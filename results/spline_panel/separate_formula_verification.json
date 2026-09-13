@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "verification_scope": "Separate formula checks by original producer; not independent review",
+  "panel_rows_checked": 2700,
+  "paired_setting_rows_checked": 9900,
+  "all33_cells_have300": true,
+  "public_rows_checked": 123,
+  "normal_tails": "math.erfc",
+  "wilson_intervals": "statsmodels proportion_confint",
+  "full_family_BY_checks": 24,
+  "outputs": {
+    "panel_spline_draws.csv": "d6e4a2299508901cf44705bd3300f3fa12fb124492f0b29f96034310d6e80827",
+    "panel_all_33_comparisons.csv": "5dfae8691658e89e7a2b3997534b92e442bdbfeb65b3d901b6eccdc0d760042d",
+    "public_all_models.csv": "f9d05d4fd880ae82a9fb04cc385e3fa6cfc6b75832b3fdd051ff15e0f978e58f"
+  }
+}

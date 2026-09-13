@@ -1,0 +1,61 @@
+{
+  "scope": "Current public package after documented packaging edits. Original experiment identities are retained separately in ORIGINAL_RUN_HASHES.json; this inventory does not attest that revised public bytes ran at original recorded timestamps.",
+  "files": {
+    "ORIGINAL_RUN_HASHES.json": {
+      "sha256": "692ff03034084fbf00429faaaaed35918229132efb28fa9d0aa6cd1a86e05792",
+      "bytes": 1640
+    },
+    "README.md": {
+      "sha256": "010807ead03c19681c232ec89e59a3b9ae92d1d2e6cf88ed352b7616a022c75a",
+      "bytes": 9572
+    },
+    "aggregate_verification.json": {
+      "sha256": "2895c5fd8ce8d194f833415f076ab2aed1818a4d2a26c1bf92e37bace0f1f47f",
+      "bytes": 939
+    },
+    "combined_hac_covariance.csv": {
+      "sha256": "e4d13d2eaf9c4a2df76875567023321411528971ab4b62798f1f1d3acfd42389",
+      "bytes": 3996
+    },
+    "cross_resolution_term_hac_covariance.csv": {
+      "sha256": "8cc2040e0aded8246cba51edd064ec0ac3003587e9dcf416a649f774fd4f796c",
+      "bytes": 37099
+    },
+    "decompose.py": {
+      "sha256": "5187882684c6a8573ed48c55f16f7e8beaee19437146711ee2b649119ff2ae85",
+      "bytes": 14745
+    },
+    "per_resolution.csv": {
+      "sha256": "f9d6adc98a87e55b3f14c4cdab1e3e00acff9984b3e446c4a860eb4ac7dffee4",
+      "bytes": 2205
+    },
+    "portability_verification.json": {
+      "sha256": "d206de9b2fadc249866c13e3162bf4eb93d2705927a00c96f26de9400d2f370a",
+      "bytes": 1378
+    },
+    "protocol.json": {
+      "sha256": "9bf076869ffddab73a1abe125b4d01d65f84bf1933508eb879caa4193a47c7b7",
+      "bytes": 3434
+    },
+    "receipt.json": {
+      "sha256": "8d0e68e0383e9f11158fa2b030fd5349814ab43952762c999b6c807435ae8d19",
+      "bytes": 1773
+    },
+    "summary.csv": {
+      "sha256": "0f6d0238bec9a39662d2d2a9eef272895b6479a0818d861cc14b4b244c276afb",
+      "bytes": 1258
+    },
+    "verification.json": {
+      "sha256": "07a639016c8bf27d8555d989e40a23d6a3243342cc6845995b7161d836f295d8",
+      "bytes": 2768
+    },
+    "verify_aggregates.py": {
+      "sha256": "ad1f82c249be1520b4b2f739cb5270bc12e534cf828fba11e11e1a0e9053e413",
+      "bytes": 5286
+    },
+    "weekly_aggregates.csv": {
+      "sha256": "47408c72a04c1b89d01aeeb80558db5fe74bd2bc811f6f3f85d87e9712d76fb6",
+      "bytes": 5332
+    }
+  }
+}

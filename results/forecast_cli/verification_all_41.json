@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "scope": "Second software replay after identifier-collision fix, using the actual CSV parser for all four fixed public families. No forecaster refits or new calibration claim.",
+  "models": 41,
+  "prediction_rows": 1898512,
+  "compute_seconds": 67.7436343356967,
+  "maximum_statistic_absolute_error": 1.2040723973427703e-10,
+  "all_frozen_labels_match": true,
+  "all_cohort_hashes_match": true,
+  "actual_CSV_parser_exercised": true,
+  "counts": {
+    "RETAIN": 23,
+    "ABSTAIN": 8,
+    "NULL": 10
+  },
+  "families": [
+    {
+      "status": "PASS",
+      "completed_utc": "2026-09-07T21:00:49.554486+00:00",
+      "domain": "electricity",
+      "models": 11,
+      "rows": 384912,
+      "seconds": 13.567921835929155,
+      "all_frozen_labels_match": true,
+      "all_cohort_hashes_match": true,
+      "actual_CSV_parser_exercised": true,
+      "maximum_statistic_absolute_error": 3.771205570046732e-12,
+      "counts": {
+        "RETAIN": 10,
+        "ABSTAIN": 1
+      },
+      "protocol_sha256": "0cb7630ca7b77747d43a16553db7986f4eac07d2521fd68c704e54c708970ec0",
+      "reference_registry_sha256": "5bd09172debe639fc1e0dcb894c780153f377332614fff8f2685a6114018c9fe",
+      "cli_receipt_sha256": "e90ea69a9540115254e44673a2d997ce0b1d39045742a9f83925e415f39f7325",
+      "scope": "Replay of known public forecasts and diagnostics, without refitting or claiming new calibration evidence."
+    },
+    {
+      "status": "PASS",
+      "completed_utc": "2026-09-07T21:01:02.306683+00:00",
+      "domain": "ratings",
+      "models": 10,
+      "rows": 120880,
+      "seconds": 11.960258442908525,
+      "all_frozen_labels_match": true,
+      "all_cohort_hashes_match": true,
+      "actual_CSV_parser_exercised": true,
+      "maximum_statistic_absolute_error": 1.2040723973427703e-10,
+      "counts": {
+        "RETAIN": 6,
+        "ABSTAIN": 4
+      },
+      "protocol_sha256": "0cb7630ca7b77747d43a16553db7986f4eac07d2521fd68c704e54c708970ec0",
+      "reference_registry_sha256": "5bd09172debe639fc1e0dcb894c780153f377332614fff8f2685a6114018c9fe",
+      "cli_receipt_sha256": "3e7a0ea4cf56269cfee9ad863ae758d81bd1c873efc707789225b51b93bd67f6",
+      "scope": "Replay of known public forecasts and diagnostics, without refitting or claiming new calibration evidence."
+    },
+    {
+      "status": "PASS",
+      "completed_utc": "2026-09-07T21:01:41.444201+00:00",
+      "domain": "retail",
+      "models": 10,
+      "rows": 1120000,
+      "seconds": 33.31528099626303,
+      "all_frozen_labels_match": true,
+      "all_cohort_hashes_match": true,
+      "actual_CSV_parser_exercised": true,
+      "maximum_statistic_absolute_error": 9.208989126818778e-11,
+      "counts": {
+        "RETAIN": 7,
+        "ABSTAIN": 2,
+        "NULL": 1
+      },
+      "protocol_sha256": "0cb7630ca7b77747d43a16553db7986f4eac07d2521fd68c704e54c708970ec0",
+      "reference_registry_sha256": "5bd09172debe639fc1e0dcb894c780153f377332614fff8f2685a6114018c9fe",
+      "cli_receipt_sha256": "34f5446586f954946c7fd00fc1f856eb8d085ed608d986e6dcbf593377259649",
+      "scope": "Replay of known public forecasts and diagnostics, without refitting or claiming new calibration evidence."
+    },
+    {
+      "status": "PASS",
+      "completed_utc": "2026-09-07T21:01:52.550405+00:00",
+      "domain": "portfolios",
+      "models": 10,
+      "rows": 272720,
+      "seconds": 8.90017306059599,
+      "all_frozen_labels_match": true,
+      "all_cohort_hashes_match": true,
+      "actual_CSV_parser_exercised": true,
+      "maximum_statistic_absolute_error": 4.551470311753292e-12,
+      "counts": {
+        "NULL": 9,
+        "ABSTAIN": 1
+      },
+      "protocol_sha256": "0cb7630ca7b77747d43a16553db7986f4eac07d2521fd68c704e54c708970ec0",
+      "reference_registry_sha256": "5bd09172debe639fc1e0dcb894c780153f377332614fff8f2685a6114018c9fe",
+      "cli_receipt_sha256": "309ffe811508fc014f41fa3db26d64d15c3692f956561845575ece9a70fdcfc1",
+      "scope": "Replay of known public forecasts and diagnostics, without refitting or claiming new calibration evidence."
+    }
+  ],
+  "protocol_sha256": "0cb7630ca7b77747d43a16553db7986f4eac07d2521fd68c704e54c708970ec0"
+}

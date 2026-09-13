@@ -1,0 +1,10 @@
+{
+  "protocol_sha256": "0fc4db53f7b6385916d47b4fc1dafa903e213f89874e87a7ce54b88d58164ee0",
+  "public_packaging": {
+    "change": "Public packaging: internal inventory path labels removed; hash links updated. No fitted model or numerical result changed.",
+    "original_run_hashes": "ORIGINAL_RUN_HASHES.json",
+    "timestamp_scope": "Recorded timestamps describe the original run; revised public bytes were not executed at those times."
+  },
+  "selection_sha256": "87b2f6e7cff6cd992fbd25fb7c11eae4144fe10d3a28a798d8466bb283dbb3e0",
+  "started_utc": "2026-09-12T12:01:57.799319+00:00"
+}

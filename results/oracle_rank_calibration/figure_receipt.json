@@ -1,0 +1,13 @@
+{
+  "source_sha256": "79cdcaa7c967a11ef1010fe13ae942d689ebf7c98d75816cca40196b4efb9cba",
+  "script_sha256": "6f0ac11cf2e5ef0ea3e6a42dc7e8a858224c016db48d64f8bed61c272d5a98a3",
+  "points": 48,
+  "manual_point_movement": false,
+  "interval_scope": "Conditional on each realized calibration bank, not the marginal Monte Carlo size.",
+  "files": {
+    "fig_oracle_rank.pdf": "d33fc4517db993eee9f35884b7771f1bb0980a3e212be6d616bfab5a9aca5bb3",
+    "fig_oracle_rank.png": "1e67305b27d00fd3efabdcf8ac84627bd95b3131a5c0e48c132d613d0fd66320",
+    "fig_oracle_rank.svg": "ff45b9113941fc671e5fce4fcac43ff15465681efd25b7c13caed70150b195bb",
+    "figure_coordinates.csv": "608b2844600692bc08db7588edc930adfbcf810496b32fa258459e4791a70292"
+  }
+}

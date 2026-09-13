@@ -1,0 +1,9 @@
+{
+  "official_percent_unit_source": "https://github.com/OpenSourceAP/CrossSection/blob/master/Portfolios/Code/11_ProcessCRSP.R",
+  "verified_statement": "The official processing code sets ret = 100*ret for monthly returns (line 50 in the current master source).",
+  "official_return_exporter": "https://github.com/OpenSourceAP/CrossSection/blob/master/Portfolios/Code/20_PredictorPorts.R",
+  "official_source_match_receipt": "Embedded in protocol.json under provenance",
+  "test_command": "python -m unittest discover -s tests -p test_monthly_portfolio_forecasters.py -v",
+  "tests_passed": 7,
+  "actual_test_log_sha256": "a6503b64a69680c3f47a002d6148218e236f80d0acf2d89245909ccaf3358b3e"
+}

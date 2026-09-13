@@ -1,0 +1,51 @@
+model,left,right,hac_covariance
+Past price and calendar,complementary_product,complementary_product,2.4988269528114466e-06
+Past price and calendar,complementary_product,directional_product,1.9175469054465317e-06
+Past price and calendar,complementary_product,outcome_fit_shift,-2.6155026366667714e-07
+Past price and calendar,complementary_product,forecast_fit_shift,-2.5436644108260633e-07
+Past price and calendar,complementary_product,joint_fit_shift,-6.5363342615631485e-08
+Past price and calendar,directional_product,complementary_product,1.9175469054465317e-06
+Past price and calendar,directional_product,directional_product,3.7614294977079729e-06
+Past price and calendar,directional_product,outcome_fit_shift,-9.833913392025997e-07
+Past price and calendar,directional_product,forecast_fit_shift,2.9701497748487432e-06
+Past price and calendar,directional_product,joint_fit_shift,-1.4287584338470283e-07
+Past price and calendar,outcome_fit_shift,complementary_product,-2.6155026366667714e-07
+Past price and calendar,outcome_fit_shift,directional_product,-9.833913392025997e-07
+Past price and calendar,outcome_fit_shift,outcome_fit_shift,1.5220694448547394e-06
+Past price and calendar,outcome_fit_shift,forecast_fit_shift,-2.7039239789877048e-06
+Past price and calendar,outcome_fit_shift,joint_fit_shift,4.6001345859704255e-07
+Past price and calendar,forecast_fit_shift,complementary_product,-2.5436644108260633e-07
+Past price and calendar,forecast_fit_shift,directional_product,2.9701497748487432e-06
+Past price and calendar,forecast_fit_shift,outcome_fit_shift,-2.7039239789877048e-06
+Past price and calendar,forecast_fit_shift,forecast_fit_shift,7.0528636972694071e-06
+Past price and calendar,forecast_fit_shift,joint_fit_shift,-1.1244235023503522e-06
+Past price and calendar,joint_fit_shift,complementary_product,-6.5363342615631485e-08
+Past price and calendar,joint_fit_shift,directional_product,-1.4287584338470283e-07
+Past price and calendar,joint_fit_shift,outcome_fit_shift,4.6001345859704255e-07
+Past price and calendar,joint_fit_shift,forecast_fit_shift,-1.1244235023503522e-06
+Past price and calendar,joint_fit_shift,joint_fit_shift,5.8689754298423823e-07
+Croston SBA,complementary_product,complementary_product,1.0466706584585726e-06
+Croston SBA,complementary_product,directional_product,3.8577345195400888e-07
+Croston SBA,complementary_product,outcome_fit_shift,5.5835609583026244e-07
+Croston SBA,complementary_product,forecast_fit_shift,-1.456528664625681e-06
+Croston SBA,complementary_product,joint_fit_shift,2.3727536229085457e-07
+Croston SBA,directional_product,complementary_product,3.8577345195400888e-07
+Croston SBA,directional_product,directional_product,8.1641264140560516e-07
+Croston SBA,directional_product,outcome_fit_shift,1.602896047356479e-06
+Croston SBA,directional_product,forecast_fit_shift,-1.551844891106546e-06
+Croston SBA,directional_product,joint_fit_shift,3.7958803320166349e-07
+Croston SBA,outcome_fit_shift,complementary_product,5.5835609583026244e-07
+Croston SBA,outcome_fit_shift,directional_product,1.602896047356479e-06
+Croston SBA,outcome_fit_shift,outcome_fit_shift,3.6287073665286027e-06
+Croston SBA,outcome_fit_shift,forecast_fit_shift,-3.3882284663977219e-06
+Croston SBA,outcome_fit_shift,joint_fit_shift,8.0406105139533655e-07
+Croston SBA,forecast_fit_shift,complementary_product,-1.456528664625681e-06
+Croston SBA,forecast_fit_shift,directional_product,-1.551844891106546e-06
+Croston SBA,forecast_fit_shift,outcome_fit_shift,-3.3882284663977219e-06
+Croston SBA,forecast_fit_shift,forecast_fit_shift,4.2059668109128937e-06
+Croston SBA,forecast_fit_shift,joint_fit_shift,-9.1305457099603615e-07
+Croston SBA,joint_fit_shift,complementary_product,2.3727536229085457e-07
+Croston SBA,joint_fit_shift,directional_product,3.7958803320166349e-07
+Croston SBA,joint_fit_shift,outcome_fit_shift,8.0406105139533655e-07
+Croston SBA,joint_fit_shift,forecast_fit_shift,-9.1305457099603615e-07
+Croston SBA,joint_fit_shift,joint_fit_shift,2.5130619051150857e-07

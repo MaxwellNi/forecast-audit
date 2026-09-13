@@ -1,0 +1,69 @@
+{
+  "scope": "Identities of original experiment code, protocol, receipts, source, fitted models, choices and numerical outputs before public packaging edits. Revised public scripts/receipts were not executed at the original recorded timestamps. Source.zip, fitted_models.pkl and every CSV retain their original bytes.",
+  "files": {
+    "confirmation_metrics.csv": {
+      "sha256": "4798424e119a16fb882ba7550f1d79207a19e5bce520bb6422025bc4dd97a7a5",
+      "bytes": 9688
+    },
+    "confirmation_receipt.json": {
+      "sha256": "d7a17a6d430376707d5b396721d40afd1ca58622bd0c887e5feb35fcbbfe1698",
+      "bytes": 1238
+    },
+    "confirmation_started.json": {
+      "sha256": "af1cc432eb19ee530d8a7b1e482fd7e0cb5662f095d3201af23a415892821c35",
+      "bytes": 235
+    },
+    "fitted_models.pkl": {
+      "sha256": "b871d060c7459c192c925dc355b55ef80ac432025dc6259d878c53dc315d50c0",
+      "bytes": 293907
+    },
+    "forecast_timing_check.json": {
+      "sha256": "967a69057c5fca167ec5b99a036a3ef7aaf0cabc28fdb87520f66451f6c59b60",
+      "bytes": 659
+    },
+    "gain_identity.csv": {
+      "sha256": "3a0cfefab6c25c03c22596b2373043782a578f7b19f0b076847ad3ebb986fc7c",
+      "bytes": 2455
+    },
+    "paired_risk_improvements.csv": {
+      "sha256": "56b09dbd38c7d943abfb03d838369a13e332182623a1ae88379b7bf84a61e3b6",
+      "bytes": 13197
+    },
+    "protocol.json": {
+      "sha256": "35eb6c0332a48dd9df01899b6e80ab61ba6c6ad2e7ffd2c4acaf507efd2dd870",
+      "bytes": 6604
+    },
+    "protocol.sha256": {
+      "sha256": "709e32ae5e1fff23a6f4b76444a95001cadd86a6996d389ebbc9bb38390cafd7",
+      "bytes": 80
+    },
+    "selection.json": {
+      "sha256": "6308461c19fa5150cf729ebea30b991ee1b43912463749196ed370ca3bb8b3ec",
+      "bytes": 9822
+    },
+    "selection.sha256": {
+      "sha256": "379c40baff97f55c37def534a7b510cc0b7450052196116a39ece294dcebfb19",
+      "bytes": 81
+    },
+    "selection_all_candidates.csv": {
+      "sha256": "f30d8ad4c83764780268076054ef03231bb73521c74687aa28ae38a76c160641",
+      "bytes": 3728
+    },
+    "source.zip": {
+      "sha256": "139e9908f0a3544bb222386855c9ce107e96467306bb8e4ce936aab59e7baac4",
+      "bytes": 604298
+    },
+    "source_receipt.json": {
+      "sha256": "72f591d57ad5f3dda597f849fdc3fc5949b4cabcc4efacc12c27a1a2a8a61312",
+      "bytes": 342
+    },
+    "study.py": {
+      "sha256": "1f47b402a9ba65a383fa53f853549546f47a29f34e4f09c5e94c9d962741193a",
+      "bytes": 24153
+    },
+    "weekly_trace.csv": {
+      "sha256": "a435fa02295554a533cafb818c5247464a8644b5298aaf8a3a62039d7b6bce55",
+      "bytes": 88323
+    }
+  }
+}

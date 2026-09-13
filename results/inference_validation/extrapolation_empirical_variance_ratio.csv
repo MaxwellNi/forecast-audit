@@ -1,0 +1,19 @@
+clusters,condition,beta,empirical_variance_ratio,weight_l1,replications,scope
+25,high_overlap_conditional_null,1,1.091373503978519,1.9921874999999993,300,Monte Carlo covariance of the five fitted mean products; ratio to q32. Not a guarantee or a within-dataset standard-error ratio.
+25,high_overlap_conditional_null,2,0.9651866024494613,1.409278900673737,300,Monte Carlo covariance of the five fitted mean products; ratio to q32. Not a guarantee or a within-dataset standard-error ratio.
+25,high_overlap_shared_noise_alternative,1,1.1248546410232263,1.9921874999999993,300,Monte Carlo covariance of the five fitted mean products; ratio to q32. Not a guarantee or a within-dataset standard-error ratio.
+25,high_overlap_shared_noise_alternative,2,0.9771809779668329,1.409278900673737,300,Monte Carlo covariance of the five fitted mean products; ratio to q32. Not a guarantee or a within-dataset standard-error ratio.
+25,independent_forecast_null,1,1.0175308199174669,1.9921874999999993,300,Monte Carlo covariance of the five fitted mean products; ratio to q32. Not a guarantee or a within-dataset standard-error ratio.
+25,independent_forecast_null,2,0.9726320400004278,1.409278900673737,300,Monte Carlo covariance of the five fitted mean products; ratio to q32. Not a guarantee or a within-dataset standard-error ratio.
+50,high_overlap_conditional_null,1,1.0830032846959814,1.9921874999999993,300,Monte Carlo covariance of the five fitted mean products; ratio to q32. Not a guarantee or a within-dataset standard-error ratio.
+50,high_overlap_conditional_null,2,0.9766355519095982,1.409278900673737,300,Monte Carlo covariance of the five fitted mean products; ratio to q32. Not a guarantee or a within-dataset standard-error ratio.
+50,high_overlap_shared_noise_alternative,1,1.1436668620248442,1.9921874999999993,300,Monte Carlo covariance of the five fitted mean products; ratio to q32. Not a guarantee or a within-dataset standard-error ratio.
+50,high_overlap_shared_noise_alternative,2,0.9873144816318024,1.409278900673737,300,Monte Carlo covariance of the five fitted mean products; ratio to q32. Not a guarantee or a within-dataset standard-error ratio.
+50,independent_forecast_null,1,1.014113034350424,1.9921874999999993,300,Monte Carlo covariance of the five fitted mean products; ratio to q32. Not a guarantee or a within-dataset standard-error ratio.
+50,independent_forecast_null,2,0.9940744487906956,1.409278900673737,300,Monte Carlo covariance of the five fitted mean products; ratio to q32. Not a guarantee or a within-dataset standard-error ratio.
+100,high_overlap_conditional_null,1,1.0637543100433677,1.9921874999999993,300,Monte Carlo covariance of the five fitted mean products; ratio to q32. Not a guarantee or a within-dataset standard-error ratio.
+100,high_overlap_conditional_null,2,0.9532488410231712,1.409278900673737,300,Monte Carlo covariance of the five fitted mean products; ratio to q32. Not a guarantee or a within-dataset standard-error ratio.
+100,high_overlap_shared_noise_alternative,1,1.145366015030656,1.9921874999999993,300,Monte Carlo covariance of the five fitted mean products; ratio to q32. Not a guarantee or a within-dataset standard-error ratio.
+100,high_overlap_shared_noise_alternative,2,0.9646083255440461,1.409278900673737,300,Monte Carlo covariance of the five fitted mean products; ratio to q32. Not a guarantee or a within-dataset standard-error ratio.
+100,independent_forecast_null,1,1.0089292780870307,1.9921874999999993,300,Monte Carlo covariance of the five fitted mean products; ratio to q32. Not a guarantee or a within-dataset standard-error ratio.
+100,independent_forecast_null,2,1.0004476097499695,1.409278900673737,300,Monte Carlo covariance of the five fitted mean products; ratio to q32. Not a guarantee or a within-dataset standard-error ratio.

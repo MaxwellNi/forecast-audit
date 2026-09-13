@@ -1,0 +1,80 @@
+{
+  "calibration_seed_start": 342719001,
+  "evaluation_seed_start": 876510001,
+  "calibration_draws": 1000,
+  "evaluation_draws": 1000,
+  "entities": 80,
+  "periods": 25,
+  "configs_noise_correlation": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.01,
+      0.0
+    ],
+    [
+      0.01,
+      0.03
+    ],
+    [
+      0.01,
+      0.06
+    ],
+    [
+      0.01,
+      0.1
+    ],
+    [
+      0.01,
+      0.3
+    ],
+    [
+      0.01,
+      0.6
+    ],
+    [
+      0.1,
+      0.0
+    ],
+    [
+      0.1,
+      0.03
+    ],
+    [
+      0.1,
+      0.06
+    ],
+    [
+      0.1,
+      0.1
+    ],
+    [
+      0.1,
+      0.3
+    ],
+    [
+      0.1,
+      0.6
+    ]
+  ],
+  "methods": [
+    "bins32",
+    "extrapolation_beta1",
+    "extrapolation_beta2",
+    "spline",
+    "linear_plus_spline",
+    "oracle_rank_means"
+  ],
+  "workers": 2,
+  "alpha": 0.05,
+  "truth": "At correlation zero, conditional on the focal baseline rank, the competitor baseline multiset is fixed and score/outcome noises are disjoint homogeneous Gaussian arrays. The whole score/outcome rank distributions then factorize. Thus the conditional rank covariance is exactly zero, including after mixing random grid assignments. Exact copy has zero product variance and is a separate degenerate boundary.",
+  "controls": "The current five contiguous whole-period complementary folds; additive entity effects plus baseline-percentile bins or splines. Same rows, forecasts, outcomes and training information for all learned fits. Eight nominal quantile knots, cubic spline, sum-loss ridge .001; the added linear term is explicitly unpenalized. Oracle means use the known Gaussian grid law and are a diagnostic comparator.",
+  "guard": "Whole-panel equality of forecast and baseline weak orders, or standard error <=1e-10, assigns p=1. All attempts remain in denominators. No R2 threshold is used.",
+  "inference": "Normal statistic uses the historical ddof=0 cluster scale. CR1+t uses sample period SD ddof=1 and t24. Independent supplied-null calibration uses plus-one ranks of the ddof=1 statistic from disjoint simulated panels, separately for each noise scale and method.",
+  "calibration_scope": "Known simulated null law and a common nominal 5% level, not equal realized error rates or a calibration law for actual data. Single hypothesis per configuration, not a family FDR study.",
+  "coupling": "Shared primitives across methods, noise levels and injected correlations in each replication. Calibration and evaluation seeds are disjoint. No replication or cell is excluded.",
+  "followup_disclosure": "The original zero/.3/.6 correlation grid was evaluated first and retained in a separate recorded run. Because its positive controls saturated, this follow-up adds .03/.06/.10 correlations on the same primitive seeds. It retains every original configuration and is an exploratory power extension, not independent confirmation of a prespecified power claim.",
+  "source_sha256": "b0c45fe98382bd98eb40493d61ff8b2475ca4e08b77c761d771592c7eae6690d"
+}

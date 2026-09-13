@@ -1,0 +1,7 @@
+{
+  "inputs/original_efficiency/replications.csv.gz": "inputs/original_efficiency/replications.csv.gz",
+  "inputs/original_efficiency/summary.csv": "inputs/original_efficiency/summary.csv",
+  "inputs/original_efficiency/protocol.json": "inputs/original_efficiency/protocol.json",
+  "inputs/matched_betting/replications.csv.gz": "inputs/matched_betting/replications.csv.gz",
+  "inputs/matched_betting/protocol.json": "inputs/matched_betting/protocol.json"
+}

@@ -1,0 +1,458 @@
+{
+  "verdict": "PASS",
+  "source_sha256": "2759c9fe326c3628ca6021dd1e08a22642760802c427922771f9da21727f55a7",
+  "rows": 10500,
+  "datasets": 2100,
+  "cells": 35,
+  "checks": [
+    "complete paired cells",
+    "sample and fold hashes identical within each dataset",
+    "normal tails independently recomputed",
+    "rejections recounted",
+    "Wilson intervals independently recomputed"
+  ],
+  "cells_recounted": [
+    {
+      "regime": "kink",
+      "alternative": "null",
+      "method": "extrapolated",
+      "n": 300,
+      "rejections": 28,
+      "rate": 0.09333333333333334,
+      "wilson95": [
+        0.06536421957889091,
+        0.1315853970170732
+      ]
+    },
+    {
+      "regime": "kink",
+      "alternative": "null",
+      "method": "gcm_coarse",
+      "n": 300,
+      "rejections": 54,
+      "rate": 0.18,
+      "wilson95": [
+        0.1406583026966649,
+        0.2274331988870445
+      ]
+    },
+    {
+      "regime": "kink",
+      "alternative": "null",
+      "method": "gcm_fine",
+      "n": 300,
+      "rejections": 36,
+      "rate": 0.12,
+      "wilson95": [
+        0.0879508443036389,
+        0.16165781382701605
+      ]
+    },
+    {
+      "regime": "kink",
+      "alternative": "null",
+      "method": "gcm_spline",
+      "n": 300,
+      "rejections": 21,
+      "rate": 0.07,
+      "wilson95": [
+        0.046236944827176336,
+        0.10463601042593323
+      ]
+    },
+    {
+      "regime": "kink",
+      "alternative": "null",
+      "method": "kci_gamma",
+      "n": 300,
+      "rejections": 17,
+      "rate": 0.056666666666666664,
+      "wilson95": [
+        0.03567747646328951,
+        0.08886595802247463
+      ]
+    },
+    {
+      "regime": "kink",
+      "alternative": "positive_covariance",
+      "method": "extrapolated",
+      "n": 300,
+      "rejections": 284,
+      "rate": 0.9466666666666667,
+      "wilson95": [
+        0.9151308582251686,
+        0.9669080874809034
+      ]
+    },
+    {
+      "regime": "kink",
+      "alternative": "positive_covariance",
+      "method": "gcm_coarse",
+      "n": 300,
+      "rejections": 298,
+      "rate": 0.9933333333333333,
+      "wilson95": [
+        0.9760224167496929,
+        0.998169851642088
+      ]
+    },
+    {
+      "regime": "kink",
+      "alternative": "positive_covariance",
+      "method": "gcm_fine",
+      "n": 300,
+      "rejections": 289,
+      "rate": 0.9633333333333334,
+      "wilson95": [
+        0.9355461518281071,
+        0.979404694837147
+      ]
+    },
+    {
+      "regime": "kink",
+      "alternative": "positive_covariance",
+      "method": "gcm_spline",
+      "n": 300,
+      "rejections": 287,
+      "rate": 0.9566666666666667,
+      "wilson95": [
+        0.9272825343659885,
+        0.9745035519155927
+      ]
+    },
+    {
+      "regime": "kink",
+      "alternative": "positive_covariance",
+      "method": "kci_gamma",
+      "n": 300,
+      "rejections": 220,
+      "rate": 0.7333333333333333,
+      "wilson95": [
+        0.680572605868549,
+        0.7801940075599961
+      ]
+    },
+    {
+      "regime": "kink",
+      "alternative": "zero_covariance_dependence",
+      "method": "extrapolated",
+      "n": 300,
+      "rejections": 27,
+      "rate": 0.09,
+      "wilson95": [
+        0.06259022560547936,
+        0.12777701079864834
+      ]
+    },
+    {
+      "regime": "kink",
+      "alternative": "zero_covariance_dependence",
+      "method": "gcm_coarse",
+      "n": 300,
+      "rejections": 33,
+      "rate": 0.11,
+      "wilson95": [
+        0.07940528531126051,
+        0.15045623224388538
+      ]
+    },
+    {
+      "regime": "kink",
+      "alternative": "zero_covariance_dependence",
+      "method": "gcm_fine",
+      "n": 300,
+      "rejections": 29,
+      "rate": 0.09666666666666666,
+      "wilson95": [
+        0.06815029481828931,
+        0.13538170196951116
+      ]
+    },
+    {
+      "regime": "kink",
+      "alternative": "zero_covariance_dependence",
+      "method": "gcm_spline",
+      "n": 300,
+      "rejections": 24,
+      "rate": 0.08,
+      "wilson95": [
+        0.054346855395144764,
+        0.11627324043347391
+      ]
+    },
+    {
+      "regime": "kink",
+      "alternative": "zero_covariance_dependence",
+      "method": "kci_gamma",
+      "n": 300,
+      "rejections": 300,
+      "rate": 1.0,
+      "wilson95": [
+        0.9873570287754538,
+        0.9999999999999998
+      ]
+    },
+    {
+      "regime": "oscillation",
+      "alternative": "null",
+      "method": "extrapolated",
+      "n": 300,
+      "rejections": 44,
+      "rate": 0.14666666666666667,
+      "wilson95": [
+        0.11110518744033696,
+        0.19116251222500888
+      ]
+    },
+    {
+      "regime": "oscillation",
+      "alternative": "null",
+      "method": "gcm_coarse",
+      "n": 300,
+      "rejections": 243,
+      "rate": 0.81,
+      "wilson95": [
+        0.7617962081751881,
+        0.8503651496655933
+      ]
+    },
+    {
+      "regime": "oscillation",
+      "alternative": "null",
+      "method": "gcm_fine",
+      "n": 300,
+      "rejections": 65,
+      "rate": 0.21666666666666667,
+      "wilson95": [
+        0.1737878350698321,
+        0.2667098486240773
+      ]
+    },
+    {
+      "regime": "oscillation",
+      "alternative": "null",
+      "method": "gcm_spline",
+      "n": 300,
+      "rejections": 47,
+      "rate": 0.15666666666666668,
+      "wilson95": [
+        0.11990681678878562,
+        0.2021080234520693
+      ]
+    },
+    {
+      "regime": "oscillation",
+      "alternative": "null",
+      "method": "kci_gamma",
+      "n": 300,
+      "rejections": 11,
+      "rate": 0.03666666666666667,
+      "wilson95": [
+        0.02059530516285303,
+        0.06445384817189295
+      ]
+    },
+    {
+      "regime": "oscillation",
+      "alternative": "positive_covariance",
+      "method": "extrapolated",
+      "n": 300,
+      "rejections": 294,
+      "rate": 0.98,
+      "wilson95": [
+        0.9570603791821394,
+        0.9908023684422963
+      ]
+    },
+    {
+      "regime": "oscillation",
+      "alternative": "positive_covariance",
+      "method": "gcm_coarse",
+      "n": 300,
+      "rejections": 300,
+      "rate": 1.0,
+      "wilson95": [
+        0.9873570287754538,
+        0.9999999999999998
+      ]
+    },
+    {
+      "regime": "oscillation",
+      "alternative": "positive_covariance",
+      "method": "gcm_fine",
+      "n": 300,
+      "rejections": 298,
+      "rate": 0.9933333333333333,
+      "wilson95": [
+        0.9760224167496929,
+        0.998169851642088
+      ]
+    },
+    {
+      "regime": "oscillation",
+      "alternative": "positive_covariance",
+      "method": "gcm_spline",
+      "n": 300,
+      "rejections": 290,
+      "rate": 0.9666666666666667,
+      "wilson95": [
+        0.9397381741959452,
+        0.9817950526611452
+      ]
+    },
+    {
+      "regime": "oscillation",
+      "alternative": "positive_covariance",
+      "method": "kci_gamma",
+      "n": 300,
+      "rejections": 201,
+      "rate": 0.67,
+      "wilson95": [
+        0.6149358533991501,
+        0.7207655363845044
+      ]
+    },
+    {
+      "regime": "step",
+      "alternative": "null",
+      "method": "extrapolated",
+      "n": 300,
+      "rejections": 36,
+      "rate": 0.12,
+      "wilson95": [
+        0.0879508443036389,
+        0.16165781382701605
+      ]
+    },
+    {
+      "regime": "step",
+      "alternative": "null",
+      "method": "gcm_coarse",
+      "n": 300,
+      "rejections": 69,
+      "rate": 0.23,
+      "wilson95": [
+        0.18597181807303015,
+        0.28085538638822466
+      ]
+    },
+    {
+      "regime": "step",
+      "alternative": "null",
+      "method": "gcm_fine",
+      "n": 300,
+      "rejections": 42,
+      "rate": 0.14,
+      "wilson95": [
+        0.10527132693072412,
+        0.18383161235094903
+      ]
+    },
+    {
+      "regime": "step",
+      "alternative": "null",
+      "method": "gcm_spline",
+      "n": 300,
+      "rejections": 53,
+      "rate": 0.17666666666666667,
+      "wilson95": [
+        0.13767670929949632,
+        0.22383241209237675
+      ]
+    },
+    {
+      "regime": "step",
+      "alternative": "null",
+      "method": "kci_gamma",
+      "n": 300,
+      "rejections": 29,
+      "rate": 0.09666666666666666,
+      "wilson95": [
+        0.06815029481828931,
+        0.13538170196951116
+      ]
+    },
+    {
+      "regime": "step",
+      "alternative": "positive_covariance",
+      "method": "extrapolated",
+      "n": 300,
+      "rejections": 290,
+      "rate": 0.9666666666666667,
+      "wilson95": [
+        0.9397381741959452,
+        0.9817950526611452
+      ]
+    },
+    {
+      "regime": "step",
+      "alternative": "positive_covariance",
+      "method": "gcm_coarse",
+      "n": 300,
+      "rejections": 298,
+      "rate": 0.9933333333333333,
+      "wilson95": [
+        0.9760224167496929,
+        0.998169851642088
+      ]
+    },
+    {
+      "regime": "step",
+      "alternative": "positive_covariance",
+      "method": "gcm_fine",
+      "n": 300,
+      "rejections": 295,
+      "rate": 0.9833333333333333,
+      "wilson95": [
+        0.9615846051669054,
+        0.9928605226493666
+      ]
+    },
+    {
+      "regime": "step",
+      "alternative": "positive_covariance",
+      "method": "gcm_spline",
+      "n": 300,
+      "rejections": 295,
+      "rate": 0.9833333333333333,
+      "wilson95": [
+        0.9615846051669054,
+        0.9928605226493666
+      ]
+    },
+    {
+      "regime": "step",
+      "alternative": "positive_covariance",
+      "method": "kci_gamma",
+      "n": 300,
+      "rejections": 259,
+      "rate": 0.8633333333333333,
+      "wilson95": [
+        0.8198445870022494,
+        0.8976348539079136
+      ]
+    }
+  ],
+  "frozen_superiority_criteria": [
+    {
+      "regime": "kink",
+      "lower_null": false,
+      "disjoint_intervals": false,
+      "power_within_005": true
+    },
+    {
+      "regime": "step",
+      "lower_null": true,
+      "disjoint_intervals": false,
+      "power_within_005": true
+    },
+    {
+      "regime": "oscillation",
+      "lower_null": true,
+      "disjoint_intervals": false,
+      "power_within_005": true
+    }
+  ],
+  "superiority_demonstrated": false,
+  "limitation": "Failure of the superiority rule does not prove spline noninferiority; no producer or KCI statistic replay in this recount."
+}

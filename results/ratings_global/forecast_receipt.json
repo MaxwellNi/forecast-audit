@@ -1,0 +1,113 @@
+{
+  "domain": "ratings",
+  "protocol_sha256": "2d8d9ba8c7d081373f81fd50771fbb8303ada3afbfda578dfe358e027888f91a",
+  "source_hashes": {
+    "reproduce_temporal_public.py": "c57431721feca1513c062811581a31bf261101e432fab08cca115ebaf2119a29",
+    "temporal_public_forecasters.py": "24fdfd9c4ef17f7b0c94147f8a54934ddb0a2ed52f2dcfee02eb4a9e540cdf85",
+    "rating_forecasters.py": "9656f6fb38c4b6565887ef23de38b1dbacad1b8ddc641b61273649aece3d1506",
+    "retail_forecasters.py": "53f5eb94273dfcd4762b2679535adbe6e29fc4d1627e687902421d24e7ff565b",
+    "reproduce_public_forecasts.py": "7d410888b093813e33c88159cc56b11ec6932fbd11de1ae8526afbc7613888f8",
+    "audit_panel_predictions.py": "bcf96e51df5fdf3cbff657463b124306bcc08cc950024b63eee5e211cf2f6c65",
+    "cluster_covariance_reference.py": "48911f76a06fb565060394f4a5d30ef242ed80f9ba64405da28641773d30c760"
+  },
+  "preparation": {
+    "cutoff_utc": "2017-01-01",
+    "evaluation_end_exclusive_utc": "2018-01-01",
+    "training_rows": 1368078,
+    "test_rows": 12088,
+    "selected_training_users": 6000,
+    "evaluation_users": 279,
+    "eligible_training_movies": 7057,
+    "fitted_training_movies": 7057,
+    "maximum_training_timestamp": 1483228733,
+    "minimum_test_timestamp": 1483229082,
+    "singleton_evaluation_users": 18,
+    "evaluation_activity_filter": "none",
+    "cohort_uses_evaluation_rows": false
+  },
+  "elapsed_seconds": 316.77920765057206,
+  "model_errors": [
+    {
+      "model": "Item mean",
+      "n": 12088,
+      "mae": 0.6927495830960513,
+      "rmse": 0.9045356843581572,
+      "prediction_sha256": "7aa911acfa9c0d7fffeb12fd6ac6f94653c17ebb386c7906331d6b2ad19d4458"
+    },
+    {
+      "model": "User mean",
+      "n": 12088,
+      "mae": 0.7152900589508241,
+      "rmse": 0.9379200685271538,
+      "prediction_sha256": "b5ed191e0bd8d1f983938408c5401cf10589455e22f6cbded0c3078a70422f56"
+    },
+    {
+      "model": "User and item bias",
+      "n": 12088,
+      "mae": 0.6225813376716963,
+      "rmse": 0.8244571614749184,
+      "prediction_sha256": "ddeffe3c70c93254077fdefddfa4187a6c18f03e9eb94d10cb26bd418cb32d2d"
+    },
+    {
+      "model": "SVD (40 factors)",
+      "n": 12088,
+      "mae": 0.6080979720484619,
+      "rmse": 0.8071602108767403,
+      "prediction_sha256": "3a84fd936ac423a1c530077947050475b870ac28b6398ef8d39efbe285330330"
+    },
+    {
+      "model": "SVD interaction",
+      "n": 12088,
+      "mae": 3.4628739948999923,
+      "rmse": 3.5954516764063644,
+      "prediction_sha256": "e2dedcb0d38495d255ed4f34ada2adf63ff73e8d77fab89f297afb0ab0a13648"
+    },
+    {
+      "model": "Global mean",
+      "n": 12088,
+      "mae": 0.7474728433837166,
+      "rmse": 0.9861361862594149,
+      "prediction_sha256": "3ed212f6a98460df6e7b18152faf6fb562209b5bb22bf71b28f0b49109025b0b"
+    },
+    {
+      "model": "Slope One",
+      "n": 12088,
+      "mae": 0.6116401790379294,
+      "rmse": 0.8112107907485013,
+      "prediction_sha256": "ad9844e49767624edd13db1842151f11912e2ef3bbf9a602aeb9606bf7ea6c76"
+    },
+    {
+      "model": "Item nearest neighbours",
+      "n": 12088,
+      "mae": 0.5811003829660122,
+      "rmse": 0.7772604745170765,
+      "prediction_sha256": "b3b28869c75ab83647b81f24d19047e5feb248e4be0532b44b763158da14407c"
+    },
+    {
+      "model": "Alternating least squares",
+      "n": 12088,
+      "mae": 0.7189996005201449,
+      "rmse": 1.005539963518248,
+      "prediction_sha256": "3121e2918d7937968eb432312b7bde773e503ec5fe31108e97268f50551b9137"
+    },
+    {
+      "model": "SVD (32 factors)",
+      "n": 12088,
+      "mae": 0.608298668090359,
+      "rmse": 0.8078641038457722,
+      "prediction_sha256": "38585fcf85f01af4d35e8bd0c2fd0eee3d53809efbfcb8b7d4d8b445d1decc56"
+    }
+  ],
+  "dependencies": {
+    "numpy": "1.26.4",
+    "scipy": "1.11.4",
+    "pandas": "2.2.3",
+    "lightgbm": "4.6.0",
+    "scikit-learn": "1.7.2"
+  },
+  "all_ten_models_actually_refitted": true,
+  "old_results_overwritten": false,
+  "published_rows": false,
+  "prospective_source_vintage_verified": false,
+  "inference": "Prespecified temporal evaluation and nominal audit; no established universal calibration"
+}

@@ -1,0 +1,3 @@
+# Required for all eleven electricity models; install after requirements.txt.
+--index-url https://download.pytorch.org/whl/cpu
+torch==2.12.0+cpu

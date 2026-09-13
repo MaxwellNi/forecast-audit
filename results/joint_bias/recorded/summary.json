@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "classification": "POST-EXPOSURE EXPLORATION; not confirmation; all 32 candidates retained",
+  "rows": 32,
+  "old_bias_max_error": 2.0816681711721685e-17,
+  "old_p_max_error": 0.0,
+  "max_improvement": 0.0025109250200164926,
+  "median_improvement": 0.0004792507797823399,
+  "strict_improvements_above_1e_10": 32,
+  "median_relative_improvement": 0.012399114757957137,
+  "maximum_relative_improvement": 0.06517292912658684,
+  "statuses": {
+    "certified": 32
+  },
+  "all_observed_validation_events": true,
+  "all_32_receipts_verified": true,
+  "source_inputs_unchanged": true,
+  "variance_rejections": 0,
+  "betting_rejections": 0,
+  "elapsed_seconds": 0.925419744104147
+}

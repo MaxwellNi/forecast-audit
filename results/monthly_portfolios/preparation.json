@@ -1,0 +1,15 @@
+{
+  "evaluation_months": 132,
+  "evaluation_origins_on_calendar": 27379,
+  "evaluation_rows_with_all_thirty_features": 27255,
+  "evaluation_rows_with_observed_target_and_baseline": 27272,
+  "evaluation_rows_without_baseline": 94,
+  "evaluation_rows_without_target": 83,
+  "evaluation_series": 209,
+  "input_sha256": "2464b3f608ba076f0c3d1bc64af80070f967c0d57c57219ded726a08e0a7cc44",
+  "panel_rows": 84583,
+  "panel_sha256": "921f43d64704a458071d66d3acb5f3a509e812dd9c671c3ba85b3a86cea374a8",
+  "protocol_sha256": "c6c86f2348023b2d88d5743ecae452201c9b374a3ed1c8f9a83b251435086225",
+  "series": 212,
+  "source_release_vs_historical_observability": "A public downloaded release can establish numeric provenance; it does not establish which release or signal definitions were available at each historical origin."
+}

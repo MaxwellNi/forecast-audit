@@ -1,0 +1,194 @@
+[
+  {
+    "condition": "gaussian_null",
+    "entities": 8,
+    "cluster": 0,
+    "max_difference": 3.469446951953614e-18
+  },
+  {
+    "condition": "gaussian_null",
+    "entities": 8,
+    "cluster": 399,
+    "max_difference": 0.0
+  },
+  {
+    "condition": "gaussian_alternative",
+    "entities": 8,
+    "cluster": 0,
+    "max_difference": 2.7755575615628914e-17
+  },
+  {
+    "condition": "gaussian_alternative",
+    "entities": 8,
+    "cluster": 399,
+    "max_difference": 1.3877787807814457e-17
+  },
+  {
+    "condition": "linear_copy",
+    "entities": 8,
+    "cluster": 0,
+    "max_difference": 1.3877787807814457e-17
+  },
+  {
+    "condition": "linear_copy",
+    "entities": 8,
+    "cluster": 399,
+    "max_difference": 8.673617379884035e-18
+  },
+  {
+    "condition": "nonmonotone_copy",
+    "entities": 8,
+    "cluster": 0,
+    "max_difference": 6.938893903907228e-18
+  },
+  {
+    "condition": "nonmonotone_copy",
+    "entities": 8,
+    "cluster": 399,
+    "max_difference": 1.734723475976807e-17
+  },
+  {
+    "condition": "interaction_copy",
+    "entities": 8,
+    "cluster": 0,
+    "max_difference": 5.204170427930421e-18
+  },
+  {
+    "condition": "interaction_copy",
+    "entities": 8,
+    "cluster": 399,
+    "max_difference": 1.0408340855860843e-17
+  },
+  {
+    "condition": "gaussian_null",
+    "entities": 32,
+    "cluster": 0,
+    "max_difference": 4.336808689942018e-18
+  },
+  {
+    "condition": "gaussian_null",
+    "entities": 32,
+    "cluster": 399,
+    "max_difference": 0.0
+  },
+  {
+    "condition": "gaussian_alternative",
+    "entities": 32,
+    "cluster": 0,
+    "max_difference": 6.938893903907228e-18
+  },
+  {
+    "condition": "gaussian_alternative",
+    "entities": 32,
+    "cluster": 399,
+    "max_difference": 3.469446951953614e-18
+  },
+  {
+    "condition": "linear_copy",
+    "entities": 32,
+    "cluster": 0,
+    "max_difference": 1.734723475976807e-18
+  },
+  {
+    "condition": "linear_copy",
+    "entities": 32,
+    "cluster": 399,
+    "max_difference": 3.903127820947816e-18
+  },
+  {
+    "condition": "nonmonotone_copy",
+    "entities": 32,
+    "cluster": 0,
+    "max_difference": 8.673617379884035e-18
+  },
+  {
+    "condition": "nonmonotone_copy",
+    "entities": 32,
+    "cluster": 399,
+    "max_difference": 3.469446951953614e-18
+  },
+  {
+    "condition": "interaction_copy",
+    "entities": 32,
+    "cluster": 0,
+    "max_difference": 5.637851296924623e-18
+  },
+  {
+    "condition": "interaction_copy",
+    "entities": 32,
+    "cluster": 399,
+    "max_difference": 2.6020852139652106e-18
+  },
+  {
+    "condition": "gaussian_null",
+    "entities": 128,
+    "cluster": 0,
+    "max_difference": 2.710505431213761e-18
+  },
+  {
+    "condition": "gaussian_null",
+    "entities": 128,
+    "cluster": 399,
+    "max_difference": 1.734723475976807e-18
+  },
+  {
+    "condition": "gaussian_alternative",
+    "entities": 128,
+    "cluster": 0,
+    "max_difference": 3.469446951953614e-18
+  },
+  {
+    "condition": "gaussian_alternative",
+    "entities": 128,
+    "cluster": 399,
+    "max_difference": 0.0
+  },
+  {
+    "condition": "linear_copy",
+    "entities": 128,
+    "cluster": 0,
+    "max_difference": 2.3852447794681098e-18
+  },
+  {
+    "condition": "linear_copy",
+    "entities": 128,
+    "cluster": 399,
+    "max_difference": 4.336808689942018e-19
+  },
+  {
+    "condition": "nonmonotone_copy",
+    "entities": 128,
+    "cluster": 0,
+    "max_difference": 6.505213034913027e-19
+  },
+  {
+    "condition": "nonmonotone_copy",
+    "entities": 128,
+    "cluster": 399,
+    "max_difference": 1.5178830414797062e-18
+  },
+  {
+    "condition": "interaction_copy",
+    "entities": 128,
+    "cluster": 0,
+    "max_difference": 1.0842021724855044e-18
+  },
+  {
+    "condition": "interaction_copy",
+    "entities": 128,
+    "cluster": 399,
+    "max_difference": 0.0
+  },
+  {
+    "condition": "fixed_grid_opposite_boundary",
+    "entities": 8,
+    "cluster": 0,
+    "max_difference": 0.0
+  },
+  {
+    "condition": "fixed_grid_opposite_boundary",
+    "entities": 8,
+    "cluster": 6399,
+    "max_difference": 3.469446951953614e-18
+  }
+]

@@ -1,0 +1,113 @@
+{
+  "domain": "retail",
+  "protocol_sha256": "32873e2f4d8f1a7e4326d88ebbc88eb06a3b1a67f8e843a40930448010fcf139",
+  "source_hashes": {
+    "reproduce_temporal_public.py": "c57431721feca1513c062811581a31bf261101e432fab08cca115ebaf2119a29",
+    "temporal_public_forecasters.py": "24fdfd9c4ef17f7b0c94147f8a54934ddb0a2ed52f2dcfee02eb4a9e540cdf85",
+    "rating_forecasters.py": "9656f6fb38c4b6565887ef23de38b1dbacad1b8ddc641b61273649aece3d1506",
+    "retail_forecasters.py": "53f5eb94273dfcd4762b2679535adbe6e29fc4d1627e687902421d24e7ff565b",
+    "reproduce_public_forecasts.py": "7d410888b093813e33c88159cc56b11ec6932fbd11de1ae8526afbc7613888f8",
+    "audit_panel_predictions.py": "bcf96e51df5fdf3cbff657463b124306bcc08cc950024b63eee5e211cf2f6c65",
+    "cluster_covariance_reference.py": "48911f76a06fb565060394f4a5d30ef242ed80f9ba64405da28641773d30c760"
+  },
+  "preparation": {
+    "cutoff_week": 11541,
+    "complete_weeks": 277,
+    "partial_weeks_excluded": {
+      "11617": 2
+    },
+    "series": 4000,
+    "training_rows": 992000,
+    "test_rows": 112000,
+    "test_weeks": 28,
+    "target_week_price_used": false,
+    "evaluation_price_missingness_filters_rows": false,
+    "training_eligibility": "positive total training sales and at least eight observed training price weeks",
+    "calendar_features": "month sine/cosine only; no SNAP or unpublished future price plan"
+  },
+  "elapsed_seconds": 112.13561391085386,
+  "model_errors": [
+    {
+      "model": "Last week",
+      "n": 112000,
+      "mae": 3.866517857142857,
+      "rmse": 9.616162919050108,
+      "prediction_sha256": "fc5bacce5207639fafa5cc58e195b7206bd0fca9acdf8b222453650c227b0e9e"
+    },
+    {
+      "model": "Four week mean",
+      "n": 112000,
+      "mae": 3.5480558035714287,
+      "rmse": 9.893317634492702,
+      "prediction_sha256": "dd074cc1118b351e030cc0a601e9aa94e82cc424f812f2be80af9d25e41af39b"
+    },
+    {
+      "model": "Past price and calendar",
+      "n": 112000,
+      "mae": 9.129962619688827,
+      "rmse": 22.70550826270295,
+      "prediction_sha256": "52cbe13303ebade5abc5fb87ead62cbc1f0c417b3c168f7c09a9d8866d5a00ff"
+    },
+    {
+      "model": "Past price calendar and history",
+      "n": 112000,
+      "mae": 3.4622748401346195,
+      "rmse": 8.775782898716056,
+      "prediction_sha256": "3c04b1bb12737cda9090c32cc8871f49a8b6cf4084cd6d7437f248cece6b641d"
+    },
+    {
+      "model": "Training series mean",
+      "n": 112000,
+      "mae": 5.634002376152074,
+      "rmse": 14.13109974479113,
+      "prediction_sha256": "2c75de0ed7437c08dd66118eb9948d838e6524b786dc98ebbcb97a28863b9d69"
+    },
+    {
+      "model": "Eight week mean",
+      "n": 112000,
+      "mae": 3.7395558035714287,
+      "rmse": 10.475129945601255,
+      "prediction_sha256": "abe596a376ba6f16fc3aba0db4f2202fb263cf286cbea199d568aef94b3dc441"
+    },
+    {
+      "model": "Exponential smoothing",
+      "n": 112000,
+      "mae": 3.492279399675674,
+      "rmse": 9.379991916652822,
+      "prediction_sha256": "f36fbbad48c530533807f48db85560b6ee6ceecc8b472b24e3266780b902ad46"
+    },
+    {
+      "model": "Croston SBA",
+      "n": 112000,
+      "mae": 4.355190206169553,
+      "rmse": 11.509298114988319,
+      "prediction_sha256": "63a139149482249db18b4b935013f3a18cf0cf6835b3d6c9f12cc0376e8cf14e"
+    },
+    {
+      "model": "Theta",
+      "n": 112000,
+      "mae": 3.4051180294005783,
+      "rmse": 8.976343543899706,
+      "prediction_sha256": "f8af135721aab494f768442f95fbb702ccf1cd5fee79a0fd4f59d9d5b253972e"
+    },
+    {
+      "model": "Ridge with history",
+      "n": 112000,
+      "mae": 3.561230620911984,
+      "rmse": 8.953317839851724,
+      "prediction_sha256": "506db75a9ba0319903bb9e6a7c24c32db8a328954889440089624f8d9313f270"
+    }
+  ],
+  "dependencies": {
+    "numpy": "1.26.4",
+    "scipy": "1.11.4",
+    "pandas": "2.2.3",
+    "lightgbm": "4.6.0",
+    "scikit-learn": "1.7.2"
+  },
+  "all_ten_models_actually_refitted": true,
+  "old_results_overwritten": false,
+  "published_rows": false,
+  "prospective_source_vintage_verified": false,
+  "inference": "Prespecified temporal evaluation and nominal audit; no established universal calibration"
+}

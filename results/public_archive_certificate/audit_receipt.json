@@ -1,0 +1,35 @@
+{
+  "archive_sha256": "6a83233e1f3922869ea47f89b5b2d1e1fe98165c0e92171e1dd17abd46639144",
+  "census_computed_after_certificate_written": true,
+  "census_rank_and_diagnostic_seconds": 0.039054617285728455,
+  "completed_utc": "2026-09-12T14:29:42.946082+00:00",
+  "no_retuning": true,
+  "output_sha256": {
+    "census_results.csv": "a268e79435d52875282af9ebcadd4d6b6d57a0cf4e92c37a6bd052a041bdee5b",
+    "certificate_results.csv": "53ac8c9efbbfd0bf7a78c75c1a80f8e3d953ff0a824d5efda17dcfbd8bc90bde",
+    "certificate_written.json": "ff99f3be24b86c9e26ee2ccb843fc8b3b1bbf589a904209723dcc9b0feafac39",
+    "nuisance_validation.csv": "d9b0289d9479b1900e0686ce12d9dee40e3df1713aa76fe00adcb09b6bd526e2",
+    "sampling_indices.npz": "d7be7754100646acb0f8446a66f2f24e4f8f26840d231ef8f7254b7ba7451a93",
+    "sampling_receipt.json": "51fa756d9da86bc8e3c622143caf85cecbe06aac1cb116fa20a3777a9bb6e0dd",
+    "triple_scores.csv.gz": "781805aa2fd17357a8d93d4036e3d8f89d49568658ce276f546a77ccb2d2fe19"
+  },
+  "protocol_sha256": "113bfaf1350f87495f50c659bf132fcd1bbdafad283f63affef5adc9c4b9a185",
+  "public_packaging": {
+    "change": "Portable relative source/helper paths and receipt hash links only; original models, archive, draw indices and numerical results are unchanged.",
+    "original_hashes": "ORIGINAL_RUN_HASHES.json",
+    "timestamp_scope": "Original recorded times describe the original local execution. These repackaged public bytes were not executed at those times."
+  },
+  "query_cost": {
+    "archive_census_rows": 70080,
+    "evaluation_queries": 12288,
+    "feature_archive_construction_already_accessed_full_archive": true,
+    "query_to_census_ratio": 0.46757990867579907,
+    "total_queries": 32768,
+    "training_queries": 4096,
+    "unique_archive_rows_queried": 26140,
+    "unique_to_census_ratio": 0.3730022831050228,
+    "validation_pair_queries": 16384
+  },
+  "scope": "One randomized finite-archive certificate application, not future forecasting certification or an empirical calibration experiment.",
+  "source_sha256": "f6c4d0e0df12ecdb9ea008dd6eef3518adb52c559d04a9bac2e1b81dcfc8d4e1"
+}

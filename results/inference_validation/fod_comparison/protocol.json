@@ -1,0 +1,72 @@
+{
+  "calibration_seed": 491732061,
+  "evaluation_seed": 670921843,
+  "calibration_draws": 5000,
+  "evaluation_families": 1000,
+  "entities": [
+    25,
+    100,
+    400
+  ],
+  "times": 20,
+  "lookback": 5,
+  "past_loading": 0.2,
+  "family_sizes": [
+    10,
+    11
+  ],
+  "signals_for_first_three_models": [
+    0.0,
+    0.03,
+    0.06,
+    0.1
+  ],
+  "methods": [
+    "complementary",
+    "gapped_complementary",
+    "directional",
+    "classical_fod_recursive_instrument"
+  ],
+  "inference": [
+    "normal",
+    "student_t",
+    "independent_supplied_null"
+  ],
+  "alpha": 0.05,
+  "nuisance_folds": 5,
+  "evaluation_rows_per_entity": 12,
+  "truth": "Null model has zero raw conditional innovation covariance. Directional fitted raw product expectation is exactly zero. Complementary and gapped fitted products may be biased for that target.",
+  "data": "Independent entity trajectories; Gaussian innovations and intercepts. Forecast uses the preceding five outcome innovations plus unit-variance noise. Forecast noise has correlation 0.5 across models; outcomes are shared. No ranks, bins, estimated spline, or HAC is used.",
+  "pairing": "Entity counts are nested, family sizes are nested, and all methods and injected alternatives share primitives within a family replication. Calibration and evaluation use independent RNG streams.",
+  "guards": "Require complete fixed support with nonempty earlier/later training sides; finite raw inputs; at least two entities; assign p=1 whenever sample standard error is <=1e-10. All family members remain in BY. No p-value or outcome-dependent model filtering.",
+  "studentization": "Sample SD uses ddof=1, so G/(G-1) is already present; t(G-1) changes only the reference law. This does not repair nuisance bias.",
+  "calibration": "Each method and entity count has a separate bank of independent null statistics from the known generator. Plus-one upper-tail ranks include ties. The same independent bank is used for all exchangeable model marginals; no calibration/evaluation draws overlap.",
+  "scope": "Complete raw equal-entity branch with simulated known null law, not the ranked observed-peer Algorithm 1 and not a real-panel or universal FDR guarantee. Alternatives inject current outcome information and are not prospective forecasts.",
+  "source_sha256": "5b351e0672a1027379ac33d71fe6e4d4fe4da402aaf936b29b20c6a030bdc10f",
+  "batch_size": 20,
+  "comparison_source_sha256": "f3712102a18a82752c26315f24e3cd78f6812029d10878ce2b3fc4acec329922",
+  "legacy_source_sha256": "5b351e0672a1027379ac33d71fe6e4d4fe4da402aaf936b29b20c6a030bdc10f",
+  "base_study": "scripts/analysis/independent_entity_family.py",
+  "base_results": "results/inference_validation/raw_family_study",
+  "legacy_record_hashes": {
+    "SHA256SUMS": "810ab4fcac6b6cd1135ded3f25697598a2b9023566e168e0d965729692bf8618",
+    "analytic_expectations.csv": "ff8b8cac540bc93d9721f350923ddaadbd386f812223acb80a1694d4b378d1ba",
+    "evaluation_statistics.npz": "6bbe088bb9958913723c88cf5b938aa0480861c2201069f9a926738cf2d52d5d",
+    "family_replications.csv.gz": "e6030290d79fb29ba28ed9fd19652cca775d4b612a637fa5196a073acc6d4e76",
+    "family_summary.csv": "69d3a396e04cabc1c507b7522d61ea3f2c9456d576fb09f6753f5eb3d664fdd2",
+    "independent_null_calibration.npz": "1b037c7ca9352bfe8acc9bdf848116a2db85d58b20eae50f169eb9f610f54891",
+    "paired_power_differences.csv": "de9782de6a2a56f7521253f4dbdee8203dd1006208a5aa082ea9010b294ba58f",
+    "protocol.json": "240f9718d6193688305781130fce86c6ccbd7ae4ca0f3ef637402868f9b675bb",
+    "receipt.json": "442c03acab2a16713f0f363119dbfcf25c8e3b7b120c143d32a4cdf98c76bad9",
+    "single_model_summary.csv": "6f3df614f4909b50bd487de454c640c6918b944bb731f884ea54b4ae5537ffab"
+  },
+  "primary_scope": "G=400, K=11; all-null and signals 0.03, 0.06, 0.10; all existing G,K preserved as sensitivities",
+  "classical_source": "Arellano and Bover (1995), Journal of Econometrics 68:29-51, equations (24)-(25), pp. 41-42; https://www.cemfi.es/~arellano/arellano-bover-1995.pdf",
+  "FOD": "Use X_t minus mean of X strictly before t as predictable instrument, and c_t times Y_t minus mean of all Y strictly after t, on the same t=5,...,16. Divide summed moments by sum(c_t). Standard FOD moment with a specified instrument, not full panel GMM.",
+  "FOD_normalization_sum_c": 11.329645257396843,
+  "FOD_normalization": "A positive design-only scalar ensures constant innovation-covariance response one. It does not change a studentized statistic.",
+  "instrument_under_alternative": "Only null forecasts are predictable relative to the current outcome innovation. Current-innovation injections deliberately break the null and are synthetic positive controls.",
+  "paired_intervals": "Per-family power differences; pointwise normal Monte Carlo intervals conditional on the realized calibration banks. Primary G400 K11 additionally uses Bonferroni intervals across 3 signals x 3 comparator methods x 3 inference rules = 27 contrasts. No claim of equal realized FDR.",
+  "FDR_bounds": "Pointwise 95% Hoeffding bounds use bounded per-family FDP in [0,1]; for supplied-null inference they cover the conditional FDR given the realized independent bank. They do not integrate new-bank uncertainty and are not simultaneous across cells. Conventional Monte Carlo intervals are also retained.",
+  "selection": "The new FOD specification and primary comparisons are fixed before executing this new comparison, after the earlier study had been reviewed. This is a retrospective methodological follow-up, not independent discovery confirmation."
+}

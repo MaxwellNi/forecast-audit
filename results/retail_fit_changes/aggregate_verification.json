@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "source_data_accessed": false,
+  "current_public_receipt_links_verified": true,
+  "original_result_files_preserved": 6,
+  "checks": [
+    {
+      "model": "Past price and calendar",
+      "five_resolution_identities": true,
+      "original_weights_replay": true,
+      "seventeen_week_identities": true,
+      "all25_combined_HAC_covariances": true,
+      "variance_of_sum_includes_cross_terms": true,
+      "all225_resolution_covariances_mapped_to_combined_terms": true
+    },
+    {
+      "model": "Croston SBA",
+      "five_resolution_identities": true,
+      "original_weights_replay": true,
+      "seventeen_week_identities": true,
+      "all25_combined_HAC_covariances": true,
+      "variance_of_sum_includes_cross_terms": true,
+      "all225_resolution_covariances_mapped_to_combined_terms": true
+    }
+  ],
+  "scope": "Independent aggregate arithmetic only; no causal, population or calibration conclusion."
+}

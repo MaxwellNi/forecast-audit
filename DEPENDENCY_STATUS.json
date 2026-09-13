@@ -1,0 +1,10 @@
+{
+  "historical_training_reconstructed": false,
+  "limitations": [
+    "Stored restricted aggregates support arithmetic checks only.",
+    "Private training and historical source identity are not established by this package."
+  ],
+  "private_source_rows_loaders_training_inputs_or_weights_included": false,
+  "public_entrypoints_require_private_helpers": false,
+  "scope": "Private source reconstruction is outside the released package."
+}

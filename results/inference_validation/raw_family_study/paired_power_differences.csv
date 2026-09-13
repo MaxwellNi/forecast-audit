@@ -1,0 +1,109 @@
+entities,signal,family_size,inference,comparison,paired_power_difference,mc_se,interval_low,interval_high,interpretation
+25,0.03,10,normal,directional_minus_complementary,0.009,0.002317069972552004,0.0044585428537980715,0.013541457146201927,normal or t reference at the common nominal level
+25,0.03,10,normal,directional_minus_gapped_complementary,-0.06,0.006531836427018941,-0.07280239939695712,-0.04719760060304287,normal or t reference at the common nominal level
+25,0.03,10,student_t,directional_minus_complementary,0.005,0.0018500992707841926,0.0013738054292629824,0.008626194570737017,normal or t reference at the common nominal level
+25,0.03,10,student_t,directional_minus_gapped_complementary,-0.035,0.005013328914018456,-0.044826124671476175,-0.02517387532852383,normal or t reference at the common nominal level
+25,0.03,10,independent_supplied_null,directional_minus_complementary,0.0003333333333333335,0.001972985161684194,-0.0035337175835676864,0.004200384250234354,common nominal level with independent supplied-null calibration
+25,0.03,10,independent_supplied_null,directional_minus_gapped_complementary,0.002666666666666667,0.0024492627006235065,-0.002133888226555406,0.00746722155988874,common nominal level with independent supplied-null calibration
+25,0.03,11,normal,directional_minus_complementary,0.007666666666666666,0.0022734583914164664,0.0032106882194903917,0.01212264511384294,normal or t reference at the common nominal level
+25,0.03,11,normal,directional_minus_gapped_complementary,-0.056333333333333326,0.00626091750279987,-0.06860473163882107,-0.04406193502784558,normal or t reference at the common nominal level
+25,0.03,11,student_t,directional_minus_complementary,0.004333333333333334,0.0019109004237055911,0.0005879685028703755,0.008078698163796293,normal or t reference at the common nominal level
+25,0.03,11,student_t,directional_minus_gapped_complementary,-0.03,0.004667810527623036,-0.03914890863414115,-0.02085109136585885,normal or t reference at the common nominal level
+25,0.03,11,independent_supplied_null,directional_minus_complementary,0.0016666666666666668,0.0017321150206227327,-0.001728278773753889,0.005061612107087223,common nominal level with independent supplied-null calibration
+25,0.03,11,independent_supplied_null,directional_minus_gapped_complementary,0.002666666666666667,0.0024492627006235065,-0.002133888226555406,0.00746722155988874,common nominal level with independent supplied-null calibration
+100,0.03,10,normal,directional_minus_complementary,0.024666666666666663,0.003896731688374826,0.017029072557452004,0.03230426077588132,normal or t reference at the common nominal level
+100,0.03,10,normal,directional_minus_gapped_complementary,-0.36133333333333334,0.013065988419814252,-0.3869426706361693,-0.3357239960304974,normal or t reference at the common nominal level
+100,0.03,10,student_t,directional_minus_complementary,0.022333333333333337,0.003691335705760986,0.015098315350041804,0.029568351316624872,normal or t reference at the common nominal level
+100,0.03,10,student_t,directional_minus_gapped_complementary,-0.343,0.01301145940521783,-0.36850246043422696,-0.3174975395657731,normal or t reference at the common nominal level
+100,0.03,10,independent_supplied_null,directional_minus_complementary,-0.007333333333333332,0.0034580602080682243,-0.014111131341147052,-0.0005555353255196124,common nominal level with independent supplied-null calibration
+100,0.03,10,independent_supplied_null,directional_minus_gapped_complementary,0.005666666666666667,0.0032456090989007457,-0.0006947271671787943,0.012028060500512128,common nominal level with independent supplied-null calibration
+100,0.03,11,normal,directional_minus_complementary,0.022666666666666665,0.003704344288947168,0.015406151860330217,0.029927181473003113,normal or t reference at the common nominal level
+100,0.03,11,normal,directional_minus_gapped_complementary,-0.353,0.013059921958478984,-0.3785974470386188,-0.32740255296138115,normal or t reference at the common nominal level
+100,0.03,11,student_t,directional_minus_complementary,0.019333333333333334,0.0034114307969390976,0.012646928971332703,0.026019737695333965,normal or t reference at the common nominal level
+100,0.03,11,student_t,directional_minus_gapped_complementary,-0.333,0.012937909437452516,-0.35835830249740697,-0.30764169750259307,normal or t reference at the common nominal level
+100,0.03,11,independent_supplied_null,directional_minus_complementary,-0.007333333333333332,0.003259373007388105,-0.013721704427814018,-0.0009449622388526466,common nominal level with independent supplied-null calibration
+100,0.03,11,independent_supplied_null,directional_minus_gapped_complementary,0.004,0.0029802299675609663,-0.001841250736419494,0.009841250736419494,common nominal level with independent supplied-null calibration
+400,0.03,10,normal,directional_minus_complementary,0.11833333333333332,0.008574099477409577,0.10152809835761055,0.1351385683090561,normal or t reference at the common nominal level
+400,0.03,10,normal,directional_minus_gapped_complementary,-0.875,0.008686221874350806,-0.8920249948737276,-0.8579750051262724,normal or t reference at the common nominal level
+400,0.03,10,student_t,directional_minus_complementary,0.116,0.008495394474822131,0.09934902682934862,0.1326509731706514,normal or t reference at the common nominal level
+400,0.03,10,student_t,directional_minus_gapped_complementary,-0.8773333333333334,0.008610350639674212,-0.8942096205870949,-0.860457046079572,normal or t reference at the common nominal level
+400,0.03,10,independent_supplied_null,directional_minus_complementary,-0.08333333333333334,0.008433663630818657,-0.09986331404973792,-0.06680335261692877,common nominal level with independent supplied-null calibration
+400,0.03,10,independent_supplied_null,directional_minus_gapped_complementary,-0.006999999999999998,0.009197344546240388,-0.025026795310631157,0.011026795310631159,common nominal level with independent supplied-null calibration
+400,0.03,11,normal,directional_minus_complementary,0.10966666666666666,0.008268913500940833,0.09345959620482264,0.1258737371285107,normal or t reference at the common nominal level
+400,0.03,11,normal,directional_minus_gapped_complementary,-0.8823333333333333,0.008426347765788173,-0.8988489749542781,-0.8658176917123885,normal or t reference at the common nominal level
+400,0.03,11,student_t,directional_minus_complementary,0.10666666666666666,0.008193521859806915,0.0906073638214451,0.12272596951188822,normal or t reference at the common nominal level
+400,0.03,11,student_t,directional_minus_gapped_complementary,-0.8853333333333333,0.008355253119992452,-0.9017096294485185,-0.8689570372181481,normal or t reference at the common nominal level
+400,0.03,11,independent_supplied_null,directional_minus_complementary,-0.077,0.008111933809937277,-0.09289939026747707,-0.06110060973252293,common nominal level with independent supplied-null calibration
+400,0.03,11,independent_supplied_null,directional_minus_gapped_complementary,0.0023333333333333344,0.008689908774809693,-0.014698887865293666,0.019365554531960334,common nominal level with independent supplied-null calibration
+25,0.06,10,normal,directional_minus_complementary,0.01566666666666667,0.0031777329774171797,0.009438310030928997,0.02189502330240434,normal or t reference at the common nominal level
+25,0.06,10,normal,directional_minus_gapped_complementary,-0.09466666666666666,0.00808243590847828,-0.11050824104728409,-0.07882509228604924,normal or t reference at the common nominal level
+25,0.06,10,student_t,directional_minus_complementary,0.01,0.002731852590117132,0.004645568923370421,0.01535443107662958,normal or t reference at the common nominal level
+25,0.06,10,student_t,directional_minus_gapped_complementary,-0.06433333333333333,0.0069616982856770355,-0.07797826197326031,-0.05068840469340634,normal or t reference at the common nominal level
+25,0.06,10,independent_supplied_null,directional_minus_complementary,-0.003999999999999999,0.003196316420644725,-0.01026478018446366,0.0022647801844636615,common nominal level with independent supplied-null calibration
+25,0.06,10,independent_supplied_null,directional_minus_gapped_complementary,-0.0006666666666666665,0.0036532499399867095,-0.007827036549040618,0.006493703215707284,common nominal level with independent supplied-null calibration
+25,0.06,11,normal,directional_minus_complementary,0.015,0.0030742670320665247,0.008974436617149611,0.021025563382850387,normal or t reference at the common nominal level
+25,0.06,11,normal,directional_minus_gapped_complementary,-0.093,0.008081162916497344,-0.1088390793163348,-0.0771609206836652,normal or t reference at the common nominal level
+25,0.06,11,student_t,directional_minus_complementary,0.008333333333333331,0.002413559552643896,0.0036027566101512953,0.013063910056515367,normal or t reference at the common nominal level
+25,0.06,11,student_t,directional_minus_gapped_complementary,-0.06166666666666666,0.006759242118809429,-0.07491478121953314,-0.04841855211380018,normal or t reference at the common nominal level
+25,0.06,11,independent_supplied_null,directional_minus_complementary,-0.004666666666666666,0.0027863531297672526,-0.010127918801010482,0.0007945854676771492,common nominal level with independent supplied-null calibration
+25,0.06,11,independent_supplied_null,directional_minus_gapped_complementary,-0.0016666666666666663,0.0032841720091654437,-0.008103643804630935,0.004770310471297603,common nominal level with independent supplied-null calibration
+100,0.06,10,normal,directional_minus_complementary,0.09599999999999999,0.0073752253867295885,0.08154455824201,0.11045544175798998,normal or t reference at the common nominal level
+100,0.06,10,normal,directional_minus_gapped_complementary,-0.588,0.01258627881521836,-0.6126691064778279,-0.563330893522172,normal or t reference at the common nominal level
+100,0.06,10,student_t,directional_minus_complementary,0.08833333333333332,0.007112041668343051,0.07439373166338094,0.1022729350032857,normal or t reference at the common nominal level
+100,0.06,10,student_t,directional_minus_gapped_complementary,-0.573,0.012847500943869394,-0.598181101849984,-0.5478188981500159,normal or t reference at the common nominal level
+100,0.06,10,independent_supplied_null,directional_minus_complementary,-0.057333333333333326,0.006918950200129488,-0.07089447572558712,-0.04377219094107953,common nominal level with independent supplied-null calibration
+100,0.06,10,independent_supplied_null,directional_minus_gapped_complementary,0.003999999999999999,0.00774880920168022,-0.011187666035293233,0.01918766603529323,common nominal level with independent supplied-null calibration
+100,0.06,11,normal,directional_minus_complementary,0.08966666666666666,0.007219634556064672,0.0755161829367799,0.10381715039655341,normal or t reference at the common nominal level
+100,0.06,11,normal,directional_minus_gapped_complementary,-0.5766666666666667,0.012773969054154923,-0.6017036460128103,-0.551629687320523,normal or t reference at the common nominal level
+100,0.06,11,student_t,directional_minus_complementary,0.08266666666666665,0.006756946276955022,0.0694230519638348,0.0959102813694985,normal or t reference at the common nominal level
+100,0.06,11,student_t,directional_minus_gapped_complementary,-0.556,0.012794309712825245,-0.5810768470371376,-0.5309231529628625,normal or t reference at the common nominal level
+100,0.06,11,independent_supplied_null,directional_minus_complementary,-0.05133333333333333,0.006689018252883576,-0.06444380910898513,-0.03822285755768152,common nominal level with independent supplied-null calibration
+100,0.06,11,independent_supplied_null,directional_minus_gapped_complementary,0.001333333333333333,0.007199154660640916,-0.01277700980152286,0.015443676468189529,common nominal level with independent supplied-null calibration
+400,0.06,10,normal,directional_minus_complementary,0.6266666666666667,0.012592003754707136,0.6019863393074407,0.6513469940258927,normal or t reference at the common nominal level
+400,0.06,10,normal,directional_minus_gapped_complementary,-0.32533333333333336,0.012670476921958159,-0.35016746810037136,-0.30049919856629537,normal or t reference at the common nominal level
+400,0.06,10,student_t,directional_minus_complementary,0.6223333333333333,0.012608382316458019,0.5976209039930755,0.647045762673591,normal or t reference at the common nominal level
+400,0.06,10,student_t,directional_minus_gapped_complementary,-0.33033333333333337,0.012685807324930609,-0.35519751569019736,-0.3054691509764694,normal or t reference at the common nominal level
+400,0.06,10,independent_supplied_null,directional_minus_complementary,-0.18366666666666667,0.00979945159045627,-0.20287359178396097,-0.16445974154937237,common nominal level with independent supplied-null calibration
+400,0.06,10,independent_supplied_null,directional_minus_gapped_complementary,-0.05199999999999999,0.01237848960021215,-0.0762618396164158,-0.027738160383584176,common nominal level with independent supplied-null calibration
+400,0.06,11,normal,directional_minus_complementary,0.6133333333333333,0.012577863375451968,0.5886807211174474,0.6379859455492192,normal or t reference at the common nominal level
+400,0.06,11,normal,directional_minus_gapped_complementary,-0.3423333333333334,0.01269173274537721,-0.3672091295142727,-0.31745753715239405,normal or t reference at the common nominal level
+400,0.06,11,student_t,directional_minus_complementary,0.6096666666666667,0.012663167070077261,0.5848468592093152,0.6344864741240182,normal or t reference at the common nominal level
+400,0.06,11,student_t,directional_minus_gapped_complementary,-0.3483333333333334,0.012790827648694407,-0.37340335552477444,-0.32326331114189233,normal or t reference at the common nominal level
+400,0.06,11,independent_supplied_null,directional_minus_complementary,-0.17833333333333334,0.009807257180502387,-0.19755555740711803,-0.15911110925954866,common nominal level with independent supplied-null calibration
+400,0.06,11,independent_supplied_null,directional_minus_gapped_complementary,-0.027666666666666666,0.012362517212600023,-0.05189720040336271,-0.003436132929970623,common nominal level with independent supplied-null calibration
+25,0.1,10,normal,directional_minus_complementary,0.043666666666666666,0.005926917459590188,0.0320499084458699,0.055283424887463434,normal or t reference at the common nominal level
+25,0.1,10,normal,directional_minus_gapped_complementary,-0.1753333333333333,0.01064760977008635,-0.19620264848270255,-0.15446401818396407,normal or t reference at the common nominal level
+25,0.1,10,student_t,directional_minus_complementary,0.02366666666666667,0.0044738640909563615,0.0148978930483922,0.032435440284941136,normal or t reference at the common nominal level
+25,0.1,10,student_t,directional_minus_gapped_complementary,-0.13166666666666665,0.009705799084526866,-0.1506900328723393,-0.112643300460994,normal or t reference at the common nominal level
+25,0.1,10,independent_supplied_null,directional_minus_complementary,-0.024666666666666663,0.005107279758222666,-0.034676934992783084,-0.014656398340550238,common nominal level with independent supplied-null calibration
+25,0.1,10,independent_supplied_null,directional_minus_gapped_complementary,0.006000000000000002,0.005695690066161801,-0.005163552529677127,0.01716355252967713,common nominal level with independent supplied-null calibration
+25,0.1,11,normal,directional_minus_complementary,0.04,0.005556556466392532,0.029109149325870637,0.050890850674129365,normal or t reference at the common nominal level
+25,0.1,11,normal,directional_minus_gapped_complementary,-0.174,0.010416293286601486,-0.1944159348417389,-0.15358406515826106,normal or t reference at the common nominal level
+25,0.1,11,student_t,directional_minus_complementary,0.019666666666666666,0.004158988587981921,0.011515049034222102,0.027818284299111228,normal or t reference at the common nominal level
+25,0.1,11,student_t,directional_minus_gapped_complementary,-0.12466666666666666,0.009409929276631862,-0.1431101280488651,-0.10622320528446821,normal or t reference at the common nominal level
+25,0.1,11,independent_supplied_null,directional_minus_complementary,-0.02033333333333333,0.00513719028822086,-0.030402226298246217,-0.010264440368420447,common nominal level with independent supplied-null calibration
+25,0.1,11,independent_supplied_null,directional_minus_gapped_complementary,0.004000000000000001,0.005618818975749067,-0.007012885192468171,0.015012885192468173,common nominal level with independent supplied-null calibration
+100,0.1,10,normal,directional_minus_complementary,0.2666666666666666,0.01106094782507409,0.2449872089295214,0.2883461244038118,normal or t reference at the common nominal level
+100,0.1,10,normal,directional_minus_gapped_complementary,-0.521,0.013096117213275148,-0.5466683897380193,-0.49533161026198075,normal or t reference at the common nominal level
+100,0.1,10,student_t,directional_minus_complementary,0.269,0.01114983741719966,0.2471463186622887,0.29085368133771133,normal or t reference at the common nominal level
+100,0.1,10,student_t,directional_minus_gapped_complementary,-0.5323333333333332,0.013064485902744668,-0.5579397257027128,-0.5067269409639537,normal or t reference at the common nominal level
+100,0.1,10,independent_supplied_null,directional_minus_complementary,-0.2023333333333333,0.010496256171408837,-0.22290599542929462,-0.181760671237372,common nominal level with independent supplied-null calibration
+100,0.1,10,independent_supplied_null,directional_minus_gapped_complementary,-0.0033333333333333344,0.012271263881547976,-0.027385010541167366,0.020718343874500698,common nominal level with independent supplied-null calibration
+100,0.1,11,normal,directional_minus_complementary,0.269,0.010948515017672638,0.24754091056536165,0.2904590894346384,normal or t reference at the common nominal level
+100,0.1,11,normal,directional_minus_gapped_complementary,-0.5276666666666666,0.013015527631067081,-0.5531771008235581,-0.5021562325097751,normal or t reference at the common nominal level
+100,0.1,11,student_t,directional_minus_complementary,0.2593333333333333,0.011054490368753707,0.23766653221057604,0.28100013445609057,normal or t reference at the common nominal level
+100,0.1,11,student_t,directional_minus_gapped_complementary,-0.5456666666666667,0.013007492515015907,-0.571161351996098,-0.5201719813372355,normal or t reference at the common nominal level
+100,0.1,11,independent_supplied_null,directional_minus_complementary,-0.198,0.01043575128607926,-0.21845407252071536,-0.17754592747928466,common nominal level with independent supplied-null calibration
+100,0.1,11,independent_supplied_null,directional_minus_gapped_complementary,-0.010333333333333332,0.01199691781868407,-0.03384729225795411,0.013180625591287446,common nominal level with independent supplied-null calibration
+400,0.1,10,normal,directional_minus_complementary,0.1716666666666667,0.009583560006603912,0.15288288905372302,0.19045044427961036,normal or t reference at the common nominal level
+400,0.1,10,normal,directional_minus_gapped_complementary,-0.004666666666666667,0.0015572706118157794,-0.007718917065825595,-0.0016144162675077395,normal or t reference at the common nominal level
+400,0.1,10,student_t,directional_minus_complementary,0.176,0.009752903112361936,0.1568843098997706,0.1951156901002294,normal or t reference at the common nominal level
+400,0.1,10,student_t,directional_minus_gapped_complementary,-0.005,0.001591567982902319,-0.008119473246488545,-0.001880526753511455,normal or t reference at the common nominal level
+400,0.1,10,independent_supplied_null,directional_minus_complementary,-0.004666666666666667,0.0015572706118157794,-0.007718917065825595,-0.0016144162675077395,common nominal level with independent supplied-null calibration
+400,0.1,10,independent_supplied_null,directional_minus_gapped_complementary,-0.004666666666666667,0.0015572706118157794,-0.007718917065825595,-0.0016144162675077395,common nominal level with independent supplied-null calibration
+400,0.1,11,normal,directional_minus_complementary,0.18566666666666667,0.009886189191834068,0.16628973585067192,0.20504359748266143,normal or t reference at the common nominal level
+400,0.1,11,normal,directional_minus_gapped_complementary,-0.005666666666666667,0.0017236182142915312,-0.009044958366678069,-0.002288374966655266,normal or t reference at the common nominal level
+400,0.1,11,student_t,directional_minus_complementary,0.18866666666666668,0.009969612377054913,0.16912622640763905,0.2082071069256943,normal or t reference at the common nominal level
+400,0.1,11,student_t,directional_minus_gapped_complementary,-0.005666666666666667,0.0017236182142915312,-0.009044958366678069,-0.002288374966655266,normal or t reference at the common nominal level
+400,0.1,11,independent_supplied_null,directional_minus_complementary,-0.005,0.001591567982902319,-0.008119473246488545,-0.001880526753511455,common nominal level with independent supplied-null calibration
+400,0.1,11,independent_supplied_null,directional_minus_gapped_complementary,-0.004666666666666667,0.00162712520271619,-0.0078558320639904,-0.0014775012693429347,common nominal level with independent supplied-null calibration

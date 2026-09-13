@@ -1,0 +1,11 @@
+model,row_count,cluster_count,singleton_clusters,minimum_cluster_size,maximum_cluster_size,nonconstant_forecast_clusters,nonconstant_baseline_clusters,same_weak_order_clusters,reversed_weak_order_clusters,exact_baseline_copy,zero_forecast_rank_variation,same_weak_order,reversed_weak_order,abstain,reason
+Alternating least squares,12088,279,18,1,761,261,261,37,23,False,False,False,False,False,no_exact_sample_redundancy_detected
+Global mean,12088,279,18,1,761,0,261,18,18,False,True,False,False,True,zero_within_cluster_forecast_rank_variation
+Item mean,12088,279,18,1,761,261,261,279,18,True,False,True,False,True,exact_observed_baseline_copy
+Item nearest neighbours,12088,279,18,1,761,261,261,38,26,False,False,False,False,False,no_exact_sample_redundancy_detected
+SVD (32 factors),12088,279,18,1,761,261,261,75,18,False,False,False,False,False,no_exact_sample_redundancy_detected
+SVD (40 factors),12088,279,18,1,761,261,261,68,19,False,False,False,False,False,no_exact_sample_redundancy_detected
+SVD interaction,12088,279,18,1,761,261,261,29,27,False,False,False,False,False,no_exact_sample_redundancy_detected
+Slope One,12088,279,18,1,761,261,261,51,19,False,False,False,False,False,no_exact_sample_redundancy_detected
+User and item bias,12088,279,18,1,761,261,261,279,18,False,False,True,False,True,same_observed_baseline_weak_order
+User mean,12088,279,18,1,761,0,261,18,18,False,True,False,False,True,zero_within_cluster_forecast_rank_variation

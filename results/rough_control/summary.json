@@ -1,0 +1,537 @@
+{
+  "canonical_null_warning": "New i.i.d. diagnostic only; not a rerun or validation of the large dependent panels in the original table; normal/gamma calibration is approximate, never a finite-sample guarantee.",
+  "completed_utc": "2026-09-07T00:44:11.974924+00:00",
+  "packaged_protocol_scope": "Current reproduction configuration; not a claim of new experimental execution.",
+  "protocol_sha256": "7645908470660ef94fb73f7d638a21238b52b483eb59e520241b3a304306c0bf",
+  "python": "3.12.11",
+  "raw_rows_sha256": "2759c9fe326c3628ca6021dd1e08a22642760802c427922771f9da21727f55a7",
+  "rows": [
+    {
+      "alternative": "null",
+      "mean_partial_distance_correlation": 0.02538678609958041,
+      "method": "gcm_coarse",
+      "n": 400,
+      "rate": 0.18,
+      "regime": "kink",
+      "rejections": 54,
+      "replications": 300,
+      "seconds": 0.38203081116080284,
+      "wilson95": [
+        0.1406583026966649,
+        0.2274331988870445
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_partial_distance_correlation": 0.02538678609958041,
+      "method": "gcm_fine",
+      "n": 400,
+      "rate": 0.12,
+      "regime": "kink",
+      "rejections": 36,
+      "replications": 300,
+      "seconds": 0.23584409058094025,
+      "wilson95": [
+        0.0879508443036389,
+        0.16165781382701605
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_partial_distance_correlation": 0.02538678609958041,
+      "method": "gcm_spline",
+      "n": 400,
+      "rate": 0.07,
+      "regime": "kink",
+      "rejections": 21,
+      "replications": 300,
+      "seconds": 1.6459627225995064,
+      "wilson95": [
+        0.046236944827176336,
+        0.10463601042593323
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_partial_distance_correlation": 0.02538678609958041,
+      "method": "extrapolated",
+      "n": 400,
+      "rate": 0.09333333333333334,
+      "regime": "kink",
+      "rejections": 28,
+      "replications": 300,
+      "seconds": 1.391958836466074,
+      "wilson95": [
+        0.06536421957889091,
+        0.1315853970170732
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_partial_distance_correlation": 0.02538678609958041,
+      "method": "kci_gamma",
+      "n": 400,
+      "rate": 0.056666666666666664,
+      "regime": "kink",
+      "rejections": 17,
+      "replications": 300,
+      "seconds": 503.6095603555441,
+      "wilson95": [
+        0.03567747646328951,
+        0.08886595802247463
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_partial_distance_correlation": 0.08383375188005593,
+      "method": "gcm_coarse",
+      "n": 400,
+      "rate": 0.9933333333333333,
+      "regime": "kink",
+      "rejections": 298,
+      "replications": 300,
+      "seconds": 0.34145668521523476,
+      "wilson95": [
+        0.9760224167496929,
+        0.998169851642088
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_partial_distance_correlation": 0.08383375188005593,
+      "method": "gcm_fine",
+      "n": 400,
+      "rate": 0.9633333333333334,
+      "regime": "kink",
+      "rejections": 289,
+      "replications": 300,
+      "seconds": 0.2946983687579632,
+      "wilson95": [
+        0.9355461518281071,
+        0.979404694837147
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_partial_distance_correlation": 0.08383375188005593,
+      "method": "gcm_spline",
+      "n": 400,
+      "rate": 0.9566666666666667,
+      "regime": "kink",
+      "rejections": 287,
+      "replications": 300,
+      "seconds": 1.678842432796955,
+      "wilson95": [
+        0.9272825343659885,
+        0.9745035519155927
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_partial_distance_correlation": 0.08383375188005593,
+      "method": "extrapolated",
+      "n": 400,
+      "rate": 0.9466666666666667,
+      "regime": "kink",
+      "rejections": 284,
+      "replications": 300,
+      "seconds": 1.4034692458808422,
+      "wilson95": [
+        0.9151308582251686,
+        0.9669080874809034
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_partial_distance_correlation": 0.08383375188005593,
+      "method": "kci_gamma",
+      "n": 400,
+      "rate": 0.7333333333333333,
+      "regime": "kink",
+      "rejections": 220,
+      "replications": 300,
+      "seconds": 488.6814313530922,
+      "wilson95": [
+        0.680572605868549,
+        0.7801940075599961
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_partial_distance_correlation": 0.07487559804719256,
+      "method": "gcm_coarse",
+      "n": 400,
+      "rate": 0.23,
+      "regime": "step",
+      "rejections": 69,
+      "replications": 300,
+      "seconds": 0.40100277960300446,
+      "wilson95": [
+        0.18597181807303015,
+        0.28085538638822466
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_partial_distance_correlation": 0.07487559804719256,
+      "method": "gcm_fine",
+      "n": 400,
+      "rate": 0.14,
+      "regime": "step",
+      "rejections": 42,
+      "replications": 300,
+      "seconds": 0.26984869688749313,
+      "wilson95": [
+        0.10527132693072412,
+        0.18383161235094903
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_partial_distance_correlation": 0.07487559804719256,
+      "method": "gcm_spline",
+      "n": 400,
+      "rate": 0.17666666666666667,
+      "regime": "step",
+      "rejections": 53,
+      "replications": 300,
+      "seconds": 1.6965663395822048,
+      "wilson95": [
+        0.13767670929949632,
+        0.22383241209237675
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_partial_distance_correlation": 0.07487559804719256,
+      "method": "extrapolated",
+      "n": 400,
+      "rate": 0.12,
+      "regime": "step",
+      "rejections": 36,
+      "replications": 300,
+      "seconds": 1.4217524714767933,
+      "wilson95": [
+        0.0879508443036389,
+        0.16165781382701605
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_partial_distance_correlation": 0.07487559804719256,
+      "method": "kci_gamma",
+      "n": 400,
+      "rate": 0.09666666666666666,
+      "regime": "step",
+      "rejections": 29,
+      "replications": 300,
+      "seconds": 553.0804224982858,
+      "wilson95": [
+        0.06815029481828931,
+        0.13538170196951116
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_partial_distance_correlation": 0.152400597198192,
+      "method": "gcm_coarse",
+      "n": 400,
+      "rate": 0.9933333333333333,
+      "regime": "step",
+      "rejections": 298,
+      "replications": 300,
+      "seconds": 0.45552267879247665,
+      "wilson95": [
+        0.9760224167496929,
+        0.998169851642088
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_partial_distance_correlation": 0.152400597198192,
+      "method": "gcm_fine",
+      "n": 400,
+      "rate": 0.9833333333333333,
+      "regime": "step",
+      "rejections": 295,
+      "replications": 300,
+      "seconds": 0.32862289622426033,
+      "wilson95": [
+        0.9615846051669054,
+        0.9928605226493666
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_partial_distance_correlation": 0.152400597198192,
+      "method": "gcm_spline",
+      "n": 400,
+      "rate": 0.9833333333333333,
+      "regime": "step",
+      "rejections": 295,
+      "replications": 300,
+      "seconds": 1.5782398246228695,
+      "wilson95": [
+        0.9615846051669054,
+        0.9928605226493666
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_partial_distance_correlation": 0.152400597198192,
+      "method": "extrapolated",
+      "n": 400,
+      "rate": 0.9666666666666667,
+      "regime": "step",
+      "rejections": 290,
+      "replications": 300,
+      "seconds": 1.5532435737550259,
+      "wilson95": [
+        0.9397381741959452,
+        0.9817950526611452
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_partial_distance_correlation": 0.152400597198192,
+      "method": "kci_gamma",
+      "n": 400,
+      "rate": 0.8633333333333333,
+      "regime": "step",
+      "rejections": 259,
+      "replications": 300,
+      "seconds": 496.82766050100327,
+      "wilson95": [
+        0.8198445870022494,
+        0.8976348539079136
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_partial_distance_correlation": 0.13963414704212126,
+      "method": "gcm_coarse",
+      "n": 400,
+      "rate": 0.81,
+      "regime": "oscillation",
+      "rejections": 243,
+      "replications": 300,
+      "seconds": 0.5744631364941597,
+      "wilson95": [
+        0.7617962081751881,
+        0.8503651496655933
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_partial_distance_correlation": 0.13963414704212126,
+      "method": "gcm_fine",
+      "n": 400,
+      "rate": 0.21666666666666667,
+      "regime": "oscillation",
+      "rejections": 65,
+      "replications": 300,
+      "seconds": 0.2791811376810074,
+      "wilson95": [
+        0.1737878350698321,
+        0.2667098486240773
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_partial_distance_correlation": 0.13963414704212126,
+      "method": "gcm_spline",
+      "n": 400,
+      "rate": 0.15666666666666668,
+      "regime": "oscillation",
+      "rejections": 47,
+      "replications": 300,
+      "seconds": 1.4611902087926865,
+      "wilson95": [
+        0.11990681678878562,
+        0.2021080234520693
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_partial_distance_correlation": 0.13963414704212126,
+      "method": "extrapolated",
+      "n": 400,
+      "rate": 0.14666666666666667,
+      "regime": "oscillation",
+      "rejections": 44,
+      "replications": 300,
+      "seconds": 1.7022871598601341,
+      "wilson95": [
+        0.11110518744033696,
+        0.19116251222500888
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_partial_distance_correlation": 0.13963414704212126,
+      "method": "kci_gamma",
+      "n": 400,
+      "rate": 0.03666666666666667,
+      "regime": "oscillation",
+      "rejections": 11,
+      "replications": 300,
+      "seconds": 485.6716848574579,
+      "wilson95": [
+        0.02059530516285303,
+        0.06445384817189295
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_partial_distance_correlation": 0.19182695328280033,
+      "method": "gcm_coarse",
+      "n": 400,
+      "rate": 1.0,
+      "regime": "oscillation",
+      "rejections": 300,
+      "replications": 300,
+      "seconds": 0.4777744300663471,
+      "wilson95": [
+        0.9873570287754538,
+        0.9999999999999998
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_partial_distance_correlation": 0.19182695328280033,
+      "method": "gcm_fine",
+      "n": 400,
+      "rate": 0.9933333333333333,
+      "regime": "oscillation",
+      "rejections": 298,
+      "replications": 300,
+      "seconds": 0.2848317585885525,
+      "wilson95": [
+        0.9760224167496929,
+        0.998169851642088
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_partial_distance_correlation": 0.19182695328280033,
+      "method": "gcm_spline",
+      "n": 400,
+      "rate": 0.9666666666666667,
+      "regime": "oscillation",
+      "rejections": 290,
+      "replications": 300,
+      "seconds": 1.6161275692284107,
+      "wilson95": [
+        0.9397381741959452,
+        0.9817950526611452
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_partial_distance_correlation": 0.19182695328280033,
+      "method": "extrapolated",
+      "n": 400,
+      "rate": 0.98,
+      "regime": "oscillation",
+      "rejections": 294,
+      "replications": 300,
+      "seconds": 1.626992929726839,
+      "wilson95": [
+        0.9570603791821394,
+        0.9908023684422963
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_partial_distance_correlation": 0.19182695328280033,
+      "method": "kci_gamma",
+      "n": 400,
+      "rate": 0.67,
+      "regime": "oscillation",
+      "rejections": 201,
+      "replications": 300,
+      "seconds": 542.7840327359736,
+      "wilson95": [
+        0.6149358533991501,
+        0.7207655363845044
+      ]
+    },
+    {
+      "alternative": "zero_covariance_dependence",
+      "mean_partial_distance_correlation": 0.09072933786028979,
+      "method": "gcm_coarse",
+      "n": 400,
+      "rate": 0.11,
+      "regime": "kink",
+      "rejections": 33,
+      "replications": 300,
+      "seconds": 0.4361107870936394,
+      "wilson95": [
+        0.07940528531126051,
+        0.15045623224388538
+      ]
+    },
+    {
+      "alternative": "zero_covariance_dependence",
+      "mean_partial_distance_correlation": 0.09072933786028979,
+      "method": "gcm_fine",
+      "n": 400,
+      "rate": 0.09666666666666666,
+      "regime": "kink",
+      "rejections": 29,
+      "replications": 300,
+      "seconds": 0.24648305028676987,
+      "wilson95": [
+        0.06815029481828931,
+        0.13538170196951116
+      ]
+    },
+    {
+      "alternative": "zero_covariance_dependence",
+      "mean_partial_distance_correlation": 0.09072933786028979,
+      "method": "gcm_spline",
+      "n": 400,
+      "rate": 0.08,
+      "regime": "kink",
+      "rejections": 24,
+      "replications": 300,
+      "seconds": 1.7002563811838627,
+      "wilson95": [
+        0.054346855395144764,
+        0.11627324043347391
+      ]
+    },
+    {
+      "alternative": "zero_covariance_dependence",
+      "mean_partial_distance_correlation": 0.09072933786028979,
+      "method": "extrapolated",
+      "n": 400,
+      "rate": 0.09,
+      "regime": "kink",
+      "rejections": 27,
+      "replications": 300,
+      "seconds": 1.3807689249515533,
+      "wilson95": [
+        0.06259022560547936,
+        0.12777701079864834
+      ]
+    },
+    {
+      "alternative": "zero_covariance_dependence",
+      "mean_partial_distance_correlation": 0.09072933786028979,
+      "method": "kci_gamma",
+      "n": 400,
+      "rate": 1.0,
+      "regime": "kink",
+      "rejections": 300,
+      "replications": 300,
+      "seconds": 523.7882523015141,
+      "wilson95": [
+        0.9873570287754538,
+        0.9999999999999998
+      ]
+    }
+  ],
+  "script_sha256": "69caa251e70c780c3626c2211ec1fa2adb3e5c23e17e05a1621c9764f24ac7df",
+  "seconds": 3647.033424988389
+}

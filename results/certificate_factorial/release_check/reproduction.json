@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "scope": "Portable factorial reconstruction plus independent checks; same exposed streams; no new confirmation.",
+  "rows": 400000,
+  "settings": 100,
+  "methods": 4,
+  "paired_contrasts": 600,
+  "outputs": {
+    "factorial_rows.csv.gz": {
+      "rows": 400000,
+      "max_absolute_numeric_difference": 0.0,
+      "byte_identical": true
+    },
+    "summary.csv": {
+      "rows": 400,
+      "max_absolute_numeric_difference": 0.0,
+      "byte_identical": true
+    },
+    "paired_differences.csv": {
+      "rows": 600,
+      "max_absolute_numeric_difference": 0.0,
+      "byte_identical": true
+    },
+    "attribution.csv": {
+      "rows": 100,
+      "max_absolute_numeric_difference": 0.0,
+      "byte_identical": true
+    },
+    "main_figure_data.csv": {
+      "rows": 32,
+      "max_absolute_numeric_difference": 0.0,
+      "byte_identical": true
+    },
+    "persistent_table.csv": {
+      "rows": 16,
+      "max_absolute_numeric_difference": 0.0,
+      "byte_identical": true
+    },
+    "matched300_comparator_summary.csv": {
+      "rows": 256,
+      "max_absolute_numeric_difference": 0.0,
+      "byte_identical": true
+    },
+    "matched300_paired_differences.csv": {
+      "rows": 128,
+      "max_absolute_numeric_difference": 0.0,
+      "byte_identical": true
+    },
+    "classical_context.csv": {
+      "rows": 200,
+      "max_absolute_numeric_difference": 0.0,
+      "byte_identical": true
+    }
+  },
+  "primitive_replications": [
+    0,
+    1,
+    17,
+    123,
+    317,
+    503,
+    777,
+    999
+  ],
+  "primitive_rows": 4000,
+  "max_primitive_error": 2.7755575615628914e-14,
+  "independent_verification": "independent/verification.json",
+  "figure": "figures/fig_certificate_factorial.pdf",
+  "environment": {
+    "python": "3.12.11",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3"
+  },
+  "elapsed_seconds": 57.04459831118584
+}

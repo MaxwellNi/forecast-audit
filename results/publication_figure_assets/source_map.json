@@ -1,0 +1,6 @@
+{
+  "prior_plot_inputs": "results/figure_evidence/plot_inputs.json",
+  "canonical_summary": "results/canonical_beta2/summary.json",
+  "public_scores": "results/public_score_link/public_all_41_models.csv",
+  "spline_panel": "results/spline_panel/public_all_models.csv"
+}

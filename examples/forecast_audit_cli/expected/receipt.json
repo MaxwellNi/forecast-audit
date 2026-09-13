@@ -1,0 +1,59 @@
+{
+  "status": "COMPLETED_DIAGNOSTIC_SCREEN",
+  "completed_utc": "2026-09-12T22:07:22.957183+00:00",
+  "input_sha256": "e230cd16e7021651e9376067a774e78a7a88c5fc00e9a88c2f18c90d004f0d8d",
+  "family_size": 6,
+  "models": [
+    "constant",
+    "copy",
+    "reverse_order",
+    "same_order",
+    "signal",
+    "unrelated"
+  ],
+  "specification": {
+    "frequency": "cluster",
+    "lag": 0,
+    "beta": 2.0,
+    "ladder": [
+      2,
+      3,
+      4
+    ],
+    "alpha": 0.05,
+    "folds": 5,
+    "fold_scheme": "contiguous whole observed periods",
+    "minimum_clusters": 5
+  },
+  "counts": {
+    "ABSTAIN": 4,
+    "RETAIN": 1,
+    "NOT_RETAINED": 1
+  },
+  "finite_certificate_issued": false,
+  "target": "additive-control residual association of within-period ranks; fixed resolution contrast",
+  "control_representation": "additive entity effects and declared baseline rank bins; not full joint conditioning",
+  "guarantee_scope": "The five-period minimum allows the five-fold calculation; it does not establish inference validity. The M<=50 flag records an empirical concern, not a validity threshold. Larger panels also require justified sampling, dependence and nuisance conditions. Observed-copy/order guards and full-family BY do not calibrate the underlying normal-reference values.",
+  "selection": "The CLI uses exactly the supplied exponent, ladder, lag and family. It performs no outcome-based choice or tuning.",
+  "fold_scope": "Complete observed periods stay in a single fold. Training may use periods later than an evaluation period; this is not a forward-only forecast-training procedure. Forecasts must already respect the intended evaluation protocol.",
+  "guard_scope": "Exact observed copy, constant within-period ranks, same or reversed weak ordering, and numerical undefined-scale rules. Observed agreement does not prove population measurability. Undefined statistics are blank, with guarded p=1 and ABSTAIN.",
+  "output_scope": "Model and resolution aggregates only; individual outcomes, forecasts, residuals and entity/period labels are not written. Aggregate output may still require publication permission.",
+  "sources": {
+    "forecast_audit_cli.py": "b32c3a41139c8600f1af60d32241452e0a0d4d97c3fff368e26525d83eca9b95",
+    "audit_panel_predictions.py": "3b5d4ea18425c80fcd97ae4e39f3c768167dc564294ab08386c98e1e1ddf7e81",
+    "audit_decisions.py": "eb5ea949f7ff400aa59e7a5caeb45522ddb8272f72d4f448e695cc2878519305",
+    "cluster_covariance_reference.py": "48911f76a06fb565060394f4a5d30ef242ed80f9ba64405da28641773d30c760"
+  },
+  "dependencies": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.11.4"
+  },
+  "files": {
+    "by_trace.csv": "220daa99c0fdafce2261af36d49cb2869021686f563d783f7d2ca50da50d2699",
+    "cohorts.csv": "943306d3149fec422c2f2ede27e976367e0927ef1529e1e9b0a3b817bb93ce43",
+    "guard_evidence.csv": "0ed3b440acdec92ce21a1a264cf5607524d8acba2f86b7f28e9938b2671930bc",
+    "profile.csv": "21ffcbe670a0b8aa7ac58bce9acd08a397ef3621c4ec5cb829b0702efba78107",
+    "resolution_trace.csv": "2fe43a5d957229fa089374b24857dc4a6b7b12ffe7ebe62a6c85d3af4f56fb20"
+  }
+}

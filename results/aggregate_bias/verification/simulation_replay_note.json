@@ -1,0 +1,6 @@
+{
+  "scope": "Audit implementation replay correction, before second seed was executed",
+  "failure": "A different floating-point summation order when normalizing 16-state probabilities changed the replayed random draws, so same-seed primitive comparison failed.",
+  "repair": "Use the declared NumPy probability-array reduction instead of Python scalar sum. Exact distribution formula, second seed, tested grid and bounds remain unchanged.",
+  "original_failure_example": "C=2,m=8192,one_heavy,exact; replicate 0"
+}

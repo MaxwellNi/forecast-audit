@@ -1,0 +1,12 @@
+# Locally frozen design: paired comparison on rough controls (2026-09-07)
+
+Purpose. Table I compares binned GCM, spline GCM, resolution extrapolation and maintained KCI on smooth scalar controls, where a spline is the natural adjustment and has the lowest worst-case false-positive rate among the covariance tests. Resolution extrapolation targets the leading bias from binned adjustment. This plan asks, before any result is seen, whether a regime exists in which the fixed-knot spline is itself biased and extrapolated binning is better, and commits to reporting the full table whichever way it comes out.
+
+Frozen before any result is read.
+
+1. Harness. scripts/analysis/canonical_baselines.py unchanged in every method (GCM 8 bins, GCM 32 bins, GCM splines with eight training-quantile knots and ridge 0.001, extrapolation over {8,12,16,24,32} with beta=1, KCI from causal-learn 0.1.4.8 with its defaults), n=400 independent observations, 300 replications per cell, two balanced folds, the same seeding scheme as the recorded Table I run. The only change is the list of regimes.
+2. New regimes (null, X = g(Z)+eX, Y = g(Z)+eY, eX,eY independent standard normal): kink g(Z)=0.8(|Z| - E|Z|); step g(Z)=0.8 sign(Z); oscillation g(Z)=0.8 sqrt(2) sin(3Z). The constants are fixed here; they are not tuned after seeing results. Each regime also has the positive-covariance alternative of the existing harness (adds 0.5U to both).
+3. Reported quantities per method and regime: false-positive rate at target 0.05 with Wilson interval; power on the alternative; the same "zero-covariance dependence" column as Table I is not required.
+4. Prespecified comparison rule. A regime is described as favouring extrapolation only if extrapolation's false-positive rate is below the spline's on that null with non-overlapping 95% Wilson intervals, and its power on the paired alternative is at least the spline's minus 0.05. Otherwise the text states that the spline remains better, and the regime table is still reported in full. No regime is dropped after the fact.
+5. Outputs. results/rough_control/ with the harness's usual per-replication CSV, summary, protocol hash and receipt. Writer and independent recomputation roles are distinct; the independent role recomputes the summary from the per-replication CSV without importing the writer's summariser.
+6. Computational scale. The recorded Table I run took 297 s on one CPU thread for 2,700 datasets; this plan adds 6 cells x 300 = 1,800 datasets.

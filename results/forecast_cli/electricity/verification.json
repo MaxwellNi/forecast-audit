@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-09-07T21:00:49.554486+00:00",
+  "domain": "electricity",
+  "models": 11,
+  "rows": 384912,
+  "seconds": 13.567921835929155,
+  "all_frozen_labels_match": true,
+  "all_cohort_hashes_match": true,
+  "actual_CSV_parser_exercised": true,
+  "maximum_statistic_absolute_error": 3.771205570046732e-12,
+  "counts": {
+    "RETAIN": 10,
+    "ABSTAIN": 1
+  },
+  "protocol_sha256": "0cb7630ca7b77747d43a16553db7986f4eac07d2521fd68c704e54c708970ec0",
+  "reference_registry_sha256": "5bd09172debe639fc1e0dcb894c780153f377332614fff8f2685a6114018c9fe",
+  "cli_receipt_sha256": "e90ea69a9540115254e44673a2d997ce0b1d39045742a9f83925e415f39f7325",
+  "scope": "Replay of known public forecasts and diagnostics, without refitting or claiming new calibration evidence."
+}

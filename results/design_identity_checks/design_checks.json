@@ -1,0 +1,79 @@
+{
+  "balanced_lag_one_examples": [
+    {
+      "closed_form_numerator": -1.25,
+      "expected_numerator": -1.25,
+      "folds": 5,
+      "lookback": 1,
+      "rows_per_fold": 1
+    },
+    {
+      "closed_form_numerator": 0.0,
+      "expected_numerator": 0.0,
+      "folds": 5,
+      "lookback": 1,
+      "rows_per_fold": 2
+    },
+    {
+      "closed_form_numerator": 0.4166666666666667,
+      "expected_numerator": 0.4166666666666667,
+      "folds": 5,
+      "lookback": 1,
+      "rows_per_fold": 3
+    },
+    {
+      "closed_form_numerator": 0.75,
+      "expected_numerator": 0.75,
+      "folds": 5,
+      "lookback": 1,
+      "rows_per_fold": 5
+    }
+  ],
+  "data_dependencies": "None; every example is generated or exhaustively enumerated here.",
+  "dependencies": [
+    "Python standard library",
+    "NumPy"
+  ],
+  "fixed_peers": [
+    {
+      "direction": "same",
+      "distinct_expected_score": -0.011111111111111106,
+      "enumerated_probability": 1.0,
+      "maximum_identity_error": 1.3877787807814457e-17,
+      "predicted_distinct_score": -0.011111111111111112,
+      "shared_expected_score": -4.662916374634923e-19
+    },
+    {
+      "direction": "opposite",
+      "distinct_expected_score": 0.01111111111111112,
+      "enumerated_probability": 0.9999999999999999,
+      "maximum_identity_error": 2.949029909160572e-17,
+      "predicted_distinct_score": 0.011111111111111113,
+      "shared_expected_score": -2.2573428044327104e-19
+    }
+  ],
+  "independently_resampled_peers": {
+    "distinct_expected_score": 2.710505431213761e-18,
+    "entities_per_group": 3,
+    "enumerated_probability": 1.0000000000000018,
+    "maximum_identity_error": 3.8163916471489756e-17,
+    "predicted_shared_score": 0.01125000000000001,
+    "reuse_term": 0.02250000000000002,
+    "shared_expected_score": 0.011250000000000048
+  },
+  "maximum_identity_error": 1.7763568394002505e-15,
+  "random_causal_designs": {
+    "cases": 40,
+    "maximum_formula_vs_dense_error": 1.7763568394002505e-15,
+    "maximum_time_directed_mean_under_identity_covariance": 0.0
+  },
+  "scope": "Synthetic score-expectation checks; no p-value or calibration guarantee.",
+  "serial_dependence_counterexample": {
+    "expected_time_directed_numerator": 0.3558399999999999,
+    "folds": 3,
+    "innovation_ar_coefficient": 0.8,
+    "interpretation": "Serial covariance violates the uncorrelated-innovation premise.",
+    "rows": 6,
+    "rows_per_fold": 2
+  }
+}

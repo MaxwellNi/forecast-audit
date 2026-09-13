@@ -1,0 +1,7 @@
+{
+  "recorded_utc": "2026-09-05T19:37:44.855821+00:00",
+  "elapsed_seconds": 7.132165405899286,
+  "audit_rows": 33,
+  "exact_full_core_checks": 33,
+  "note": "No statistical output used for design changes; replication zero reruns in production and counts once."
+}

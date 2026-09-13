@@ -1,0 +1,431 @@
+[
+  {
+    "clusters": 25,
+    "condition": "independent_forecast_null",
+    "ladder": "primary",
+    "beta": 0.5,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 25,
+    "condition": "independent_forecast_null",
+    "ladder": "primary",
+    "beta": 1.0,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 25,
+    "condition": "independent_forecast_null",
+    "ladder": "primary",
+    "beta": 2.0,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 25,
+    "condition": "high_overlap_conditional_null",
+    "ladder": "primary",
+    "beta": 0.5,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 25,
+    "condition": "high_overlap_conditional_null",
+    "ladder": "primary",
+    "beta": 1.0,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 25,
+    "condition": "high_overlap_conditional_null",
+    "ladder": "primary",
+    "beta": 2.0,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 25,
+    "condition": "high_overlap_shared_noise_alternative",
+    "ladder": "primary",
+    "beta": 0.5,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 25,
+    "condition": "high_overlap_shared_noise_alternative",
+    "ladder": "primary",
+    "beta": 1.0,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 25,
+    "condition": "high_overlap_shared_noise_alternative",
+    "ladder": "primary",
+    "beta": 2.0,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 50,
+    "condition": "independent_forecast_null",
+    "ladder": "primary",
+    "beta": 0.5,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 50,
+    "condition": "independent_forecast_null",
+    "ladder": "primary",
+    "beta": 1.0,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 50,
+    "condition": "independent_forecast_null",
+    "ladder": "primary",
+    "beta": 2.0,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 50,
+    "condition": "high_overlap_conditional_null",
+    "ladder": "primary",
+    "beta": 0.5,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 50,
+    "condition": "high_overlap_conditional_null",
+    "ladder": "primary",
+    "beta": 1.0,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 50,
+    "condition": "high_overlap_conditional_null",
+    "ladder": "primary",
+    "beta": 2.0,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 50,
+    "condition": "high_overlap_shared_noise_alternative",
+    "ladder": "primary",
+    "beta": 0.5,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 50,
+    "condition": "high_overlap_shared_noise_alternative",
+    "ladder": "primary",
+    "beta": 1.0,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 50,
+    "condition": "high_overlap_shared_noise_alternative",
+    "ladder": "primary",
+    "beta": 2.0,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 100,
+    "condition": "independent_forecast_null",
+    "ladder": "primary",
+    "beta": 0.5,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 100,
+    "condition": "independent_forecast_null",
+    "ladder": "primary",
+    "beta": 1.0,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 100,
+    "condition": "independent_forecast_null",
+    "ladder": "primary",
+    "beta": 2.0,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 100,
+    "condition": "independent_forecast_null",
+    "ladder": "coarse",
+    "beta": 1.0,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 100,
+    "condition": "independent_forecast_null",
+    "ladder": "fine",
+    "beta": 1.0,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 100,
+    "condition": "high_overlap_conditional_null",
+    "ladder": "primary",
+    "beta": 0.5,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 100,
+    "condition": "high_overlap_conditional_null",
+    "ladder": "primary",
+    "beta": 1.0,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 100,
+    "condition": "high_overlap_conditional_null",
+    "ladder": "primary",
+    "beta": 2.0,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 100,
+    "condition": "high_overlap_conditional_null",
+    "ladder": "coarse",
+    "beta": 1.0,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 100,
+    "condition": "high_overlap_conditional_null",
+    "ladder": "fine",
+    "beta": 1.0,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 100,
+    "condition": "high_overlap_shared_noise_alternative",
+    "ladder": "primary",
+    "beta": 0.5,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 100,
+    "condition": "high_overlap_shared_noise_alternative",
+    "ladder": "primary",
+    "beta": 1.0,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 100,
+    "condition": "high_overlap_shared_noise_alternative",
+    "ladder": "primary",
+    "beta": 2.0,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 100,
+    "condition": "high_overlap_shared_noise_alternative",
+    "ladder": "coarse",
+    "beta": 1.0,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  },
+  {
+    "clusters": 100,
+    "condition": "high_overlap_shared_noise_alternative",
+    "ladder": "fine",
+    "beta": 1.0,
+    "status": "PASS",
+    "absolute_differences": {
+      "mean_product": 0.0,
+      "standard_error": 0.0,
+      "statistic": 0.0,
+      "p_one_sided": 0.0
+    }
+  }
+]

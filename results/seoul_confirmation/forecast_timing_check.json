@@ -1,0 +1,25 @@
+{
+  "confirmation_outcomes_parsed": false,
+  "counterfactual_timing_checks": [
+    {
+      "all_forecasts_at_and_before_cutoff_unchanged": true,
+      "first_perturbed_outcome_row": 3500
+    },
+    {
+      "all_forecasts_at_and_before_cutoff_unchanged": true,
+      "first_perturbed_outcome_row": 5000
+    },
+    {
+      "all_forecasts_at_and_before_cutoff_unchanged": true,
+      "first_perturbed_outcome_row": 6000
+    }
+  ],
+  "protocol_sha256": "0fc4db53f7b6385916d47b4fc1dafa903e213f89874e87a7ce54b88d58164ee0",
+  "public_packaging": {
+    "change": "Public packaging: internal inventory path labels removed; hash links updated. No fitted model or numerical result changed.",
+    "original_run_hashes": "ORIGINAL_RUN_HASHES.json",
+    "timestamp_scope": "Recorded timestamps describe the original run; revised public bytes were not executed at those times."
+  },
+  "script_sha256": "4b1c4fd6fc6a573e27c7e38f7cf6141b4373a3ba7f8b3aa3331d91a2af2ced6b",
+  "verified_utc": "2026-09-12T12:01:56.976392+00:00"
+}

@@ -1,0 +1,56 @@
+{
+  "generator": "scripts/figures/make_publication_figures.py",
+  "generator_sha256": "edd08e5fe50eca12ccb1e84049c242a7dfe863a8f6580dd77e1ea9885a56ba9d",
+  "sources": {
+    "prior_plot_inputs": {
+      "path": "results/figure_evidence/plot_inputs.json",
+      "sha256": "af5d976c83ea8d05f77f2cc9ee652583c93cb9aec76e82690fd5b878c309e07a",
+      "bytes": 27848
+    },
+    "canonical_summary": {
+      "path": "results/canonical_beta2/summary.json",
+      "sha256": "6b238b3bbbaba4c385ea7136abb3c0bc7153da475ca171c997dfa7159ce42473",
+      "bytes": 27084
+    },
+    "public_scores": {
+      "path": "results/public_score_link/public_all_41_models.csv",
+      "sha256": "5bd09172debe639fc1e0dcb894c780153f377332614fff8f2685a6114018c9fe",
+      "bytes": 17502
+    },
+    "spline_panel": {
+      "path": "results/spline_panel/public_all_models.csv",
+      "sha256": "f9d05d4fd880ae82a9fb04cc385e3fa6cfc6b75832b3fdd051ff15e0f978e58f",
+      "bytes": 52435
+    }
+  },
+  "runtime": {
+    "python": "3.12.11",
+    "matplotlib": "3.10.6",
+    "numpy": "1.26.4"
+  },
+  "checks": {
+    "all_54_canonical_rates_and_wilson_intervals_recomputed": true,
+    "all_45_original_canonical_cells_unchanged": true,
+    "all_41_names_exactly_matched_across_three_sources": true,
+    "all_38_beta2_and_spline_pairs_matched_to_prior_plot_inputs": true,
+    "all_41_beta2_statistics_and_guarded_BY_p_matched_to_spline_panel": true,
+    "three_undefined_pairs_retained": true,
+    "ten_literal_null_decisions_retained": true,
+    "svd_interaction_mae_explicitly_undefined": true,
+    "minimum_figure_font_pt": 8,
+    "adjacent_model_labels_do_not_overlap": true
+  },
+  "outputs": {
+    "fig_canonical_comparison.pdf": "a8f81d41bfa996d17776deaaf5f0599d311ffaf9edb0eafcc8a3972dc7eafd97",
+    "fig_canonical_comparison.svg": "18b9806074d64507f723417e77e6b003fba32143b3ed71ba5b565212be678b87",
+    "fig_canonical_comparison.png": "54f8f83740c60b776822ec26bf015d148cdb21f47ad8befebf871e7c1b4cd123",
+    "fig_public_named_comparison.pdf": "c38610b9f4d9022a18e3ca1e2b13de7f403afe2b0a6ca3c57c789c0321bc49ab",
+    "fig_public_named_comparison.svg": "719de2f79120ff1ab85c9edcd8f4dce187992071234d356a513fd5eb66156889",
+    "fig_public_named_comparison.png": "612c3bbd3bea94c0cb5af57e59ddf345488a140555c03271d8c52e8e629053c8",
+    "public_41_complete.csv": "16ba65c849d85b0594def586c6ad1591799b8a8620e40820e1b1d86a9f761443",
+    "public_41_complete.md": "6c32c7343550e3c41d4d12902ce1d2f0368d66a87d5e2dd3c0ea139f62f9aabd",
+    "public_41_complete.display.json": "5e8c3c4344ff7223ba76928fb93b9df278d4be28156735cb3b30a0e658713d6f",
+    "public_41_complete.pdf": "874905c353857100135a66f9dfa7224090c0fd2f99b24bcfe53ceeb4a5cde598",
+    "plot_coordinates.json": "941a0a74f8dcdbbdea85fb23ea07bc49b1ea960eb9006014998b84ff2dd2c08a"
+  }
+}

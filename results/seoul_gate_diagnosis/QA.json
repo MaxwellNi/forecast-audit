@@ -1,0 +1,8 @@
+{
+  "read_only_default_replay_passed": true,
+  "study_directory_bytes_unchanged_by_default_run": true,
+  "source_files_checked": 27,
+  "family_candidates_reconstructed": 16,
+  "selection_weekly_moments_reconstructed": 128,
+  "scope": "Recorded deterministic arithmetic and frozen-model reconstruction checks; no new independent statistical confirmation."
+}

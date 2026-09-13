@@ -1,0 +1,10 @@
+{
+  "archive_sha256": "6a83233e1f3922869ea47f89b5b2d1e1fe98165c0e92171e1dd17abd46639144",
+  "protocol_sha256": "113bfaf1350f87495f50c659bf132fcd1bbdafad283f63affef5adc9c4b9a185",
+  "public_packaging": {
+    "change": "Portable relative source/helper paths and receipt hash links only; original models, archive, draw indices and numerical results are unchanged.",
+    "original_hashes": "ORIGINAL_RUN_HASHES.json",
+    "timestamp_scope": "Original recorded times describe the original local execution. These repackaged public bytes were not executed at those times."
+  },
+  "started_utc": "2026-09-12T14:29:41.273250+00:00"
+}

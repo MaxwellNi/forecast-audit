@@ -1,0 +1,19 @@
+{
+  "reproduce.py": {
+    "original_sha256": "f5293f0981a7cc117e5a3077f1081bf8f217f1d1dd3eab85f6839f5c61d151e8",
+    "distributed_sha256": "f2439f2c516eb0d0762ebb7003c639eae2f987bb48bef4be15b252042c5beb11"
+  },
+  "classical_reference_comparators.py": {
+    "original_sha256": "3ea240a61e129fd730ee76abeaf50e234ee883b0755627141a84edc6acada4f4",
+    "distributed_sha256": "ea9d8684fdf05aac8496559d7553356b2987033677b16e1b548f5efef5f88960"
+  },
+  "verify.py": {
+    "original_sha256": "e8cc7b0bbce7a14c51c7291472e62d317653b5233f87e68482c2fa055dbb015f",
+    "distributed_sha256": "ed1dd45ee365690a3fcdf3b705aeb943c47500344d774e98af96c4b5174d1860"
+  },
+  "independent_primitives.py": {
+    "original_sha256": "d1c2b0d6885a214c465824b9ca11ee12a7d961b5c865807e602f0a735d507f49",
+    "distributed_sha256": "14d119646d042667b79e798c3e782b2eb1a8906ba8b2c7a72318d6a88e6f955a",
+    "adaptation": "Extracted independent simulation and inference functions; removed unrelated file-writing audit main. Evaluates confidence radius only in nonempty cells to avoid a masked division warning."
+  }
+}

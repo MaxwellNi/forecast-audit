@@ -1,0 +1,389 @@
+{
+  "passed": true,
+  "source_sha256": "f6c4d0e0df12ecdb9ea008dd6eef3518adb52c559d04a9bac2e1b81dcfc8d4e1",
+  "environment": {
+    "python": "3.9.21",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.6.1"
+  },
+  "numerical_tables": {
+    "certificate_results.csv": {
+      "rows": 21,
+      "excluded_columns": [
+        "computational_seconds"
+      ],
+      "all_compared_columns_array_equal": true,
+      "maximum_numeric_error": 0.0,
+      "columns": {
+        "candidate": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": null
+        },
+        "method": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": null
+        },
+        "primary": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "training_queries": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "validation_pair_queries": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "evaluation_queries": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "total_queries": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "unique_archive_rows_queried": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "archive_census_rows": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "query_to_census_ratio": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "unique_to_census_ratio": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "feature_archive_construction_already_accessed_full_archive": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "mean": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "bias_upper": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "kernel_lower": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "kernel_upper": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "effective_triples": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "delta": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "alpha": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "radius": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "lower_bound": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "p": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "reject": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "kernel_sample_variance": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "bound": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": null
+        },
+        "p_by": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "by_retain": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        }
+      }
+    },
+    "census_results.csv": {
+      "rows": 21,
+      "excluded_columns": [],
+      "all_compared_columns_array_equal": true,
+      "maximum_numeric_error": 0.0,
+      "columns": {
+        "candidate": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": null
+        },
+        "method": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": null
+        },
+        "census_theta": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "census_fitted_moment": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "exact_learning_bias": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "signed_allowance": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "absolute_allowance": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "signed_bias_covered": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "confidence_lower_bound": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "observed_lower_covers": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "p": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "p_by": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "by_retain": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        }
+      }
+    },
+    "nuisance_validation.csv": {
+      "rows": 12,
+      "excluded_columns": [],
+      "all_compared_columns_array_equal": true,
+      "maximum_numeric_error": 0.0,
+      "columns": {
+        "candidate": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": null
+        },
+        "category": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "f": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "g": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "training_count": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "validation_count": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "validation_mean_x": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "validation_mean_y": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "lower_x": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "upper_x": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "lower_y": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "upper_y": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "category_mass_upper": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        },
+        "signed_cell_upper": {
+          "array_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_error": 0.0
+        }
+      }
+    }
+  },
+  "archive_arrays": {
+    "date": {
+      "shape": [
+        70080
+      ],
+      "dtype": "datetime64[D]",
+      "array_equal": true,
+      "within_tolerance": true,
+      "maximum_absolute_error": null
+    },
+    "meter": {
+      "shape": [
+        70080
+      ],
+      "dtype": "<U6",
+      "array_equal": true,
+      "within_tolerance": true,
+      "maximum_absolute_error": null
+    },
+    "outcome": {
+      "shape": [
+        70080
+      ],
+      "dtype": "float64",
+      "array_equal": true,
+      "within_tolerance": true,
+      "maximum_absolute_error": 0.0
+    },
+    "category": {
+      "shape": [
+        70080
+      ],
+      "dtype": "int64",
+      "array_equal": true,
+      "within_tolerance": true,
+      "maximum_absolute_error": 0.0
+    },
+    "hist_gradient_boosting": {
+      "shape": [
+        70080
+      ],
+      "dtype": "float64",
+      "array_equal": true,
+      "within_tolerance": true,
+      "maximum_absolute_error": 0.0
+    },
+    "seasonal_7d": {
+      "shape": [
+        70080
+      ],
+      "dtype": "float64",
+      "array_equal": true,
+      "within_tolerance": true,
+      "maximum_absolute_error": 0.0
+    },
+    "categorical_copy_control": {
+      "shape": [
+        70080
+      ],
+      "dtype": "float64",
+      "array_equal": true,
+      "within_tolerance": true,
+      "maximum_absolute_error": 0.0
+    }
+  },
+  "comparison_tolerances": {
+    "numerical_tables": {
+      "rtol": 1e-10,
+      "atol": 1e-12
+    },
+    "numeric_archive_arrays": {
+      "rtol": 1e-10,
+      "atol": 1e-10
+    }
+  },
+  "all_archive_arrays_equal": true,
+  "all_forecast_arrays_equal": true,
+  "maximum_forecast_absolute_error": 0.0,
+  "archive_predictions_within_tolerance": true,
+  "scope": "Fresh execution of the exposed fixed numerical study; no new independent statistical confirmation. A passed tolerance check does not imply exact equality. Array equality and absolute discrepancies are reported separately; runtime columns and execution timestamps are excluded from equality claims."
+}

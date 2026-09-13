@@ -1,0 +1,115 @@
+{
+  "title": "Retrospective common-support comparison of a custom adversarial residual-ranking MLP and standard baselines",
+  "scope": {
+    "feature_count": 12,
+    "lagged_market_control_count": 5,
+    "disclosure_feature_count": 7,
+    "common_evaluation_security_months": 18036,
+    "expanding_annual_folds": 11,
+    "completed_fits": 55,
+    "custom_neural_fits": 33,
+    "ridge_fits": 11,
+    "histogram_gradient_boosting_fits": 11,
+    "fixed_neural_seeds": [
+      11,
+      23,
+      47
+    ],
+    "common_eligible_evaluation_periods": 132,
+    "evaluation_periods_excluded_for_count_or_constant_values": 0,
+    "same_ordered_evaluation_keys_for_all_models": true
+  },
+  "design": {
+    "target": "Next-calendar-month simple return, never imputed; fitted target is the standardized within-training-month average rank, with degenerate training periods mapped to zero.",
+    "features": "Five complete-calendar lagged-return/volatility controls and seven recomputed disclosure-count, buy-share and announcement-delay features; all fitted models use the same 12 features.",
+    "split": "Expanding annual training with observed labels that mature no later than the fit cutoff; model weights fixed within each evaluation year.",
+    "preprocessing": "Finite training-only feature medians, with all-missing training features filled by zero, followed by training-only means and population standard deviations.",
+    "custom_neural_model": "Actual raw-rank and two-way-residual-rank losses, gradient-reversal issuer/month heads and stability penalty; two 128-unit layers, 20 fixed epochs, three fixed seeds. Each seed score is 0.25 times its raw head plus its residual head.",
+    "ensemble": "Arithmetic mean of all three fixed seed scores; individual seeds are reported without selection.",
+    "ridge": "Ridge regression with alpha 10, fitted to the same training rank target.",
+    "histogram_gradient_boosting": "200 iterations, learning rate 0.05, 15 leaves, minimum leaf size 30, L2 regularization 1, no early stopping.",
+    "unfit_control": "One-month momentum from a complete preceding calendar month; missing values use the same training median.",
+    "selection": "No hyperparameter selection, epoch selection, outcome-dependent stopping, security sampling or transaction replication."
+  },
+  "metrics": {
+    "primary": "Equal-weight mean within-month Spearman over common eligible periods with at least ten rows and nonconstant outcomes and every reported score.",
+    "secondary": [
+      "Pooled Spearman",
+      "Standard deviation of within-month Spearman values on the same eligible periods"
+    ],
+    "same_rows_before_fitting": true
+  },
+  "models": [
+    {
+      "model": "Custom adversarial residual-ranking MLP (three-seed mean)",
+      "role": "Fixed ensemble",
+      "training_seed": null,
+      "equal_month_mean_spearman": 0.00274647787935966,
+      "pooled_spearman": -0.0003456463444273172,
+      "within_month_spearman_standard_deviation": 0.09043306539143697
+    },
+    {
+      "model": "Custom adversarial residual-ranking MLP (seed 11)",
+      "role": "Individual seed",
+      "training_seed": 11,
+      "equal_month_mean_spearman": 0.002577046898332221,
+      "pooled_spearman": 0.013670173477817698,
+      "within_month_spearman_standard_deviation": 0.09046319461130668
+    },
+    {
+      "model": "Custom adversarial residual-ranking MLP (seed 23)",
+      "role": "Individual seed",
+      "training_seed": 23,
+      "equal_month_mean_spearman": -0.0006321071390244433,
+      "pooled_spearman": -0.01478397511650857,
+      "within_month_spearman_standard_deviation": 0.10244202773234236
+    },
+    {
+      "model": "Custom adversarial residual-ranking MLP (seed 47)",
+      "role": "Individual seed",
+      "training_seed": 47,
+      "equal_month_mean_spearman": 0.0037437646993417283,
+      "pooled_spearman": -0.0025016538160963567,
+      "within_month_spearman_standard_deviation": 0.09067345441884328
+    },
+    {
+      "model": "Ridge regression",
+      "role": "Fitted comparator",
+      "training_seed": null,
+      "equal_month_mean_spearman": 0.05666800051103659,
+      "pooled_spearman": 0.04032736358144126,
+      "within_month_spearman_standard_deviation": 0.12920357384028483
+    },
+    {
+      "model": "Histogram gradient boosting",
+      "role": "Fitted comparator",
+      "training_seed": null,
+      "equal_month_mean_spearman": 0.037944726667518754,
+      "pooled_spearman": 0.022672431148260026,
+      "within_month_spearman_standard_deviation": 0.11770926279116646
+    },
+    {
+      "model": "One-month momentum",
+      "role": "Unfit control",
+      "training_seed": null,
+      "equal_month_mean_spearman": 0.023141831040327,
+      "pooled_spearman": -0.004440516180878664,
+      "within_month_spearman_standard_deviation": 0.12295271370272284
+    }
+  ],
+  "historical_vintages_verified": false,
+  "finite_certificate": false,
+  "limitations": [
+    "The source extracts do not provide historical snapshots or publication/ingestion timestamps for transaction revisions, revised-primary security mappings, price adjustments, or dividends. Historical vintages are unverified.",
+    "Transaction uniqueness is checked against the current full extract, and security identifiers and adjusted prices are current-source fields. The cohort is therefore selected retrospectively; verified train-only preprocessing and label-maturity checks do not establish historical availability of the evaluation population.",
+    "Reported announcement days are filtered against forecast origins but have not been independently matched against archived original public announcements.",
+    "The population is a conservative subset of covered securities with eligible disclosures and observed next-calendar-month outcomes. Vendor coverage, missing outcomes and delisting selection remain limitations; missing labels are not imputed.",
+    "The comparison uses 12 conservative available features and is neither a reconstruction nor a reranking of the historical 30-model comparison.",
+    "Ridge and histogram gradient boosting use fixed settings. This is not an exhaustive hyperparameter competition or an ablation of every component of the custom neural objective.",
+    "The evaluation concerns temporal prediction within the covered security population; it does not establish generalization to held-out securities.",
+    "Annual model weights are fixed after the fit cutoff. The assumption that the relevant data are observable after the calendar day ends is not verified by historical market-data publication records.",
+    "The comparison was recorded before its own fits, but these reconstructed outcomes had already been used for a different simple-MLP experiment. It is not an untouched prospective holdout or an external preregistration.",
+    "Metrics are descriptive. No confidence intervals, significance tests, finite certificate, prospective validity, economic-profitability claim or model selection is supported by this export.",
+    "No external archive retrieval, pretrained checkpoints or reconstruction of all historical models was used."
+  ]
+}

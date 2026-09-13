@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "scope": "Independent stored-row arithmetic, direct binomial-tail CI inversion and200original primitive training/validation reconstructions; no producer or factorial analysis imports.",
+  "source_rows_copied": 300000,
+  "new_absolute_variance_rows": 100000,
+  "total_rows": 400000,
+  "total_method_cells": 400,
+  "nonpositive_method_cells": 160,
+  "nonpositive_rejections": 0,
+  "coverage_failures": 0,
+  "absolute_and_signed_validation_rebuilds": 200,
+  "max_allowance_rebuild_error": 5.384581669432009e-15,
+  "max_inference_errors": {
+    "p": 7.689404668553834e-13,
+    "radius": 4.215378046623641e-16,
+    "lower_bound": 7.28583859910259e-16
+  },
+  "max_summary_error": 6.661338147750939e-16,
+  "paired_contrast_cells": 600,
+  "max_paired_ci_error": 1.3322676295501878e-15,
+  "interaction_cells": 100,
+  "max_interaction_error": 6.583275591331983e-16,
+  "secondary_cells": 256,
+  "secondary_paired_cells": 128,
+  "max_secondary_ci_error": 5.551115123125783e-16,
+  "environment": {
+    "python": "3.12.11",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3"
+  },
+  "elapsed_seconds": 17.57340269908309,
+  "protocol_sha256": "9762fcfd8f550eb9ac5917179132e9695dea4ce4c08dbb9e0d591c3646b46c5e",
+  "completion_receipt_sha256": "0036baa0a1c8d9fe9396947a08b1272522104a1b359395d2908676da64e78821",
+  "verifier_sha256": "ed827c31201560d79169ce480a5a3df8002a94255dcbc924b7c7abcafd95252f"
+}

@@ -1,0 +1,7 @@
+shape,noise_scale,method,replications,withheld_fraction,withholding_reasons,period_cluster_statistic_defined,period_cluster_statistic_rate,period_cluster_statistic_mean,period_cluster_statistic_sd,two_way_cluster_statistic_defined,two_way_cluster_statistic_rate,two_way_cluster_statistic_mean,two_way_cluster_statistic_sd
+linear,0.01,extrapolation_beta1,100,0.0,no exact redundancy detected,100,0.0,-3.621860321498581,0.2786059402329448,100,0.0,-2.931259309876846,0.2235275778544451
+linear,0.01,extrapolation_beta2,100,0.0,no exact redundancy detected,100,0.0,-1.2068654560732206,0.4200048251303548,100,0.0,-1.0319244441275288,0.3576321670313362
+linear,0.01,extrapolation_beta1_distinct_references,100,0.0,no exact redundancy detected,100,0.0,-4.124017892714683,0.2678888406640914,100,0.0,-3.390358902598852,0.2179054555314609
+linear,0.01,bins32,100,0.0,no exact redundancy detected,100,0.93,2.3167871733582537,0.4174106607744816,100,0.87,2.030581145595406,0.364230475041185
+linear,0.01,bins8,100,0.0,no exact redundancy detected,100,1.0,4.848797599542056,0.1227272567326154,100,1.0,3.92857960263422,0.0987259859621976
+linear,0.01,spline,100,0.0,no exact redundancy detected,100,0.11,0.1457767150897,1.3136488623534093,100,0.08,0.117180560705773,1.101015387830632

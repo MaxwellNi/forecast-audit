@@ -1,0 +1,74 @@
+{
+  "attribution": "Seoul Bike Sharing Demand (2020). UCI Machine Learning Repository.",
+  "baselines": [
+    "seasonal_24h",
+    "ridge_lags_calendar"
+  ],
+  "candidates_per_baseline": [
+    "persistence_1h",
+    "seasonal_24h",
+    "seasonal_168h",
+    "ridge_lags_calendar",
+    "hist_gradient_boosting",
+    "mirror_ridge_control",
+    "exact_baseline_copy",
+    "noise_control"
+  ],
+  "confirmation": "Download occurs only after freeze. Prepare parses train/nuisance/select outcomes through usecols/nrows and builds no confirmation outcomes. Confirm phase checks immutable selection hashes, then computes confirmation predictions from only earlier raw observations and evaluates exactly once. No post-confirm retuning or source exclusion. Script/schema repairs, if needed, must be documented as protocol deviations.",
+  "controls": "mirror_ridge=2*raw_baseline-ridge; exact copy=raw_baseline; noise=raw_baseline+N(0,100^2) from fixed stream independent of outcomes. These are prespecified diagnostic controls, not asserted scientific null truths. Some duplicate/copy targets are deliberate; keep all16 family members.",
+  "embargo": "Seven whole calendar days between each fitting/selection/confirmation window. Lags may use earlier embargo outcomes as forecast-time information; embargo is not a proof of independence.",
+  "environment": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.9.21",
+    "scipy": "1.13.1",
+    "sklearn": "1.6.1"
+  },
+  "forecast_origin": "One hour ahead, after the previous hour count is observed. Available features: lags 1,2,3,24,25,48,168; rolling past-only means 24 and168; target hour sin/cos first and second harmonics, weekday sin/cos, day-of-year sin/cos, weekend. No weather, holiday indicator, functioning-day indicator, contemporaneous count, random innovation, or future response feature.",
+  "frozen_utc": "2026-09-12T12:01:09.575202+00:00",
+  "gain_identity": "Report selection oracle plug-in theta_plus^2/v, selected coefficient t, confirmation theta and v, actual risk improvement2*t*theta_confirm-t^2*v_confirm, and ex-post confirmation oracle for diagnosis only. The selection plug-in is optimistic and is not a forecast guarantee. No confirmation coefficient is deployed.",
+  "gate_inference": "Eight nonoverlapping seven-day selection blocks. HAC lag1 on block means, Bartlett weight1/2, finite8/7 correction; Student t7 nominal upper tail. BY is arithmetic over dependent temporal diagnostics and does not establish calibrated FDR. Undefined standard error gives p=1.",
+  "license": "CC BY 4.0; https://creativecommons.org/licenses/by/4.0/",
+  "metrics": "All candidate raw/direct, conventional, ungated augmentation and gated augmentation MSE, RMSE and MAE, plus all negative results. Minimum meaningful gain is1% of confirmation mY-baseline MSE; this is a reporting threshold, not a test-tuned choice.",
+  "model_fit": "All model weights and feature scaling use train window only; no model refit during nuisance, select, or confirm. Past counts may update lag features sequentially. All rows including operational closure zeros retained.",
+  "models": {
+    "hgb": "HistGradientBoostingRegressor(max_iter=150,max_leaf_nodes=15,learning_rate=.05,min_samples_leaf=32,l2_regularization=1,early_stopping=False,random_state=seed)",
+    "ridge": "StandardScaler then Ridge(alpha=10.0)"
+  },
+  "nuisance": "For each baseline separately, regress outcome and each forecast on intercept, standardized baseline linear term and cubic B-splines (5 quantile knots; linear extrapolation). Knots and all least-squares coefficients fit only nuisance window. Unclipped count-scale predictions preserve the quadratic identity. mY and mX are fitted projections, not known true conditional means.",
+  "primary_comparison": "For each of two baseline adjustments: selected gated augmentation minus selected conventional convex blend in final raw count MSE; also report each vs mY baseline, ungated augmentation and direct trained strong-model predictions. Positive risk improvement means comparator MSE minus method MSE.",
+  "prior_inventory_search": "No matching dataset name or DOI was found in the prior local inventory before freeze; this records no discovered prior project use, not proof that no human ever saw the data.",
+  "public_packaging": {
+    "change": "Public packaging: internal inventory path labels removed; hash links updated. No fitted model or numerical result changed.",
+    "original_run_hashes": "ORIGINAL_RUN_HASHES.json",
+    "timestamp_scope": "Recorded timestamps describe the original run; revised public bytes were not executed at those times."
+  },
+  "scope": "Prospectively locked reanalysis on newly obtained historical public source. Not third-party validation, not statistically independent time samples, not a new broad cross-domain result. Prior Capital Bike Sharing 2012 support was already revealed and is excluded.",
+  "script_sha256": "4b1c4fd6fc6a573e27c7e38f7cf6141b4373a3ba7f8b3aa3331d91a2af2ced6b",
+  "seed": 26091273,
+  "selection": "Fit nonnegative augmentation t=max(theta_hat,0)/mean(rX^2), no upper cap. Also conventional convex blend mY+a*(X-mY), a clipped to[0,1] minimizing select MSE. Guard exact raw baseline copies and numerically zero residual variance with p=1,t=0. Complete-family BY at q=.05 over all16 baseline/candidate pairs. Gate uses positive theta and adjusted p<=.05. Select MSE-minimizing candidate within each strategy (ungated residual augmentation, gated residual augmentation, conventional convex blend); baseline remains an option; ties choose baseline then declared model order. Selection records frozen before confirm labels are evaluated.",
+  "source_assertions": "Exactly 8760 consecutive hourly records, 2017-12-01 through 2018-11-30; any schema/date failure stops the experiment without selecting another favorable source.",
+  "source_doi": "https://doi.org/10.24432/C5F62R",
+  "source_page": "https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand",
+  "source_url": "https://archive.ics.uci.edu/static/public/560/seoul+bike+sharing+demand.zip",
+  "target": "Raw rental-count residual-product mean theta_hat=mean[(X-mX(B))*(Y-mY(B))]. Count-squared units. No rank transformation or implication from ranks to raw risk.",
+  "uncertainty": "Primary pointwise95% paired intervals from12 nonoverlapping weekly block means with HAC lag1, Bartlett1/2 and12/11 correction, t11. Report six fortnight-block sensitivity with t5 and4000 paired weekly-block percentile bootstrap draws; seed fixed. These are dependence approximations, not exact or joint coverage guarantees. No hourly IID intervals.",
+  "windows_inclusive": {
+    "confirm": [
+      "2018-09-08",
+      "2018-11-30"
+    ],
+    "nuisance": [
+      "2018-05-05",
+      "2018-06-29"
+    ],
+    "select": [
+      "2018-07-07",
+      "2018-08-31"
+    ],
+    "train": [
+      "2017-12-08",
+      "2018-04-27"
+    ]
+  }
+}

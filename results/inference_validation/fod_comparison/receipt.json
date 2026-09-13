@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 8.376717273145914,
+  "source_sha256": "f3712102a18a82752c26315f24e3cd78f6812029d10878ce2b3fc4acec329922",
+  "numpy_version": "1.26.4",
+  "family_summary_cells": 288,
+  "family_records": 288000,
+  "paired_contrasts": 162,
+  "guarded_count": 0,
+  "all_original_record_hashes_unchanged": true,
+  "all_original_BY_decisions_identical": true,
+  "minimum_calibrated_p": 0.0001999600079984003,
+  "first_BY_threshold_K11": 0.0015051785308979708
+}

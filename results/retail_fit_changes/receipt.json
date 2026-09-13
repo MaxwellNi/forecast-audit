@@ -1,0 +1,27 @@
+{
+  "completed_utc": "2026-09-12T12:13:45.586926+00:00",
+  "files_sha256": {
+    "combined_hac_covariance.csv": "e4d13d2eaf9c4a2df76875567023321411528971ab4b62798f1f1d3acfd42389",
+    "cross_resolution_term_hac_covariance.csv": "8cc2040e0aded8246cba51edd064ec0ac3003587e9dcf416a649f774fd4f796c",
+    "decompose.py": "5187882684c6a8573ed48c55f16f7e8beaee19437146711ee2b649119ff2ae85",
+    "per_resolution.csv": "f9d6adc98a87e55b3f14c4cdab1e3e00acff9984b3e446c4a860eb4ac7dffee4",
+    "protocol.json": "9bf076869ffddab73a1abe125b4d01d65f84bf1933508eb879caa4193a47c7b7",
+    "summary.csv": "0f6d0238bec9a39662d2d2a9eef272895b6479a0818d861cc14b4b244c276afb",
+    "verification.json": "07a639016c8bf27d8555d989e40a23d6a3243342cc6845995b7161d836f295d8",
+    "weekly_aggregates.csv": "47408c72a04c1b89d01aeeb80558db5fe74bd2bc811f6f3f85d87e9712d76fb6"
+  },
+  "input_sha256": {
+    "model_03.parquet": "e0b52f233a0d615c627406c599657e8b7f8bf077b101a0de6670ed3ea5fffe83",
+    "model_08.parquet": "eedc9e9a954530190dd1c26a8d75a923d1cf4720f2b29bdabed025ff7a1f4d4b"
+  },
+  "private_sources_accessed": false,
+  "protocol_sha256": "9bf076869ffddab73a1abe125b4d01d65f84bf1933508eb879caa4193a47c7b7",
+  "public_observation_rows_exported": false,
+  "public_packaging": {
+    "change": "Public packaging: producer accepts explicit source paths, internal module path labels removed, and receipt links updated. Numerical outputs and source hashes are unchanged.",
+    "original_run_hashes": "ORIGINAL_RUN_HASHES.json",
+    "timestamp_scope": "Recorded timestamps describe the original run; revised public bytes were not executed at those times."
+  },
+  "published_means_and_standard_errors_preserved": true,
+  "script_sha256": "5187882684c6a8573ed48c55f16f7e8beaee19437146711ee2b649119ff2ae85"
+}

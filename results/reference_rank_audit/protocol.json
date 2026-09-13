@@ -1,0 +1,48 @@
+{
+  "frozen_utc": "2026-09-05T21:06:44.618548+00:00",
+  "replications": 300,
+  "seed_base": 202609059830000,
+  "entities": [
+    8,
+    32,
+    128
+  ],
+  "clusters": [
+    25,
+    100,
+    400
+  ],
+  "conditions": [
+    "gaussian_null",
+    "gaussian_alternative",
+    "linear_copy",
+    "nonmonotone_copy",
+    "interaction_copy"
+  ],
+  "normal_tail": "one-sided; sample cluster SD with ddof=1",
+  "fixed_grid_boundary": {
+    "entities": 8,
+    "clusters": 6400,
+    "noise_sd": 0.1,
+    "description": "X=B+noise,Y=-B+noise; fixed grid, iid-peer premise false"
+  },
+  "methods": [
+    "naive_normal",
+    "distinct_reference_normal",
+    "distinct_reference_finite"
+  ],
+  "numeric_score_allowance": 1e-10,
+  "nuisance_status": "known means; copy conditions use exact forecast mean and outcome mean .5",
+  "estimand": "conditional covariance of population marginal mid-CDF transforms given raw controls",
+  "finite_scope": "honest fixed nuisance means; iid rows within independent clusters",
+  "hypothesis": "iid conditional-null reference reuse adds bias, distinct references remove it; fixed-grid boundary need not be valid",
+  "full_disclosure": "all settings, paired draws, means, SDs, rates, intervals; no tuning or exclusions",
+  "source_sha256": {
+    "peer_rank_study.py": "89f3d4db9b9a9f57ea7d2531748dc7d5af51da37374eb712cc5e8aba01d02a03",
+    "peer_rank_products.py": "e614c9d29bb4bbe5e35df073c664c3224c18eaa36eda012e342658246c9a893d"
+  },
+  "software": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3"
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "frozen_utc": "2026-09-12T21:27:04.112890+00:00",
+  "scope": "POST-EXPOSURE FACTORIAL ABLATION on already inspected original and matched-comparator streams. No new simulation, new domain or independent confirmation.",
+  "base_seed": 202609121457,
+  "replications": 1000,
+  "replication_ids": "0..999",
+  "original_settings": 100,
+  "methods": [
+    "absolute_range",
+    "signed_range",
+    "absolute_variance",
+    "signed_variance"
+  ],
+  "alpha": 0.05,
+  "delta": 0.0001,
+  "source_generation_shape": [
+    1600,
+    64
+  ],
+  "preservation": "Copy three original method rows unchanged in numerical value; add absolute_variance from signed_variance using the original stored absolute allowance. No RNG is called by analysis.",
+  "grid": "Entire original grid: both designs; five signals[-.125,0,.125,.25,.5]; groups25,100,400,1600; estimated fits with512/8192validation pairs; two-category opposed shifts with8192pairs. Keep all100settings including40nonpositive settings.",
+  "absolute_definition": "Exactly original weighted_category_bias_budget: coordinate intervals at delta/2, cell e_c=max(|lv-f|,|uv-f|)*max(|lw-g|,|uw-g|), maximize sum p_c e_c subject to same p_c upper binomial caps and simplex. Not max|sum p d|, a worst-cell maximum, empirical category weights, or a changed validation event.",
+  "variance_definition": "Same full grouped-U center and disjoint-triple sample variance, J=M*floor(N/3), fitted kernel range, factor2 inversion and deterministic Hoeffding cap as original signed_variance; change only bias allowance.",
+  "paired_contrasts": [
+    {
+      "before": "absolute_range",
+      "after": "signed_range",
+      "name": "learning_at_range"
+    },
+    {
+      "before": "absolute_range",
+      "after": "absolute_variance",
+      "name": "sampling_at_absolute"
+    },
+    {
+      "before": "absolute_range",
+      "after": "signed_variance",
+      "name": "total_upgrade"
+    },
+    {
+      "before": "signed_range",
+      "after": "absolute_variance",
+      "name": "crossed_comparison"
+    },
+    {
+      "before": "signed_range",
+      "after": "signed_variance",
+      "name": "sampling_at_signed"
+    },
+    {
+      "before": "absolute_variance",
+      "after": "signed_variance",
+      "name": "learning_at_variance"
+    }
+  ],
+  "paired_ci": "For plus/minus discordant counts, separate two-sided97.5%Clopper-Pearson intervals; subtract endpoints. Bonferroni ensures at least95%coverage for paired probability difference. Pointwise per fixedsetting/contrast, not independent-proportions or McNemar CI; no simultaneous-grid claim.",
+  "interaction": "(signed_variance-absolute_variance)-(signed_range-absolute_range) per paired binary decision; ternary because signed allowance is pointwise no larger. Same discordant-probability interval.",
+  "continuous_attribution": "Lower-bound gain equals absolute-minus-signed allowance plus range-minus-variance radius pointwise. Thresholded power can interact; report both factor orders and their average, never uniquely assign overlapping decisions.",
+  "average_factor_ci": "Pointwise Hoeffding on paired per-replication order-averaged factors, support[0,1] for learning and[-1,1] for sampling; descriptive grid sums have no pooled-binomial CI.",
+  "figure_settings": [
+    {
+      "design": "two_balanced",
+      "signal": 0.125,
+      "fit": "estimated",
+      "validation_pairs": 8192,
+      "groups": 100
+    },
+    {
+      "design": "two_balanced",
+      "signal": 0.125,
+      "fit": "estimated",
+      "validation_pairs": 8192,
+      "groups": 400
+    },
+    {
+      "design": "two_balanced",
+      "signal": 0.25,
+      "fit": "estimated",
+      "validation_pairs": 8192,
+      "groups": 100
+    },
+    {
+      "design": "two_balanced",
+      "signal": 0.25,
+      "fit": "estimated",
+      "validation_pairs": 8192,
+      "groups": 400
+    },
+    {
+      "design": "eight_rare",
+      "signal": 0.125,
+      "fit": "estimated",
+      "validation_pairs": 8192,
+      "groups": 100
+    },
+    {
+      "design": "eight_rare",
+      "signal": 0.125,
+      "fit": "estimated",
+      "validation_pairs": 8192,
+      "groups": 400
+    },
+    {
+      "design": "eight_rare",
+      "signal": 0.25,
+      "fit": "estimated",
+      "validation_pairs": 8192,
+      "groups": 100
+    },
+    {
+      "design": "eight_rare",
+      "signal": 0.25,
+      "fit": "estimated",
+      "validation_pairs": 8192,
+      "groups": 400
+    }
+  ],
+  "persistent_table_settings": [
+    {
+      "design": "two_balanced",
+      "signal": 0.25,
+      "fit": "opposed_shifts",
+      "validation_pairs": 8192,
+      "groups": 100
+    },
+    {
+      "design": "two_balanced",
+      "signal": 0.25,
+      "fit": "opposed_shifts",
+      "validation_pairs": 8192,
+      "groups": 400
+    },
+    {
+      "design": "two_balanced",
+      "signal": 0.5,
+      "fit": "opposed_shifts",
+      "validation_pairs": 8192,
+      "groups": 100
+    },
+    {
+      "design": "two_balanced",
+      "signal": 0.5,
+      "fit": "opposed_shifts",
+      "validation_pairs": 8192,
+      "groups": 400
+    }
+  ],
+  "classical_context": "Retain original original independent_triples/pooled_variance summaries. Secondary matched300-prefix uses all32existing matched-comparator settings and existing comparator methods independent_bernstein,independent_betting,pooled_variance,pooled_betting together with factorial four; no extension of that grid.",
+  "secondary_pairs": [
+    [
+      "signed_variance",
+      "independent_betting"
+    ],
+    [
+      "absolute_variance",
+      "independent_betting"
+    ],
+    [
+      "signed_variance",
+      "independent_bernstein"
+    ],
+    [
+      "signed_variance",
+      "pooled_variance"
+    ]
+  ],
+  "independent_verifier": "No analysis/producer imports. Recompute all rows, CI endpoints using direct binomial inversion, and selected original primitive validation blocks with generic numeric comparisons and scipy LP.",
+  "input_sha256": {
+    "inputs/original_efficiency/replications.csv.gz": "c3a30da84752fd0fd4fab9a62f8bab707a342e9f42943a5aa75f85f4155b6af3",
+    "inputs/original_efficiency/summary.csv": "38ec66f213ec36b2ad4cd6830500c2b8576ceb902af18cdc3643d8c845439a02",
+    "inputs/original_efficiency/protocol.json": "c4dc38f3a5b57c4ea00e3205e616f538c59b849c1401fe5a7fae8260575293f3",
+    "inputs/matched_betting/replications.csv.gz": "30b71e3e4c98cc0cf728a6f03bba9f7025c43246a7a9ea673af0d347d646cf22",
+    "inputs/matched_betting/protocol.json": "038e07f871e10ed5287a38cb40d60714f4e8f423015142d02a3d1e1ac810729b"
+  },
+  "code_sha256": "8eaea0b2818f456041bf9c694aab2376ef0b572c79d90c75aaa688305abecc16",
+  "environment": {
+    "python": "3.9.21",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3"
+  },
+  "preexecution_revision": {
+    "prior_protocol_sha256": "ea6e108c7ca1f93c4ba5ed23a501f4a272acbb75f771580c379987034fffdaa7",
+    "note": "Before any run_started/results, corrected summary serialization so test-only betting comparators report coverage as unavailable, not as failures. Scientific design unchanged. Initial code/protocol retained."
+  },
+  "original_input_code_sha256": {
+    "study.py": "ec135fc26f4f809f54729e4c4b6d9a58d3c1ef959fb49a0d3ddbfcb4455efc70",
+    "reference_certificate_efficiency.py": "90247801d60445a7c8a9ffdca7c571fbd972c8895ab2ebf2e90dfae85bb68c2b",
+    "category_reference_certificate.py": "cba724a995d2d18405a19a6d82dd91c4eb365d34462fb5cd4a3707a4dc7fa84b"
+  },
+  "original_protocol_sha256": "5524550fd1dc1e541d7f499b1081da334e4216f85cd65f93bd847239cf85c6a2",
+  "export_note": "Scientific settings, dates, confidence rules and pre-execution revision preserved. Input paths translated to this public directory; historical executable hashes retained without distributing unusable original-layout source. This exported JSON is not claimed byte-identical to the historical protocol."
+}

@@ -1,0 +1,156 @@
+{
+  "all_draws_independently_reconstructed": 2700,
+  "analytic_checks": {
+    "extrapolated_bias": 0.005555555555555588,
+    "pass": true,
+    "population_bin_biases": [
+      0.0888888888888889,
+      0.026388888888888917
+    ],
+    "raw_CI_rank_counterexample_covariance": 0.4999999999999999,
+    "support_extrema": {
+      "bounded_noise": [
+        -1.027777777777778,
+        1.979166666666667
+      ],
+      "noise_free": [
+        -0.027777777777777846,
+        0.14583333333333331
+      ]
+    },
+    "tied_rank_max_n80": 8.83246851112417
+  },
+  "draws_sha256": "b881a82437c541c94e4a008fd50a5097c51b0a6f58ff356f20ef9306fe282a6a",
+  "max_mean_absolute_reconstruction_error": 9.43689570931383e-16,
+  "packaged_protocol_scope": "Current reproduction configuration; not a claim of new experimental execution.",
+  "pass": true,
+  "protocol_sha256": "8b4c372f32b3fee600810c804ceb8577b863c27986d11ae84c9e54e0946f46a1",
+  "summary": [
+    {
+      "bounded_rate": 0.0,
+      "bounded_rejections": 0,
+      "bounded_wilson95": [
+        8.673617379884035e-19,
+        0.012642971224546034
+      ],
+      "condition": "noise_free_null",
+      "lower_bound_coverage_failures": 0,
+      "n": 128,
+      "replications": 300,
+      "unadjusted_rate": 0.0,
+      "unadjusted_rejections": 0
+    },
+    {
+      "bounded_rate": 0.0,
+      "bounded_rejections": 0,
+      "bounded_wilson95": [
+        8.673617379884035e-19,
+        0.012642971224546034
+      ],
+      "condition": "independent_noise_null",
+      "lower_bound_coverage_failures": 0,
+      "n": 128,
+      "replications": 300,
+      "unadjusted_rate": 0.0,
+      "unadjusted_rejections": 0
+    },
+    {
+      "bounded_rate": 0.043333333333333335,
+      "bounded_rejections": 13,
+      "bounded_wilson95": [
+        0.025496448084407246,
+        0.07271746563401146
+      ],
+      "condition": "shared_signal_alternative",
+      "lower_bound_coverage_failures": 0,
+      "n": 128,
+      "replications": 300,
+      "unadjusted_rate": 0.06333333333333334,
+      "unadjusted_rejections": 19
+    },
+    {
+      "bounded_rate": 0.0,
+      "bounded_rejections": 0,
+      "bounded_wilson95": [
+        8.673617379884035e-19,
+        0.012642971224546034
+      ],
+      "condition": "noise_free_null",
+      "lower_bound_coverage_failures": 0,
+      "n": 512,
+      "replications": 300,
+      "unadjusted_rate": 0.02,
+      "unadjusted_rejections": 6
+    },
+    {
+      "bounded_rate": 0.0,
+      "bounded_rejections": 0,
+      "bounded_wilson95": [
+        8.673617379884035e-19,
+        0.012642971224546034
+      ],
+      "condition": "independent_noise_null",
+      "lower_bound_coverage_failures": 0,
+      "n": 512,
+      "replications": 300,
+      "unadjusted_rate": 0.0,
+      "unadjusted_rejections": 0
+    },
+    {
+      "bounded_rate": 1.0,
+      "bounded_rejections": 300,
+      "bounded_wilson95": [
+        0.9873570287754538,
+        0.9999999999999998
+      ],
+      "condition": "shared_signal_alternative",
+      "lower_bound_coverage_failures": 0,
+      "n": 512,
+      "replications": 300,
+      "unadjusted_rate": 1.0,
+      "unadjusted_rejections": 300
+    },
+    {
+      "bounded_rate": 0.0,
+      "bounded_rejections": 0,
+      "bounded_wilson95": [
+        8.673617379884035e-19,
+        0.012642971224546034
+      ],
+      "condition": "noise_free_null",
+      "lower_bound_coverage_failures": 0,
+      "n": 2048,
+      "replications": 300,
+      "unadjusted_rate": 0.83,
+      "unadjusted_rejections": 249
+    },
+    {
+      "bounded_rate": 0.0,
+      "bounded_rejections": 0,
+      "bounded_wilson95": [
+        8.673617379884035e-19,
+        0.012642971224546034
+      ],
+      "condition": "independent_noise_null",
+      "lower_bound_coverage_failures": 0,
+      "n": 2048,
+      "replications": 300,
+      "unadjusted_rate": 0.0,
+      "unadjusted_rejections": 0
+    },
+    {
+      "bounded_rate": 1.0,
+      "bounded_rejections": 300,
+      "bounded_wilson95": [
+        0.9873570287754538,
+        0.9999999999999998
+      ],
+      "condition": "shared_signal_alternative",
+      "lower_bound_coverage_failures": 0,
+      "n": 2048,
+      "replications": 300,
+      "unadjusted_rate": 1.0,
+      "unadjusted_rejections": 300
+    }
+  ]
+}

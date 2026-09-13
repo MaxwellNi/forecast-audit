@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "original_rows_reaggregated": 144000,
+  "original_summary_cells_checked": 144,
+  "original_settings_with_primitive_replay": 72,
+  "original_primitive_replicates_checked": 288,
+  "original_component_max_absolute_error": 1.3877787807814457e-16,
+  "second_seed": 1309202699,
+  "second_seed_raw_pair_replicates": 1600,
+  "second_seed_fit_rows": 4800,
+  "second_seed_method_cells": 48,
+  "second_seed_max_noncoverage": 0,
+  "scope": "Finite validation-bias coverage and width only. Positive power, future-panel validity and scientific novelty are not established by these tests.",
+  "generation_review": "Reference-channel dependence through common reference category is included. Focal channels are conditionally independent, overall Bernoulli marginals are exactly 1/2, and midrank category means are .25+.5q.",
+  "original_producer_imported": false
+}

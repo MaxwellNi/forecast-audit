@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "scope": "Independent manual rank/cosine evaluation for all3 main-text examples; no producer imports",
+  "checks": [
+    {
+      "model": "seasonal_naive_7",
+      "n": 34992,
+      "mean_cluster_spearman": 0.9852205933732988,
+      "MAE": 6.306880109274052,
+      "defined_clusters": 729
+    },
+    {
+      "model": "Last week",
+      "n": 112000,
+      "mean_cluster_spearman": 0.7921575127523963,
+      "MAE": 3.866517857142857,
+      "defined_clusters": 28
+    },
+    {
+      "model": "Past price and calendar",
+      "n": 112000,
+      "mean_cluster_spearman": 0.1358602868996102,
+      "MAE": 9.129962619688827,
+      "defined_clusters": 28
+    }
+  ],
+  "source_table_sha256": "5bd09172debe639fc1e0dcb894c780153f377332614fff8f2685a6114018c9fe"
+}

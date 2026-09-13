@@ -1,0 +1,129 @@
+{
+  "files": {
+    "DATA_LICENSE.md": {
+      "bytes": 2120,
+      "sha256": "d57c0cae1c21c04d807f213e5de1fe0706625f42c229dc198c098d726e178fb9"
+    },
+    "LICENSE": {
+      "bytes": 1068,
+      "sha256": "9f1abe28a25b5f6f95c58a81a647de3fa72ff6388d228c59bddd079255709989"
+    },
+    "ORIGINAL_RUN_HASHES.json": {
+      "bytes": 2013,
+      "sha256": "d9bfd861c58d803887bc68b66abe7087fca34080dacb309d1ecf436ecd9ebce8"
+    },
+    "PACKAGING.json": {
+      "bytes": 386,
+      "sha256": "c9d74ec820afbf8d00827222f285a8dba41bcc7f0c249f42946bab5aedf9ae54"
+    },
+    "PREDECLARED_PLAN.md": {
+      "bytes": 3114,
+      "sha256": "0210ac10fc154b30283730513fe6ad36c4e2f77087b12e7ff262319416f14eb1"
+    },
+    "README.md": {
+      "bytes": 6791,
+      "sha256": "e1d6d3c4ad8d596d0377a17e4322fd3e54dd80095698edf47bf69a18728f61f8"
+    },
+    "REPORT.md": {
+      "bytes": 14438,
+      "sha256": "bbe3b8e65a07ed3b87da3b7f7d5af2897d71e2dfb28010395f255a9bc4c06adb"
+    },
+    "archive_seal.json": {
+      "bytes": 1939,
+      "sha256": "9de32a657276118fa94b6db032d1ff3ada8ac69871d3f325b0ee5be7aa5db3b1"
+    },
+    "audit_receipt.json": {
+      "bytes": 2103,
+      "sha256": "9500856199311ce95695e7b054771b9e3d0d9622ce6a4d94477ecef2e23a9847"
+    },
+    "audit_started.json": {
+      "bytes": 625,
+      "sha256": "a2308556afab468e32a2149b87d184a25e7a95812d719bc857805d75e7365760"
+    },
+    "census_results.csv": {
+      "bytes": 4921,
+      "sha256": "a268e79435d52875282af9ebcadd4d6b6d57a0cf4e92c37a6bd052a041bdee5b"
+    },
+    "certificate_results.csv": {
+      "bytes": 8298,
+      "sha256": "53ac8c9efbbfd0bf7a78c75c1a80f8e3d953ff0a824d5efda17dcfbd8bc90bde"
+    },
+    "certificate_written.json": {
+      "bytes": 191,
+      "sha256": "ff99f3be24b86c9e26ee2ccb843fc8b3b1bbf589a904209723dcc9b0feafac39"
+    },
+    "forecast_archive.npz": {
+      "bytes": 1475092,
+      "sha256": "6a83233e1f3922869ea47f89b5b2d1e1fe98165c0e92171e1dd17abd46639144"
+    },
+    "forecast_model.pkl": {
+      "bytes": 588312,
+      "sha256": "f4e2fc0d2850b4901e4c3997a9fa6b5238d4601c95e8782416c5da1576a6436b"
+    },
+    "helpers/category_reference_certificate.py": {
+      "bytes": 12883,
+      "sha256": "cba724a995d2d18405a19a6d82dd91c4eb365d34462fb5cd4a3707a4dc7fa84b"
+    },
+    "helpers/peer_rank_products.py": {
+      "bytes": 4248,
+      "sha256": "e614c9d29bb4bbe5e35df073c664c3224c18eaa36eda012e342658246c9a893d"
+    },
+    "helpers/reference_certificate_efficiency.py": {
+      "bytes": 6190,
+      "sha256": "90247801d60445a7c8a9ffdca7c571fbd972c8895ab2ebf2e90dfae85bb68c2b"
+    },
+    "nuisance_validation.csv": {
+      "bytes": 2532,
+      "sha256": "d9b0289d9479b1900e0686ce12d9dee40e3df1713aa76fe00adcb09b6bd526e2"
+    },
+    "protocol.json": {
+      "bytes": 7032,
+      "sha256": "113bfaf1350f87495f50c659bf132fcd1bbdafad283f63affef5adc9c4b9a185"
+    },
+    "protocol.sha256": {
+      "bytes": 80,
+      "sha256": "b83d1dc5fc1294c09f132496e44638246e4b752c65808a432b43c0adf69348b8"
+    },
+    "reproduce.py": {
+      "bytes": 7232,
+      "sha256": "7eb9f5749ba2064812b74990f2ac165675a74c94cc73a5600fe3b5b322c7404e"
+    },
+    "reproduction_comparison.json": {
+      "bytes": 10746,
+      "sha256": "b49c16081db546e87fa590f7480e66c39fa2733602f06727d602994e7db93bd9"
+    },
+    "requirements.txt": {
+      "bytes": 83,
+      "sha256": "231e7f61407ec0d68d69e48957a19cc9a1373c126411b23dde3797786accdbbb"
+    },
+    "sampling_indices.npz": {
+      "bytes": 95327,
+      "sha256": "d7be7754100646acb0f8446a66f2f24e4f8f26840d231ef8f7254b7ba7451a93"
+    },
+    "sampling_receipt.json": {
+      "bytes": 510,
+      "sha256": "51fa756d9da86bc8e3c622143caf85cecbe06aac1cb116fa20a3777a9bb6e0dd"
+    },
+    "study.py": {
+      "bytes": 24330,
+      "sha256": "16e1c75e2b1d15530248e50d6b30989447f167cfd0f80ead38c2bff1652c6b60"
+    },
+    "test_verify.py": {
+      "bytes": 3651,
+      "sha256": "0f3bbf9eb0a211304975f45a2533515f3c4a6b5c53761ab7165654b0d92b4fed"
+    },
+    "triple_scores.csv.gz": {
+      "bytes": 42958,
+      "sha256": "781805aa2fd17357a8d93d4036e3d8f89d49568658ce276f546a77ccb2d2fe19"
+    },
+    "verification.json": {
+      "bytes": 5245,
+      "sha256": "d670315fa15fc77471785f762c70d19874378083dc3615a81bc834388e0f364e"
+    },
+    "verify.py": {
+      "bytes": 18835,
+      "sha256": "5c2ec0135a05274e8f3c2c9fee556166eb3dbf91dd15ecbfd54c31e11250aa17"
+    }
+  },
+  "scope": "Portable public finite-archive study. Source zip is fetched separately; derived archive, model, sampling indices and outputs included."
+}

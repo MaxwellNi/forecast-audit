@@ -1,0 +1,982 @@
+{
+  "all_original_comparator_fields_retained": true,
+  "all_sample_and_fold_hashes_match": true,
+  "completed_utc": "2026-09-07T20:12:15.268309+00:00",
+  "full_beta1_coarse_fine_replay_max_absolute_errors": {
+    "extrapolated": 0.0,
+    "gcm_coarse": 0.0,
+    "gcm_fine": 0.0
+  },
+  "independent_datasets": 2700,
+  "limits": "This tests a raw scalar Gaussian-control benchmark with estimated quantile bins. The fixed-resolution beta-two smooth-uniform asymptotic calculation is not automatically its finite-sample justification. Normal and gamma reference tests have different targets and approximate calibration. Rejection on the zero-covariance dependent case is detection for KCI but not power for the residual-covariance test. This extension is not a new independent replication and cannot demonstrate panel calibration or a finite confidence certificate.",
+  "maintained_harness_sha256": "69caa251e70c780c3626c2211ec1fa2adb3e5c23e17e05a1621c9764f24ac7df",
+  "method_cells": 54,
+  "new_datasets": 0,
+  "new_statistic_evaluations": 2700,
+  "paired_beta1_beta2": [
+    {
+      "alternative": "null",
+      "beta1_only": 2,
+      "beta2_only": 8,
+      "both_reject": 34,
+      "neither_reject": 256,
+      "rate_difference_beta2_minus_beta1": 0.02,
+      "regime": "linear",
+      "replications": 300
+    },
+    {
+      "alternative": "positive_covariance",
+      "beta1_only": 0,
+      "beta2_only": 5,
+      "both_reject": 285,
+      "neither_reject": 10,
+      "rate_difference_beta2_minus_beta1": 0.016666666666666666,
+      "regime": "linear",
+      "replications": 300
+    },
+    {
+      "alternative": "null",
+      "beta1_only": 2,
+      "beta2_only": 1,
+      "both_reject": 26,
+      "neither_reject": 271,
+      "rate_difference_beta2_minus_beta1": -0.0033333333333333335,
+      "regime": "smooth",
+      "replications": 300
+    },
+    {
+      "alternative": "positive_covariance",
+      "beta1_only": 0,
+      "beta2_only": 4,
+      "both_reject": 289,
+      "neither_reject": 7,
+      "rate_difference_beta2_minus_beta1": 0.013333333333333334,
+      "regime": "smooth",
+      "replications": 300
+    },
+    {
+      "alternative": "null",
+      "beta1_only": 0,
+      "beta2_only": 121,
+      "both_reject": 63,
+      "neither_reject": 116,
+      "rate_difference_beta2_minus_beta1": 0.4033333333333333,
+      "regime": "nonlinear",
+      "replications": 300
+    },
+    {
+      "alternative": "positive_covariance",
+      "beta1_only": 0,
+      "beta2_only": 16,
+      "both_reject": 283,
+      "neither_reject": 1,
+      "rate_difference_beta2_minus_beta1": 0.05333333333333334,
+      "regime": "nonlinear",
+      "replications": 300
+    },
+    {
+      "alternative": "null",
+      "beta1_only": 3,
+      "beta2_only": 3,
+      "both_reject": 29,
+      "neither_reject": 265,
+      "rate_difference_beta2_minus_beta1": 0.0,
+      "regime": "heavy_tail",
+      "replications": 300
+    },
+    {
+      "alternative": "positive_covariance",
+      "beta1_only": 1,
+      "beta2_only": 2,
+      "both_reject": 295,
+      "neither_reject": 2,
+      "rate_difference_beta2_minus_beta1": 0.0033333333333333335,
+      "regime": "heavy_tail",
+      "replications": 300
+    },
+    {
+      "alternative": "zero_covariance_dependence",
+      "beta1_only": 6,
+      "beta2_only": 1,
+      "both_reject": 22,
+      "neither_reject": 271,
+      "rate_difference_beta2_minus_beta1": -0.016666666666666666,
+      "regime": "smooth",
+      "replications": 300
+    }
+  ],
+  "paired_data_hashes_sha256": "9a5a35d108f8bfbf5e882119955a9fe4ea55edcb627515db32623f84aa71f127",
+  "protocol_sha256": "a08b791fd9d63494fbf01f40cc6592340021d42e66dbf8bf17fbe56afd4368be",
+  "raw_rows_sha256": "ccae5edac6f4249995e9be224edad6f973d72efd8b444a7c8f5db0a40a33f221",
+  "retained_comparator_rows": 13500,
+  "rows": [
+    {
+      "alternative": "null",
+      "mean_statistic": 0.6872644754817087,
+      "method": "gcm_coarse",
+      "n": 400,
+      "rate": 0.22,
+      "regime": "linear",
+      "rejections": 66,
+      "replications": 300,
+      "seconds": 0.1939581222832203,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.1768274459698328,
+        0.27025261791591293
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_statistic": 0.11902073543319251,
+      "method": "gcm_fine",
+      "n": 400,
+      "rate": 0.14,
+      "regime": "linear",
+      "rejections": 42,
+      "replications": 300,
+      "seconds": 0.17925262823700905,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.10527132693072412,
+        0.18383161235094903
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_statistic": 0.009047241328302617,
+      "method": "gcm_spline",
+      "n": 400,
+      "rate": 0.1,
+      "regime": "linear",
+      "rejections": 30,
+      "replications": 300,
+      "seconds": 1.0329950749874115,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.07094791459501532,
+        0.1391664623846215
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_statistic": -0.0818435286261128,
+      "method": "extrapolated",
+      "n": 400,
+      "rate": 0.12,
+      "regime": "linear",
+      "rejections": 36,
+      "replications": 300,
+      "seconds": 0.8219978772103786,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.0879508443036389,
+        0.16165781382701605
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_statistic": 85.30071904418492,
+      "method": "kci_gamma",
+      "n": 400,
+      "rate": 0.07,
+      "regime": "linear",
+      "rejections": 21,
+      "replications": 300,
+      "seconds": 29.27321895211935,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.046236944827176336,
+        0.10463601042593323
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_statistic": 0.10336749038640287,
+      "method": "extrapolated_beta2",
+      "n": 400,
+      "rate": 0.14,
+      "regime": "linear",
+      "rejections": 42,
+      "replications": 300,
+      "seconds": 0.679051112383604,
+      "timing_origin": "new execution including bin fits and replay checks",
+      "wilson95": [
+        0.10527132693072412,
+        0.18383161235094903
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_statistic": 4.262022789150853,
+      "method": "gcm_coarse",
+      "n": 400,
+      "rate": 0.9933333333333333,
+      "regime": "linear",
+      "rejections": 298,
+      "replications": 300,
+      "seconds": 0.19853534176945686,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.9760224167496929,
+        0.998169851642088
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_statistic": 3.9332117877654915,
+      "method": "gcm_fine",
+      "n": 400,
+      "rate": 0.9566666666666667,
+      "regime": "linear",
+      "rejections": 287,
+      "replications": 300,
+      "seconds": 0.17474409937858582,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.9272825343659885,
+        0.9745035519155927
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_statistic": 3.623331521037514,
+      "method": "gcm_spline",
+      "n": 400,
+      "rate": 0.9466666666666667,
+      "regime": "linear",
+      "rejections": 284,
+      "replications": 300,
+      "seconds": 1.0658159032464027,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.9151308582251686,
+        0.9669080874809034
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_statistic": 3.7826621621049763,
+      "method": "extrapolated",
+      "n": 400,
+      "rate": 0.95,
+      "regime": "linear",
+      "rejections": 285,
+      "replications": 300,
+      "seconds": 0.8250146917998791,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.9191529665272558,
+        0.9694683593706526
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_statistic": 201.11146675824298,
+      "method": "kci_gamma",
+      "n": 400,
+      "rate": 0.73,
+      "regime": "linear",
+      "rejections": 219,
+      "replications": 300,
+      "seconds": 30.146917168051004,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.6770882626256942,
+        0.7770959706110145
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_statistic": 4.016731512060248,
+      "method": "extrapolated_beta2",
+      "n": 400,
+      "rate": 0.9666666666666667,
+      "regime": "linear",
+      "rejections": 290,
+      "replications": 300,
+      "seconds": 0.6731708273291588,
+      "timing_origin": "new execution including bin fits and replay checks",
+      "wilson95": [
+        0.9397381741959452,
+        0.9817950526611452
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_statistic": 0.027372580034985616,
+      "method": "gcm_coarse",
+      "n": 400,
+      "rate": 0.07,
+      "regime": "smooth",
+      "rejections": 21,
+      "replications": 300,
+      "seconds": 0.19867531210184097,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.046236944827176336,
+        0.10463601042593323
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_statistic": -0.0819813301391721,
+      "method": "gcm_fine",
+      "n": 400,
+      "rate": 0.09666666666666666,
+      "regime": "smooth",
+      "rejections": 29,
+      "replications": 300,
+      "seconds": 0.17167934030294418,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.06815029481828931,
+        0.13538170196951116
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_statistic": -0.08554304072720756,
+      "method": "gcm_spline",
+      "n": 400,
+      "rate": 0.07,
+      "regime": "smooth",
+      "rejections": 21,
+      "replications": 300,
+      "seconds": 1.0167229697108269,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.046236944827176336,
+        0.10463601042593323
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_statistic": -0.10107792363839758,
+      "method": "extrapolated",
+      "n": 400,
+      "rate": 0.09333333333333334,
+      "regime": "smooth",
+      "rejections": 28,
+      "replications": 300,
+      "seconds": 0.8347943052649498,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.06536421957889091,
+        0.1315853970170732
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_statistic": 98.57151288885453,
+      "method": "kci_gamma",
+      "n": 400,
+      "rate": 0.04666666666666667,
+      "regime": "smooth",
+      "rejections": 14,
+      "replications": 300,
+      "seconds": 28.922809559851885,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.027998933682334012,
+        0.07679736022792105
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_statistic": -0.0675492450116042,
+      "method": "extrapolated_beta2",
+      "n": 400,
+      "rate": 0.09,
+      "regime": "smooth",
+      "rejections": 27,
+      "replications": 300,
+      "seconds": 0.6827899999916553,
+      "timing_origin": "new execution including bin fits and replay checks",
+      "wilson95": [
+        0.06259022560547936,
+        0.12777701079864834
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_statistic": 3.860260124659147,
+      "method": "gcm_coarse",
+      "n": 400,
+      "rate": 0.98,
+      "regime": "smooth",
+      "rejections": 294,
+      "replications": 300,
+      "seconds": 0.19184350594878197,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.9570603791821394,
+        0.9908023684422963
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_statistic": 3.7540124290107406,
+      "method": "gcm_fine",
+      "n": 400,
+      "rate": 0.9666666666666667,
+      "regime": "smooth",
+      "rejections": 290,
+      "replications": 300,
+      "seconds": 0.16891584545373917,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.9397381741959452,
+        0.9817950526611452
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_statistic": 3.6513369735757064,
+      "method": "gcm_spline",
+      "n": 400,
+      "rate": 0.9533333333333334,
+      "regime": "smooth",
+      "rejections": 286,
+      "replications": 300,
+      "seconds": 0.9928864650428295,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.923202639772079,
+        0.9720010663176659
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_statistic": 3.7195419058829278,
+      "method": "extrapolated",
+      "n": 400,
+      "rate": 0.9633333333333334,
+      "regime": "smooth",
+      "rejections": 289,
+      "replications": 300,
+      "seconds": 0.7987884059548378,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.9355461518281071,
+        0.979404694837147
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_statistic": 217.88121320048788,
+      "method": "kci_gamma",
+      "n": 400,
+      "rate": 0.7266666666666667,
+      "regime": "smooth",
+      "rejections": 218,
+      "replications": 300,
+      "seconds": 28.899927511811256,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.6736074258805683,
+        0.7739944271643041
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_statistic": 3.849797639100778,
+      "method": "extrapolated_beta2",
+      "n": 400,
+      "rate": 0.9766666666666667,
+      "regime": "smooth",
+      "rejections": 293,
+      "replications": 300,
+      "seconds": 0.6920278668403625,
+      "timing_origin": "new execution including bin fits and replay checks",
+      "wilson95": [
+        0.9526280277317246,
+        0.9886523397008747
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_statistic": 3.387939077501807,
+      "method": "gcm_coarse",
+      "n": 400,
+      "rate": 0.9866666666666667,
+      "regime": "nonlinear",
+      "rejections": 296,
+      "replications": 300,
+      "seconds": 0.19109000638127327,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.9662244697474675,
+        0.9948030382606411
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_statistic": 1.7468416165660376,
+      "method": "gcm_fine",
+      "n": 400,
+      "rate": 0.59,
+      "regime": "nonlinear",
+      "rejections": 177,
+      "replications": 300,
+      "seconds": 0.1683674193918705,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.5335482149789318,
+        0.6441760502006498
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_statistic": 0.1878090285482788,
+      "method": "gcm_spline",
+      "n": 400,
+      "rate": 0.11333333333333333,
+      "regime": "nonlinear",
+      "rejections": 34,
+      "replications": 300,
+      "seconds": 1.0035447552800179,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.082244501875291,
+        0.15419939587169124
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_statistic": 0.6650284802094294,
+      "method": "extrapolated",
+      "n": 400,
+      "rate": 0.21,
+      "regime": "nonlinear",
+      "rejections": 63,
+      "replications": 300,
+      "seconds": 0.8124315552413464,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.1677218007333024,
+        0.25961112257693425
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_statistic": 61.17206063565062,
+      "method": "kci_gamma",
+      "n": 400,
+      "rate": 0.04666666666666667,
+      "regime": "nonlinear",
+      "rejections": 14,
+      "replications": 300,
+      "seconds": 28.914136804640293,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.027998933682334012,
+        0.07679736022792105
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_statistic": 1.8032433991152812,
+      "method": "extrapolated_beta2",
+      "n": 400,
+      "rate": 0.6133333333333333,
+      "regime": "nonlinear",
+      "rejections": 184,
+      "replications": 300,
+      "seconds": 0.7154685109853745,
+      "timing_origin": "new execution including bin fits and replay checks",
+      "wilson95": [
+        0.5571245198072374,
+        0.6666764067151987
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_statistic": 4.890435627181662,
+      "method": "gcm_coarse",
+      "n": 400,
+      "rate": 1.0,
+      "regime": "nonlinear",
+      "rejections": 300,
+      "replications": 300,
+      "seconds": 0.19819782301783562,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.9873570287754538,
+        0.9999999999999998
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_statistic": 4.217665160224217,
+      "method": "gcm_fine",
+      "n": 400,
+      "rate": 0.9933333333333333,
+      "regime": "nonlinear",
+      "rejections": 298,
+      "replications": 300,
+      "seconds": 0.1754337027668953,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.9760224167496929,
+        0.998169851642088
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_statistic": 3.7317285906201674,
+      "method": "gcm_spline",
+      "n": 400,
+      "rate": 0.9733333333333334,
+      "regime": "nonlinear",
+      "rejections": 292,
+      "replications": 300,
+      "seconds": 1.0003528334200382,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.9482710570494102,
+        0.9864269301913529
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_statistic": 3.353632467687746,
+      "method": "extrapolated",
+      "n": 400,
+      "rate": 0.9433333333333334,
+      "regime": "nonlinear",
+      "rejections": 283,
+      "replications": 300,
+      "seconds": 0.8349012359976768,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.9111340419775253,
+        0.9643225235367106
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_statistic": 197.17600418566937,
+      "method": "kci_gamma",
+      "n": 400,
+      "rate": 0.7966666666666666,
+      "regime": "nonlinear",
+      "rejections": 239,
+      "replications": 300,
+      "seconds": 29.0595797970891,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.7475056887150938,
+        0.8383261483583421
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_statistic": 4.247812302812498,
+      "method": "extrapolated_beta2",
+      "n": 400,
+      "rate": 0.9966666666666667,
+      "regime": "nonlinear",
+      "rejections": 299,
+      "replications": 300,
+      "seconds": 0.6673372536897659,
+      "timing_origin": "new execution including bin fits and replay checks",
+      "wilson95": [
+        0.9813633063054688,
+        0.9994113422781488
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_statistic": 0.051345339131389243,
+      "method": "gcm_coarse",
+      "n": 400,
+      "rate": 0.09,
+      "regime": "heavy_tail",
+      "rejections": 27,
+      "replications": 300,
+      "seconds": 0.2094091698527336,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.06259022560547936,
+        0.12777701079864834
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_statistic": 0.03018302612783535,
+      "method": "gcm_fine",
+      "n": 400,
+      "rate": 0.12,
+      "regime": "heavy_tail",
+      "rejections": 36,
+      "replications": 300,
+      "seconds": 0.1668771654367447,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.0879508443036389,
+        0.16165781382701605
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_statistic": -0.012706697517278797,
+      "method": "gcm_spline",
+      "n": 400,
+      "rate": 0.09333333333333334,
+      "regime": "heavy_tail",
+      "rejections": 28,
+      "replications": 300,
+      "seconds": 0.9817516952753067,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.06536421957889091,
+        0.1315853970170732
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_statistic": 0.0037407138444937407,
+      "method": "extrapolated",
+      "n": 400,
+      "rate": 0.10666666666666667,
+      "regime": "heavy_tail",
+      "rejections": 32,
+      "replications": 300,
+      "seconds": 0.8268753364682198,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.07657584904594214,
+        0.14670328831736743
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_statistic": 86.14068284039546,
+      "method": "kci_gamma",
+      "n": 400,
+      "rate": 0.07,
+      "regime": "heavy_tail",
+      "rejections": 21,
+      "replications": 300,
+      "seconds": 28.58886333927512,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.046236944827176336,
+        0.10463601042593323
+      ]
+    },
+    {
+      "alternative": "null",
+      "mean_statistic": 0.011169563687497053,
+      "method": "extrapolated_beta2",
+      "n": 400,
+      "rate": 0.10666666666666667,
+      "regime": "heavy_tail",
+      "rejections": 32,
+      "replications": 300,
+      "seconds": 0.6774801425635815,
+      "timing_origin": "new execution including bin fits and replay checks",
+      "wilson95": [
+        0.07657584904594214,
+        0.14670328831736743
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_statistic": 4.223893312567784,
+      "method": "gcm_coarse",
+      "n": 400,
+      "rate": 0.9933333333333333,
+      "regime": "heavy_tail",
+      "rejections": 298,
+      "replications": 300,
+      "seconds": 0.18722334504127502,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.9760224167496929,
+        0.998169851642088
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_statistic": 4.14952024498581,
+      "method": "gcm_fine",
+      "n": 400,
+      "rate": 1.0,
+      "regime": "heavy_tail",
+      "rejections": 300,
+      "replications": 300,
+      "seconds": 0.1719769425690174,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.9873570287754538,
+        0.9999999999999998
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_statistic": 3.967469489812707,
+      "method": "gcm_spline",
+      "n": 400,
+      "rate": 0.97,
+      "regime": "heavy_tail",
+      "rejections": 291,
+      "replications": 300,
+      "seconds": 0.9927168376743793,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.9439774608583589,
+        0.9841381461905676
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_statistic": 4.106388672380162,
+      "method": "extrapolated",
+      "n": 400,
+      "rate": 0.9866666666666667,
+      "regime": "heavy_tail",
+      "rejections": 296,
+      "replications": 300,
+      "seconds": 0.8037036247551441,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.9662244697474675,
+        0.9948030382606411
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_statistic": 282.93771975373653,
+      "method": "kci_gamma",
+      "n": 400,
+      "rate": 0.9266666666666666,
+      "regime": "heavy_tail",
+      "rejections": 278,
+      "replications": 300,
+      "seconds": 28.548214837908745,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.8914686583942826,
+        0.9510760061607713
+      ]
+    },
+    {
+      "alternative": "positive_covariance",
+      "mean_statistic": 4.231107628546867,
+      "method": "extrapolated_beta2",
+      "n": 400,
+      "rate": 0.99,
+      "regime": "heavy_tail",
+      "rejections": 297,
+      "replications": 300,
+      "seconds": 0.6752905771136284,
+      "timing_origin": "new execution including bin fits and replay checks",
+      "wilson95": [
+        0.9710165066376601,
+        0.9965933815622847
+      ]
+    },
+    {
+      "alternative": "zero_covariance_dependence",
+      "mean_statistic": 0.12285152029851273,
+      "method": "gcm_coarse",
+      "n": 400,
+      "rate": 0.06,
+      "regime": "smooth",
+      "rejections": 18,
+      "replications": 300,
+      "seconds": 0.19802432879805565,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.038286369524692054,
+        0.09283944515290843
+      ]
+    },
+    {
+      "alternative": "zero_covariance_dependence",
+      "mean_statistic": 0.09103626089793587,
+      "method": "gcm_fine",
+      "n": 400,
+      "rate": 0.09666666666666666,
+      "regime": "smooth",
+      "rejections": 29,
+      "replications": 300,
+      "seconds": 0.1789364330470562,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.06815029481828931,
+        0.13538170196951116
+      ]
+    },
+    {
+      "alternative": "zero_covariance_dependence",
+      "mean_statistic": 0.03467069676568205,
+      "method": "gcm_spline",
+      "n": 400,
+      "rate": 0.05,
+      "regime": "smooth",
+      "rejections": 15,
+      "replications": 300,
+      "seconds": 1.0222170315682888,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.03053164062934728,
+        0.08084703347274415
+      ]
+    },
+    {
+      "alternative": "zero_covariance_dependence",
+      "mean_statistic": 0.07524552919835739,
+      "method": "extrapolated",
+      "n": 400,
+      "rate": 0.09333333333333334,
+      "regime": "smooth",
+      "rejections": 28,
+      "replications": 300,
+      "seconds": 0.8196744211018085,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.06536421957889091,
+        0.1315853970170732
+      ]
+    },
+    {
+      "alternative": "zero_covariance_dependence",
+      "mean_statistic": 765.3882015605933,
+      "method": "kci_gamma",
+      "n": 400,
+      "rate": 1.0,
+      "regime": "smooth",
+      "rejections": 300,
+      "replications": 300,
+      "seconds": 28.96195124834776,
+      "timing_origin": "retained original execution",
+      "wilson95": [
+        0.9873570287754538,
+        0.9999999999999998
+      ]
+    },
+    {
+      "alternative": "zero_covariance_dependence",
+      "mean_statistic": 0.08712233015626704,
+      "method": "extrapolated_beta2",
+      "n": 400,
+      "rate": 0.07666666666666666,
+      "regime": "smooth",
+      "rejections": 23,
+      "replications": 300,
+      "seconds": 0.6814444251358509,
+      "timing_origin": "new execution including bin fits and replay checks",
+      "wilson95": [
+        0.051627611786607464,
+        0.1124101038501748
+      ]
+    }
+  ],
+  "script_sha256": "3f4963f895dda07a0cad38964bbdddc670c693811a84a0a900125b2d3aced0de",
+  "seconds": 6.808550547808409,
+  "status": "COMPLETE",
+  "total_rows": 16200
+}

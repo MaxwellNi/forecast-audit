@@ -1,0 +1,19 @@
+{
+  "completed_utc": "2026-09-07T20:14:32.561899+00:00",
+  "coordinates_sha256": "5f98041d9e50aaf13b8ea5c0238dceb136de9f4c913024e3fc06d4eb7aa10fc8",
+  "full_sample_and_fold_hashes_replayed": 2700,
+  "maximum_pvalue_absolute_error": 3.3306690738754696e-16,
+  "maximum_statistic_absolute_error": 2.6645352591003757e-15,
+  "method_cells": 54,
+  "new_statistics_replayed_with_closed_form_weights_and_variance": 2700,
+  "protocol_sha256": "a08b791fd9d63494fbf01f40cc6592340021d42e66dbf8bf17fbe56afd4368be",
+  "raw_rows": 16200,
+  "raw_rows_sha256": "ccae5edac6f4249995e9be224edad6f973d72efd8b444a7c8f5db0a40a33f221",
+  "scope": "Separate arithmetic implementation by the same study author; no external review or new statistical replication. Maintained nuisance prediction routine is shared.",
+  "seconds": 7.942823585122824,
+  "status": "PASS",
+  "summary_sha256": "6b238b3bbbaba4c385ea7136abb3c0bc7153da475ca171c997dfa7159ce42473",
+  "unchanged_original_rows": 13500,
+  "verifier_sha256": "44d5188bfcce042ab179183ad433aa4cd7bd31c2776a22f77706bd4df5d0bafd",
+  "wilson_reference": "statsmodels.stats.proportion.proportion_confint"
+}

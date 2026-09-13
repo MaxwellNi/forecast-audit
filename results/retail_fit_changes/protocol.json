@@ -1,0 +1,53 @@
+{
+  "beta": 2,
+  "covariance": "Compute lag2 Bartlett HAC on centered week sums of all15 resolution/term columns, retaining every cross-resolution and cross-term covariance. Also compute full5x5 covariance of complementary product, directional product and3 combined terms. No extra small-sample correction is introduced into comparison with old SEs.",
+  "export_scope": "Model, resolution and week aggregates and opaque hashes only; no provider observations, forecasts, residuals, or entity labels.",
+  "frequency": "W-FRI",
+  "identity": "rXc=X-fXc; rYc=Y-fYc; dx=fXd-fXc; dy=fYd-fYc. Directional minus complementary product = -rXc*dy-rYc*dx+dx*dy, row by row at each resolution. Combine products and each term linearly with the same beta2 weights; never multiply separately extrapolated residuals.",
+  "input_sha256": {
+    "model_03.parquet": "e0b52f233a0d615c627406c599657e8b7f8bf077b101a0de6670ed3ea5fffe83",
+    "model_08.parquet": "eedc9e9a954530190dd1c26a8d75a923d1cf4720f2b29bdabed025ff7a1f4d4b"
+  },
+  "intercept_weights": [
+    -0.20463945033686862,
+    0.15424254552731625,
+    0.2798512440797811,
+    0.3695717430458274,
+    0.4009739176839436
+  ],
+  "lag": 2,
+  "models": {
+    "Croston SBA": "model_08.parquet",
+    "Past price and calendar": "model_03.parquet"
+  },
+  "public_packaging": {
+    "change": "Public packaging: producer accepts explicit source paths, internal module path labels removed, and receipt links updated. Numerical outputs and source hashes are unchanged.",
+    "original_run_hashes": "ORIGINAL_RUN_HASHES.json",
+    "timestamp_scope": "Recorded timestamps describe the original run; revised public bytes were not executed at those times."
+  },
+  "published_comparison_sha256": "cf03fadc6f75aa9dbe13b30b715a43126d4517c43fb01562e8c49895d1c0d0df",
+  "resolution_ladder": [
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "scope": "Retrospective exact empirical accounting on already published public M5 support. No independence, causal interpretation, calibrated inference or prospective discovery claim.",
+  "script_sha256": "5187882684c6a8573ed48c55f16f7e8beaee19437146711ee2b649119ff2ae85",
+  "sources_sha256": {
+    "scripts/analysis/audit_decisions.py": "eb5ea949f7ff400aa59e7a5caeb45522ddb8272f72d4f448e695cc2878519305",
+    "scripts/analysis/audit_panel_predictions.py": "92489cf8cdae0650cd6493112d28fe13b34cfb356cae02c83a387d39f9561ff3",
+    "scripts/analysis/cluster_covariance_reference.py": "48911f76a06fb565060394f4a5d30ef242ed80f9ba64405da28641773d30c760",
+    "scripts/analysis/directional_audit.py": "44e7764bba287ee60de87f8ed025e96686b3f60e696362c68317f543f342e54a",
+    "scripts/analysis/forecast_audit_cli.py": "2ae54daa65d7150975b6248aee7b015d4417e425e5bc684e4a54f91aab5f2acd"
+  },
+  "support": "Original all28weeks train nuisance fits; evaluate only original contiguous folds1,2,3, exactly68000rows in17weeks. Original standardized within-week ranks and baseline bins are unchanged.",
+  "terms": {
+    "forecast_fit_shift": "-mean(rYc*dx)",
+    "joint_fit_shift": "mean(dx*dy)",
+    "outcome_fit_shift": "-mean(rXc*dy)"
+  },
+  "verification": "Check all input hashes against v3 receipt, exact full cohort hash,68000rows/17weeks, no boundary fallback or unseen entities on middle folds, row-level identity, same-support mean/SE replay, cross-resolution covariance mapping, and dense versus sparse complementary-fit agreement.",
+  "written_utc": "2026-09-12T12:13:37.875970+00:00"
+}

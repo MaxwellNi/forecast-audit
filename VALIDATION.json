@@ -1,0 +1,106 @@
+{
+  "release": "icdm2026-v7",
+  "date": "2026-09-13",
+  "paper_sha256": "ba4c7b9ab33ffeeedc229248c9897504a33dadf6c1a2547012f3a495c8bbaf63",
+  "unit_tests": {
+    "count": 180,
+    "status": "PASS",
+    "command": "python -m unittest discover -s tests"
+  },
+  "aggregate_replay": {
+    "status": "PASS",
+    "command": "python reproduce_artifacts.py --output /tmp/forecast-audit-results",
+    "complete_public_forecasters": 41,
+    "learned_reference_cells": 48,
+    "complete_raw_family_cells": 216,
+    "near_copy_cells": 234,
+    "classical_temporal_comparison_cells": 288,
+    "categorical_bound_rows": 216000,
+    "categorical_bound_cells": 216,
+    "rental_risk_rows": 74,
+    "rental_paired_comparisons": 82,
+    "retail_fit_change_models": 2,
+    "complete_fast_checks": 26,
+    "signed_variance_rows": 500000,
+    "signed_variance_cells": 500,
+    "independently_rebuilt_efficiency_rows": 4000,
+    "public_archive_candidates": 3,
+    "public_archive_certificate_rows": 21,
+    "seoul_gate_candidate_rows": 16,
+    "seoul_gate_weekly_rows": 128,
+    "factorial_rows": 400000,
+    "factorial_cells": 400,
+    "matched_betting_rows": 48000,
+    "joint_candidate_certificates": 32,
+    "confirmation_certificate_rows": 160,
+    "confirmation_selected_rules": 32,
+    "confirmation_weekly_rows": 944,
+    "confirmation_dependence_bounds": 4,
+    "aggregate_bias_diagnostic_rows": 128,
+    "aggregate_bias_simulation_rows": 144000,
+    "aggregate_bias_simulation_method_cells": 144
+  },
+  "main_pdf": {
+    "pages": 10,
+    "all_fonts_embedded": true,
+    "Type3_fonts": false,
+    "isolated_typesetting_text_and_render_match": true,
+    "isolated_source_byte_identical": true,
+    "companion_pages": 51
+  },
+  "scope": "Recorded arithmetic, synthetic study verification, executable input checks and local typesetting. This does not certify observational-panel calibration, retrain every forecasting model, or verify publisher acceptance.",
+  "source_data_replay": {
+    "task": "Seoul rental demand",
+    "status": "PASS",
+    "scope": "Previously verified source-data fitting; retained evidence. The current package replay checks aggregate arithmetic and hashes without loading the separately pinned Seoul model.",
+    "environments": "Fresh fitting verified in recorded Python 3.9.21 environment; frozen forecast/timing reconstruction additionally verified in Python 3.12.11. Seoul requirements are pinned separately.",
+    "additional_task": {
+      "task": "Fixed public electricity archive",
+      "rows": 70080,
+      "status": "PASS",
+      "scope": "Portable source-data forecast and audit reconstruction reproduced all numerical tables in the recorded environment; finite-archive target, not future population inference.",
+      "all_forecast_arrays_equal": true,
+      "maximum_forecast_absolute_error": 0.0,
+      "all_compared_nonruntime_table_columns_equal": true
+    }
+  },
+  "additional_archive_verifier_tests": {
+    "count": 8,
+    "status": "PASS",
+    "corruption_controls": 6,
+    "command": "python results/public_archive_certificate/test_verify.py"
+  },
+  "public_confirmation_source_replay": {
+    "status": "PASS",
+    "tasks": [
+      "Appliances Energy Prediction",
+      "Metro Interstate Traffic Volume"
+    ],
+    "command": "python results/forecast_confirmation/reproduce.py --output /tmp/source-retraining",
+    "forecast_arrays_exact": 70,
+    "sampling_arrays_exact": 8,
+    "all_nonruntime_table_fields_exact": true,
+    "independent_arithmetic_max_raw_mse_discrepancy": 1.1641532182693481e-10,
+    "independent_arithmetic_scope": "Within numerical tolerance; reported separately from exact producer replay. All 160 certificates, 32 choices, 32 confirmation rows, 944 weeks and four dependent bounds reconstructed.",
+    "environment": {
+      "python": "3.12.11",
+      "numpy": "1.26.4",
+      "pandas": "2.2.3",
+      "scipy": "1.11.4",
+      "scikit_learn": "1.7.2"
+    }
+  },
+  "aggregate_bias_validation": {
+    "status": "PASS",
+    "validation_contract": "Known exact category masses; condition only on focal categories; independent split validation streams.",
+    "simulation_full_regeneration_rows": 144000,
+    "simulation_full_regeneration_method_cells": 144,
+    "independent_archive_rows": 128,
+    "original_primary_confirmation_unchanged": "0/2",
+    "scope": "Post-exposure archive diagnostic and independent validation-bound simulation; not new forecast confirmation.",
+    "figure_settings": 72,
+    "figure_rectangle_median_slack_wins": 10,
+    "figure_all_outputs_byte_reproducible": true,
+    "synthetic_example": "examples/aggregate_validation.py"
+  }
+}

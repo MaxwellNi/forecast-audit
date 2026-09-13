@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "independent_checker": "scripts/figures/verify_publication_figures.py",
+  "checker_sha256": "8c29499d43a669e87b0efae3c8fb6e845caafaadfa662401b3555990bfdefec2",
+  "checked_all_54_wilson_intervals_max_error": 2.220446049250313e-16,
+  "actual_svg_public_markers_checked": 76,
+  "actual_svg_canonical_markers_checked": 30,
+  "actual_svg_canonical_error_bars_checked": 30,
+  "maximum_svg_public_coordinate_error_pt": 4.995170570509799e-07,
+  "maximum_svg_canonical_coordinate_error_pt": 4.894945959676988e-07,
+  "svg_serialization_tolerance_pt": 1e-06,
+  "all_41_table_rows_source_matched": true,
+  "all_41_display_rows_and_rounded_measurements_checked": true,
+  "ten_null_strings_preserved": true,
+  "three_undefined_pairs_have_no_numeric_marker": true,
+  "coincident_models_have_separate_named_rows": true,
+  "svd_interaction_mae_remains_undefined": true,
+  "all_source_and_output_receipts_verified": true
+}

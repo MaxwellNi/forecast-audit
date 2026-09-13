@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "experiment": "matched_iid_canonical_baselines",
+  "n": 400,
+  "replications": 300,
+  "alpha": 0.05,
+  "seed_start": 620260905,
+  "regimes": [
+    "linear",
+    "smooth",
+    "nonlinear",
+    "heavy_tail"
+  ],
+  "alternatives": [
+    "null",
+    "positive_covariance"
+  ],
+  "extra_cell": [
+    "smooth",
+    "zero_covariance_dependence"
+  ],
+  "observations": "400 independent rows; identical raw x,y,z for every method; no ranking, subsampling, fixed effects, abstention, or selection",
+  "nuisance_folds": "One balanced two-fold assignment per replication shared by all GCM variants. Bins, knots and response means are fit only on training rows. KCI uses its native full-sample kernel construction and has no nuisance folds.",
+  "gcm_tail": "one-sided positive residual covariance; normal reference; sqrt(sum((s-mean(s))**2))/n",
+  "coarse_q": 8,
+  "fine_q": 32,
+  "extrapolation_q": [
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "extrapolation_beta": 1,
+  "extrapolation_weights": [
+    -0.49609375,
+    0.0195312499999998,
+    0.27734375000000006,
+    0.5351562500000003,
+    0.6640625000000004
+  ],
+  "spline": "8 quantile knots, cubic, linear boundary extrapolation, Ridge(alpha=0.001, fit_intercept=True)",
+  "kci": {
+    "package": "causal-learn==0.1.4.8",
+    "class": "KCI_CInd",
+    "kernels": "Gaussian",
+    "est_width": "empirical",
+    "approx": true,
+    "use_gp": false,
+    "regularization": 0.001
+  },
+  "distance": "Canonical U-centered partial distance covariance and correlation as descriptive coefficients only; its zero null differs from conditional independence.",
+  "dgp": "Z,U,ex,ey independent standard normal except heavy_tail ex,ey~t5/sqrt(5/3). g(Z)=0.8Z linear; 0.8(Z^2-1) nonlinear; 0.8tanh(1.5Z) smooth/heavy_tail. Null X=g+ex,Y=g+ey. Positive alternative adds 0.5U to both (conditional covariance 0.25). Extra smooth cell X=g+ex,Y=g+(ex^2-1)/sqrt(2)+ey, conditional covariance zero but dependent.",
+  "analysis": "Report every cell, counts, Wilson 95% intervals, all p-values/statistics and paired decisions; no rejection threshold or model tuning after results. Timing excludes imports and coefficient-only distance calculation; extrapolation includes all five resolution fits.",
+  "limit": "New i.i.d. diagnostic only; not a rerun or validation of the large dependent panels in the original table; normal/gamma calibration is approximate, never a finite-sample guarantee.",
+  "created_utc": "2026-09-05T12:41:42.264611+00:00",
+  "script_sha256": "69caa251e70c780c3626c2211ec1fa2adb3e5c23e17e05a1621c9764f24ac7df",
+  "dependencies": {
+    "numpy": "1.26.4",
+    "scipy": "1.11.4",
+    "scikit-learn": "1.7.2",
+    "causal-learn": "0.1.4.8"
+  },
+  "kci_source_sha256": "374f7bffe16dfc91cd1cc39795e50020081b126ef147950f543ad345a479b2ea",
+  "freeze_status": "Written locally before the simulation, not an independently timestamped preregistration."
+}

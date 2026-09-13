@@ -1,0 +1,479 @@
+{
+  "status": "PASS",
+  "models_checked": 41,
+  "model_cluster_pairs_checked": 12409,
+  "rank_vectors_checked": 37227,
+  "max_rank_absolute_difference": 0.0,
+  "max_spearman_absolute_difference": 3.3306690738754696e-16,
+  "max_saved_normal_tail_absolute_difference": 1.1102230246251565e-16,
+  "cohorts": [
+    {
+      "domain": "electricity",
+      "model": "dlinear",
+      "n": 34992,
+      "clusters": 729,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "12553db517213f4038de753151e273c5d0296e4b05e46c006a0a610e90696384",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "electricity",
+      "model": "drift",
+      "n": 34992,
+      "clusters": 729,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "12553db517213f4038de753151e273c5d0296e4b05e46c006a0a610e90696384",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "electricity",
+      "model": "histgbr_lag",
+      "n": 34992,
+      "clusters": 729,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "12553db517213f4038de753151e273c5d0296e4b05e46c006a0a610e90696384",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "electricity",
+      "model": "holt_winters",
+      "n": 34992,
+      "clusters": 729,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "12553db517213f4038de753151e273c5d0296e4b05e46c006a0a610e90696384",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "electricity",
+      "model": "lasso_lag",
+      "n": 34992,
+      "clusters": 729,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "12553db517213f4038de753151e273c5d0296e4b05e46c006a0a610e90696384",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "electricity",
+      "model": "linear_lag",
+      "n": 34992,
+      "clusters": 729,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "12553db517213f4038de753151e273c5d0296e4b05e46c006a0a610e90696384",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "electricity",
+      "model": "naive_1",
+      "n": 34992,
+      "clusters": 729,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "12553db517213f4038de753151e273c5d0296e4b05e46c006a0a610e90696384",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "electricity",
+      "model": "ridge_lag",
+      "n": 34992,
+      "clusters": 729,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "12553db517213f4038de753151e273c5d0296e4b05e46c006a0a610e90696384",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "electricity",
+      "model": "seasonal_naive_7",
+      "n": 34992,
+      "clusters": 729,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "12553db517213f4038de753151e273c5d0296e4b05e46c006a0a610e90696384",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "electricity",
+      "model": "ses",
+      "n": 34992,
+      "clusters": 729,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "12553db517213f4038de753151e273c5d0296e4b05e46c006a0a610e90696384",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "electricity",
+      "model": "theta",
+      "n": 34992,
+      "clusters": 729,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "12553db517213f4038de753151e273c5d0296e4b05e46c006a0a610e90696384",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "ratings",
+      "model": "Alternating least squares",
+      "n": 12088,
+      "clusters": 279,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "57d505e90caac55bd3eec2cdbc640cb18291d68483dee03a7368e2cf5aac17de",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "ratings",
+      "model": "Global mean",
+      "n": 12088,
+      "clusters": 279,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "57d505e90caac55bd3eec2cdbc640cb18291d68483dee03a7368e2cf5aac17de",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "ratings",
+      "model": "Item mean",
+      "n": 12088,
+      "clusters": 279,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "57d505e90caac55bd3eec2cdbc640cb18291d68483dee03a7368e2cf5aac17de",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "ratings",
+      "model": "Item nearest neighbours",
+      "n": 12088,
+      "clusters": 279,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "57d505e90caac55bd3eec2cdbc640cb18291d68483dee03a7368e2cf5aac17de",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "ratings",
+      "model": "SVD (32 factors)",
+      "n": 12088,
+      "clusters": 279,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "57d505e90caac55bd3eec2cdbc640cb18291d68483dee03a7368e2cf5aac17de",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "ratings",
+      "model": "SVD (40 factors)",
+      "n": 12088,
+      "clusters": 279,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "57d505e90caac55bd3eec2cdbc640cb18291d68483dee03a7368e2cf5aac17de",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "ratings",
+      "model": "SVD interaction",
+      "n": 12088,
+      "clusters": 279,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "57d505e90caac55bd3eec2cdbc640cb18291d68483dee03a7368e2cf5aac17de",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "ratings",
+      "model": "Slope One",
+      "n": 12088,
+      "clusters": 279,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "57d505e90caac55bd3eec2cdbc640cb18291d68483dee03a7368e2cf5aac17de",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "ratings",
+      "model": "User and item bias",
+      "n": 12088,
+      "clusters": 279,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "57d505e90caac55bd3eec2cdbc640cb18291d68483dee03a7368e2cf5aac17de",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "ratings",
+      "model": "User mean",
+      "n": 12088,
+      "clusters": 279,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "57d505e90caac55bd3eec2cdbc640cb18291d68483dee03a7368e2cf5aac17de",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "retail",
+      "model": "Croston SBA",
+      "n": 112000,
+      "clusters": 28,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "81801a5c0571a3c12620e1f20eae86f63be34859d97332266000440be3f41676",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "retail",
+      "model": "Eight week mean",
+      "n": 112000,
+      "clusters": 28,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "81801a5c0571a3c12620e1f20eae86f63be34859d97332266000440be3f41676",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "retail",
+      "model": "Exponential smoothing",
+      "n": 112000,
+      "clusters": 28,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "81801a5c0571a3c12620e1f20eae86f63be34859d97332266000440be3f41676",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "retail",
+      "model": "Four week mean",
+      "n": 112000,
+      "clusters": 28,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "81801a5c0571a3c12620e1f20eae86f63be34859d97332266000440be3f41676",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "retail",
+      "model": "Last week",
+      "n": 112000,
+      "clusters": 28,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "81801a5c0571a3c12620e1f20eae86f63be34859d97332266000440be3f41676",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "retail",
+      "model": "Past price and calendar",
+      "n": 112000,
+      "clusters": 28,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "81801a5c0571a3c12620e1f20eae86f63be34859d97332266000440be3f41676",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "retail",
+      "model": "Past price calendar and history",
+      "n": 112000,
+      "clusters": 28,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "81801a5c0571a3c12620e1f20eae86f63be34859d97332266000440be3f41676",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "retail",
+      "model": "Ridge with history",
+      "n": 112000,
+      "clusters": 28,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "81801a5c0571a3c12620e1f20eae86f63be34859d97332266000440be3f41676",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "retail",
+      "model": "Theta",
+      "n": 112000,
+      "clusters": 28,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "81801a5c0571a3c12620e1f20eae86f63be34859d97332266000440be3f41676",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "retail",
+      "model": "Training series mean",
+      "n": 112000,
+      "clusters": 28,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "81801a5c0571a3c12620e1f20eae86f63be34859d97332266000440be3f41676",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "portfolios",
+      "model": "Elastic net",
+      "n": 27272,
+      "clusters": 132,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "aa8dd6c200532a87b899ff8e4c5d043573af8142b3b0e96db13bd1ea65a0e4d2",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "portfolios",
+      "model": "Exponential twelve-month mean",
+      "n": 27272,
+      "clusters": 132,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "aa8dd6c200532a87b899ff8e4c5d043573af8142b3b0e96db13bd1ea65a0e4d2",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "portfolios",
+      "model": "Last month",
+      "n": 27272,
+      "clusters": 132,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "aa8dd6c200532a87b899ff8e4c5d043573af8142b3b0e96db13bd1ea65a0e4d2",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "portfolios",
+      "model": "LightGBM",
+      "n": 27272,
+      "clusters": 132,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "aa8dd6c200532a87b899ff8e4c5d043573af8142b3b0e96db13bd1ea65a0e4d2",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "portfolios",
+      "model": "Ridge",
+      "n": 27272,
+      "clusters": 132,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "aa8dd6c200532a87b899ff8e4c5d043573af8142b3b0e96db13bd1ea65a0e4d2",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "portfolios",
+      "model": "Seasonal twelve-month lag",
+      "n": 27272,
+      "clusters": 132,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "aa8dd6c200532a87b899ff8e4c5d043573af8142b3b0e96db13bd1ea65a0e4d2",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "portfolios",
+      "model": "Small MLP",
+      "n": 27272,
+      "clusters": 132,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "aa8dd6c200532a87b899ff8e4c5d043573af8142b3b0e96db13bd1ea65a0e4d2",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "portfolios",
+      "model": "Trailing three-month return",
+      "n": 27272,
+      "clusters": 132,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "aa8dd6c200532a87b899ff8e4c5d043573af8142b3b0e96db13bd1ea65a0e4d2",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "portfolios",
+      "model": "Trailing twelve-month return",
+      "n": 27272,
+      "clusters": 132,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "aa8dd6c200532a87b899ff8e4c5d043573af8142b3b0e96db13bd1ea65a0e4d2",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    },
+    {
+      "domain": "portfolios",
+      "model": "Training portfolio mean",
+      "n": 27272,
+      "clusters": 132,
+      "cohort_matches_complete_family": true,
+      "cohort_sha256": "aa8dd6c200532a87b899ff8e4c5d043573af8142b3b0e96db13bd1ea65a0e4d2",
+      "rank_and_spearman_checks": "PASS",
+      "normal_tail_check": "PASS"
+    }
+  ],
+  "full_family_BY_checks": [
+    {
+      "domain": "electricity",
+      "kind": "p_policy",
+      "models": 11,
+      "rejects": 10,
+      "status": "PASS"
+    },
+    {
+      "domain": "electricity",
+      "kind": "raw_p_one_sided",
+      "models": 11,
+      "rejects": 10,
+      "status": "PASS"
+    },
+    {
+      "domain": "ratings",
+      "kind": "p_policy",
+      "models": 10,
+      "rejects": 6,
+      "status": "PASS"
+    },
+    {
+      "domain": "ratings",
+      "kind": "raw_p_one_sided",
+      "models": 10,
+      "rejects": 8,
+      "status": "PASS"
+    },
+    {
+      "domain": "retail",
+      "kind": "p_policy",
+      "models": 10,
+      "rejects": 7,
+      "status": "PASS"
+    },
+    {
+      "domain": "retail",
+      "kind": "raw_p_one_sided",
+      "models": 10,
+      "rejects": 7,
+      "status": "PASS"
+    },
+    {
+      "domain": "portfolios",
+      "kind": "p_policy",
+      "models": 10,
+      "rejects": 0,
+      "status": "PASS"
+    },
+    {
+      "domain": "portfolios",
+      "kind": "raw_p_one_sided",
+      "models": 10,
+      "rejects": 0,
+      "status": "PASS"
+    }
+  ]
+}

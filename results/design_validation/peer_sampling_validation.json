@@ -1,0 +1,136 @@
+{
+  "status": "PASS",
+  "plotted_points_checked": 18,
+  "replication_rows_recounted": 2700,
+  "x_coordinates": "Exact group counts; no jitter.",
+  "interval_check": "Independent Wilson interval computation from statsmodels, checked against figure coordinates.",
+  "points": [
+    {
+      "peer_regime": "resampled_peers",
+      "method": "shared_references",
+      "groups": 25,
+      "rejections": 56,
+      "replications": 300
+    },
+    {
+      "peer_regime": "resampled_peers",
+      "method": "shared_references",
+      "groups": 100,
+      "rejections": 138,
+      "replications": 300
+    },
+    {
+      "peer_regime": "resampled_peers",
+      "method": "shared_references",
+      "groups": 400,
+      "rejections": 284,
+      "replications": 300
+    },
+    {
+      "peer_regime": "resampled_peers",
+      "method": "distinct_references",
+      "groups": 25,
+      "rejections": 15,
+      "replications": 300
+    },
+    {
+      "peer_regime": "resampled_peers",
+      "method": "distinct_references",
+      "groups": 100,
+      "rejections": 16,
+      "replications": 300
+    },
+    {
+      "peer_regime": "resampled_peers",
+      "method": "distinct_references",
+      "groups": 400,
+      "rejections": 13,
+      "replications": 300
+    },
+    {
+      "peer_regime": "fixed_peers_aligned_effects",
+      "method": "shared_references",
+      "groups": 25,
+      "rejections": 14,
+      "replications": 300
+    },
+    {
+      "peer_regime": "fixed_peers_aligned_effects",
+      "method": "shared_references",
+      "groups": 100,
+      "rejections": 15,
+      "replications": 300
+    },
+    {
+      "peer_regime": "fixed_peers_aligned_effects",
+      "method": "shared_references",
+      "groups": 400,
+      "rejections": 16,
+      "replications": 300
+    },
+    {
+      "peer_regime": "fixed_peers_aligned_effects",
+      "method": "distinct_references",
+      "groups": 25,
+      "rejections": 0,
+      "replications": 300
+    },
+    {
+      "peer_regime": "fixed_peers_aligned_effects",
+      "method": "distinct_references",
+      "groups": 100,
+      "rejections": 0,
+      "replications": 300
+    },
+    {
+      "peer_regime": "fixed_peers_aligned_effects",
+      "method": "distinct_references",
+      "groups": 400,
+      "rejections": 0,
+      "replications": 300
+    },
+    {
+      "peer_regime": "fixed_peers_opposed_effects",
+      "method": "shared_references",
+      "groups": 25,
+      "rejections": 16,
+      "replications": 300
+    },
+    {
+      "peer_regime": "fixed_peers_opposed_effects",
+      "method": "shared_references",
+      "groups": 100,
+      "rejections": 16,
+      "replications": 300
+    },
+    {
+      "peer_regime": "fixed_peers_opposed_effects",
+      "method": "shared_references",
+      "groups": 400,
+      "rejections": 17,
+      "replications": 300
+    },
+    {
+      "peer_regime": "fixed_peers_opposed_effects",
+      "method": "distinct_references",
+      "groups": 25,
+      "rejections": 65,
+      "replications": 300
+    },
+    {
+      "peer_regime": "fixed_peers_opposed_effects",
+      "method": "distinct_references",
+      "groups": 100,
+      "rejections": 156,
+      "replications": 300
+    },
+    {
+      "peer_regime": "fixed_peers_opposed_effects",
+      "method": "distinct_references",
+      "groups": 400,
+      "rejections": 284,
+      "replications": 300
+    }
+  ],
+  "figure_sha256": "1afc1776286b41082742d609b34a8550b7275da1ce1a7d7b07f085df704777d8"
+}

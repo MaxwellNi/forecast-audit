@@ -1,0 +1,169 @@
+{
+  "annual_fit_checks": [
+    {
+      "cutoff": "2012-12-31",
+      "latest_training_origin": "2012-11-30",
+      "test_rows": 2500,
+      "training_rows": 56725,
+      "year": 2013
+    },
+    {
+      "cutoff": "2013-12-31",
+      "latest_training_origin": "2013-11-30",
+      "test_rows": 2484,
+      "training_rows": 59227,
+      "year": 2014
+    },
+    {
+      "cutoff": "2014-12-31",
+      "latest_training_origin": "2014-11-30",
+      "test_rows": 2484,
+      "training_rows": 61711,
+      "year": 2015
+    },
+    {
+      "cutoff": "2015-12-31",
+      "latest_training_origin": "2015-11-30",
+      "test_rows": 2491,
+      "training_rows": 64195,
+      "year": 2016
+    },
+    {
+      "cutoff": "2016-12-31",
+      "latest_training_origin": "2016-11-30",
+      "test_rows": 2496,
+      "training_rows": 66685,
+      "year": 2017
+    },
+    {
+      "cutoff": "2017-12-31",
+      "latest_training_origin": "2017-11-30",
+      "test_rows": 2489,
+      "training_rows": 69181,
+      "year": 2018
+    },
+    {
+      "cutoff": "2018-12-31",
+      "latest_training_origin": "2018-11-30",
+      "test_rows": 2484,
+      "training_rows": 71671,
+      "year": 2019
+    },
+    {
+      "cutoff": "2019-12-31",
+      "latest_training_origin": "2019-11-30",
+      "test_rows": 2484,
+      "training_rows": 74155,
+      "year": 2020
+    },
+    {
+      "cutoff": "2020-12-31",
+      "latest_training_origin": "2020-11-30",
+      "test_rows": 2484,
+      "training_rows": 76639,
+      "year": 2021
+    },
+    {
+      "cutoff": "2021-12-31",
+      "latest_training_origin": "2021-11-30",
+      "test_rows": 2484,
+      "training_rows": 79123,
+      "year": 2022
+    },
+    {
+      "cutoff": "2022-12-31",
+      "latest_training_origin": "2022-11-30",
+      "test_rows": 2392,
+      "training_rows": 81607,
+      "year": 2023
+    }
+  ],
+  "checks": [
+    "Every target equals an explicit raw next-calendar-month key lookup",
+    "Every one of thirty features equals direct past-calendar-key formulas",
+    "Baseline uses exactly twelve known monthly returns through origin",
+    "Unavailable windows and targets remain missing",
+    "All ten saved vectors have exactly the prespecified common raw targets and keys",
+    "Every annual fit uses only labels matured by preceding December",
+    "Every imputation and scaling parameter independently recomputed from training data",
+    "All ten predictor outputs reproduced from rules or saved actual fitted parameters",
+    "Every nominal BY adjustment independently recomputed over the full ten-model family"
+  ],
+  "complete_family_audit_checks": [
+    {
+      "file": "extrapolated_profile.csv",
+      "models": 10,
+      "nominal_rejections": 0,
+      "specification": "(1, 12, 'contiguous')"
+    },
+    {
+      "file": "extrapolated_profile.csv",
+      "models": 10,
+      "nominal_rejections": 0,
+      "specification": "(2, 12, 'contiguous')"
+    },
+    {
+      "file": "single_resolution_profile.csv",
+      "models": 10,
+      "nominal_rejections": 0,
+      "specification": "(12, 'contiguous')"
+    },
+    {
+      "file": "single_resolution_profile.csv",
+      "models": 10,
+      "nominal_rejections": 0,
+      "specification": "(12, 'interleaved')"
+    }
+  ],
+  "independent_calendar_discrepancies": {
+    "compound_return_12m": 2.2737367544323206e-13,
+    "compound_return_24m": 6.821210263296962e-13,
+    "compound_return_3m": 1.1368683772161603e-13,
+    "compound_return_6m": 2.2737367544323206e-13,
+    "exponential_12m": 2.842170943040401e-14,
+    "next_calendar_month_target": 0.0,
+    "return_lag_0": 0.0,
+    "return_lag_1": 0.0,
+    "return_lag_10": 0.0,
+    "return_lag_11": 0.0,
+    "return_lag_12": 0.0,
+    "return_lag_13": 0.0,
+    "return_lag_14": 0.0,
+    "return_lag_15": 0.0,
+    "return_lag_16": 0.0,
+    "return_lag_17": 0.0,
+    "return_lag_18": 0.0,
+    "return_lag_19": 0.0,
+    "return_lag_2": 0.0,
+    "return_lag_20": 0.0,
+    "return_lag_21": 0.0,
+    "return_lag_22": 0.0,
+    "return_lag_23": 0.0,
+    "return_lag_3": 0.0,
+    "return_lag_4": 0.0,
+    "return_lag_5": 0.0,
+    "return_lag_6": 0.0,
+    "return_lag_7": 0.0,
+    "return_lag_8": 0.0,
+    "return_lag_9": 0.0,
+    "volatility_12m": 2.993161274389422e-13,
+    "volatility_24m": 1.630917623174355e-13
+  },
+  "protocol_sha256": "c6c86f2348023b2d88d5743ecae452201c9b374a3ed1c8f9a83b251435086225",
+  "raw_long_short_rows": 173302,
+  "rows_verified": 84583,
+  "saved_prediction_max_absolute_discrepancies": {
+    "Elastic net": 0.0,
+    "Exponential twelve-month mean": 0.0,
+    "Last month": 0.0,
+    "LightGBM": 0.0,
+    "Ridge": 0.0,
+    "Seasonal twelve-month lag": 0.0,
+    "Small MLP": 0.0,
+    "Trailing three-month return": 0.0,
+    "Trailing twelve-month return": 0.0,
+    "Training portfolio mean": 0.0
+  },
+  "status": "Passed independent raw-key/calendar/parameter checks; no inferential calibration claim",
+  "verifier_sha256": "19f62589de44ff0f16e7f82405ac3ff64728b9c042539b525eae0b09fd539044"
+}

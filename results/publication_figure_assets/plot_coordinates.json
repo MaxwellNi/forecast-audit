@@ -1,0 +1,923 @@
+{
+  "canonical": {
+    "plotted_cells": [
+      {
+        "regime": "linear",
+        "alternative": "null",
+        "method": "gcm_coarse",
+        "rejections": 66,
+        "replications": 300,
+        "rate": 0.22,
+        "wilson95": [
+          0.1768274459698328,
+          0.27025261791591293
+        ],
+        "x": 0.22,
+        "y_categorical": -0.3
+      },
+      {
+        "regime": "linear",
+        "alternative": "null",
+        "method": "gcm_fine",
+        "rejections": 42,
+        "replications": 300,
+        "rate": 0.14,
+        "wilson95": [
+          0.10527132693072412,
+          0.18383161235094903
+        ],
+        "x": 0.14,
+        "y_categorical": 0.7
+      },
+      {
+        "regime": "linear",
+        "alternative": "null",
+        "method": "gcm_spline",
+        "rejections": 30,
+        "replications": 300,
+        "rate": 0.1,
+        "wilson95": [
+          0.07094791459501532,
+          0.1391664623846215
+        ],
+        "x": 0.1,
+        "y_categorical": 1.7
+      },
+      {
+        "regime": "linear",
+        "alternative": "null",
+        "method": "extrapolated",
+        "rejections": 36,
+        "replications": 300,
+        "rate": 0.12,
+        "wilson95": [
+          0.0879508443036389,
+          0.16165781382701605
+        ],
+        "x": 0.12,
+        "y_categorical": 2.7
+      },
+      {
+        "regime": "linear",
+        "alternative": "null",
+        "method": "extrapolated_beta2",
+        "rejections": 42,
+        "replications": 300,
+        "rate": 0.14,
+        "wilson95": [
+          0.10527132693072412,
+          0.18383161235094903
+        ],
+        "x": 0.14,
+        "y_categorical": 3.7
+      },
+      {
+        "regime": "linear",
+        "alternative": "null",
+        "method": "kci_gamma",
+        "rejections": 21,
+        "replications": 300,
+        "rate": 0.07,
+        "wilson95": [
+          0.046236944827176336,
+          0.10463601042593323
+        ],
+        "x": 0.07,
+        "y_categorical": 4.7
+      },
+      {
+        "regime": "smooth",
+        "alternative": "null",
+        "method": "gcm_coarse",
+        "rejections": 21,
+        "replications": 300,
+        "rate": 0.07,
+        "wilson95": [
+          0.046236944827176336,
+          0.10463601042593323
+        ],
+        "x": 0.07,
+        "y_categorical": -0.15
+      },
+      {
+        "regime": "smooth",
+        "alternative": "null",
+        "method": "gcm_fine",
+        "rejections": 29,
+        "replications": 300,
+        "rate": 0.09666666666666666,
+        "wilson95": [
+          0.06815029481828931,
+          0.13538170196951116
+        ],
+        "x": 0.09666666666666666,
+        "y_categorical": 0.85
+      },
+      {
+        "regime": "smooth",
+        "alternative": "null",
+        "method": "gcm_spline",
+        "rejections": 21,
+        "replications": 300,
+        "rate": 0.07,
+        "wilson95": [
+          0.046236944827176336,
+          0.10463601042593323
+        ],
+        "x": 0.07,
+        "y_categorical": 1.85
+      },
+      {
+        "regime": "smooth",
+        "alternative": "null",
+        "method": "extrapolated",
+        "rejections": 28,
+        "replications": 300,
+        "rate": 0.09333333333333334,
+        "wilson95": [
+          0.06536421957889091,
+          0.1315853970170732
+        ],
+        "x": 0.09333333333333334,
+        "y_categorical": 2.85
+      },
+      {
+        "regime": "smooth",
+        "alternative": "null",
+        "method": "extrapolated_beta2",
+        "rejections": 27,
+        "replications": 300,
+        "rate": 0.09,
+        "wilson95": [
+          0.06259022560547936,
+          0.12777701079864834
+        ],
+        "x": 0.09,
+        "y_categorical": 3.85
+      },
+      {
+        "regime": "smooth",
+        "alternative": "null",
+        "method": "kci_gamma",
+        "rejections": 14,
+        "replications": 300,
+        "rate": 0.04666666666666667,
+        "wilson95": [
+          0.027998933682334012,
+          0.07679736022792105
+        ],
+        "x": 0.04666666666666667,
+        "y_categorical": 4.85
+      },
+      {
+        "regime": "nonlinear",
+        "alternative": "null",
+        "method": "gcm_coarse",
+        "rejections": 296,
+        "replications": 300,
+        "rate": 0.9866666666666667,
+        "wilson95": [
+          0.9662244697474675,
+          0.9948030382606411
+        ],
+        "x": 0.9866666666666667,
+        "y_categorical": 0.0
+      },
+      {
+        "regime": "nonlinear",
+        "alternative": "null",
+        "method": "gcm_fine",
+        "rejections": 177,
+        "replications": 300,
+        "rate": 0.59,
+        "wilson95": [
+          0.5335482149789318,
+          0.6441760502006498
+        ],
+        "x": 0.59,
+        "y_categorical": 1.0
+      },
+      {
+        "regime": "nonlinear",
+        "alternative": "null",
+        "method": "gcm_spline",
+        "rejections": 34,
+        "replications": 300,
+        "rate": 0.11333333333333333,
+        "wilson95": [
+          0.082244501875291,
+          0.15419939587169124
+        ],
+        "x": 0.11333333333333333,
+        "y_categorical": 2.0
+      },
+      {
+        "regime": "nonlinear",
+        "alternative": "null",
+        "method": "extrapolated",
+        "rejections": 63,
+        "replications": 300,
+        "rate": 0.21,
+        "wilson95": [
+          0.1677218007333024,
+          0.25961112257693425
+        ],
+        "x": 0.21,
+        "y_categorical": 3.0
+      },
+      {
+        "regime": "nonlinear",
+        "alternative": "null",
+        "method": "extrapolated_beta2",
+        "rejections": 184,
+        "replications": 300,
+        "rate": 0.6133333333333333,
+        "wilson95": [
+          0.5571245198072374,
+          0.6666764067151987
+        ],
+        "x": 0.6133333333333333,
+        "y_categorical": 4.0
+      },
+      {
+        "regime": "nonlinear",
+        "alternative": "null",
+        "method": "kci_gamma",
+        "rejections": 14,
+        "replications": 300,
+        "rate": 0.04666666666666667,
+        "wilson95": [
+          0.027998933682334012,
+          0.07679736022792105
+        ],
+        "x": 0.04666666666666667,
+        "y_categorical": 5.0
+      },
+      {
+        "regime": "heavy_tail",
+        "alternative": "null",
+        "method": "gcm_coarse",
+        "rejections": 27,
+        "replications": 300,
+        "rate": 0.09,
+        "wilson95": [
+          0.06259022560547936,
+          0.12777701079864834
+        ],
+        "x": 0.09,
+        "y_categorical": 0.15
+      },
+      {
+        "regime": "heavy_tail",
+        "alternative": "null",
+        "method": "gcm_fine",
+        "rejections": 36,
+        "replications": 300,
+        "rate": 0.12,
+        "wilson95": [
+          0.0879508443036389,
+          0.16165781382701605
+        ],
+        "x": 0.12,
+        "y_categorical": 1.15
+      },
+      {
+        "regime": "heavy_tail",
+        "alternative": "null",
+        "method": "gcm_spline",
+        "rejections": 28,
+        "replications": 300,
+        "rate": 0.09333333333333334,
+        "wilson95": [
+          0.06536421957889091,
+          0.1315853970170732
+        ],
+        "x": 0.09333333333333334,
+        "y_categorical": 2.15
+      },
+      {
+        "regime": "heavy_tail",
+        "alternative": "null",
+        "method": "extrapolated",
+        "rejections": 32,
+        "replications": 300,
+        "rate": 0.10666666666666667,
+        "wilson95": [
+          0.07657584904594214,
+          0.14670328831736743
+        ],
+        "x": 0.10666666666666667,
+        "y_categorical": 3.15
+      },
+      {
+        "regime": "heavy_tail",
+        "alternative": "null",
+        "method": "extrapolated_beta2",
+        "rejections": 32,
+        "replications": 300,
+        "rate": 0.10666666666666667,
+        "wilson95": [
+          0.07657584904594214,
+          0.14670328831736743
+        ],
+        "x": 0.10666666666666667,
+        "y_categorical": 4.15
+      },
+      {
+        "regime": "heavy_tail",
+        "alternative": "null",
+        "method": "kci_gamma",
+        "rejections": 21,
+        "replications": 300,
+        "rate": 0.07,
+        "wilson95": [
+          0.046236944827176336,
+          0.10463601042593323
+        ],
+        "x": 0.07,
+        "y_categorical": 5.15
+      },
+      {
+        "regime": "smooth",
+        "alternative": "zero_covariance_dependence",
+        "method": "gcm_coarse",
+        "rejections": 18,
+        "replications": 300,
+        "rate": 0.06,
+        "wilson95": [
+          0.038286369524692054,
+          0.09283944515290843
+        ],
+        "x": 0.06,
+        "y_categorical": 0.3
+      },
+      {
+        "regime": "smooth",
+        "alternative": "zero_covariance_dependence",
+        "method": "gcm_fine",
+        "rejections": 29,
+        "replications": 300,
+        "rate": 0.09666666666666666,
+        "wilson95": [
+          0.06815029481828931,
+          0.13538170196951116
+        ],
+        "x": 0.09666666666666666,
+        "y_categorical": 1.3
+      },
+      {
+        "regime": "smooth",
+        "alternative": "zero_covariance_dependence",
+        "method": "gcm_spline",
+        "rejections": 15,
+        "replications": 300,
+        "rate": 0.05,
+        "wilson95": [
+          0.03053164062934728,
+          0.08084703347274415
+        ],
+        "x": 0.05,
+        "y_categorical": 2.3
+      },
+      {
+        "regime": "smooth",
+        "alternative": "zero_covariance_dependence",
+        "method": "extrapolated",
+        "rejections": 28,
+        "replications": 300,
+        "rate": 0.09333333333333334,
+        "wilson95": [
+          0.06536421957889091,
+          0.1315853970170732
+        ],
+        "x": 0.09333333333333334,
+        "y_categorical": 3.3
+      },
+      {
+        "regime": "smooth",
+        "alternative": "zero_covariance_dependence",
+        "method": "extrapolated_beta2",
+        "rejections": 23,
+        "replications": 300,
+        "rate": 0.07666666666666666,
+        "wilson95": [
+          0.051627611786607464,
+          0.1124101038501748
+        ],
+        "x": 0.07666666666666666,
+        "y_categorical": 4.3
+      },
+      {
+        "regime": "smooth",
+        "alternative": "zero_covariance_dependence",
+        "method": "kci_gamma",
+        "rejections": 300,
+        "replications": 300,
+        "rate": 1.0,
+        "wilson95": [
+          0.9873570287754538,
+          0.9999999999999998
+        ],
+        "x": 1.0,
+        "y_categorical": 5.3
+      }
+    ],
+    "all_source_cells": 54,
+    "reference_line": 0.05,
+    "uncertainty": "Unrounded recorded pointwise 95% Wilson intervals; no simultaneous-coverage claim.",
+    "categorical_positions": "Five conditions occupy separate subrows within each method; no measured-axis jitter.",
+    "canvas_inches": [
+      3.5,
+      3.1
+    ],
+    "minimum_font_pt": 8.0,
+    "text_outside_canvas": []
+  },
+  "public_named": {
+    "panels": [
+      {
+        "domain": "electricity",
+        "x_limits": [
+          -6.5,
+          10.7
+        ],
+        "x_ticks": [
+          -5,
+          0,
+          5,
+          10
+        ],
+        "models": [
+          {
+            "domain": "electricity",
+            "model": "dlinear",
+            "display_name": "DLinear",
+            "x_beta2": 8.7628575466187,
+            "x_spline": 8.925659822734385,
+            "y_categorical": 0,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "electricity",
+            "model": "drift",
+            "display_name": "Drift",
+            "x_beta2": 9.065938753353752,
+            "x_spline": 9.250888478760151,
+            "y_categorical": 1,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "electricity",
+            "model": "histgbr_lag",
+            "display_name": "Histogram gradient boosting",
+            "x_beta2": 7.490402886594411,
+            "x_spline": 7.722892870049854,
+            "y_categorical": 2,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "electricity",
+            "model": "holt_winters",
+            "display_name": "Holt-Winters",
+            "x_beta2": 9.020278033697927,
+            "x_spline": 8.790244357788675,
+            "y_categorical": 3,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "electricity",
+            "model": "lasso_lag",
+            "display_name": "Lasso lag regression",
+            "x_beta2": 8.351602772929603,
+            "x_spline": 8.56183752398884,
+            "y_categorical": 4,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "electricity",
+            "model": "linear_lag",
+            "display_name": "Linear lag regression",
+            "x_beta2": 8.356252427190105,
+            "x_spline": 8.565853791733275,
+            "y_categorical": 5,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "electricity",
+            "model": "naive_1",
+            "display_name": "One-day persistence",
+            "x_beta2": 9.065534660694247,
+            "x_spline": 9.25130939348023,
+            "y_categorical": 6,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "electricity",
+            "model": "ridge_lag",
+            "display_name": "Ridge lag regression",
+            "x_beta2": 8.532049558823926,
+            "x_spline": 8.694869449194476,
+            "y_categorical": 7,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "electricity",
+            "model": "seasonal_naive_7",
+            "display_name": "Seven-day persistence",
+            "x_beta2": -5.355447688931285,
+            "x_spline": 4.938213193092078,
+            "y_categorical": 8,
+            "undefined": false,
+            "finite_copy_or_order_guard": true
+          },
+          {
+            "domain": "electricity",
+            "model": "ses",
+            "display_name": "Exponential smoothing",
+            "x_beta2": 9.422228381504905,
+            "x_spline": 9.246851993172388,
+            "y_categorical": 9,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "electricity",
+            "model": "theta",
+            "display_name": "Theta",
+            "x_beta2": 9.239126910339753,
+            "x_spline": 9.448110122801834,
+            "y_categorical": 10,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          }
+        ]
+      },
+      {
+        "domain": "ratings",
+        "x_limits": [
+          -0.8,
+          15.2
+        ],
+        "x_ticks": [
+          0,
+          5,
+          10,
+          15
+        ],
+        "models": [
+          {
+            "domain": "ratings",
+            "model": "Alternating least squares",
+            "display_name": "Alternating least squares",
+            "x_beta2": 12.743562925312736,
+            "x_spline": 12.670868276062574,
+            "y_categorical": 0,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "ratings",
+            "model": "Global mean",
+            "display_name": "Global mean",
+            "x_beta2": null,
+            "x_spline": null,
+            "y_categorical": 1,
+            "undefined": true,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "ratings",
+            "model": "Item mean",
+            "display_name": "Item mean",
+            "x_beta2": 2.6118208231587663,
+            "x_spline": 3.1966285031423416,
+            "y_categorical": 2,
+            "undefined": false,
+            "finite_copy_or_order_guard": true
+          },
+          {
+            "domain": "ratings",
+            "model": "Item nearest neighbours",
+            "display_name": "Item nearest neighbors",
+            "x_beta2": 12.92678700964048,
+            "x_spline": 12.886632595321352,
+            "y_categorical": 3,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "ratings",
+            "model": "SVD (32 factors)",
+            "display_name": "SVD (32 factors)",
+            "x_beta2": 10.075530418996635,
+            "x_spline": 10.102852543771748,
+            "y_categorical": 4,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "ratings",
+            "model": "SVD (40 factors)",
+            "display_name": "SVD (40 factors)",
+            "x_beta2": 10.6186830434423,
+            "x_spline": 10.635186937977746,
+            "y_categorical": 5,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "ratings",
+            "model": "SVD interaction",
+            "display_name": "SVD interaction",
+            "x_beta2": 13.597640215602308,
+            "x_spline": 13.525753320823602,
+            "y_categorical": 6,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "ratings",
+            "model": "Slope One",
+            "display_name": "Slope One",
+            "x_beta2": 7.176636502203645,
+            "x_spline": 7.125995992072474,
+            "y_categorical": 7,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "ratings",
+            "model": "User and item bias",
+            "display_name": "User and item bias",
+            "x_beta2": 2.6118208231587663,
+            "x_spline": 3.1966285031423416,
+            "y_categorical": 8,
+            "undefined": false,
+            "finite_copy_or_order_guard": true
+          },
+          {
+            "domain": "ratings",
+            "model": "User mean",
+            "display_name": "User mean",
+            "x_beta2": null,
+            "x_spline": null,
+            "y_categorical": 9,
+            "undefined": true,
+            "finite_copy_or_order_guard": false
+          }
+        ]
+      },
+      {
+        "domain": "retail",
+        "x_limits": [
+          -14.8,
+          11.8
+        ],
+        "x_ticks": [
+          -10,
+          0,
+          10
+        ],
+        "models": [
+          {
+            "domain": "retail",
+            "model": "Croston SBA",
+            "display_name": "Croston SBA",
+            "x_beta2": -8.590987588546547,
+            "x_spline": -13.153617863950144,
+            "y_categorical": 0,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "retail",
+            "model": "Eight week mean",
+            "display_name": "Eight week mean",
+            "x_beta2": 3.8406667900086138,
+            "x_spline": 3.8423954878835307,
+            "y_categorical": 1,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "retail",
+            "model": "Exponential smoothing",
+            "display_name": "Exponential smoothing",
+            "x_beta2": 4.289652374462342,
+            "x_spline": 5.615230783146654,
+            "y_categorical": 2,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "retail",
+            "model": "Four week mean",
+            "display_name": "Four week mean",
+            "x_beta2": 6.037841501974247,
+            "x_spline": 7.997835817672497,
+            "y_categorical": 3,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "retail",
+            "model": "Last week",
+            "display_name": "Last week",
+            "x_beta2": 1.9303410329989004,
+            "x_spline": -0.5018128710497514,
+            "y_categorical": 4,
+            "undefined": false,
+            "finite_copy_or_order_guard": true
+          },
+          {
+            "domain": "retail",
+            "model": "Past price and calendar",
+            "display_name": "Past price and calendar",
+            "x_beta2": 7.675661265670232,
+            "x_spline": 6.76054653713173,
+            "y_categorical": 5,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "retail",
+            "model": "Past price calendar and history",
+            "display_name": "Past price calendar and history",
+            "x_beta2": 4.710654756103474,
+            "x_spline": 7.871077240307,
+            "y_categorical": 6,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "retail",
+            "model": "Ridge with history",
+            "display_name": "Ridge with history",
+            "x_beta2": 3.650525923131529,
+            "x_spline": 7.8798597982052625,
+            "y_categorical": 7,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "retail",
+            "model": "Theta",
+            "display_name": "Theta",
+            "x_beta2": 6.362059744357098,
+            "x_spline": 9.573179018768027,
+            "y_categorical": 8,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "retail",
+            "model": "Training series mean",
+            "display_name": "Training series mean",
+            "x_beta2": null,
+            "x_spline": null,
+            "y_categorical": 9,
+            "undefined": true,
+            "finite_copy_or_order_guard": false
+          }
+        ]
+      },
+      {
+        "domain": "portfolios",
+        "x_limits": [
+          -2.6,
+          2.15
+        ],
+        "x_ticks": [
+          -2,
+          -1,
+          0,
+          1,
+          2
+        ],
+        "models": [
+          {
+            "domain": "portfolios",
+            "model": "Elastic net",
+            "display_name": "Elastic net",
+            "x_beta2": 0.946979654081484,
+            "x_spline": 0.9458686262733754,
+            "y_categorical": 0,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "portfolios",
+            "model": "Exponential twelve-month mean",
+            "display_name": "Exponential twelve-month mean",
+            "x_beta2": 1.29107576574517,
+            "x_spline": 1.2781205021051223,
+            "y_categorical": 1,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "portfolios",
+            "model": "Last month",
+            "display_name": "Last month",
+            "x_beta2": 1.4540050401801183,
+            "x_spline": 1.4438273716382972,
+            "y_categorical": 2,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "portfolios",
+            "model": "LightGBM",
+            "display_name": "LightGBM",
+            "x_beta2": -0.269110212677881,
+            "x_spline": -0.28497822829528513,
+            "y_categorical": 3,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "portfolios",
+            "model": "Ridge",
+            "display_name": "Ridge",
+            "x_beta2": 0.942420013696092,
+            "x_spline": 0.9417271686585829,
+            "y_categorical": 4,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "portfolios",
+            "model": "Seasonal twelve-month lag",
+            "display_name": "Seasonal twelve-month lag",
+            "x_beta2": -1.100404678678665,
+            "x_spline": -1.1101888618111715,
+            "y_categorical": 5,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "portfolios",
+            "model": "Small MLP",
+            "display_name": "Small MLP",
+            "x_beta2": -1.137301009949647,
+            "x_spline": -1.1235159539178268,
+            "y_categorical": 6,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "portfolios",
+            "model": "Trailing three-month return",
+            "display_name": "Trailing three-month return",
+            "x_beta2": -0.2035670260604521,
+            "x_spline": -0.2081236182486496,
+            "y_categorical": 7,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          },
+          {
+            "domain": "portfolios",
+            "model": "Trailing twelve-month return",
+            "display_name": "Trailing twelve-month return",
+            "x_beta2": 0.8598090744253166,
+            "x_spline": -0.7906129020952645,
+            "y_categorical": 8,
+            "undefined": false,
+            "finite_copy_or_order_guard": true
+          },
+          {
+            "domain": "portfolios",
+            "model": "Training portfolio mean",
+            "display_name": "Training portfolio mean",
+            "x_beta2": -2.11127435661084,
+            "x_spline": -2.10993438904199,
+            "y_categorical": 9,
+            "undefined": false,
+            "finite_copy_or_order_guard": false
+          }
+        ]
+      }
+    ],
+    "reference_line": 1.6448536269514715,
+    "total_models": 41,
+    "finite_pairs": 38,
+    "undefined_pairs": 3,
+    "finite_copy_or_order_guards": 5,
+    "uncertainty": "Observed raw statistics only; no confidence intervals implied.",
+    "categorical_positions": "One original model per named row; exact coordinates and no numeric jitter.",
+    "canvas_inches": [
+      7.0,
+      5.0
+    ],
+    "minimum_font_pt": 8.0,
+    "text_outside_canvas": []
+  }
+}

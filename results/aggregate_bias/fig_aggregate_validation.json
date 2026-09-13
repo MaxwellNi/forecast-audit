@@ -1,0 +1,61 @@
+{
+  "size_inches": [
+    7,
+    2.05
+  ],
+  "minimum_font_points": 8,
+  "left_panel": "Previously reported eight-category estimated-fit ablation; 1,000 repetitions per cell.",
+  "right_panel": "All 72 known-category-probability validation settings; 2,000 repetitions per method and setting.",
+  "ratio_definition": "Median(rectangle upper bound - true bias) / median(aggregate upper bound - true bias), computed separately within each setting.",
+  "interpretation": "Ratios above one favor the aggregate bound. Ten ratios are below one. Horizontal black marks are descriptive medians across 18 settings, not confidence intervals.",
+  "point_placement": "Deterministic horizontal packing only; no vertical jitter, trimming, or setting selection.",
+  "scope": "Validation-bound comparison and previously reported ablation; not an independent forecast confirmation, discovery-power comparison for the aggregate method, or general superiority claim.",
+  "counts": {
+    "settings": 72,
+    "aggregate_tighter": 62,
+    "rectangle_tighter": 10
+  },
+  "group_summaries": [
+    {
+      "categories": 2,
+      "count": 18,
+      "minimum": 0.5573974267174915,
+      "median": 0.9982564252558082,
+      "maximum": 1.144870647446631,
+      "aggregate_tighter": 9,
+      "rectangle_tighter": 9
+    },
+    {
+      "categories": 8,
+      "count": 18,
+      "minimum": 1.2603555545838652,
+      "median": 2.57663150067338,
+      "maximum": 2.9162604350783496,
+      "aggregate_tighter": 18,
+      "rectangle_tighter": 0
+    },
+    {
+      "categories": 32,
+      "count": 18,
+      "minimum": 1.4442212504741219,
+      "median": 4.842387430340693,
+      "maximum": 7.188673319007353,
+      "aggregate_tighter": 18,
+      "rectangle_tighter": 0
+    },
+    {
+      "categories": 128,
+      "count": 18,
+      "minimum": 0.9873424890973695,
+      "median": 5.119570207713323,
+      "maximum": 16.94032593390928,
+      "aggregate_tighter": 17,
+      "rectangle_tighter": 1
+    }
+  ],
+  "input_sha256": {
+    "../certificate_factorial/summary.csv": "dc008dbc236793406e24ca22527531086412cfe505a82341a3b6cea5d4728c20",
+    "simulation/summary.csv": "360948cb8a7c7c8fc8e3ee1d54ad7679898fbaf0bfc4267b4d5120a0acc24b18"
+  },
+  "script_sha256": "d570f93d11fe003246088eaee627b5b738b5d27bee768609260242dee2648f77"
+}

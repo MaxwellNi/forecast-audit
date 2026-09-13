@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETE",
+  "recorded_utc": "2026-09-05T19:39:19.466999+00:00",
+  "elapsed_seconds": 76.27666143327951,
+  "independent_primitive_draws": 300,
+  "condition_datasets": 2700,
+  "audit_rows": 9900,
+  "core_sha256": "92489cf8cdae0650cd6493112d28fe13b34cfb356cae02c83a387d39f9561ff3",
+  "script_sha256": "b90bc4dfc1106f6c49753189222b2e1bba8cd2b99e26c20851b264468e6fcaf3",
+  "output_sha256": {
+    "protocol.json": "7ccbdf33da313587b6fb40a116d16de1c6c53ee6fd8b29e558e8778733602bbf",
+    "benchmark.json": "7fe626d50b21ea060672f308c4b3015e3b80b7e9570f6aa6b2e13932a93234a0",
+    "run_started.json": "11ef06976225a6a4de9302c851705ea8befa7b94c18c6ca2f81231263fff24ab",
+    "draws.csv": "6bb9f9c4a586f4760f28de2273fe83641a80e25574bb3eff8f6ffa1b95f08342",
+    "summary.csv": "add768205451fa0095f83e499dbab2e0b983a35f74008d2810fd43478b38e44b",
+    "full_core_checks.json": "26cf0a5a6da45c16eee7b8ee28bcb0ae8c36f869293bd65341a4ebd16213e764"
+  }
+}

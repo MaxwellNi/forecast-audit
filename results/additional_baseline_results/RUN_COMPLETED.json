@@ -1,0 +1,41 @@
+{
+  "completed_unix": 1788950407.4820135,
+  "frozen_input_hashes_unchanged": true,
+  "packaged_protocol_scope": "Current reproduction configuration; not a claim of new experimental execution.",
+  "protocol_sha256": "017a4154ebf4402acf865d109e71c803281dd6106bfdeb9906f484b6c9f27d29",
+  "results": [
+    {
+      "elapsed_seconds": 20.863934148103,
+      "expected_rows": 400,
+      "raw_rows": 400,
+      "raw_sha256": "c33a4da5aa9d70481a5daefd4419fbb0de1b8b0150f69f27e6b50db7152a04cd",
+      "status": "COMPLETE",
+      "suite": "adaptive_beta"
+    },
+    {
+      "elapsed_seconds": 457.0963880121708,
+      "expected_rows": 9540,
+      "raw_rows": 9540,
+      "raw_sha256": "0bf59097eb93fe4ba5940de32e5faa5c637430897d4928f311c461133371eeaf",
+      "status": "COMPLETE",
+      "suite": "ablation"
+    },
+    {
+      "elapsed_seconds": 58.91127988323569,
+      "expected_rows": 1400,
+      "raw_rows": 1400,
+      "raw_sha256": "652bf528a6560e66403ca086b7dd2e3c5959ece76cc4762896b8b9504a5acbac",
+      "status": "COMPLETE",
+      "suite": "stress"
+    },
+    {
+      "elapsed_seconds": 1149.0537526197731,
+      "expected_rows": 42400,
+      "raw_rows": 42400,
+      "raw_sha256": "2a11f05ba6ef2dc24b5b52375bccc327dde8b90a50a7b7e25c2ae0e9d8c62c61",
+      "status": "COMPLETE",
+      "suite": "generalization"
+    }
+  ],
+  "status": "ALL_PRESCRIBED_RUNS_COMPLETE"
+}

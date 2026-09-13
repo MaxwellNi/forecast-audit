@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "source_sha256": "5b351e0672a1027379ac33d71fe6e4d4fe4da402aaf936b29b20c6a030bdc10f",
+  "elapsed_seconds": 7.143531229346991,
+  "numpy_version": "1.26.4",
+  "family_summary_cells": 216,
+  "family_records": 216000,
+  "all_guarded_count": 0,
+  "minimum_mc_p": 0.0001999600079984003,
+  "first_BY_threshold_10": 0.0017070857607370277,
+  "first_BY_threshold_11": 0.0015051785308979708
+}

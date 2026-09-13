@@ -1,0 +1,34 @@
+{
+  "seed": 914273,
+  "repetitions": 500,
+  "entities": [
+    25,
+    100,
+    400
+  ],
+  "times": [
+    20,
+    40
+  ],
+  "lookbacks": [
+    1,
+    5
+  ],
+  "injected_association": [
+    0.0,
+    0.1,
+    0.3
+  ],
+  "past_loading": 0.2,
+  "folds": 5,
+  "evaluation": "Same three middle folds and equal entity weights for both methods.",
+  "data": "Independent entity trajectories; independent standard normal outcome innovations, forecast noise, and two entity intercepts. Five presample innovations supply the lookbacks.",
+  "null": "Injected association zero; forecast uses only past outcomes and independent forecast noise.",
+  "positive_controls": "Current outcome innovation is added to the score. These are injected associations, not prospective forecasts.",
+  "gapped_comparator": "Null cells only. Both nuisance means use complementary blocks after excluding lookback-many rows before and after the evaluation fold. This is a simple gapped mean comparator, not a complete implementation of a prior estimator.",
+  "inference": "One-sided normal threshold 1.6448536269514722; pointwise 95% Wilson intervals. Classical independent-entity studentization, not a ranked-panel or HAC guarantee.",
+  "coupling": "Common random numbers across entity counts, trajectory lengths, lookbacks, methods, and injected associations.",
+  "elapsed_seconds": 10.051608324050903,
+  "numpy_version": "1.26.4",
+  "generator_sha256": "dfaa4ea923f4432b5a90f903b67d550f8d7b6db0ff6bee7448ac0751fc3797f1"
+}

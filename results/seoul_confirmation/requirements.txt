@@ -1,0 +1,8 @@
+# Recorded producer: Python 3.9.21. Python itself is not pinned by pip.
+numpy==1.26.4
+pandas==2.3.3
+scipy==1.13.1
+scikit-learn==1.6.1
+# Required by the producer, but not version-recorded in the original protocol.
+# Version 3.6.0 is used for current package verification.
+threadpoolctl==3.6.0

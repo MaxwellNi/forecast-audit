@@ -1,0 +1,190 @@
+{
+  "scope": "After-exposure portable adaptation of an originally fixed local study. Hash mapping records transformations; it is not a newly backdated seal.",
+  "original_protocol_fixed_utc": "2026-09-12T17:02:15.173633+00:00",
+  "source_download_completed_utc": "2026-09-12T17:02:29.287245+00:00",
+  "original_local_seal_sha256": "e9f0d2cd336aaacd3f5492134e2ee9c813d121f837ed6ae82fc6de325a52774e",
+  "corrected_execution_seal_sha256": "906e8909c324ce3dbfa22c546481b40d69ff8df86ddcdafdf0ef24d3f42601a8",
+  "source_archives": {
+    "appliances": {
+      "bytes": 11979507,
+      "sha256": "2fccf354445d886e7917620b0195db1f3e3e34d5a067a93b844694a4c561255a",
+      "url": "https://archive.ics.uci.edu/static/public/374/appliances+energy+prediction.zip"
+    },
+    "metro": {
+      "bytes": 405547,
+      "sha256": "b99aeabcbd6cc86f642da3a79d90883425798f58abd3b3302da2fa19dda73768",
+      "url": "https://archive.ics.uci.edu/static/public/492/metro+interstate+traffic+volume.zip"
+    }
+  },
+  "mechanical_correction": "Category-centered midrank residuals now use exact int64 numerators. The earlier floating residuals induced six category-copy rejections in the two known-forecast methods. The correction removes those six rejections; all 32 selected rules and four dependent confirmation bounds remain unchanged. It used the same forecasts, protocol and draws after outcomes were already exposed.",
+  "forecast_serialization": "Original model pickles are deliberately not distributed here. Reproduction fits the fixed models under the installed scikit-learn version and stores new models in the output directory. Saved numeric archives are independently verifiable without loading a pickle.",
+  "source_execution_versions": {
+    "python": "3.9",
+    "scikit_learn": "1.6.1"
+  },
+  "tested_portable_versions": {
+    "python": "3.12.11",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.11.4",
+    "scikit_learn": "1.7.2"
+  },
+  "components": [
+    {
+      "component": "gates.py",
+      "source_sha256": "5558e75bb7a3be0fdbfdfde7a82a7b7f96cbd87358a1f3006328709c9ca3a7f2",
+      "export_sha256": "bb6c00aa83d8964d6b0272ee831d1401a020d79d79e51f96cbca9ee6ef5a8f9e",
+      "adaptation": "Remove internal version label from docstring; numerical code unchanged"
+    },
+    {
+      "component": "helpers/category_reference_certificate.py",
+      "source_sha256": "cba724a995d2d18405a19a6d82dd91c4eb365d34462fb5cd4a3707a4dc7fa84b",
+      "export_sha256": "cba724a995d2d18405a19a6d82dd91c4eb365d34462fb5cd4a3707a4dc7fa84b",
+      "adaptation": "unchanged bytes"
+    },
+    {
+      "component": "helpers/classical_reference_comparators.py",
+      "source_sha256": "7fd91041647e08158ad235f1c23722d8ca8593cdd8e710008111deb4777dbfef",
+      "export_sha256": "7fd91041647e08158ad235f1c23722d8ca8593cdd8e710008111deb4777dbfef",
+      "adaptation": "unchanged bytes"
+    },
+    {
+      "component": "helpers/peer_rank_products.py",
+      "source_sha256": "e614c9d29bb4bbe5e35df073c664c3224c18eaa36eda012e342658246c9a893d",
+      "export_sha256": "e614c9d29bb4bbe5e35df073c664c3224c18eaa36eda012e342658246c9a893d",
+      "adaptation": "unchanged bytes"
+    },
+    {
+      "component": "helpers/reference_certificate_efficiency.py",
+      "source_sha256": "62a494b4bd5b4da35e64935f4f5563d59d9957559e0e3d98d47b554850461359",
+      "export_sha256": "62a494b4bd5b4da35e64935f4f5563d59d9957559e0e3d98d47b554850461359",
+      "adaptation": "unchanged bytes"
+    },
+    {
+      "component": "selection_certificates.csv",
+      "source_sha256": "2afc8df65b89a6054d8f886e71ef683af5b79692162848f94b7022c7c0c0f348",
+      "export_sha256": "2afc8df65b89a6054d8f886e71ef683af5b79692162848f94b7022c7c0c0f348",
+      "adaptation": "unchanged bytes"
+    },
+    {
+      "component": "frozen_selections.csv",
+      "source_sha256": "eb7859cc5510d352a6a383e432457276edd428b9505e3483dcdb9e7469e0da11",
+      "export_sha256": "eb7859cc5510d352a6a383e432457276edd428b9505e3483dcdb9e7469e0da11",
+      "adaptation": "unchanged bytes"
+    },
+    {
+      "component": "confirmation_results.csv",
+      "source_sha256": "d387b66fd88ae060fc4e74634cdda5d16d6d3d20f9abb3220ff060246854d73c",
+      "export_sha256": "d387b66fd88ae060fc4e74634cdda5d16d6d3d20f9abb3220ff060246854d73c",
+      "adaptation": "unchanged bytes"
+    },
+    {
+      "component": "confirmation_weeks.csv",
+      "source_sha256": "b83a600d1b7f0dd79c49938be0a3bd387e7d1fde72998ad945eae2964b406d61",
+      "export_sha256": "b83a600d1b7f0dd79c49938be0a3bd387e7d1fde72998ad945eae2964b406d61",
+      "adaptation": "unchanged bytes"
+    },
+    {
+      "component": "confirmation_all_candidates.csv",
+      "source_sha256": "0e9df553c82cb1778d06a003472294b0ec46f62c8e4783475bb2ea60821f2c42",
+      "export_sha256": "0e9df553c82cb1778d06a003472294b0ec46f62c8e4783475bb2ea60821f2c42",
+      "adaptation": "unchanged bytes"
+    },
+    {
+      "component": "confirmation_dependent_bounds.csv",
+      "source_sha256": "14d60f0ee0a0762d4f6ac0d888a30fb86dec09bb907162dfeb0051e3f142a45a",
+      "export_sha256": "14d60f0ee0a0762d4f6ac0d888a30fb86dec09bb907162dfeb0051e3f142a45a",
+      "adaptation": "unchanged bytes"
+    },
+    {
+      "component": "appliances/forecast_archive.npz",
+      "source_sha256": "ba16db40e3eeb5121e323c361acf0d69494658809384053ea9ca2d6b891b46bc",
+      "export_sha256": "ba16db40e3eeb5121e323c361acf0d69494658809384053ea9ca2d6b891b46bc",
+      "adaptation": "unchanged bytes"
+    },
+    {
+      "component": "appliances/frozen_blends.csv",
+      "source_sha256": "7b8501751c5fc58c4cb0996ae52e7459d69ac56e1630446074562a92e7dfde25",
+      "export_sha256": "7b8501751c5fc58c4cb0996ae52e7459d69ac56e1630446074562a92e7dfde25",
+      "adaptation": "unchanged bytes"
+    },
+    {
+      "component": "appliances/sampling_indices.npz",
+      "source_sha256": "8ca68fa1fa7d4570e4e1a65f64f9e0b190682c8542892dc1ab439a8cd62974ee",
+      "export_sha256": "8ca68fa1fa7d4570e4e1a65f64f9e0b190682c8542892dc1ab439a8cd62974ee",
+      "adaptation": "unchanged bytes"
+    },
+    {
+      "component": "data/appliances.zip",
+      "source_sha256": "2fccf354445d886e7917620b0195db1f3e3e34d5a067a93b844694a4c561255a",
+      "export_sha256": "2fccf354445d886e7917620b0195db1f3e3e34d5a067a93b844694a4c561255a",
+      "adaptation": "unchanged bytes"
+    },
+    {
+      "component": "metro/forecast_archive.npz",
+      "source_sha256": "e1029d00ddf3f94000b845760a064aa2c3cab1bdf04a81f9b7a0b6eb37063b1d",
+      "export_sha256": "e1029d00ddf3f94000b845760a064aa2c3cab1bdf04a81f9b7a0b6eb37063b1d",
+      "adaptation": "unchanged bytes"
+    },
+    {
+      "component": "metro/frozen_blends.csv",
+      "source_sha256": "c464826b0b81af3ab56d0d16a61497d9478239ac693a87b0ec08824865d85593",
+      "export_sha256": "c464826b0b81af3ab56d0d16a61497d9478239ac693a87b0ec08824865d85593",
+      "adaptation": "unchanged bytes"
+    },
+    {
+      "component": "metro/sampling_indices.npz",
+      "source_sha256": "9b34209acbf3e17afba99934710f137cb92a796047d2dd8264210ea8e2fbea0b",
+      "export_sha256": "9b34209acbf3e17afba99934710f137cb92a796047d2dd8264210ea8e2fbea0b",
+      "adaptation": "unchanged bytes"
+    },
+    {
+      "component": "data/metro.zip",
+      "source_sha256": "b99aeabcbd6cc86f642da3a79d90883425798f58abd3b3302da2fa19dda73768",
+      "export_sha256": "b99aeabcbd6cc86f642da3a79d90883425798f58abd3b3302da2fa19dda73768",
+      "adaptation": "unchanged bytes"
+    },
+    {
+      "component": "protocol.json",
+      "source_sha256": "40e77091b81ba706df24b9b3fdda6f3718a15b815a48841a1e59d3406c309b3a",
+      "export_sha256": "168008f4d18de3c6fead433f5c0d1ffb80bd469cabc7921268ad75a082354745",
+      "adaptation": "Public wording and path-independent status; all scientific numerical choices preserved"
+    },
+    {
+      "component": "experiment.py",
+      "source_sha256": "87f9276dd3afb38e73c4272c0f9a888067016cd22c87ee042c4b6cd43debf433",
+      "export_sha256": "bf6dd178d8b644176d2943458644bd44f959e7c364c5ca6aeb0d5df4c971a682",
+      "adaptation": "Required external output directory; export integrity manifest replaces historical execution seal; fetch delegated to reproduce.py; forecasting and inference arithmetic unchanged"
+    },
+    {
+      "component": "independent_math.py",
+      "source_sha256": "d1c2b0d6885a214c465824b9ca11ee12a7d961b5c865807e602f0a735d507f49",
+      "export_sha256": "08167d207fc97f048624671f216e057e1bab634dc2db4f6b7d86ce733380baff",
+      "adaptation": "Extract only independently implemented mathematical functions; remove unrelated historical study driver"
+    },
+    {
+      "component": "independent_betting.py",
+      "source_sha256": "9f39d0d8b01b21aa05b45e676ce9b6400443c9f1a3231d0c2cfd0be60a1cac85",
+      "export_sha256": "7ea8d707887b35ac89ae5107c5bf802303e6aa4919ced1ad18a7b6aa66d5d1f6",
+      "adaptation": "Extract independent fixed mixture arithmetic; use local independent math module"
+    },
+    {
+      "component": "verify.py",
+      "source_sha256": "af36c3bd961154ea74794c09056e7fc820c9bc6a69b4bcac0954bfe215e32c45",
+      "export_sha256": "5d6ecedfcf211112962f05297c0ff8613572dbb044943a80d34ce0a26209eb3f",
+      "adaptation": "Portable --source/--output and local independent helpers; same full primitive/source/selection/confirmation reconstruction; original defective results excluded"
+    },
+    {
+      "component": "preparation_summary.json",
+      "source_sha256": "895be9d0c097b86694f9691cd60b19e5dbb46beecce96d7c67a2e037e1d7864a",
+      "export_sha256": "f00a9c2dc18ea9a2d9e3723548c3bbf3f6ae7a054e96a1dc726565bbb4489c89",
+      "adaptation": "Retain aggregate preparation metadata; omit absent historical pickle digest and label scope"
+    },
+    {
+      "component": "test_protocol.py",
+      "source_sha256": "adb1a2d0dfbc67c7080f9b253a6b5103f635a8da303970302220831b6edb13a9",
+      "export_sha256": "05ff618cf68a5d8eea047ed889e9a5dc8632db7991fe6cc46b7ea995c1a7c27e",
+      "adaptation": "Regression checks retained; docstring records present purpose without claiming a new prefetch check"
+    }
+  ]
+}

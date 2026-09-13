@@ -1,0 +1,52 @@
+{
+  "domain": "ratings",
+  "auditor_sha256": "92489cf8cdae0650cd6493112d28fe13b34cfb356cae02c83a387d39f9561ff3",
+  "prediction_input_hashes": [
+    {
+      "name": "model_01.parquet",
+      "sha256": "bd464a78d83e700614e7de5b8766858603fe0357c6185b052114bbe744c4e536"
+    },
+    {
+      "name": "model_02.parquet",
+      "sha256": "0a57ee01c1d8b4f2edabc17308c3ef7ae1abc9d6e2aeb3564db21f121d895f7c"
+    },
+    {
+      "name": "model_03.parquet",
+      "sha256": "78e0de0d58e0b79324119a79768bc6752eeffc20e03104f7d8ec6b6573696500"
+    },
+    {
+      "name": "model_04.parquet",
+      "sha256": "917642da5a43857e4b58e4dc67ebc26fb74a6d0149d5a593fdd2c09c2d4489fc"
+    },
+    {
+      "name": "model_05.parquet",
+      "sha256": "cbd01b312b6ee7a9e622a76ecc0c4c5eb6adaf5db28204995a33caf0f611882c"
+    },
+    {
+      "name": "model_06.parquet",
+      "sha256": "0ea7df541f0ea65f2508f2f28264559000fe7ee0d2d31fb36099b7043d92f1aa"
+    },
+    {
+      "name": "model_07.parquet",
+      "sha256": "7d02bdbb3eaed1a71efe90fef45096b773d4930df33c1cd87d780beeecbe4714"
+    },
+    {
+      "name": "model_08.parquet",
+      "sha256": "df88bb944322d0dc686bc4d5ef83323f3c108603d081422bd6dd296bfbc99c2c"
+    },
+    {
+      "name": "model_09.parquet",
+      "sha256": "f667d5fa408d1dc6c79fdb533985de9fd186c28b70f55a7559a5a5dd354306a2"
+    },
+    {
+      "name": "model_10.parquet",
+      "sha256": "54e14bf6ca591bd0a01eb73f82cc599186f71f982b151c498b9f68f973324f54"
+    }
+  ],
+  "rows_per_model": 12088,
+  "models": 10,
+  "elapsed_seconds": 29.123359456658363,
+  "beta1_nominal": 6,
+  "beta1_BY": 6,
+  "beta1_undefined": 2
+}

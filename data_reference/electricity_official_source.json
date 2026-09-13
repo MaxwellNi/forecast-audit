@@ -1,0 +1,11 @@
+{
+  "url": "https://archive.ics.uci.edu/static/public/321/electricityloaddiagrams20112014.zip",
+  "checked_utc": "2026-09-05T18:15:38.577368+00:00",
+  "purpose": "Stream official archive for SHA256 comparison only; do not replace local raw data.",
+  "headers": {},
+  "status": "download_stream_hashed",
+  "bytes": 261335609,
+  "sha256": "f6c4d0e0df12ecdb9ea008dd6eef3518adb52c559d04a9bac2e1b81dcfc8d4e1",
+  "matches_local_frozen_raw": true,
+  "elapsed_seconds": 14.15127158164978
+}

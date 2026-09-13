@@ -1,0 +1,9 @@
+setting,design_cells,maximum_zero_signal_rejection,minimum_positive_signal_rejection,legacy_threshold_failed_cells,stronger_prose_threshold_failed_cells
+ours,20,0.14666666666666667,0.9533333333333334,0,0
+GCM coarse,20,1.0,0.9933333333333333,20,20
+GCM fine,20,1.0,0.9733333333333334,16,19
+linear,20,1.0,1.0,20,20
+permutation,20,1.0,0.9933333333333333,20,20
+weighted GCM,20,0.92,0.5066666666666667,15,20
+projected CM,20,1.0,0.52,18,20
+local perm.,20,0.6333333333333333,0.8466666666666667,10,15

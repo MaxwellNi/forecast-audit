@@ -1,0 +1,135 @@
+{
+  "scope": "Portable aggregate learning-bias study; path adaptations are recorded separately from the original source hashes.",
+  "files": [
+    {
+      "path": "PROVENANCE.json",
+      "sha256": "36188af1998c4b42dd28860253f58fa1e323ab2e9a778c1a08c654e7f6875af4",
+      "bytes": 5932
+    },
+    {
+      "path": "README.md",
+      "sha256": "8fc06ad751f19f8cb4c858ce01965bce543e07b9e17e6d421382e8467a44f83e",
+      "bytes": 5497
+    },
+    {
+      "path": "THEORY.md",
+      "sha256": "f6b86aed8a547feeb8f70abff10f9ce910da70a690a41acf1e1a39185f2bb001",
+      "bytes": 7098
+    },
+    {
+      "path": "aggregate_bias_bound.py",
+      "sha256": "84a246b716f5bea9a0e6a06e1e7f541d300ac49f47da304ee6ed6d3828d053da",
+      "bytes": 3881
+    },
+    {
+      "path": "aggregate_validation_points.csv",
+      "sha256": "4b5c75b0fe7a3ccbffb13e48f8a8e892eecfe6f8daf559e518961a558076049c",
+      "bytes": 7860
+    },
+    {
+      "path": "archive/all_candidates.csv",
+      "sha256": "64dd8361ec1054f24c4f848b42977d5c57e5e2c90ba17d6499ae86b368b03e3d",
+      "bytes": 35901
+    },
+    {
+      "path": "archive/protocol.json",
+      "sha256": "c4f6cafe8eab11adbcaa8fa0d41acaee7a9ed46c0f179fb6956afdd10ce195e2",
+      "bytes": 1211
+    },
+    {
+      "path": "diagnose.py",
+      "sha256": "6343bf9b3fc5a43813e2c1a8798440ca502fd7b32db13515eb93d1ec3851436e",
+      "bytes": 5535
+    },
+    {
+      "path": "factorial_detection_points.csv",
+      "sha256": "89d3b871fb70824ffef72058cfed79d4c4b088a9f6fe778be0357b772d141b81",
+      "bytes": 2526
+    },
+    {
+      "path": "fig_aggregate_validation.json",
+      "sha256": "4bbd7f8395c2f4ee7b73542cfc4401914f3d0f8e5d2de00cb70475749238fe80",
+      "bytes": 2288
+    },
+    {
+      "path": "fig_aggregate_validation.pdf",
+      "sha256": "052e0caf81337f5bfd8e5b71ae6e7407f5076335e65e0d36e1b023c794a08547",
+      "bytes": 20405
+    },
+    {
+      "path": "fig_aggregate_validation.png",
+      "sha256": "4aab8ada7a1457fc985f2f383c61c621a810fa573163e76a2c2f7fb89a06534b",
+      "bytes": 149270
+    },
+    {
+      "path": "fig_aggregate_validation.svg",
+      "sha256": "7360c14f155634c917f0401fd27baa705246f20c3783701b93ba870cfe97383a",
+      "bytes": 30172
+    },
+    {
+      "path": "make_figure.py",
+      "sha256": "d570f93d11fe003246088eaee627b5b738b5d27bee768609260242dee2648f77",
+      "bytes": 9585
+    },
+    {
+      "path": "reproduce.py",
+      "sha256": "a455a15f8a7ba27178940d84ef8dff067cebc6e5d8ef6ff391ad28ab481a5779",
+      "bytes": 4113
+    },
+    {
+      "path": "simulate.py",
+      "sha256": "aa0e8f3e88693e6930764fef4c321331aa9b813b76731b138341fc7039762770",
+      "bytes": 6522
+    },
+    {
+      "path": "simulation/protocol.json",
+      "sha256": "589f9d9003440782c34b2275860b732c551a59fdcfd766ae271d9e2b79a1abcf",
+      "bytes": 1077
+    },
+    {
+      "path": "simulation/replications.csv.gz",
+      "sha256": "7f2b09a591a4a7a88e9ccc5f015ca31779f97592a4e934e3160cb9608eed0c79",
+      "bytes": 8679492
+    },
+    {
+      "path": "simulation/summary.csv",
+      "sha256": "360948cb8a7c7c8fc8e3ee1d54ad7679898fbaf0bfc4267b4d5120a0acc24b18",
+      "bytes": 13186
+    },
+    {
+      "path": "verification/second_seed_raw_rows.csv",
+      "sha256": "a3ddde2d5a8bc5a0b26394448acb7a754f64d16e1f96e2147445deca7dfc8200",
+      "bytes": 432158
+    },
+    {
+      "path": "verification/second_seed_summary.csv",
+      "sha256": "f5ed29b4f7e4fa82feca4a4133235dd28e8f4d9d8e5396bd84989807a0960f20",
+      "bytes": 3286
+    },
+    {
+      "path": "verification/simulation_audit.json",
+      "sha256": "d44eb59dcadf381d029fe7eb472a6d90742335e57d2ebe4384263f624d7f74cd",
+      "bytes": 873
+    },
+    {
+      "path": "verification/simulation_replay_note.json",
+      "sha256": "556951fdc85e78a54e6c18c7acb91bbd979e7a82430fb361e2f37f4327bc44b4",
+      "bytes": 516
+    },
+    {
+      "path": "verify_archive.py",
+      "sha256": "0c0837384843d209029a0cb5bf19f82dac4febfa646da304fedfd898c3561471",
+      "bytes": 11853
+    },
+    {
+      "path": "verify_simulation.py",
+      "sha256": "266f68e79998e1ddae7e320ea72689c71ced59fa700944ce0da86ddb8fbc397f",
+      "bytes": 3287
+    },
+    {
+      "path": "verify_simulation_primitives.py",
+      "sha256": "09cb3035903f6ad84f8fe8aa6d11de352cd65233e8b00c925707d98cf4d2b85f",
+      "bytes": 9642
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "scope": "Original simulation output bytes and separately recorded hardened replay provenance. Portable public code adds path adaptation and family-budget support; it is not claimed to be byte-identical to either historical source file.",
+  "records": 500000,
+  "cells": 500,
+  "outputs": {
+    "replications.csv.gz": {
+      "sha256": "c3a30da84752fd0fd4fab9a62f8bab707a342e9f42943a5aa75f85f4155b6af3",
+      "original_equals_hardened_replay": true,
+      "bytes": 18935101
+    },
+    "summary.csv": {
+      "sha256": "38ec66f213ec36b2ad4cd6830500c2b8576ceb902af18cdc3643d8c845439a02",
+      "original_equals_hardened_replay": true,
+      "bytes": 131333
+    }
+  },
+  "original_protocol": "protocol_original.json",
+  "hardened_replay_protocol": "protocol_hardened_replay.json",
+  "historical_omitted_source": "The original permissive independent-triple helper is identified only by its original protocol hash and is not distributed. The hardened helper requires the supplied mean to equal the mean of its own independent triple scores; its full replay reproduced all output bytes."
+}

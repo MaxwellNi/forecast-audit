@@ -1,0 +1,13 @@
+signal,method,exact_mean_raw_score
+0.0,complementary,-0.045052083333333326
+0.0,gapped_complementary,0.06553287981859411
+0.0,directional,0.0
+0.03,complementary,-0.013177083333333332
+0.03,gapped_complementary,0.10005668934240364
+0.03,directional,0.029999999999999992
+0.06,complementary,0.018697916666666654
+0.06,gapped_complementary,0.13458049886621315
+0.06,directional,0.059999999999999984
+0.1,complementary,0.061197916666666644
+0.1,gapped_complementary,0.18061224489795918
+0.1,directional,0.1

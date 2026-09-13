@@ -1,0 +1,3 @@
+# Independent numerical solver comparison
+
+`solver_comparison.csv` records maximum absolute discrepancies across all thirty complete-calendar model aggregates, comparing elimination of entity effects with alternating backfitting. The largest recorded discrepancy is 3.1107239006900045e-10, below the stated bound 3.2e-10. Counts and decisions agree. These are stored numerical verification aggregates; restricted observations and private solvers are not distributed. Reproducing the comparison from raw records requires authorized access to those observations. Agreement of solvers does not establish forecast-training correctness or error-rate calibration.

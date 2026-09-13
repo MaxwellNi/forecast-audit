@@ -1,0 +1,27 @@
+{
+  "replications": 300,
+  "entities": 32,
+  "groups": [
+    25,
+    100,
+    400
+  ],
+  "resampled_seed_base": 202609059830000,
+  "fixed_seed_base": 202609109830000,
+  "resampled_draw_shape": [
+    3,
+    400,
+    128
+  ],
+  "resampled_used_entities": 32,
+  "notes": "The wider resampled draw array preserves the recorded random stream; only the first 32 entities are used. Groups are nested within replication. Both methods share each panel.",
+  "nuisance_means": "known conditional means",
+  "null_threshold": "one-sided normal 0.05",
+  "numpy": "1.26.4",
+  "replay_checks": {
+    "replications_checked": 2700,
+    "cells_checked": 18,
+    "maximum_draw_difference": 0.0
+  },
+  "generator_sha256": "c82d7288bd1f99bb399f4e7e908e20f6f945974e986932ccd1d4c83cb87d2b78"
+}

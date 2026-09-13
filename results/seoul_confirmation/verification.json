@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "chronology": [
+    "2026-09-12T12:01:09.575202+00:00",
+    "2026-09-12T12:01:12.722263+00:00",
+    "2026-09-12T12:01:14.005919+00:00",
+    "2026-09-12T12:01:56.976392+00:00",
+    "2026-09-12T12:01:57.799319+00:00",
+    "2026-09-12T12:01:58.178275+00:00"
+  ],
+  "checks": {
+    "public_receipt_hash_links": true,
+    "sidecar_hash_files": 2,
+    "source_model_and_result_files_preserved": 7,
+    "full_family_BY": 16,
+    "copy_guard_family_members": 5,
+    "fixed_selection_choices": 6,
+    "literal_gain_identities": 16,
+    "risk_metric_rows": 74,
+    "weekly_trace_rows": 888,
+    "paired_gain_and_HAC_rows": 82
+  },
+  "scope": "Public receipt-link and aggregate arithmetic verification. Timestamps refer to the recorded original run; public packaging edits are identified in ORIGINAL_RUN_HASHES.json. No new outcome selection, population nuisance oracle, temporal independence or external preregistration is established."
+}

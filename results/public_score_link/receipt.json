@@ -1,0 +1,15 @@
+{
+  "completed_utc": "2026-09-07T06:46:31.040243+00:00",
+  "elapsed_seconds": 32.84444984421134,
+  "files": {
+    "compute_public_score_link.py": "86254abdfa998ca2b932b925fa72c08614488af79a3e8d2f653dd5eb8c6f043b",
+    "protocol.json": "835c9613b7b630e120dceea6f2bb838035b4d338571ae5864e46efe6954bfca9",
+    "public_all_41_models.csv": "5bd09172debe639fc1e0dcb894c780153f377332614fff8f2685a6114018c9fe",
+    "public_all_cluster_correlations.csv": "670cbf3ebbaef3432b1a095ef6ab5254d737cc04164080817372a25a3f73358e",
+    "public_baseline_copies.csv": "d11db95db47def29fbf868f6c01056c3e724989a98102ed9134d351157bc8e70",
+    "verification.json": "50c7c2a3f2d228f735adf91af878a729d9eaee125db5fe2184a40327d8687e89"
+  },
+  "packaged_protocol_scope": "Current reproduction configuration; not a claim of new experimental execution.",
+  "protocol_sha256": "0d2dde32d04474b340720a9a11718bfdb56e9734a8259c9ea7cc01bb608301a5",
+  "status": "PASS"
+}

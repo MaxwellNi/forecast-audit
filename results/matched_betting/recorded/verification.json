@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "read_only": true,
+  "records": 48000,
+  "original_rows_matched": 28800,
+  "original_row_maximum_discrepancies": {
+    "mean": 1.0061396160665481e-16,
+    "p": 1.0258460747536446e-13,
+    "radius": 1.0061396160665481e-16,
+    "lower_bound": 3.802513859341161e-15,
+    "kernel_sample_variance": 1.0018028073766061e-16,
+    "signed_allowance": 3.802513859341161e-15,
+    "kernel_lower": 3.0531133177191805e-16,
+    "kernel_upper": 6.106226635438361e-16,
+    "exact_bias": 1.7923217163900995e-18,
+    "target": 0.0
+  },
+  "stored_betting_probabilities_checked": 19200,
+  "independent_primitive_replications": [
+    0,
+    1,
+    17,
+    67,
+    123,
+    211,
+    257,
+    299
+  ],
+  "independent_betting_rows_rebuilt": 512,
+  "maximum_rebuilt_log_evalue_error": 1.7053025658242404e-13,
+  "maximum_rebuilt_p_error": 1.6653345369377348e-15,
+  "summary_cells_checked": 640,
+  "maximum_binomial_cdf_interval_error": 5.169475958410885e-15,
+  "scope": "Deterministic audit of exposed-stream comparator extension, not an independent power study"
+}

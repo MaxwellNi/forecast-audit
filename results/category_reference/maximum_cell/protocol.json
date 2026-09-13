@@ -1,0 +1,37 @@
+{
+  "frozen_utc": "2026-09-12T12:02:37.333502+00:00",
+  "seed": 202609121140,
+  "replications": 1000,
+  "delta": 0.0001,
+  "alpha": 0.05,
+  "designs": [
+    "two_balanced",
+    "eight_balanced",
+    "eight_rare"
+  ],
+  "signals": [
+    0,
+    0.25,
+    0.5
+  ],
+  "training_rows": [
+    32,
+    512,
+    8192
+  ],
+  "validation_pairs": [
+    512,
+    8192
+  ],
+  "groups": [
+    100,
+    400
+  ],
+  "peers": 64,
+  "validation": "Disjoint iid focal/reference pairs, independent of training and evaluation; both members counted.",
+  "bound": "Two-sided cell-mean Hoeffding rectangles, worst-cell product, bounded order-three U-statistic concentration.",
+  "target": "Population marginal-midrank residual covariance; all means/variance truths used only as diagnostics.",
+  "scope": "Finite categorical controls and iid resampled peers. No conditional-independence requirement, no variance floor, no estimated null law.",
+  "provenance": "A new computable nuisance envelope and kernel-range specialization of the previously retained finite-reference bound; classical concentration is not claimed as novel.",
+  "source_sha256": "d979a6cc238704031642a78873c4bd4e036e8d5f1fcb5f491ec066cbbc5af3af"
+}

@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "N": 200,
+      "ties": false,
+      "max_abs_diff": 0.0
+    },
+    {
+      "N": 200,
+      "ties": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "N": 37,
+      "ties": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "N": 500,
+      "ties": true,
+      "max_abs_diff": 0.0
+    }
+  ],
+  "worst_max_abs_diff": 0.0,
+  "tolerance": 1e-10,
+  "pass": true
+}

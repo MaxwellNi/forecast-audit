@@ -1,0 +1,9 @@
+{
+  "null_statistic_max_absolute_difference": 0.0,
+  "mean_max_absolute_difference": 0.0,
+  "standard_error_max_absolute_difference": 0.0,
+  "statistic_max_absolute_difference": 0.0,
+  "pvalue_max_absolute_difference": 0.0,
+  "guard_arrays_identical": true,
+  "all_original_BY_decisions_identical": true
+}

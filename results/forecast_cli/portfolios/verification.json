@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-09-07T21:01:52.550405+00:00",
+  "domain": "portfolios",
+  "models": 10,
+  "rows": 272720,
+  "seconds": 8.90017306059599,
+  "all_frozen_labels_match": true,
+  "all_cohort_hashes_match": true,
+  "actual_CSV_parser_exercised": true,
+  "maximum_statistic_absolute_error": 4.551470311753292e-12,
+  "counts": {
+    "NULL": 9,
+    "ABSTAIN": 1
+  },
+  "protocol_sha256": "0cb7630ca7b77747d43a16553db7986f4eac07d2521fd68c704e54c708970ec0",
+  "reference_registry_sha256": "5bd09172debe639fc1e0dcb894c780153f377332614fff8f2685a6114018c9fe",
+  "cli_receipt_sha256": "309ffe811508fc014f41fa3db26d64d15c3692f956561845575ece9a70fdcfc1",
+  "scope": "Replay of known public forecasts and diagnostics, without refitting or claiming new calibration evidence."
+}

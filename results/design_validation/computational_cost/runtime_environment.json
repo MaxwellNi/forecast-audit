@@ -1,0 +1,15 @@
+{
+  "note": "Timings only; synthetic panels; no data read. Not preregistered (a cost measurement).",
+  "threads": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "python": "3.12.11",
+  "numpy": "1.26.4",
+  "pandas": "2.2.3",
+  "platform": "Linux-5.15.0-156-generic-x86_64-with-glibc2.35",
+  "processor": "x86_64",
+  "elapsed_seconds": 245.957370467484,
+  "hardware_limit": "The run recorded processor architecture, not a CPU model or RAM capacity. Timings are descriptive and are not a portable performance guarantee."
+}

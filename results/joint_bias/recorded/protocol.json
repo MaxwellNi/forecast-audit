@@ -1,0 +1,22 @@
+{
+  "started_utc": "2026-09-12T21:37:24.006067+00:00",
+  "classification": "POST-EXPOSURE EXPLORATION; not confirmation; all 32 candidates retained",
+  "construction": "Frozen before new joint-LP outcomes; exact same old rectangles, mass upper caps, fits and delta",
+  "source_freeze_sha256": "86efbc0d5f2d9247dd80f71c2370a522a6284fd7bf9ea391811374f2d76c0ef7",
+  "study_sha256": {
+    "selection_certificates.csv": "2afc8df65b89a6054d8f886e71ef683af5b79692162848f94b7022c7c0c0f348",
+    "appliances/forecast_archive.npz": "ba16db40e3eeb5121e323c361acf0d69494658809384053ea9ca2d6b891b46bc",
+    "appliances/sampling_indices.npz": "8ca68fa1fa7d4570e4e1a65f64f9e0b190682c8542892dc1ab439a8cd62974ee",
+    "metro/forecast_archive.npz": "e1029d00ddf3f94000b845760a064aa2c3cab1bdf04a81f9b7a0b6eb37063b1d",
+    "metro/sampling_indices.npz": "9b34209acbf3e17afba99934710f137cb92a796047d2dd8264210ea8e2fbea0b"
+  },
+  "cells": 32,
+  "delta": 0.00022996057818659666,
+  "training_rows": 4096,
+  "validation_pairs": 8192,
+  "evaluation_rows": 12288,
+  "total_query_calls": 32768,
+  "evaluation": "Recorded frozen full-U mean/radius; independently rebuilt disjoint triples, range and p inversion",
+  "census": "Used only after allowance calculation for target and true-bias diagnostics",
+  "unchanged": "No refits, new draws, category changes, evaluation tuning or confirmation-outcome remapping"
+}

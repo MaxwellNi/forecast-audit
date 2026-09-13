@@ -1,0 +1,112 @@
+{
+  "scope": "Restricted United Kingdom insider-trading case. Only model-level audit statistics are distributed.",
+  "primary": "complete_calendar_primary.csv",
+  "sensitivity_files": [
+    "historical_full_support.csv",
+    "target_only_corrected.csv"
+  ],
+  "n_models": 30,
+  "horizon": "Next calendar month",
+  "n_observations_range": [
+    2613,
+    31045
+  ],
+  "n_month_clusters_values": [
+    72,
+    132
+  ],
+  "n_seed_source_values": [
+    1,
+    4,
+    5
+  ],
+  "preprocessing": "Average all available stored forecast records by firm and month. Recompute average ranks and sample-standardized ranks within each retained month on each model support.",
+  "controls": "Additive firm effects and bins of the previous twelve calendar months return, excluding the origin month.",
+  "eligibility": "Require a finite return in the exact next calendar month and finite returns in all twelve preceding calendar months. Calendar availability only determines these exclusions. All retained recorded outcomes and momentum controls agree with the source-market construction at the stated numerical precision.",
+  "folds": "Five contiguous whole-month blocks; complementary folds fit each nuisance model.",
+  "ladder": [
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "single_resolution_sensitivity": 10,
+  "primary_exponent": 1,
+  "sensitivity_exponent": 2,
+  "tail": "One-sided normal reference for positive residual covariance",
+  "alpha": 0.05,
+  "multiplicity": "Full-family Benjamini-Yekutieli over thirty models, with abstentions at p=1.",
+  "overlap_guard": "Not applied in this case protocol.",
+  "standard_error": "Square root of summed squared centered month totals divided by the number of observations; no degrees-of-freedom adjustment or between-month HAC correction.",
+  "calendar_validation_counts": {
+    "source_bridge_records": 53800,
+    "source_bridge_with_verified_next_calendar_return": 53795,
+    "source_bridge_with_complete_prior_twelve_calendar_returns": 48719,
+    "source_bridge_with_both": 48718,
+    "originally_audited_models_with_missing_next_calendar_target": 3,
+    "missing_next_calendar_targets_in_each_affected_model": 4
+  },
+  "counts_by_variant": {
+    "historical_full_support": {
+      "1": {
+        "nominal_positive": 1,
+        "nominal_null": 29,
+        "abstain": 0,
+        "by_retained": 0
+      },
+      "2": {
+        "nominal_positive": 1,
+        "nominal_null": 29,
+        "abstain": 0,
+        "by_retained": 0
+      }
+    },
+    "target_only_corrected": {
+      "1": {
+        "nominal_positive": 1,
+        "nominal_null": 29,
+        "abstain": 0,
+        "by_retained": 0
+      },
+      "2": {
+        "nominal_positive": 1,
+        "nominal_null": 29,
+        "abstain": 0,
+        "by_retained": 0
+      }
+    },
+    "complete_calendar_primary": {
+      "1": {
+        "nominal_positive": 1,
+        "nominal_null": 29,
+        "abstain": 0,
+        "by_retained": 0
+      },
+      "2": {
+        "nominal_positive": 1,
+        "nominal_null": 29,
+        "abstain": 0,
+        "by_retained": 0
+      }
+    }
+  },
+  "limitations": [
+    "The complete-calendar restriction was defined after inspection of historical outputs and discovery of input completeness defects, and before computation of this corrected result. It is a disclosed data-quality correction, not prospective confirmation.",
+    "Model observation supports and seed counts differ; this is not a paired leaderboard comparison.",
+    "Historical feature preparation forward-filled within firm and used a global panel mean for remaining missing values. The calendar-complete audit validates the retained outcome and momentum control only. It does not establish that all model inputs, pretraining or training procedures used only information available at forecast time.",
+    "Stored target encodings and numeric precision differ across model families; month-common shifts preserve ranks mathematically but finite-precision ties can differ.",
+    "Month clustering does not establish independence between months. The normal reference and BY adjustment require valid input p-values for an error-control guarantee.",
+    "NULL means no retained positive association under the stated protocol; it does not prove absence of information, predictive uselessness, market efficiency or causality.",
+    "The finite-sample bias certificate is not applied because a validated bias allowance is unavailable.",
+    "Raw records, identifiers, dates, forecasts, residuals, per-month totals, model training inputs and private loaders are not distributed."
+  ],
+  "model_identity_correction": {
+    "previous_label": "TimesFM-2.5",
+    "correct_label": "Untrained forecasting network",
+    "reason": "An incompatible model class left all 333 parameter tensors newly initialized. Stored outputs average the available runs among five random seeds.",
+    "separate_rerun": "A correctly loaded 232-tensor TimesFM-2.5 model was evaluated separately; its checkpoint vintage and pretraining cutoff are not established for historical origins."
+  },
+  "target_unit_correction": "Twenty-nine historical forecasters used a target with a percentage-point/decimal risk-free-rate unit error. For fixed stored predictions, a common within-month correction preserves outcome ranks; corrected-target retraining is not claimed.",
+  "correction_note": "../../ERRATA.md"
+}

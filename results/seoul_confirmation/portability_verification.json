@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "python": "3.9.21",
+  "scope": "Fresh execution of the public producer in a separate directory. Every released numerical CSV reproduced byte-for-byte; original results were not overwritten. Computational replay on already exposed data, not an independent confirmation.",
+  "numerical_tables": {
+    "confirmation_metrics.csv": {
+      "identical_bytes": true,
+      "sha256": "4798424e119a16fb882ba7550f1d79207a19e5bce520bb6422025bc4dd97a7a5"
+    },
+    "gain_identity.csv": {
+      "identical_bytes": true,
+      "sha256": "3a0cfefab6c25c03c22596b2373043782a578f7b19f0b076847ad3ebb986fc7c"
+    },
+    "paired_risk_improvements.csv": {
+      "identical_bytes": true,
+      "sha256": "56b09dbd38c7d943abfb03d838369a13e332182623a1ae88379b7bf84a61e3b6"
+    },
+    "selection_all_candidates.csv": {
+      "identical_bytes": true,
+      "sha256": "f30d8ad4c83764780268076054ef03231bb73521c74687aa28ae38a76c160641"
+    },
+    "weekly_trace.csv": {
+      "identical_bytes": true,
+      "sha256": "a435fa02295554a533cafb818c5247464a8644b5298aaf8a3a62039d7b6bce55"
+    }
+  },
+  "source_archive_identical": true,
+  "public_producer_sha256": "4b1c4fd6fc6a573e27c7e38f7cf6141b4373a3ba7f8b3aa3331d91a2af2ced6b",
+  "environment": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.6.1",
+    "threadpoolctl": "3.6.0"
+  }
+}

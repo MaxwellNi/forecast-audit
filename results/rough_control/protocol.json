@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "experiment": "independent_rough_control_regimes",
+  "n": 400,
+  "replications": 300,
+  "alpha": 0.05,
+  "seed_start": 720260907,
+  "regimes": [
+    "kink",
+    "step",
+    "oscillation"
+  ],
+  "alternatives": [
+    "null",
+    "positive_covariance"
+  ],
+  "extra_cell": [
+    "kink",
+    "zero_covariance_dependence"
+  ],
+  "observations": "400 independent rows; identical raw x,y,z for every method; no ranking, subsampling, fixed effects, abstention, or selection",
+  "nuisance_folds": "One balanced two-fold assignment per replication shared by all GCM variants. Bins, knots and response means are fit only on training rows. KCI uses its native full-sample kernel construction and has no nuisance folds.",
+  "gcm_tail": "one-sided positive residual covariance; normal reference; sqrt(sum((s-mean(s))**2))/n",
+  "coarse_q": 8,
+  "fine_q": 32,
+  "extrapolation_q": [
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "extrapolation_beta": 1,
+  "extrapolation_weights": [
+    -0.49609375,
+    0.0195312499999998,
+    0.27734375000000006,
+    0.5351562500000003,
+    0.6640625000000004
+  ],
+  "spline": "8 quantile knots, cubic, linear boundary extrapolation, Ridge(alpha=0.001, fit_intercept=True)",
+  "kci": {
+    "package": "causal-learn==0.1.4.8",
+    "class": "KCI_CInd",
+    "kernels": "Gaussian",
+    "est_width": "empirical",
+    "approx": true,
+    "use_gp": false,
+    "regularization": 0.001
+  },
+  "distance": "Canonical U-centered partial distance covariance and correlation as descriptive coefficients only; its zero null differs from conditional independence.",
+  "dgp": "As the harness, with g(Z)=0.8(|Z|-sqrt(2/pi)) kink; 0.8 sign(Z) step; 0.8 sqrt(2) sin(3Z) oscillation; constants fixed in the frozen preregistration before any run.",
+  "analysis": "Report every cell, counts, Wilson 95% intervals, all p-values/statistics and paired decisions; no rejection threshold or model tuning after results. Timing excludes imports and coefficient-only distance calculation; extrapolation includes all five resolution fits.",
+  "limit": "New i.i.d. diagnostic only; not a rerun or validation of the large dependent panels in the original table; normal/gamma calibration is approximate, never a finite-sample guarantee.",
+  "prereg": "protocols/rough_control_design.md",
+  "prereg_sha256": "3a2c5c8e2137c7cdd6f939e03a06b8604cc26480c6299b9b573cc58caa15965e",
+  "wrapper_sha256": "ee7eb37f89e96aeb4caca4cf64cf63128d0b6bd4fa58e60f48ee69222c79a1b5",
+  "created_utc": "2026-09-06T23:43:24.925874+00:00",
+  "script_sha256": "69caa251e70c780c3626c2211ec1fa2adb3e5c23e17e05a1621c9764f24ac7df",
+  "dependencies": {
+    "numpy": "1.26.4",
+    "scipy": "1.11.4",
+    "scikit-learn": "1.7.2",
+    "causal-learn": "0.1.4.8"
+  },
+  "kci_source_sha256": "374f7bffe16dfc91cd1cc39795e50020081b126ef147950f543ad345a479b2ea",
+  "freeze_status": "Regimes, constants and decision rule frozen in the preregistration; protocol written locally immediately before the single run."
+}

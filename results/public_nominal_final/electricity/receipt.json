@@ -1,0 +1,16 @@
+{
+  "domain": "electricity",
+  "auditor_sha256": "92489cf8cdae0650cd6493112d28fe13b34cfb356cae02c83a387d39f9561ff3",
+  "prediction_input_hashes": [
+    {
+      "name": "new_predictions.csv.gz",
+      "sha256": "3b8dd4072414ff7ba2d310480af4fcbb7da1afe2df1a3bfa371a20c6789c2e28"
+    }
+  ],
+  "rows_per_model": 34992,
+  "models": 11,
+  "elapsed_seconds": 25.79070468991995,
+  "beta1_nominal": 10,
+  "beta1_BY": 10,
+  "beta1_undefined": 0
+}

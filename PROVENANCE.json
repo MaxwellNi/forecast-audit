@@ -1,0 +1,13 @@
+{
+  "decision_labels": "RETAIN, NOT_RETAINED and ABSTAIN are operational diagnostic labels. Historical raw tables retain their documented legacy NULL token.",
+  "hash_scope": "Hashes identify distributed bytes. Historical source hashes in recorded study metadata remain historical provenance; they are not claims that every result was originally run with the present source.",
+  "paper_sha256": "ba4c7b9ab33ffeeedc229248c9897504a33dadf6c1a2547012f3a495c8bbaf63",
+  "private_source_reproducible": false,
+  "ratings_group_labels": "Ordinal labels ordered by provider group; provider user IDs are not distributed.",
+  "release": "icdm2026-v7",
+  "scope": "Research code, recorded aggregates, manuscript and technical companion.",
+  "source_observations_included": true,
+  "source_observations_scope": "Attributed CC BY 4.0 Appliances, Metro and Seoul source ZIPs; their documented derived forecast arrays; the derived 70,080-row electricity archive and sampled indices. Original four model-comparison panels remain aggregate-only. No restricted-source observations, identifiers, predictions, residuals, loaders or weights.",
+  "tabular_evidence_files": 235,
+  "technical_companion_sha256": "c3b11c4b3f613b48e6bbf3563e0c350eecc7fd01282df643b9f6fba37eaaddc7"
+}

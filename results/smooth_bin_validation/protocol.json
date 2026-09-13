@@ -1,0 +1,30 @@
+{
+  "sample_sizes": [
+    2000,
+    8000,
+    32000
+  ],
+  "replications": 300,
+  "seed_start": 2026090500,
+  "alpha": 0.05,
+  "designs": [
+    "linear",
+    "quadratic",
+    "smooth_nonlinear"
+  ],
+  "noise_correlations": [
+    0.0,
+    0.2
+  ],
+  "bin_ladder": "ceil(n**0.2) times (1,2,4)",
+  "nuisance": "twofold histogram means; known uniform bin boundaries",
+  "methods": [
+    "coarse",
+    "finest",
+    "extrapolation_beta1",
+    "extrapolation_beta2"
+  ],
+  "sampling": "independent U uniform(0,1) and bivariate standard normal errors",
+  "claim": "illustration of a separately proved smooth scalar special case; no panel validity claim",
+  "script_sha256": "5dcd6b5111b176ed560fbbbc67576ea6289d7728698b6ef1317c7ff368df30e1"
+}

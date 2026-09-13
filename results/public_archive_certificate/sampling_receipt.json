@@ -1,0 +1,13 @@
+{
+  "archive_census_rows": 70080,
+  "drawn_utc": "2026-09-12T14:29:41.315983+00:00",
+  "evaluation_queries": 12288,
+  "feature_archive_construction_already_accessed_full_archive": true,
+  "query_to_census_ratio": 0.46757990867579907,
+  "sampling_indices_sha256": "d7be7754100646acb0f8446a66f2f24e4f8f26840d231ef8f7254b7ba7451a93",
+  "total_queries": 32768,
+  "training_queries": 4096,
+  "unique_archive_rows_queried": 26140,
+  "unique_to_census_ratio": 0.3730022831050228,
+  "validation_pair_queries": 16384
+}

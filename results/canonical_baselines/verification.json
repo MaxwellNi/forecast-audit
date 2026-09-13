@@ -1,0 +1,16 @@
+{
+  "distance_reference_source_sha256": "ba1762dd04e7b93e1d8b583a1aa8c87139422621fdc40aa58b4dda211347bb62",
+  "distance_reference_version": "0.7",
+  "independent_samples": 2700,
+  "independent_wilson_intervals": "statsmodels proportion_confint",
+  "method_cells": 45,
+  "protocol_sha256": "671cc9b714bb462c6c2471689280ac6f3150e05072cf7dc465a9cd8b8a306ced",
+  "raw_rows": 13500,
+  "raw_rows_sha256": "84a0b13667a789c61eade16588e51733e511dfa2ccbd58b24f138d560b51cd35",
+  "sample_and_fold_identity": true,
+  "spot_replay_max_absolute_error": 0.0,
+  "spot_replayed_samples": 9,
+  "status": "PASS",
+  "summary_sha256": "cac3b8183256d5634003992811de47d3ca1eae2f56dfeda58c628cf7b1ba1870",
+  "verifier_sha256": "1270dbc29da5d2f1670de15c5eaea45b5596f81e89d95de65550c0947a7e4ed3"
+}

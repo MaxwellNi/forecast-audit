@@ -1,0 +1,70 @@
+{
+  "checks": [
+    {
+      "change_se_from_direct_difference": 0.0015572933698010645,
+      "change_se_from_terms": 0.0015572933698010647,
+      "complementary_dense_sparse_max_error": 4.0345460305957204e-10,
+      "covariance_cross_resolution_mapping_verified": true,
+      "full_cohort_sha256_matches_v3": true,
+      "input_sha256_matches_v3": true,
+      "mean_and_se_replay": {
+        "complementary_middle": {
+          "mean_published": 0.0101375232092801,
+          "mean_recomputed": 0.010137523209280191,
+          "se_published": 0.0015807678364679,
+          "se_recomputed": 0.0015807678364679121,
+          "statistic_published": 6.413037370453844,
+          "statistic_recomputed": 6.413037370453844
+        },
+        "directional_middle": {
+          "mean_published": -0.0015812759315845,
+          "mean_recomputed": -0.0015812759315845598,
+          "se_published": 0.0019394405115156,
+          "se_recomputed": 0.0019394405115156213,
+          "statistic_published": -0.8153258231926044,
+          "statistic_recomputed": -0.8153258231926045
+        }
+      },
+      "middle_rows": 68000,
+      "middle_weeks": 17,
+      "model": "Past price and calendar",
+      "no_middle_boundary_fallback_or_unseen_entity": true,
+      "row_identity_max_error": 1.7763568394002505e-15,
+      "source_entity_count": 4000
+    },
+    {
+      "change_se_from_direct_difference": 0.0010447661920047675,
+      "change_se_from_terms": 0.0010447661920047766,
+      "complementary_dense_sparse_max_error": 1.625932721793788e-10,
+      "covariance_cross_resolution_mapping_verified": true,
+      "full_cohort_sha256_matches_v3": true,
+      "input_sha256_matches_v3": true,
+      "mean_and_se_replay": {
+        "complementary_middle": {
+          "mean_published": -0.0198785780462074,
+          "mean_recomputed": -0.01987857804620747,
+          "se_published": 0.0010230692344404,
+          "se_recomputed": 0.0010230692344404477,
+          "statistic_published": -19.43033509074267,
+          "statistic_recomputed": -19.43033509074267
+        },
+        "directional_middle": {
+          "mean_published": 0.0055164499101486,
+          "mean_recomputed": 0.005516449910148685,
+          "se_published": 0.0009035555552402,
+          "se_recomputed": 0.0009035555552402984,
+          "statistic_published": 6.105269209131915,
+          "statistic_recomputed": 6.105269209131915
+        }
+      },
+      "middle_rows": 68000,
+      "middle_weeks": 17,
+      "model": "Croston SBA",
+      "no_middle_boundary_fallback_or_unseen_entity": true,
+      "row_identity_max_error": 1.7763568394002505e-15,
+      "source_entity_count": 4000
+    }
+  ],
+  "interpretation": "Exact empirical accounting and replay, not population feedback identification.",
+  "passed": true
+}

@@ -1,0 +1,23 @@
+{
+  "all_candidates_retained": true,
+  "completed_utc": "2026-09-12T12:01:58.178275+00:00",
+  "confirm_count": 2016,
+  "interpretation": "Historical one-hour-ahead forecasting under immediate lagged-count availability. Raw data publication vintages are not reconstructed. Temporal block uncertainty is approximate. This source is not proof of independent external replication or general audit superiority.",
+  "no_post_confirmation_refit": true,
+  "outputs_sha256": {
+    "confirmation_metrics.csv": "4798424e119a16fb882ba7550f1d79207a19e5bce520bb6422025bc4dd97a7a5",
+    "gain_identity.csv": "3a0cfefab6c25c03c22596b2373043782a578f7b19f0b076847ad3ebb986fc7c",
+    "paired_risk_improvements.csv": "56b09dbd38c7d943abfb03d838369a13e332182623a1ae88379b7bf84a61e3b6",
+    "weekly_trace.csv": "a435fa02295554a533cafb818c5247464a8644b5298aaf8a3a62039d7b6bce55"
+  },
+  "protocol_sha256": "0fc4db53f7b6385916d47b4fc1dafa903e213f89874e87a7ce54b88d58164ee0",
+  "public_packaging": {
+    "change": "Public packaging: internal inventory path labels removed; hash links updated. No fitted model or numerical result changed.",
+    "original_run_hashes": "ORIGINAL_RUN_HASHES.json",
+    "timestamp_scope": "Recorded timestamps describe the original run; revised public bytes were not executed at those times."
+  },
+  "script_sha256": "4b1c4fd6fc6a573e27c7e38f7cf6141b4373a3ba7f8b3aa3331d91a2af2ced6b",
+  "selection_sha256": "87b2f6e7cff6cd992fbd25fb7c11eae4144fe10d3a28a798d8466bb283dbb3e0",
+  "source_sha256": "139e9908f0a3544bb222386855c9ce107e96467306bb8e4ce936aab59e7baac4",
+  "weekly_blocks": 12
+}

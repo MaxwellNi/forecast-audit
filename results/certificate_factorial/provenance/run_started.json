@@ -1,0 +1,7 @@
+{
+  "started_utc": "2026-09-12T21:27:14.359197+00:00",
+  "protocol_sha256": "9762fcfd8f550eb9ac5917179132e9695dea4ce4c08dbb9e0d591c3646b46c5e",
+  "historical_receipt_sha256": "bbc5fd8d5a5aa74b7feb48b84e67cd49502bd38438fb9fb28ed9156adaa6f2a1",
+  "historical_protocol_sha256": "5524550fd1dc1e541d7f499b1081da334e4216f85cd65f93bd847239cf85c6a2",
+  "export_note": "Dates and numerical receipts preserved; protocol pointer translated to exported scientific protocol. Original protocol/receipt hashes separately retained."
+}

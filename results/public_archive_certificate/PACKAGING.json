@@ -1,0 +1,5 @@
+{
+  "change": "Portable relative source/helper paths, receipt hash links and reader-facing report editing; original models, archive, draw indices and numerical results are unchanged.",
+  "original_hashes": "ORIGINAL_RUN_HASHES.json",
+  "timestamp_scope": "Original recorded times describe the original local execution. These repackaged public bytes were not executed at those times."
+}

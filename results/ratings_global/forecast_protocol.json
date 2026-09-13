@@ -1,0 +1,66 @@
+{
+  "domain": "ratings",
+  "source_hashes": {
+    "reproduce_temporal_public.py": "c57431721feca1513c062811581a31bf261101e432fab08cca115ebaf2119a29",
+    "temporal_public_forecasters.py": "24fdfd9c4ef17f7b0c94147f8a54934ddb0a2ed52f2dcfee02eb4a9e540cdf85",
+    "rating_forecasters.py": "9656f6fb38c4b6565887ef23de38b1dbacad1b8ddc641b61273649aece3d1506",
+    "retail_forecasters.py": "53f5eb94273dfcd4762b2679535adbe6e29fc4d1627e687902421d24e7ff565b",
+    "reproduce_public_forecasts.py": "7d410888b093813e33c88159cc56b11ec6932fbd11de1ae8526afbc7613888f8",
+    "audit_panel_predictions.py": "bcf96e51df5fdf3cbff657463b124306bcc08cc950024b63eee5e211cf2f6c65",
+    "cluster_covariance_reference.py": "48911f76a06fb565060394f4a5d30ef242ed80f9ba64405da28641773d30c760"
+  },
+  "inputs": [
+    {
+      "file": "ratings.csv",
+      "bytes": 678260987,
+      "sha256": "9c85525758597dca76e8d98cebb9c13e018c2317b09a0878b6d383179526e385"
+    }
+  ],
+  "recorded_utc": "2026-09-05T18:15:40.559370+00:00",
+  "record_type": "Local prospective analysis specification, not external preregistration",
+  "rating_split": {
+    "cutoff": "2017-01-01",
+    "end_exclusive": "2018-01-01",
+    "min_training_movie_count": 200,
+    "min_training_user_count": 60,
+    "max_training_eligible_users": 6000,
+    "seed": 2026090503,
+    "evaluation_activity_filter": false
+  },
+  "retail": {
+    "test_complete_weeks": 28,
+    "training_eligible_series": 4000,
+    "seed": 2026090504,
+    "minimum_observed_training_price_weeks": 8,
+    "positive_training_sales_required": true,
+    "target_week_price_allowed": false,
+    "current_target_sales_allowed": false,
+    "planned_calendar_covariates": [
+      "month_sin",
+      "month_cos"
+    ]
+  },
+  "model_family_size": 10,
+  "threads": 4,
+  "audit": {
+    "qs": [
+      8,
+      12,
+      16,
+      24,
+      32
+    ],
+    "betas": [
+      1,
+      2
+    ],
+    "primary_beta": 1,
+    "folds": 5,
+    "primary_fold_scheme": "contiguous",
+    "retail_hac_lag": 2,
+    "ratings_cluster_lag": 0,
+    "multiple_testing": "BY separately within complete ten-model family for each specification",
+    "pvalue_status": "normal-reference diagnostic; dependence and nuisance bias not verified"
+  },
+  "model_parameters": "Ten documented algorithms unchanged except causal feature definition and frozen split; no tuning against evaluation outcomes"
+}

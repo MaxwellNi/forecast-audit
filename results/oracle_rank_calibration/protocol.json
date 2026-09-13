@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "study": "retrospective_oracle_rank_calibration",
+  "source_file": "results/canonical_beta2/replications.csv",
+  "source_sha256": "ccae5edac6f4249995e9be224edad6f973d72efd8b444a7c8f5db0a40a33f221",
+  "timing": "Existing full outputs were already available and discussed. This split is fixed before secondary calculation, not before original data generation, and is not a confirmatory preregistration.",
+  "methods": [
+    "extrapolated",
+    "extrapolated_beta2",
+    "gcm_coarse",
+    "gcm_fine",
+    "gcm_spline",
+    "kci_gamma"
+  ],
+  "regimes": [
+    "linear",
+    "smooth",
+    "nonlinear",
+    "heavy_tail"
+  ],
+  "calibration_null_replications": [
+    0,
+    149
+  ],
+  "validation_null_replications": [
+    150,
+    299
+  ],
+  "power_positive_covariance_replications": [
+    0,
+    299
+  ],
+  "excluded_design": "zero_covariance_dependence has different null membership for KCI and covariance tests; not part of the common-null power comparison.",
+  "native_score": "native pvalue, smaller means more evidence; no fitted remapping or threshold tuning",
+  "rank_pvalue": "(1 + count(calibration native p <= evaluation native p))/151",
+  "alpha": 0.05,
+  "integer_rejection_rule": "rank_numerator <= 7",
+  "marginal_null_bound": "7/151 under exchangeable calibration/new-null draws and a fixed native score; ties are conservative; not conditional-on-bank validity.",
+  "source_independence": "Original generator uses seed_start + cell_index*100000 + replication; null calibration, null validation and positive-alternative seeds are disjoint. Verify seed and sample hashes before calculation.",
+  "summaries": "All 48 method/regime/null-or-positive cells; conditional-on-bank Wilson95 intervals. These intervals do not assess the marginal Monte Carlo validity theorem.",
+  "paired_comparisons": "All 15 method pairs in all four positive-covariance regimes, exact two-sided discordance/binomial tests, Holm correction over all60. Conditional-on-calibration-bank comparisons only.",
+  "cost": "150 fully observed oracle null datasets per regime, each with n=400, supplied by the known generating law; not free deployable calibration labels.",
+  "interpretation": "One retrospective independent-bank analysis, not a new forecasting model or confirmation of actual panel assumptions. No universal superiority conclusion, no data-dependent omitted cell, no repeat split.",
+  "output_directory": "rerun_oracle_rank_calibration",
+  "original_protocol_sha256": "271d4a66f84c5f2cbf8d59c6fac5bcdded8877ceaddbeade2fda133ee689baae",
+  "publication_relocation": "Only source/output paths relocated after the analysis; original freeze hash retained."
+}

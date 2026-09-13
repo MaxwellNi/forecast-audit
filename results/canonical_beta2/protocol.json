@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "experiment": "Paired exponent-two extension of the scalar comparison",
+  "created_utc": "2026-09-07T20:11:49.434005+00:00",
+  "freeze_status": "Locally recorded before any new exponent-two outcome; not independently timestamped preregistration. The original exponent-one comparison and separate panel studies were already observed.",
+  "script_sha256": "3f4963f895dda07a0cad38964bbdddc670c693811a84a0a900125b2d3aced0de",
+  "maintained_harness_sha256": "69caa251e70c780c3626c2211ec1fa2adb3e5c23e17e05a1621c9764f24ac7df",
+  "original_files": {
+    "protocol.json": "671cc9b714bb462c6c2471689280ac6f3150e05072cf7dc465a9cd8b8a306ced",
+    "replications.csv": "84a0b13667a789c61eade16588e51733e511dfa2ccbd58b24f138d560b51cd35",
+    "summary.json": "cac3b8183256d5634003992811de47d3ca1eae2f56dfeda58c628cf7b1ba1870"
+  },
+  "dependencies": {
+    "numpy": "1.26.4",
+    "scipy": "1.11.4",
+    "scikit-learn": "1.7.2"
+  },
+  "n": 400,
+  "replications": 300,
+  "alpha": 0.05,
+  "seed_start": 620260905,
+  "cells": [
+    [
+      "linear",
+      "null"
+    ],
+    [
+      "linear",
+      "positive_covariance"
+    ],
+    [
+      "smooth",
+      "null"
+    ],
+    [
+      "smooth",
+      "positive_covariance"
+    ],
+    [
+      "nonlinear",
+      "null"
+    ],
+    [
+      "nonlinear",
+      "positive_covariance"
+    ],
+    [
+      "heavy_tail",
+      "null"
+    ],
+    [
+      "heavy_tail",
+      "positive_covariance"
+    ],
+    [
+      "smooth",
+      "zero_covariance_dependence"
+    ]
+  ],
+  "q_ladder": [
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "beta_added": 2,
+  "weights_added": [
+    -0.20463945033686862,
+    0.15424254552731625,
+    0.27985124407978107,
+    0.36957174304582735,
+    0.4009739176839436
+  ],
+  "beta_original": 1,
+  "weights_original": [
+    -0.49609375,
+    0.0195312499999998,
+    0.27734375000000006,
+    0.5351562500000003,
+    0.6640625000000004
+  ],
+  "added_method": "extrapolated_beta2",
+  "existing_methods": [
+    "gcm_coarse",
+    "gcm_fine",
+    "gcm_spline",
+    "extrapolated",
+    "kci_gamma"
+  ],
+  "pairing": "Reuse all 2700 original seeds and balanced two-fold assignments. Regenerate every raw x,y,z and fold array; require SHA256 equality with every original method row. Use the maintained training-fold-only binned predictions and the original fixed ladder. No ranks, subsampling, fixed effects, model selection or alternative ladder.",
+  "statistic": "For each observation combine the five residual products using the minimum-Euclidean-norm weights satisfying sum(w)=1 and sum(w*q^-2)=0. Use the original one-sided normal covariance test, standard error sqrt(sum((s-mean(s))^2))/n.",
+  "comparison_identity": "Before computing the new statistic for any draw, replay beta-one, coarse-bin and fine-bin statistic/p-value pairs and require original rejection identity, with absolute and relative tolerance 2e-12. All five original comparator rows, including official KCI and spline, are copied without changing any original field. KCI is not run again.",
+  "analysis": "Publish all 2700 new rows, all 13500 original comparator rows, all 54 method cells and Wilson 95% intervals. Report the nine paired beta-one/beta-two rejection discordance tables. Report every null, positive-covariance and zero-covariance-dependence result. No choice of exponent, ladder, sample, threshold or model after these outcomes.",
+  "limits": "This tests a raw scalar Gaussian-control benchmark with estimated quantile bins. The fixed-resolution beta-two smooth-uniform asymptotic calculation is not automatically its finite-sample justification. Normal and gamma reference tests have different targets and approximate calibration. Rejection on the zero-covariance dependent case is detection for KCI but not power for the residual-covariance test. This extension is not a new independent replication and cannot demonstrate panel calibration or a finite confidence certificate.",
+  "failure_policy": "Exclusive output creation, immutable protocol, and persistent started/failed/completed records. On a software failure keep the partial attempt and document an amended protocol before any rerun. No rerun in response to unfavorable scientific outcomes.",
+  "resources": {
+    "processes": 1,
+    "numerical_threads": 1,
+    "estimated_minutes": 3,
+    "estimated_memory_gb": 1,
+    "gpu": false
+  }
+}

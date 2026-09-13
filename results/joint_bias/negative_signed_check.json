@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "classification": "Additional arithmetic check after archive results; no source, method, confidence input or archive result changed",
+  "case": "Negative signed allowance retained without clipping at zero",
+  "true_bias": "-1/64",
+  "separable_upper": -0.0087890625,
+  "joint_upper": -0.0146484375,
+  "certificate": {
+    "bias_upper": -0.0146484375,
+    "separable_upper": -0.0087890625,
+    "status": "certified",
+    "inputs": {
+      "f": [
+        0.625
+      ],
+      "g": [
+        0.375
+      ],
+      "lower_x": [
+        0.46875
+      ],
+      "upper_x": [
+        0.53125
+      ],
+      "lower_y": [
+        0.46875
+      ],
+      "upper_y": [
+        0.53125
+      ],
+      "mass_lower": [
+        0.0
+      ],
+      "mass_upper": [
+        1.0
+      ]
+    },
+    "mean_constraints": true,
+    "audit": {
+      "inequality_multipliers": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "equality_multipliers": [
+        -0.0146484375,
+        0.15625,
+        -0.15625
+      ],
+      "certified_upper_fraction": "-15/1024",
+      "positive_residual_fraction": "0",
+      "max_absolute_residual": 0.0,
+      "chosen_upper_fraction": "-15/1024",
+      "primal_candidate": [
+        1.0,
+        0.5,
+        0.5,
+        0.2509765625
+      ]
+    },
+    "solver_objective": -0.0146484375,
+    "certified_dual_upper": -0.0146484375,
+    "separable_fraction": "-9/1024",
+    "solver_status": 0,
+    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "seed": 202609120730,
+  "replications": 1000,
+  "training_rows": [
+    32,
+    512,
+    8192
+  ],
+  "groups": [
+    25,
+    100,
+    400
+  ],
+  "entities": [
+    16,
+    64
+  ],
+  "target": "Population-midrank residual covariance, exactly zero",
+  "sampling": "Independent resampled peer groups; independent training shared across evaluation groups",
+  "truth": {
+    "conditional_midrank_means": [
+      0.35,
+      0.65
+    ],
+    "Gamma": 0.0225,
+    "sigma_squared": 0.0016
+  },
+  "training": "Empirical leave-one-out midranks, then two category means; no population CDF supplied",
+  "inference": "Normal reference across independent evaluation group scores; alpha .05, no fitted threshold",
+  "error_bounds": "Exact population L2 errors are diagnostic in this known synthetic law, not supplied to the test",
+  "pairing": "All methods and training sizes share each evaluation panel; group/entity counts nested",
+  "source_sha256": "0b4121d2c0f1bc8b141a1295ba6250f210534b79eee0fc55abe5d588484476e3",
+  "numpy": "1.26.4"
+}

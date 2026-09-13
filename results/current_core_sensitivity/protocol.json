@@ -1,0 +1,91 @@
+{
+  "recorded_utc": "2026-09-05T19:37:36.826403+00:00",
+  "status": "Frozen locally before benchmark or production; not an external preregistration",
+  "specification": {
+    "entities": 80,
+    "cluster_counts": [
+      25,
+      50,
+      100
+    ],
+    "replications_per_cell": 300,
+    "independent_primitive_draws": 300,
+    "condition_datasets": 2700,
+    "audit_rows": 9900,
+    "summary_cells": 33,
+    "conditions": [
+      "independent_forecast_null",
+      "high_overlap_conditional_null",
+      "high_overlap_shared_noise_alternative"
+    ],
+    "seed_start": 202609058430000,
+    "pairing": "For replication r use default_rng(seed_start+r). Generate a 100 by 80 primitive panel once; M=25 and M=50 use its first M clusters. All conditions and specifications share primitives. The 2700 condition datasets are dependent within each of 300 independent replication draws.",
+    "primitive_draw_order": "100x80 independent normal baseline, 100x80 normal epsilon_X, 100x80 normal epsilon_Y; 100 independent rng.permutation(80) calls; 100 uniform(-.25,.25) location shifts.",
+    "independent_forecast_null": "B iid N(0,1); X=epsilon_X; Y=a_i+.6*B+.3*sin(B)+epsilon_Y; a_i=linspace(-.6,.6,80). The whole forecast-rank vector is independent of baseline/outcome arrays; its conditional mean given entity and baseline rank is zero.",
+    "high_overlap_baseline": "B_ti=c_pi_t(i)+T_t, c=linspace(-1,1,80), independent uniform permutations pi_t and continuous uniform(-.25,.25) shifts T_t. No entity effects or heterogeneous noise scales in these two regimes.",
+    "high_overlap_conditional_null": "X=B+.1*epsilon_X; Y=B+.1*epsilon_Y, with independent homogeneous iid standard-normal errors.",
+    "high_overlap_rank_null_proof": "Conditional on a focal baseline rank k and any competitor-grid permutation, forecast and outcome ranks depend on disjoint noise arrays and are independent. Their respective conditional rank distributions depend only on the fixed competitor-grid multiset, not its assignment. Mixing over permutations therefore preserves the product law. The common shift cancels from both ranks. Untied standardized ranks have deterministic centering/scale. Thus focal transformed conditional covariance given entity and exact baseline percentile is zero. Coarse binning may leave bias; fitted nuisance error is not assumed zero.",
+    "high_overlap_shared_noise_alternative": "X=B+.1*epsilon_X; Y=B+.1*(.6*epsilon_X+.8*epsilon_Y). Conditional raw residual covariance is .006; this is a prespecified positive control, not a claimed analytic effect size on the rank scale.",
+    "cluster_count_exponent_study": {
+      "M": [
+        25,
+        50,
+        100
+      ],
+      "ladder": "primary",
+      "betas": [
+        0.5,
+        1.0,
+        2.0
+      ]
+    },
+    "ladder_study": {
+      "M": 100,
+      "additional_ladders": [
+        "coarse",
+        "fine"
+      ],
+      "beta": 1.0,
+      "primary_comparator": "M=100,beta=1 row of cluster_count_exponent study"
+    },
+    "ladders": {
+      "coarse": [
+        4,
+        6,
+        8,
+        12,
+        16
+      ],
+      "primary": [
+        8,
+        12,
+        16,
+        24,
+        32
+      ],
+      "fine": [
+        16,
+        24,
+        32,
+        48,
+        64
+      ]
+    },
+    "nuisance_fitting": "Call unchanged current core.panel_residuals once per distinct q, with all five complete contiguous cluster folds; entity plus rank-bin additive nuisance, trained only on the other folds. Reuse those exact residual products for prespecified weights.",
+    "inference": "Unchanged current audit_extrapolated_panel formula: OLS-intercept weights on q^-beta; mean residual product; observation-centered cluster sums; lag zero; normal.sf(mean/SE), including fixed 1e-10 numerical score floor. No finite-M correction or p-value recalibration.",
+    "decision": "One-sided p<=.05; one fixed model in each condition. No overlap filter, multiplicity selection, optional stopping, or parameter/seed changes after benchmark.",
+    "diagnostics": "Report all cells with pointwise 95% Wilson intervals, empirical SD of mean product, average reported SE and their ratio, standardized statistic mean/SD and .025/.05/.5/.95/.975 quantiles, Monte Carlo Student-t interval for the mean product across independent replications, undefined counts, and per-q forecast nuisance R2. Low positive rejection alone is not interpreted as calibration if null statistics are shifted or dispersed. No cell or replication is excluded for overlap or solver results.",
+    "verification": "Before production, generated unit fixtures use seeds outside production range. During production replication zero, compare all 33 specification results to full unchanged core.audit_extrapolated_panel calls. Verify output completeness, every normal tail, decisions, and independent statsmodels Wilson intervals after run.",
+    "benchmark": "After freeze, time one complete paired replication; report only runtime and row/check counts. Production reruns it and counts it once. No statistical output is used to change the design.",
+    "execution": {
+      "processes": 8,
+      "threads_per_process": 1,
+      "start_method": "spawn"
+    },
+    "stopping": "Exactly 300 paired replications. A failure is reported; any correction requires a separately documented freeze instead of overwriting this protocol.",
+    "limitations": "Fixed independent clusters, balanced size80, continuous Gaussian-noise ranks and a deliberately homogeneous shifted-grid high-overlap construction. This cannot establish calibration for arbitrary baselines, hidden heterogeneous cluster states, serial real panels, or all conditional-independence nulls. Wilson intervals quantify Monte Carlo uncertainty only; sensitivities share draws and are not independent experiments."
+  },
+  "script_sha256": "b90bc4dfc1106f6c49753189222b2e1bba8cd2b99e26c20851b264468e6fcaf3",
+  "core_sha256": "92489cf8cdae0650cd6493112d28fe13b34cfb356cae02c83a387d39f9561ff3",
+  "test_sha256": "e0a65fa9f1382679cc42e30124aa2b643480cb0c0344fc56daee7dd0072fcfb9"
+}

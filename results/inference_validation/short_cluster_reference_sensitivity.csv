@@ -1,0 +1,9 @@
+method,condition,replications,historical_normal,cr1_normal,cr1_t24
+beta0.5,high_overlap_conditional_null,300,0,0,0
+beta1.0,high_overlap_conditional_null,300,0,0,0
+beta2.0,high_overlap_conditional_null,300,23,22,20
+beta0.5,independent_forecast_null,300,25,24,24
+beta1.0,independent_forecast_null,300,25,25,23
+beta2.0,independent_forecast_null,300,25,24,21
+spline,high_overlap_conditional_null,300,30,29,27
+spline,independent_forecast_null,300,24,23,21

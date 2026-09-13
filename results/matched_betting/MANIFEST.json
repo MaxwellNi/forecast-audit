@@ -1,0 +1,15 @@
+{
+  "files": {
+    "reproduce.py": "f2439f2c516eb0d0762ebb7003c639eae2f987bb48bef4be15b252042c5beb11",
+    "independent_primitives.py": "14d119646d042667b79e798c3e782b2eb1a8906ba8b2c7a72318d6a88e6f955a",
+    "SOURCE_MAP.json": "de120bb5288986a2ef0eb6130568d38aa6b36446bf642f5ba87f2a2e9ea520d1",
+    "README.md": "b2f8ffd9e799a62d8ce996de4c95216e3be0eb3dadf94af6667e2f92bb7e9e83",
+    "classical_reference_comparators.py": "ea9d8684fdf05aac8496559d7553356b2987033677b16e1b548f5efef5f88960",
+    "verify.py": "ed1dd45ee365690a3fcdf3b705aeb943c47500344d774e98af96c4b5174d1860",
+    "recorded/verification.json": "e39f3b86ef8ed4b18098800e977ecf02f48a444175fced27bfc3ae3d3c3717f9",
+    "recorded/paired_decisions.csv": "11acbcd9b674f71168ac934bb1d4a1115f132f4dce1c16e863fb369b9ab13fa8",
+    "recorded/protocol.json": "038e07f871e10ed5287a38cb40d60714f4e8f423015142d02a3d1e1ac810729b",
+    "recorded/replications.csv.gz": "30b71e3e4c98cc0cf728a6f03bba9f7025c43246a7a9ea673af0d347d646cf22",
+    "recorded/summary.csv": "c0a158df88bb016898325dc7f2cc022ef5f4058ac35874b89bc51e91011e9544"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "status": "PASS",
+  "scope": "Post-run deterministic reference; no simulation parameters, seeds, estimates or decisions changed.",
+  "rank_mean_formula": "m_k=(sum_j Phi((c_k-c_j)/(sigma*sqrt(2)))-n/2)/sqrt(n*(n+1)/12)",
+  "rank_mean_derivation": "Rank_i=1+sum_{j!=i}1{X_i>X_j}; each difference has Gaussian noise variance2sigma^2. The self-term Phi(0)=1/2 yields the displayed formula. Untied rank sample SD is sqrt(n(n+1)/12).",
+  "bin_bias_formula": "mean_k (m_k - mean_{l:bin(l)=bin(k)}m_l)^2",
+  "bin_bias_derivation": "The two ranks are conditionally independent given focal baseline rank, and have the same conditional mean m_k. Population entity effects vanish by random permutation. The within-bin conditional product mean therefore equals variance(m_k | bin); each focal grid index has probability1/n.",
+  "effect_of_extrapolation": "Signed OLS intercept weights can make these positive per-q biases sum to a negative value, even with population bin nuisances. More independent evaluation clusters do not remove a fixed nonzero population approximation bias.",
+  "probability_model": {
+    "entities": 80,
+    "sigma": 0.1,
+    "grid": "linspace(-1,1,80)"
+  },
+  "per_q_population_bin_bias": {
+    "4": 0.05683414811391611,
+    "6": 0.02504612519296707,
+    "8": 0.013853318743213919,
+    "12": 0.006128622495426868,
+    "16": 0.003353304228171032,
+    "24": 0.0015122149256402595,
+    "32": 0.00083831486732849,
+    "48": 0.0003350849962012324,
+    "64": 0.0001678825997594242,
+    "80": 0.0,
+    "160": 0.0
+  },
+  "weighted_population_references": [
+    {
+      "ladder": "coarse",
+      "beta": 1.0,
+      "weights": [
+        -0.49609375000000006,
+        0.01953125000000015,
+        0.27734375000000006,
+        0.5351562500000001,
+        0.6640625000000002
+      ],
+      "population_intercept_bias": -0.01835717794168658
+    },
+    {
+      "ladder": "primary",
+      "beta": 0.5,
+      "weights": [
+        -1.0866017532787897,
+        -0.24282764402221288,
+        0.2601617896624815,
+        0.8568001841074461,
+        1.2124674235310753
+      ],
+      "population_intercept_bias": -0.013356742273492291
+    },
+    {
+      "ladder": "primary",
+      "beta": 1.0,
+      "weights": [
+        -0.49609374999999983,
+        0.01953125000000015,
+        0.2773437499999999,
+        0.5351562499999998,
+        0.6640624999999998
+      ],
+      "population_intercept_bias": -0.004456862482235667
+    },
+    {
+      "ladder": "primary",
+      "beta": 2.0,
+      "weights": [
+        -0.20463945033686862,
+        0.15424254552731625,
+        0.2798512440797811,
+        0.3695717430458274,
+        0.4009739176839436
+      ],
+      "population_intercept_bias": -5.620053611628202e-05
+    },
+    {
+      "ladder": "fine",
+      "beta": 1.0,
+      "weights": [
+        -0.4960937499999999,
+        0.01953125000000022,
+        0.27734375000000006,
+        0.53515625,
+        0.6640625000000001
+      ],
+      "population_intercept_bias": -0.0011107090637911166
+    }
+  ],
+  "independent_quadrature_checks": [
+    {
+      "focal_grid_index": 0,
+      "direct_noise_integral_mean": -1.614409928066743,
+      "closed_formula_mean": -1.614409928066743,
+      "absolute_difference": 0.0,
+      "quadrature_reported_error_before_standardization": 5.58555318962706e-12
+    },
+    {
+      "focal_grid_index": 39,
+      "direct_noise_integral_mean": -0.021516574145579028,
+      "closed_formula_mean": -0.02151657414557964,
+      "absolute_difference": 6.106226635438361e-16,
+      "quadrature_reported_error_before_standardization": 3.806161710130059e-11
+    },
+    {
+      "focal_grid_index": 79,
+      "direct_noise_integral_mean": 1.614409928066743,
+      "closed_formula_mean": 1.614409928066743,
+      "absolute_difference": 0.0,
+      "quadrature_reported_error_before_standardization": 7.03899681081096e-11
+    }
+  ],
+  "isolating_each_grid_rank_gives_zero_bin_bias": true,
+  "numerical_scope": "Analytic model identities evaluated in double precision. Quadrature uses [-12,12]; the omitted Gaussian rank-mean tail is bounded by 2*n*norm.sf(12), far below1e-28.",
+  "not_identical_to_finite_sample_fit": "The production run estimates nuisances in finite training folds. These values describe population bin fits and must not be substituted for a certified finite-sample nuisance-bias bound.",
+  "script_sha256": "1cc082e53952190cea5ab49bf56d306c399fb34da86c33d6c54fb85a059db8ad"
+}

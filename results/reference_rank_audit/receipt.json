@@ -1,0 +1,13 @@
+{
+  "audit_rows": 41400,
+  "cells": 138,
+  "elapsed_seconds": 13.54133528470993,
+  "independent_primitive_repetitions": 300,
+  "output_sha256": {
+    "draws.csv": "26f1f60a94cad5cf7bb797b98b65ecce8b5f6a4e5da9c6469b24048b30c192f7",
+    "fast_comparisons.json": "57c5dfc82f9711774bd3ce9f7cc51b093414da67f0b6893038ad1aac3bda80cb",
+    "summary.csv": "ae550fa48a3324fb5f64148350ab0eef05db44978c073322753892f0691cd2db"
+  },
+  "protocol_sha256": "34d0a9a538776086448bd3de432f8eb85afc96d6bac280ea5a19cab899664c2f",
+  "status": "PASS"
+}

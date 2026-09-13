@@ -1,0 +1,519 @@
+{
+  "status": "PASS",
+  "scope": "Source retraining, all archive arrays, all non-runtime scientific table fields, and independent primitive reconstruction",
+  "dependencies": {
+    "python": "3.12.11",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.11.4",
+    "scikit_learn": "1.7.2"
+  },
+  "numerical_tolerance": {
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  "exact_equality_reported_separately": true,
+  "archive_arrays": {
+    "appliances": {
+      "forecast_archive.npz": {
+        "time": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "y": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "scale": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "train": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "calibration": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "selection": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "confirmation": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "hist_gradient_boosting": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "extra_trees": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "ridge": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "ridge_full": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "persistence": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "seasonal_day": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "seasonal_week": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "independent_noise": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "seasonal_day__category": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "seasonal_day__persistence": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "seasonal_day__seasonal_day": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "seasonal_day__seasonal_week": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "seasonal_day__ridge_full": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "seasonal_day__hist_gradient_boosting": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "seasonal_day__extra_trees": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "seasonal_day__category_copy": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "seasonal_day__independent_noise": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "seasonal_day__breaks": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "ridge__category": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "ridge__persistence": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "ridge__seasonal_day": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "ridge__seasonal_week": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "ridge__ridge_full": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "ridge__hist_gradient_boosting": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "ridge__extra_trees": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "ridge__category_copy": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "ridge__independent_noise": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "ridge__breaks": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "sampling_indices.npz": {
+        "training": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "validation": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "evaluation": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "all_rows": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      }
+    },
+    "metro": {
+      "forecast_archive.npz": {
+        "time": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "y": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "scale": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "train": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "calibration": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "selection": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "confirmation": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "hist_gradient_boosting": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "extra_trees": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "ridge": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "ridge_full": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "persistence": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "seasonal_day": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "seasonal_week": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "independent_noise": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "seasonal_day__category": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "seasonal_day__persistence": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "seasonal_day__seasonal_day": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "seasonal_day__seasonal_week": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "seasonal_day__ridge_full": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "seasonal_day__hist_gradient_boosting": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "seasonal_day__extra_trees": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "seasonal_day__category_copy": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "seasonal_day__independent_noise": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "seasonal_day__breaks": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "ridge__category": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "ridge__persistence": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "ridge__seasonal_day": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "ridge__seasonal_week": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "ridge__ridge_full": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "ridge__hist_gradient_boosting": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "ridge__extra_trees": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "ridge__category_copy": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "ridge__independent_noise": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "ridge__breaks": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "sampling_indices.npz": {
+        "training": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "validation": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "evaluation": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "all_rows": {
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      }
+    }
+  },
+  "tables": {
+    "selection_certificates.csv": {
+      "rows": 160,
+      "all_compared_columns_exact": true,
+      "exact_by_column": {
+        "method": true,
+        "mean": true,
+        "radius": true,
+        "lower": true,
+        "p": true,
+        "bias": true,
+        "variance": true,
+        "width": true,
+        "exact_target": true,
+        "query_calls": true,
+        "distinct_labels": true,
+        "archive_rows": true,
+        "delta": true,
+        "task": true,
+        "baseline": true,
+        "candidate": true,
+        "weight": true,
+        "p_by": true
+      },
+      "max_absolute_errors": {
+        "mean": 0.0,
+        "radius": 0.0,
+        "lower": 0.0,
+        "p": 0.0,
+        "bias": 0.0,
+        "variance": 0.0,
+        "width": 0.0,
+        "exact_target": 0.0,
+        "query_calls": 0.0,
+        "distinct_labels": 0.0,
+        "archive_rows": 0.0,
+        "delta": 0.0,
+        "weight": 0.0,
+        "p_by": 0.0
+      },
+      "byte_equal": false,
+      "runtime_columns_excluded": [
+        "five_gate_seconds"
+      ]
+    },
+    "frozen_selections.csv": {
+      "rows": 32,
+      "all_compared_columns_exact": true,
+      "exact_by_column": {
+        "task": true,
+        "baseline": true,
+        "method": true,
+        "selected": true,
+        "selection_loss": true,
+        "retained": true
+      },
+      "max_absolute_errors": {
+        "selection_loss": 0.0
+      },
+      "byte_equal": true,
+      "runtime_columns_excluded": []
+    },
+    "confirmation_results.csv": {
+      "rows": 32,
+      "all_compared_columns_exact": true,
+      "exact_by_column": {
+        "task": true,
+        "baseline": true,
+        "method": true,
+        "selected": true,
+        "confirmation_rows": true,
+        "clipping_scale": true,
+        "bounded_mse": true,
+        "raw_mse": true,
+        "baseline_bounded_mse": true,
+        "gain_vs_baseline": true,
+        "gain_vs_ungated": true,
+        "gain_vs_convex": true,
+        "raw_mae": true,
+        "bounded_mae": true,
+        "raw_gain_vs_baseline": true,
+        "raw_gain_vs_ungated": true
+      },
+      "max_absolute_errors": {
+        "confirmation_rows": 0.0,
+        "clipping_scale": 0.0,
+        "bounded_mse": 0.0,
+        "raw_mse": 0.0,
+        "baseline_bounded_mse": 0.0,
+        "gain_vs_baseline": 0.0,
+        "gain_vs_ungated": 0.0,
+        "gain_vs_convex": 0.0,
+        "raw_mae": 0.0,
+        "bounded_mae": 0.0,
+        "raw_gain_vs_baseline": 0.0,
+        "raw_gain_vs_ungated": 0.0
+      },
+      "byte_equal": true,
+      "runtime_columns_excluded": []
+    },
+    "confirmation_weeks.csv": {
+      "rows": 944,
+      "all_compared_columns_exact": true,
+      "exact_by_column": {
+        "task": true,
+        "baseline": true,
+        "method": true,
+        "block": true,
+        "rows": true,
+        "first": true,
+        "last": true,
+        "bounded_gain_vs_baseline": true,
+        "bounded_gain_vs_ungated": true,
+        "bounded_gain_vs_convex": true
+      },
+      "max_absolute_errors": {
+        "block": 0.0,
+        "rows": 0.0,
+        "bounded_gain_vs_baseline": 0.0,
+        "bounded_gain_vs_ungated": 0.0,
+        "bounded_gain_vs_convex": 0.0
+      },
+      "byte_equal": true,
+      "runtime_columns_excluded": []
+    },
+    "confirmation_all_candidates.csv": {
+      "rows": 32,
+      "all_compared_columns_exact": true,
+      "exact_by_column": {
+        "task": true,
+        "baseline": true,
+        "candidate": true,
+        "weight": true,
+        "bounded_mse": true,
+        "raw_mse": true
+      },
+      "max_absolute_errors": {
+        "weight": 0.0,
+        "bounded_mse": 0.0,
+        "raw_mse": 0.0
+      },
+      "byte_equal": true,
+      "runtime_columns_excluded": []
+    },
+    "confirmation_dependent_bounds.csv": {
+      "rows": 4,
+      "all_compared_columns_exact": true,
+      "exact_by_column": {
+        "task": true,
+        "baseline": true,
+        "primary": true,
+        "comparison": true,
+        "nominal_hours": true,
+        "observed_hours": true,
+        "availability_weighted_gain": true,
+        "alpha": true,
+        "radius": true,
+        "conditional_average_gain_lower": true,
+        "positive_conditional_gain_certified": true
+      },
+      "max_absolute_errors": {
+        "nominal_hours": 0.0,
+        "observed_hours": 0.0,
+        "availability_weighted_gain": 0.0,
+        "alpha": 0.0,
+        "radius": 0.0,
+        "conditional_average_gain_lower": 0.0
+      },
+      "byte_equal": true,
+      "runtime_columns_excluded": []
+    }
+  },
+  "all_archive_arrays_exact": true,
+  "all_compared_scientific_columns_exact": true,
+  "export_manifest_sha256": "fc16fecb4674cb3f898feaa69d0d80346f1e91b3829f6df1a24863e78641ea5f",
+  "independent_verification": "independent/verification.json",
+  "model_compatibility": "New models fitted in this environment; no historical pickle loaded."
+}

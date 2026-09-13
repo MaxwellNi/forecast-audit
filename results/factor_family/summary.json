@@ -1,0 +1,35 @@
+{
+  "family_size": 212,
+  "full_family_before_screening": true,
+  "maximum_statsmodels_covariance_abs_error": 1.5543122344752192e-15,
+  "statsmodels_by_match": true,
+  "source_hashes": {
+    "predictor_ports_full.parquet": "2464b3f608ba076f0c3d1bc64af80070f967c0d57c57219ded726a08e0a7cc44",
+    "F-F_Research_Data_5_Factors_2x3.csv": "b65691efc6d5a28670b49c80b7e4c544cc160cefc8cec41bb1d617e76e67c493",
+    "F-F_Momentum_Factor.csv": "cd2429809e081485a5a62860de64af090948c26b835b92085dcfbb0e08de8663"
+  },
+  "protocol_sha256": "0a8720ba5e3db6b7418bd563032df39aa9d9491ff87240488bcda080b1f90fc5",
+  "elapsed_seconds": 4.105720281600952,
+  "summary": [
+    {
+      "lag": 6,
+      "family_size": 212,
+      "nominal_p_below_005": 160,
+      "by_rejections": 124
+    },
+    {
+      "lag": 12,
+      "family_size": 212,
+      "nominal_p_below_005": 159,
+      "by_rejections": 122
+    },
+    {
+      "lag": 24,
+      "family_size": 212,
+      "nominal_p_below_005": 156,
+      "by_rejections": 119
+    }
+  ],
+  "full_family_by_checked_against_statsmodels": true,
+  "interpretation": "Corrected implementation diagnostics; normal p-value validity remains conditional on sampling, dependence and nuisance assumptions."
+}

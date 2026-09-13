@@ -1,0 +1,27 @@
+{
+  "classification": "Post-exposure exploratory diagnosis; no new confirmation or external preregistration",
+  "construction_frozen_utc": "2026-09-12T21:36:45.085627+00:00",
+  "first_archive_run_utc": "2026-09-12T21:37:24.006067+00:00",
+  "original_construction_receipt_sha256": "86efbc0d5f2d9247dd80f71c2370a522a6284fd7bf9ea391811374f2d76c0ef7",
+  "original_code_sha256": {
+    "joint_bias.py": "d0492d0b2de98fd0dbca20e8c73d527eda1b24826a1d48aa33973077ba273a9d",
+    "check_joint_bias.py": "fda020f2dea4759d182e912aa17d27d01930d3d7b9ba719bd65c52e19675e73d",
+    "archive_reconstruction.py": "f14134aebb1f336327760bec8f1c9f375e55fd4bca47efb150b1188fef01d0ae",
+    "independent_verification.py": "389b4cf395858c5e0d6bfad141f46467a6cc26aff46432f00e42515dc0eb8541"
+  },
+  "export_prepared_utc": "2026-09-12T21:56:35.643550+00:00",
+  "unchanged_files": "Mathematical module, correctness checks, all 32 stored candidate results, all 32 dual receipts, and all five archive input files are byte-for-byte copies of their frozen originals.",
+  "portable_changes": {
+    "reproduce.py": "Relative input discovery, package manifest checks and output location only; allowance and p-value formulas unchanged.",
+    "verify.py": "Relative input/result discovery, optional output destination, read-only default, package manifest checks and exported hash labels only; independent arithmetic unchanged.",
+    "run.py": "New orchestration for correctness checks, reconstruction, numeric comparison and independent verification."
+  },
+  "archive_input_sha256": {
+    "selection_certificates.csv": "2afc8df65b89a6054d8f886e71ef683af5b79692162848f94b7022c7c0c0f348",
+    "appliances/forecast_archive.npz": "ba16db40e3eeb5121e323c361acf0d69494658809384053ea9ca2d6b891b46bc",
+    "appliances/sampling_indices.npz": "8ca68fa1fa7d4570e4e1a65f64f9e0b190682c8542892dc1ab439a8cd62974ee",
+    "metro/forecast_archive.npz": "e1029d00ddf3f94000b845760a064aa2c3cab1bdf04a81f9b7a0b6eb37063b1d",
+    "metro/sampling_indices.npz": "9b34209acbf3e17afba99934710f137cb92a796047d2dd8264210ea8e2fbea0b"
+  },
+  "scope": "Copied local inputs match the forecast_confirmation export byte-for-byte. No model fitting, source download or confirmation-outcome reconstruction is claimed. Export timing does not renew the earlier scientific protocol."
+}

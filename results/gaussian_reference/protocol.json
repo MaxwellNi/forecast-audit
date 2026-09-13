@@ -1,0 +1,51 @@
+{
+  "created_utc": "2026-09-08T00:10:12.053831+00:00",
+  "status": "Local pre-outcome specification; earlier failed scalar/panel benchmarks were known. Not externally registered.",
+  "sources": {
+    "gaussian_panel_reference.py": "f7f73e18323b10756e6d2ae6e5337b4be08657d950de9a9747acee9e7498d51d",
+    "conditional_gaussian_reference.py": "9d2520fb0d155b0a4dad7dfd824044a3f94d0c37f0d254fa857b971e0aafddbd",
+    "canonical_baselines.py": "69caa251e70c780c3626c2211ec1fa2adb3e5c23e17e05a1621c9764f24ac7df"
+  },
+  "dependencies": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "scikit-learn": "1.6.1"
+  },
+  "seed": 928202609,
+  "replications": 1000,
+  "periods": [
+    12,
+    36
+  ],
+  "units": 6,
+  "serial_correlations": [
+    0.0,
+    0.6
+  ],
+  "within_period_correlation": 0.4,
+  "effects": [
+    0.0,
+    0.15,
+    0.35
+  ],
+  "specifications": [
+    "correct",
+    "omitted_quadratic_mean",
+    "omitted_dependence"
+  ],
+  "design": "Four fixed covariate designs: one per periods/serial-correlation cell. z is Gaussian with deterministic entity offsets; mean basis is six entity indicators plus z and z squared. Two contiguous whole-period nuisance folds. No ranks, ties or data-dependent covariance fitting.",
+  "dgp": "Given fixed Phi and known V=kron(AR1(rho),compound_symmetry(.4)), X=Phi gamma_X+L ex, Y=Phi gamma_Y+delta L ex+L ey. ex,ey and independent pilot ep are iid standard Gaussian vectors. Pilot X0=Phi gamma_X+L ep. Same X, pilot and innovation arrays paired across effects and reference specifications. gamma_X: entity coefficients linspace(-1,1), z=2,z\u00b2=3; gamma_Y: entity coefficients linspace(.5,-.5), z=.3,z\u00b2=.8.",
+  "methods": "Five original residual-product directions (8/32 bins, beta1/beta2 on 8/12/16/24/32, cubic spline); their normal HAC lag2 references and conditional Gaussian t references. Two classical leave-cluster directions, raw X and X minus independent-pilot fitted mean, plus classical GLS score; eight finite-reference methods in total. Every method has access to the same n pilot scores, zero pilot outcome labels and n evaluation outcomes; no claim of a cost advantage.",
+  "null_scope": "Y|X,Z has the stated linear Gaussian mean and known covariance up to scalar ONLY in correct reference cells at delta0. Exact t controls the sharp Gaussian no-additional-mean null, not every zero-covariance distribution. Unknown covariance, missing mean directions, ranked outcomes and outcome-chosen score directions are excluded.",
+  "negative_controls": "omitted_quadratic_mean removes z\u00b2 from the declared mean basis but keeps true V; omitted_dependence uses identity covariance but keeps full Phi. These violate the reference theorem by design. They are reported, not treated as alternative valid certificates.",
+  "learning": "Fit score-mean coefficients from the independent pilot by ordinary least squares on the declared basis. No evaluation outcomes enter the score direction. This tests whether learning improves the raw leave-cluster direction, not whether this classical construction is novel or better than GLS.",
+  "analysis": "Retain all 36 design/effect/reference cells and all 13 methods (468 cells, 468000 rows), every p-value and paired decision. Four fixed designs have 4000 independent primitive innovation draws in total; paired effects create 12000 distinct evaluated panels; three reference specifications reuse each panel. Wilson95 intervals and paired learning-minus-raw differences with descriptive normal MC intervals. Primary learning comparison: delta=.15, correct reference, four fixed designs; one-sided exact discordance binomial tests with Holm correction across all four. Delta=.35 is secondary and all failures remain. All correct-null finite-reference cells receive simultaneous Bonferroni 99% binomial intervals. Empirical consistency criterion: every interval includes .05; this is a diagnostic, not the proof. Record direction cosines, degrees of freedom and GLS conditional noncentral-t power. Do not use ordinary noncentral-t power for off-axis directions.",
+  "failure_policy": "Exclusive output creation; stop and preserve partial files on error. No scientific tuning or rerun based on outcomes.",
+  "resources": {
+    "cpus": 1,
+    "threads": 1,
+    "gpu": false,
+    "estimated_minutes": 5,
+    "memory_gb": 1
+  }
+}

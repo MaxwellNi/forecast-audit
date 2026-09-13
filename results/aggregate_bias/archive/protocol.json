@@ -1,0 +1,20 @@
+{
+  "scope": "Post-exposure development diagnostic on all 32 frozen public forecast candidates; not independent confirmation or preregistration",
+  "created_utc": "2026-09-13T00:23:24.452398+00:00",
+  "source": "../forecast_confirmation",
+  "information": "Exact category masses from all category metadata; neither full forecast ranks nor outcomes used for masses; original fitting/validation/evaluation indices unchanged",
+  "split": "First 4096 validation pairs supply X residual comparisons, last 4096 supply Y; no split selection",
+  "methods": [
+    "original signed rectangle",
+    "known-mass signed rectangle",
+    "known-mass aggregate product",
+    "oracle true bias (diagnostic only)"
+  ],
+  "sampling": [
+    "original complete U variance bound",
+    "original fixed-mixture betting"
+  ],
+  "delta": "Unchanged family_validation_delta(8); every method separately evaluated at same delta; no p-value minimum across methods",
+  "missing_category": "Deterministic maximal residual product for categories absent from either stream",
+  "outputs": "All 32 candidates, all component radii, original and revised p-values and full-family BY. Any post-exposure retained model is development evidence only."
+}

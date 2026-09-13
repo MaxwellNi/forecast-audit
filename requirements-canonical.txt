@@ -1,0 +1,4 @@
+# Install after requirements-artifacts.txt for the canonical comparison and its tests.
+causal-learn==0.1.4.8
+dcor==0.7
+array-api-compat==1.12.0

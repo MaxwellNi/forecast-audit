@@ -1,0 +1,261 @@
+{
+  "seed": 202609120541,
+  "repetitions": 3000,
+  "projection_errors": {
+    "mean_decomposition": 1.0408340855860843e-17,
+    "influence_centering": 9.324138683375338e-18,
+    "symmetrized_projection": 8.326672684688674e-17,
+    "reference_v_mean": 6.938893903907228e-18,
+    "reference_w_mean": 3.469446951953614e-18,
+    "score_vs_ordered_triples": 2.7755575615628914e-17
+  },
+  "counterexample": {
+    "support": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        3,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        3,
+        2,
+        0
+      ]
+    ],
+    "probabilities": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "q": [
+      0.046875,
+      -0.046875,
+      -0.046875,
+      0.046875
+    ],
+    "sv": [
+      0.015625,
+      -0.015625,
+      -0.015625,
+      0.015625
+    ],
+    "sw": [
+      0.015625,
+      -0.015625,
+      -0.015625,
+      0.015625
+    ],
+    "psi": [
+      0.078125,
+      -0.078125,
+      -0.078125,
+      0.078125
+    ],
+    "theta": 0.0,
+    "gamma": 0.0,
+    "tau2": 0.006103515625,
+    "focal_variance": 0.002197265625,
+    "variance_ratio": 2.7777777777777777
+  },
+  "finite_group_moments": [
+    {
+      "N": 3,
+      "configurations": 20,
+      "mean_D": 8.673617379884035e-19,
+      "mean_C": 0.0,
+      "N_var_D": 0.01953125,
+      "limiting_tau2": 0.006103515625
+    },
+    {
+      "N": 4,
+      "configurations": 35,
+      "mean_D": 1.734723475976807e-18,
+      "mean_C": 2.168404344971009e-19,
+      "N_var_D": 0.014648437500000009,
+      "limiting_tau2": 0.006103515625
+    },
+    {
+      "N": 8,
+      "configurations": 165,
+      "mean_D": 7.369186641112413e-20,
+      "mean_C": 3.5151867311053464e-19,
+      "N_var_D": 0.009649367559523819,
+      "limiting_tau2": 0.006103515625
+    },
+    {
+      "N": 16,
+      "configurations": 969,
+      "mean_D": 6.234186919469115e-19,
+      "mean_C": 7.697860395161823e-19,
+      "N_var_D": 0.00774274553571431,
+      "limiting_tau2": 0.006103515625
+    },
+    {
+      "N": 32,
+      "configurations": 6545,
+      "mean_D": -6.505213034913027e-19,
+      "mean_C": 1.0842021724855044e-19,
+      "N_var_D": 0.006893691196236513,
+      "limiting_tau2": 0.006103515625
+    },
+    {
+      "N": 64,
+      "configurations": 47905,
+      "mean_D": -2.3826643546938235e-18,
+      "mean_C": -2.9167677281622306e-18,
+      "N_var_D": 0.006491665466589863,
+      "limiting_tau2": 0.006103515625
+    }
+  ],
+  "simulations": [
+    {
+      "M": 100,
+      "N": 16,
+      "local_c": 0.0,
+      "mixture_weight": 0.0,
+      "theta": 0.0,
+      "tau2": 0.006103515625,
+      "focal_variance": 0.002197265625,
+      "theoretical_mean_finite_law": 0.0,
+      "asymptotic_mean": 0.0,
+      "mean_T": 0.0019942321848272944,
+      "sd_T": 0.993465699814515,
+      "rejection_rate": 0.043333333333333335,
+      "rejection_wilson_95": [
+        0.0366127910180945,
+        0.051221890817703224
+      ],
+      "predicted_rejection": 0.050000000000000044,
+      "wrong_focal_rejection_rate": 0.18933333333333333,
+      "wrong_focal_asymptotic_null_rejection": 0.16184284727232456,
+      "mean_N_vhat": 0.007734400381436245,
+      "max_group_jackknife_difference": 6.776263578034403e-21
+    },
+    {
+      "M": 100,
+      "N": 16,
+      "local_c": 1.5,
+      "mixture_weight": 0.0375,
+      "theta": 0.0029296875,
+      "tau2": 0.006055719375610351,
+      "focal_variance": 0.0024816513061523436,
+      "theoretical_mean_finite_law": 1.505907924296982,
+      "asymptotic_mean": 1.5,
+      "mean_T": 1.3681891086750901,
+      "sd_T": 1.0248779441978513,
+      "rejection_rate": 0.3943333333333333,
+      "rejection_wilson_95": [
+        0.3769912934046772,
+        0.41194563662594164
+      ],
+      "predicted_rejection": 0.44474652785832525,
+      "wrong_focal_rejection_rate": 0.6606666666666666,
+      "wrong_focal_asymptotic_null_rejection": 0.16184284727232456,
+      "mean_N_vhat": 0.007630500095463446,
+      "max_group_jackknife_difference": 8.470329472543003e-21
+    },
+    {
+      "M": 400,
+      "N": 64,
+      "local_c": 0.0,
+      "mixture_weight": 0.0,
+      "theta": 0.0,
+      "tau2": 0.006103515625,
+      "focal_variance": 0.002197265625,
+      "theoretical_mean_finite_law": 0.0,
+      "asymptotic_mean": 0.0,
+      "mean_T": 0.01924894413801245,
+      "sd_T": 0.9798182700402179,
+      "rejection_rate": 0.04766666666666667,
+      "rejection_wilson_95": [
+        0.040603968243672725,
+        0.05588629690317218
+      ],
+      "predicted_rejection": 0.050000000000000044,
+      "wrong_focal_rejection_rate": 0.16066666666666668,
+      "wrong_focal_asymptotic_null_rejection": 0.16184284727232456,
+      "mean_N_vhat": 0.006482288430582936,
+      "max_group_jackknife_difference": 2.6469779601696886e-22
+    },
+    {
+      "M": 400,
+      "N": 64,
+      "local_c": 1.5,
+      "mixture_weight": 0.009375,
+      "theta": 0.0007324218749999996,
+      "tau2": 0.006093654662370683,
+      "focal_variance": 0.0022699713706970217,
+      "theoretical_mean_finite_law": 1.5012131853209256,
+      "asymptotic_mean": 1.5,
+      "mean_T": 1.4548839802561928,
+      "sd_T": 1.0073768658521904,
+      "rejection_rate": 0.42833333333333334,
+      "rejection_wilson_95": [
+        0.41072887520617823,
+        0.4461210931111185
+      ],
+      "predicted_rejection": 0.44289220199202484,
+      "wrong_focal_rejection_rate": 0.6873333333333334,
+      "wrong_focal_asymptotic_null_rejection": 0.16184284727232456,
+      "mean_N_vhat": 0.006487671348515574,
+      "max_group_jackknife_difference": 4.235164736271502e-22
+    },
+    {
+      "M": 1000,
+      "N": 256,
+      "local_c": 0.0,
+      "mixture_weight": 0.0,
+      "theta": 0.0,
+      "tau2": 0.006103515625,
+      "focal_variance": 0.002197265625,
+      "theoretical_mean_finite_law": 0.0,
+      "asymptotic_mean": 0.0,
+      "mean_T": -0.015307684621020673,
+      "sd_T": 1.0149345181117868,
+      "rejection_rate": 0.044,
+      "rejection_wilson_95": [
+        0.037225603621850144,
+        0.05194070641564714
+      ],
+      "predicted_rejection": 0.050000000000000044,
+      "wrong_focal_rejection_rate": 0.17033333333333334,
+      "wrong_focal_asymptotic_null_rejection": 0.16184284727232456,
+      "mean_N_vhat": 0.006203447723251983,
+      "max_group_jackknife_difference": 2.6469779601696886e-23
+    },
+    {
+      "M": 1000,
+      "N": 256,
+      "local_c": 1.5,
+      "mixture_weight": 0.002964635306407856,
+      "theta": 0.0002316121333131136,
+      "tau2": 0.006100549739352599,
+      "focal_variance": 0.0022203731941510137,
+      "theoretical_mean_finite_law": 1.5003645809045254,
+      "asymptotic_mean": 1.5,
+      "mean_T": 1.4585501520729,
+      "sd_T": 0.9993790121146158,
+      "rejection_rate": 0.426,
+      "rejection_wilson_95": [
+        0.40841079581471823,
+        0.44377847379663
+      ],
+      "predicted_rejection": 0.44255715283806646,
+      "wrong_focal_rejection_rate": 0.6796666666666666,
+      "wrong_focal_asymptotic_null_rejection": 0.16184284727232456,
+      "mean_N_vhat": 0.006201972036607271,
+      "max_group_jackknife_difference": 3.639594695233322e-23
+    }
+  ]
+}

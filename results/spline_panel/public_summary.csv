@@ -1,0 +1,13 @@
+domain,method,models,raw_nominal,raw_BY,guarded_nominal,guarded_BY,copy_order_abstentions,undefined
+electricity,extrapolated_beta_1,11,10,10,10,10,1,0
+electricity,extrapolated_beta_2,11,10,10,10,10,1,0
+electricity,local_spline_GCM,11,11,11,10,10,1,0
+ratings,extrapolated_beta_1,10,6,6,6,6,4,2
+ratings,extrapolated_beta_2,10,8,8,6,6,4,2
+ratings,local_spline_GCM,10,8,8,6,6,4,2
+retail,extrapolated_beta_1,10,8,7,7,7,1,1
+retail,extrapolated_beta_2,10,8,7,7,7,1,1
+retail,local_spline_GCM,10,7,7,7,7,1,1
+portfolios,extrapolated_beta_1,10,0,0,0,0,1,0
+portfolios,extrapolated_beta_2,10,0,0,0,0,1,0
+portfolios,local_spline_GCM,10,0,0,0,0,1,0

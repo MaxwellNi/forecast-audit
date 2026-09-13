@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "review_scope": "shared-context independent derivation and verifier; not blind",
+  "implementation_or_study_imported": false,
+  "exact_fraction_checks": [
+    {
+      "alternative": false,
+      "misspecified": false,
+      "N": 3,
+      "enumerated_samples": 512,
+      "theta": "0",
+      "nuisance_product_bias": "0",
+      "gamma": "1/96",
+      "naive_mean": "1/192",
+      "corrected_mean": "0"
+    },
+    {
+      "alternative": false,
+      "misspecified": false,
+      "N": 4,
+      "enumerated_samples": 4096,
+      "theta": "0",
+      "nuisance_product_bias": "0",
+      "gamma": "1/96",
+      "naive_mean": "1/288",
+      "corrected_mean": "0"
+    },
+    {
+      "alternative": false,
+      "misspecified": true,
+      "N": 3,
+      "enumerated_samples": 512,
+      "theta": "0",
+      "nuisance_product_bias": "-1/384",
+      "gamma": "1/96",
+      "naive_mean": "1/384",
+      "corrected_mean": "-1/384"
+    },
+    {
+      "alternative": false,
+      "misspecified": true,
+      "N": 4,
+      "enumerated_samples": 4096,
+      "theta": "0",
+      "nuisance_product_bias": "-1/384",
+      "gamma": "1/96",
+      "naive_mean": "1/1152",
+      "corrected_mean": "-1/384"
+    },
+    {
+      "alternative": true,
+      "misspecified": false,
+      "N": 3,
+      "enumerated_samples": 512,
+      "theta": "1/96",
+      "nuisance_product_bias": "0",
+      "gamma": "1/48",
+      "naive_mean": "1/48",
+      "corrected_mean": "1/96"
+    },
+    {
+      "alternative": true,
+      "misspecified": false,
+      "N": 4,
+      "enumerated_samples": 4096,
+      "theta": "1/96",
+      "nuisance_product_bias": "0",
+      "gamma": "1/48",
+      "naive_mean": "5/288",
+      "corrected_mean": "1/96"
+    },
+    {
+      "alternative": true,
+      "misspecified": true,
+      "N": 3,
+      "enumerated_samples": 512,
+      "theta": "1/96",
+      "nuisance_product_bias": "-1/384",
+      "gamma": "1/48",
+      "naive_mean": "7/384",
+      "corrected_mean": "1/128"
+    },
+    {
+      "alternative": true,
+      "misspecified": true,
+      "N": 4,
+      "enumerated_samples": 4096,
+      "theta": "1/96",
+      "nuisance_product_bias": "-1/384",
+      "gamma": "1/48",
+      "naive_mean": "17/1152",
+      "corrected_mean": "1/128"
+    }
+  ],
+  "exact_dependent_row_counterexample": {
+    "raw_conditional_independence": true,
+    "population_target": "0",
+    "duplicated_row_corrected_mean": "1/96",
+    "iid_rows": false
+  },
+  "deterministic_references": {
+    "gaussian_null_gamma": 0.04311802170575022,
+    "gaussian_alternative_theta": 0.025279628589644196,
+    "gaussian_alternative_gamma": 0.08208867743320597,
+    "gaussian_duplicated_row_bias": 0.04021531162758313,
+    "gaussian_duplicated_row_quadrature_error_estimate": 8.316893895619e-14,
+    "gaussian_duplicated_row_formula_difference": 6.938893903907228e-18,
+    "fixed_grid_opposite_bias_by_position": [
+      9.58472839787061e-06,
+      0.01939817089099725,
+      0.03300252507624425,
+      0.03980524614166107,
+      0.03980524614166107,
+      0.03300252507624426,
+      0.01939817089099725,
+      9.58472839787054e-06
+    ],
+    "fixed_grid_opposite_average_bias": 0.02305388170932511,
+    "fixed_grid_formula_max_difference": 1.457167719820518e-16,
+    "finite_radius_N128_M400_alpha05": 0.01888477679165717,
+    "finite_power_lower_bound_N128_M400": 0.2907240996035977,
+    "N128_M400_power_lower_bound_is_weak": true
+  },
+  "verifier_sha256": "3cce53cbaac144288e4ffab9f7640af42fc685841b7589484f054e2bfe88ddd8"
+}

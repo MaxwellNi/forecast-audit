@@ -1,0 +1,37 @@
+{
+  "frozen_utc": "2026-09-12T12:06:13.401734+00:00",
+  "seed": 202609121140,
+  "replications": 1000,
+  "delta": 0.0001,
+  "alpha": 0.05,
+  "designs": [
+    "two_balanced",
+    "eight_balanced",
+    "eight_rare"
+  ],
+  "signals": [
+    0,
+    0.25,
+    0.5
+  ],
+  "training_rows": [
+    32,
+    512,
+    8192
+  ],
+  "validation_pairs": [
+    512,
+    8192
+  ],
+  "groups": [
+    100,
+    400
+  ],
+  "peers": 64,
+  "validation": "Disjoint iid focal/reference pairs, independent of training and evaluation; both members counted.",
+  "bound": "Half-delta cell-mean Hoeffding rectangles and half-delta one-sided Clopper-Pearson category masses; simplex-maximized error product; bounded order-three U-statistic concentration.",
+  "target": "Population marginal-midrank residual covariance; all means/variance truths used only as diagnostics.",
+  "scope": "Finite categorical controls and iid resampled peers. No conditional-independence requirement, no variance floor, no estimated null law.",
+  "provenance": "Frequency-weighted follow-up after seeing rare-category conservatism of the preserved maximum-cell study. Same seed primitives; not independent confirmation. Classical concentration is not claimed as novel.",
+  "source_sha256": "cba724a995d2d18405a19a6d82dd91c4eb365d34462fb5cd4a3707a4dc7fa84b"
+}

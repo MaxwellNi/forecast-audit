@@ -1,0 +1,227 @@
+{
+  "completed_utc": "2026-09-12T17:03:04.114353+00:00",
+  "tasks": {
+    "appliances": {
+      "all_source_labels_materialized": true,
+      "archive_sha256": "ba16db40e3eeb5121e323c361acf0d69494658809384053ea9ca2d6b891b46bc",
+      "base_feature_names": [
+        "lag_1",
+        "lag_2",
+        "lag_3",
+        "lag_6",
+        "lag_12",
+        "lag_24",
+        "lag_48",
+        "lag_168",
+        "rolling_mean_24",
+        "rolling_std_24",
+        "rolling_observed_24",
+        "rolling_mean_168",
+        "rolling_std_168",
+        "rolling_observed_168",
+        "hour_sin",
+        "hour_cos",
+        "week_sin",
+        "week_cos",
+        "year_sin",
+        "year_cos",
+        "weekend"
+      ],
+      "blends_sha256": "7b8501751c5fc58c4cb0996ae52e7459d69ac56e1630446074562a92e7dfde25",
+      "clipping_scale": 2477.099999999998,
+      "full_feature_names": [
+        "lag_1",
+        "lag_2",
+        "lag_3",
+        "lag_6",
+        "lag_12",
+        "lag_24",
+        "lag_48",
+        "lag_168",
+        "rolling_mean_24",
+        "rolling_std_24",
+        "rolling_observed_24",
+        "rolling_mean_168",
+        "rolling_std_168",
+        "rolling_observed_168",
+        "hour_sin",
+        "hour_cos",
+        "week_sin",
+        "week_cos",
+        "year_sin",
+        "year_cos",
+        "weekend",
+        "previous_hour_T1",
+        "previous_hour_T2",
+        "previous_hour_T3",
+        "previous_hour_T4",
+        "previous_hour_T5",
+        "previous_hour_T6",
+        "previous_hour_T7",
+        "previous_hour_T8",
+        "previous_hour_T9",
+        "previous_hour_RH_1",
+        "previous_hour_RH_2",
+        "previous_hour_RH_3",
+        "previous_hour_RH_4",
+        "previous_hour_RH_5",
+        "previous_hour_RH_6",
+        "previous_hour_RH_7",
+        "previous_hour_RH_8",
+        "previous_hour_RH_9",
+        "previous_hour_lights"
+      ],
+      "preparation_seconds": 1.441582314670086,
+      "selection_or_confirmation_metrics_computed": false,
+      "source": {
+        "absent_calendar_slots": 1,
+        "archive_member": "energydata_complete.csv",
+        "calendar_origin": "2016-01-12 00:00:00",
+        "calendar_slots": 3290,
+        "duplicate_rows": 0,
+        "duplicate_slots_with_different_outcomes": 0,
+        "first": "2016-01-11 17:00:00",
+        "last": "2016-05-27 18:00:00",
+        "raw_rows": 19735,
+        "unique_observed_slots": 3289
+      },
+      "split_end": {
+        "calibration": "2016-03-21 23:00:00",
+        "confirmation": "2016-05-16 23:00:00",
+        "selection": "2016-04-04 23:00:00",
+        "train": "2016-03-07 23:00:00"
+      },
+      "split_rows": {
+        "calibration": 336,
+        "confirmation": 1008,
+        "selection": 336,
+        "train": 1344
+      },
+      "split_start": {
+        "calibration": "2016-03-08 00:00:00",
+        "confirmation": "2016-04-05 00:00:00",
+        "selection": "2016-03-22 00:00:00",
+        "train": "2016-01-12 00:00:00"
+      },
+      "timing_checks": [
+        {
+          "current_future_feature_changes": 0,
+          "first_target": "2016-03-08 00:00:00"
+        },
+        {
+          "current_future_feature_changes": 0,
+          "first_target": "2016-03-22 00:00:00"
+        },
+        {
+          "current_future_feature_changes": 0,
+          "first_target": "2016-04-05 00:00:00"
+        }
+      ],
+      "train_median": 360.0
+    },
+    "metro": {
+      "all_source_labels_materialized": true,
+      "archive_sha256": "e1029d00ddf3f94000b845760a064aa2c3cab1bdf04a81f9b7a0b6eb37063b1d",
+      "base_feature_names": [
+        "lag_1",
+        "lag_2",
+        "lag_3",
+        "lag_6",
+        "lag_12",
+        "lag_24",
+        "lag_48",
+        "lag_168",
+        "rolling_mean_24",
+        "rolling_std_24",
+        "rolling_observed_24",
+        "rolling_mean_168",
+        "rolling_std_168",
+        "rolling_observed_168",
+        "hour_sin",
+        "hour_cos",
+        "week_sin",
+        "week_cos",
+        "year_sin",
+        "year_cos",
+        "weekend"
+      ],
+      "blends_sha256": "c464826b0b81af3ab56d0d16a61497d9478239ac693a87b0ec08824865d85593",
+      "clipping_scale": 6729.199999999997,
+      "full_feature_names": [
+        "lag_1",
+        "lag_2",
+        "lag_3",
+        "lag_6",
+        "lag_12",
+        "lag_24",
+        "lag_48",
+        "lag_168",
+        "rolling_mean_24",
+        "rolling_std_24",
+        "rolling_observed_24",
+        "rolling_mean_168",
+        "rolling_std_168",
+        "rolling_observed_168",
+        "hour_sin",
+        "hour_cos",
+        "week_sin",
+        "week_cos",
+        "year_sin",
+        "year_cos",
+        "weekend",
+        "previous_hour_temp",
+        "previous_hour_rain_1h",
+        "previous_hour_snow_1h",
+        "previous_hour_clouds_all"
+      ],
+      "preparation_seconds": 11.023243017494678,
+      "selection_or_confirmation_metrics_computed": false,
+      "source": {
+        "absent_calendar_slots": 11976,
+        "archive_member": "Metro_Interstate_Traffic_Volume.csv.gz",
+        "calendar_origin": "2012-10-02 09:00:00",
+        "calendar_slots": 52551,
+        "duplicate_rows": 7629,
+        "duplicate_slots_with_different_outcomes": 0,
+        "first": "2012-10-02 09:00:00",
+        "last": "2018-09-30 23:00:00",
+        "raw_rows": 48204,
+        "unique_observed_slots": 40575
+      },
+      "split_end": {
+        "calibration": "2016-06-30 23:00:00",
+        "confirmation": "2017-12-31 23:00:00",
+        "selection": "2016-12-31 23:00:00",
+        "train": "2015-12-31 23:00:00"
+      },
+      "split_rows": {
+        "calibration": 3476,
+        "confirmation": 8713,
+        "selection": 4362,
+        "train": 17491
+      },
+      "split_start": {
+        "calibration": "2016-01-01 00:00:00",
+        "confirmation": "2017-01-01 00:00:00",
+        "selection": "2016-07-01 00:00:00",
+        "train": "2012-10-02 09:00:00"
+      },
+      "timing_checks": [
+        {
+          "current_future_feature_changes": 0,
+          "first_target": "2016-01-01 00:00:00"
+        },
+        {
+          "current_future_feature_changes": 0,
+          "first_target": "2016-07-01 00:00:00"
+        },
+        {
+          "current_future_feature_changes": 0,
+          "first_target": "2017-01-01 00:00:00"
+        }
+      ],
+      "train_median": 3349.0
+    }
+  },
+  "scope": "Historical preparation aggregates; new source reproduction writes its own receipts and current-version fitted models."
+}

@@ -1,0 +1,45 @@
+{
+  "frozen_utc": "2026-09-12T14:23:08.590321+00:00",
+  "seed": 202609121457,
+  "replications": 1000,
+  "designs": [
+    "two_balanced",
+    "eight_rare"
+  ],
+  "signals": [
+    -0.125,
+    0.0,
+    0.125,
+    0.25,
+    0.5
+  ],
+  "groups": [
+    25,
+    100,
+    400,
+    1600
+  ],
+  "peers": 64,
+  "training": 8192,
+  "validation_pairs": [
+    512,
+    8192
+  ],
+  "alpha": 0.05,
+  "delta": 0.0001,
+  "methods": [
+    "absolute_range",
+    "signed_range",
+    "signed_variance",
+    "independent_triples",
+    "pooled_variance"
+  ],
+  "fixed_fits": "Empirical category means; a separate two-category robustness study adds +.15/-.15 persistent shifts and clips to[0,1].",
+  "comparison": "All methods share training, validation and evaluation primitive rows. Pooling is admissible under the common-law design and is a strong comparator, not assumed inferior.",
+  "scope": "Synthetic efficiency and coverage study fixed before these outputs; motivated by previous visible certificate conservatism. Not independent real-world confirmation.",
+  "source_sha256": {
+    "study.py": "ec135fc26f4f809f54729e4c4b6d9a58d3c1ef959fb49a0d3ddbfcb4455efc70",
+    "reference_certificate_efficiency.py": "3379b15abaef4cbb3529a5b0b14958d1bfd45b7c993e1547139c2f5a0ba48ced",
+    "category_reference_certificate.py": "cba724a995d2d18405a19a6d82dd91c4eb365d34462fb5cd4a3707a4dc7fa84b"
+  }
+}

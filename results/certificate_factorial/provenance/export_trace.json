@@ -1,0 +1,28 @@
+{
+  "scope": "Portable export of the same exposed-design ablation. Scientific outputs preserved; internal source layout is not distributed.",
+  "historical_protocol_sha256": "5524550fd1dc1e541d7f499b1081da334e4216f85cd65f93bd847239cf85c6a2",
+  "historical_analysis_sha256": "8eaea0b2818f456041bf9c694aab2376ef0b572c79d90c75aaa688305abecc16",
+  "historical_preexecution_protocol_sha256": "ea6e108c7ca1f93c4ba5ed23a501f4a272acbb75f771580c379987034fffdaa7",
+  "historical_preexecution_analysis_sha256": "ce49d7ca79b89d55dd95e2401be8fcc79ff3ce183f6f18947a1b116b6e1a81aa",
+  "historical_completion_receipt_sha256": "ec87d6775857a630b93603eb01e8f93094f535551a594cdd5ec3ad7d9cd382aa",
+  "historical_independent_verifier_sha256": "dcddcdd495a6fd0a85f953535f550ac6a4110340f598f0c08bfca30e632e9a1a",
+  "portable_changes": [
+    "Input paths translated to reader-facing relative names",
+    "Explicit output directories; frozen evidence never overwritten",
+    "Historical executable hashes retained; unusable original-layout sources omitted",
+    "Classical-context file renamed with unchanged bytes",
+    "Independent primitive helper located locally",
+    "Publication target symbol, leading zeros and estimated-allowance hats only"
+  ],
+  "unchanged_result_sha256": {
+    "factorial_rows.csv.gz": "3240c1543e24d52a38e6ecb464b4b8c00146bc255c6e8b3cc157e8a323bb501e",
+    "summary.csv": "dc008dbc236793406e24ca22527531086412cfe505a82341a3b6cea5d4728c20",
+    "paired_differences.csv": "a82761ec00acaf81a8339c91a301f370df439b45a1f3e1526995a2d56fc880ce",
+    "attribution.csv": "859f882ac200d3b83a35dd9163675459028ff717d9615e123927a7a801473e98",
+    "classical_context.csv": "3a5027b33ec1f9fa366e55f3b6c879cecb7bca555f02092e066a98027b43f858",
+    "main_figure_data.csv": "7a99d4f813efda40ab83f7123c66c81d102db21bdfd9ec8e4efd02c35cb85c3c",
+    "persistent_table.csv": "60d1c59e0f3565dcde9ff54919867dbefd8f6245c5b36ccefd58faa2b800397b",
+    "matched300_comparator_summary.csv": "513bc0ffefcd2dfbd6945b55d3780b93e8b9d0aea46cdabcf5fc0ac5c7b34036",
+    "matched300_paired_differences.csv": "5bad0256d2cfc3ec6917d79a58c8beaa0979dff1842651b289887e837551c1db"
+  }
+}

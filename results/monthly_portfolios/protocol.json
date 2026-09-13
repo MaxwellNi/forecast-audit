@@ -1,0 +1,171 @@
+{
+  "task": "Next-calendar-month public long-short portfolio return forecasting",
+  "dataset": "Open Source Asset Pricing published portfolio returns",
+  "dataset_relationship": "A forecasting task on the same public source used by the separate factor-alpha task; not an independent additional dataset.",
+  "recorded_utc": "2026-09-05T18:35:48.249535+00:00",
+  "record_type": "Local specification frozen before new target evaluation or model fitting, not an external preregistration",
+  "input": {
+    "filename": "predictor_ports_full.parquet",
+    "sha256": "2464b3f608ba076f0c3d1bc64af80070f967c0d57c57219ded726a08e0a7cc44",
+    "bytes": 21886842,
+    "long_short_rows": 173302,
+    "long_short_series": 212,
+    "schema": {
+      "signalname": "object",
+      "port": "object",
+      "date": "datetime64[ms]"
+    }
+  },
+  "source_hashes": {
+    "reproduce_monthly_portfolio_forecasts.py": "83df7bb4704c547e51c2902357d06d747c08b1f09c75781461d66581822e2488",
+    "monthly_portfolio_forecasters.py": "a27663fe5ca19dc6d39e7d01de0b6ab6d5c91f1e3e5432f2be465e30c78a5fcb"
+  },
+  "provenance": {
+    "official_home": "https://www.openassetpricing.com/",
+    "author_endorsed_download_package": "https://github.com/mk0417/open-asset-pricing-download",
+    "release_url_source": "https://github.com/mk0417/open-asset-pricing-download/blob/master/openassetpricing/urls.py",
+    "release": "2025.10",
+    "official_release_folder": "https://drive.google.com/drive/folders/1qQDuTsnyvWfEJR6nPBQZ8xxlq6bkLG_y",
+    "official_file_url": "https://drive.google.com/uc?export=download&id=10sOryk_ddjkXagaajTKUk1nwJs2ZLRiI",
+    "official_filename": "PredictorLSretWide.csv",
+    "official_file_sha256": "79aa0896d79924e1efa83f9afe51a3b4ce94137adfd2c5c3fd2d5d350532ee18",
+    "local_input_filename": "predictor_ports_full.parquet",
+    "local_input_sha256": "2464b3f608ba076f0c3d1bc64af80070f967c0d57c57219ded726a08e0a7cc44",
+    "local_ls_rows": 173302,
+    "official_signals": 212,
+    "matched_local_keys": 173302,
+    "local_keys_absent_official": 0,
+    "official_nonmissing_keys_absent_local": 0,
+    "matched_value_mismatches_1e12": 0,
+    "maximum_absolute_matched_return_difference": 0.0,
+    "return_units": "Percent as used in the published portfolio return export, not decimal; preserved unchanged.",
+    "retrieved_utc": "2026-09-05T18:34:51.741874+00:00",
+    "historical_vintage_policy": "Current public-release numerical verification does not establish historical publication clocks, signal discovery dates, or investable portfolio construction at forecast origins."
+  },
+  "population": "All LS signal names in the fixed public extract, no selection on evaluation activity or outcome values. The historical discovery and revision vintages of this published signal roster are not certified.",
+  "return_units": "Percent, unchanged from the official portfolio-return export; compound factors use 1 + ret/100.",
+  "forecast_origin": "End of calendar month t, after that month's portfolio return is observed. This is an explicit retrospective observability assumption, not a verified vendor publication timestamp.",
+  "target": "The supplied simple return at exactly calendar month t+1 in percent; missing calendar months remain missing. No future-price, future-factor, contemporaneous next-month return or accounting inputs.",
+  "baseline": "Complete compounded return through origin over t-11,...,t: 100*(product(1+r/100)-1). Exact baseline predictor is retained in the ten-model family.",
+  "features": [
+    "return_lag_0",
+    "return_lag_1",
+    "return_lag_2",
+    "return_lag_3",
+    "return_lag_4",
+    "return_lag_5",
+    "return_lag_6",
+    "return_lag_7",
+    "return_lag_8",
+    "return_lag_9",
+    "return_lag_10",
+    "return_lag_11",
+    "return_lag_12",
+    "return_lag_13",
+    "return_lag_14",
+    "return_lag_15",
+    "return_lag_16",
+    "return_lag_17",
+    "return_lag_18",
+    "return_lag_19",
+    "return_lag_20",
+    "return_lag_21",
+    "return_lag_22",
+    "return_lag_23",
+    "compound_return_3m",
+    "compound_return_6m",
+    "compound_return_12m",
+    "compound_return_24m",
+    "volatility_12m",
+    "volatility_24m"
+  ],
+  "window_policy": "Each compound/volatility/exponential window requires every calendar return. Explicit monthly grid, no gap compaction. Thirty features: returns t through t-23, 3/6/12/24-month compounded returns, and 12/24-month sample volatility.",
+  "training_start": "1990-01-31",
+  "test_years": [
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "annual_fit_cutoff": "Preceding December 31 after month-end. Train only origins with nonmissing target matured at or before cutoff and observed twelve-month baseline. Latest eligible training origin is preceding November. Annual fitted parameters remain fixed during the following year.",
+  "evaluation_rows": "All origins in 2013-2023 with an observed exact next-calendar-month target and complete twelve-month baseline, shared by every model. No return clipping, no performance-based cohort choice, no missing-label imputation.",
+  "preprocessing": "Feature finite-value medians, means and population standard deviations fitted on current training only; all-missing median=0 and zero standard deviation=1. Training target mean/std for learned regressors only, inverted for predictions.",
+  "models": {
+    "Last month": "r[t]",
+    "Trailing three-month return": "complete compounded r[t-2:t]",
+    "Trailing twelve-month return": "exact declared baseline",
+    "Seasonal twelve-month lag": "r[t-11], twelve months before target t+1",
+    "Training portfolio mean": "per-portfolio mean of eligible matured training targets, global training mean fallback",
+    "Exponential twelve-month mean": "normalized weights proportional to 0.8**j on r[t-j], j=0,...,11; a finite twelve-month exponentially weighted mean",
+    "Ridge": {
+      "alpha": 10.0
+    },
+    "Elastic net": {
+      "alpha": 0.01,
+      "l1_ratio": 0.5,
+      "max_iter": 5000,
+      "tol": 1e-06,
+      "selection": "cyclic"
+    },
+    "LightGBM": {
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "min_child_samples": 40,
+      "learning_rate": 0.03,
+      "seed": 2026090506,
+      "deterministic": true
+    },
+    "Small MLP": {
+      "hidden": [
+        32,
+        16
+      ],
+      "activation": "ReLU",
+      "optimizer": "Adam",
+      "alpha": 0.001,
+      "batch_size": 512,
+      "learning_rate": 0.001,
+      "epochs": 50,
+      "early_stopping": false,
+      "seed": 2026090506
+    }
+  },
+  "budget": "44 learned-regressor fits (four models x eleven years), plus six fixed-rule/training-mean predictors; no hyperparameter search or seed selection",
+  "threads": 4,
+  "audit": {
+    "family_size": 10,
+    "calendar_frequency": "M",
+    "whole_month_folds": 5,
+    "fold_schemes": [
+      "contiguous",
+      "interleaved"
+    ],
+    "hac_lag": 12,
+    "betas": [
+      1,
+      2
+    ],
+    "primary_beta": 1,
+    "qs": [
+      8,
+      12,
+      16,
+      24,
+      32
+    ],
+    "single_q": 10,
+    "score_standard_error_floor": 1e-10,
+    "floor_policy": "Numerically near-zero standard error in normalized rank-product units is undefined and assigned p=1; not a statistical calibration correction.",
+    "source_lock": "Forecast sources are frozen here; audit source hashes are recorded separately at run start and checked again at completion.",
+    "multiple_testing": "Benjamini-Yekutieli separately within the complete ten-model family for each prespecified specification",
+    "interpretation": "Nominal normal-reference diagnostics only. Neither covariance assumptions nor nuisance bias or real-data inferential calibration is established."
+  },
+  "metrics": "Full-family MAE/RMSE in percentage points and pooled/equal-month Spearman; exact-baseline diagnostic retained regardless of result."
+}

@@ -1,0 +1,17 @@
+domain,profile,fold_scheme,lag,beta,family_size,raw_nominal,raw_BY,redundancy_abstentions,undefined_abstentions,union_abstentions,policy_nominal,policy_BY
+electricity,extrapolated,contiguous,14,1.0,11,10,10,1,0,1,10,10
+electricity,extrapolated,contiguous,14,2.0,11,10,10,1,0,1,10,10
+electricity,single_resolution,contiguous,14,,11,11,11,1,0,1,10,10
+electricity,single_resolution,interleaved,14,,11,11,11,1,0,1,10,10
+ratings,extrapolated,contiguous,0,1.0,10,6,6,4,2,4,6,6
+ratings,extrapolated,contiguous,0,2.0,10,8,8,4,2,4,6,6
+ratings,single_resolution,contiguous,0,,10,8,8,4,2,4,6,6
+ratings,single_resolution,interleaved,0,,10,8,8,4,2,4,6,6
+retail,extrapolated,contiguous,2,1.0,10,8,7,1,1,2,7,7
+retail,extrapolated,contiguous,2,2.0,10,8,7,1,1,2,7,7
+retail,single_resolution,contiguous,2,,10,8,8,1,1,2,7,7
+retail,single_resolution,interleaved,2,,10,8,8,1,1,2,7,7
+monthly_portfolios,extrapolated,contiguous,12,1.0,10,0,0,1,0,1,0,0
+monthly_portfolios,extrapolated,contiguous,12,2.0,10,0,0,1,0,1,0,0
+monthly_portfolios,single_resolution,contiguous,12,,10,0,0,1,0,1,0,0
+monthly_portfolios,single_resolution,interleaved,12,,10,0,0,1,0,1,0,0

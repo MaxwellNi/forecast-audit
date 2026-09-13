@@ -1,0 +1,72 @@
+{
+  "alpha": 0.05,
+  "analytic_bias": "1/180 exactly; plus 1e-12 outward arithmetic allowance for the generated floating score",
+  "beta": 2,
+  "bounds_bounded_noise": [
+    -1.0277777777787778,
+    1.9791666666676668
+  ],
+  "bounds_noise_free": [
+    -0.027777777778777775,
+    0.14583333333433335
+  ],
+  "comparison": "same Hoeffding score interval with bias_upper=0, deliberately unjustified for oracle theta",
+  "condition_datasets": 2700,
+  "condition_dependence": "three conditions share the primitive draws within each n/replication",
+  "conditions": [
+    "noise_free_null",
+    "independent_noise_null",
+    "shared_signal_alternative"
+  ],
+  "created_utc": "2026-09-05T18:53:50.482206+00:00",
+  "draw_order": [
+    "uniform_U",
+    "rademacher_ex1",
+    "rademacher_ex2",
+    "rademacher_ey1",
+    "rademacher_ey2",
+    "rademacher_V"
+  ],
+  "envelope_failure_probability": 0.0,
+  "external_bias_upper": 0.005555555556555556,
+  "g": "U**2",
+  "independent_primitive_draws": 900,
+  "n_values": [
+    128,
+    512,
+    2048
+  ],
+  "no_pilot_no_optional_stopping": true,
+  "not_a_general_rank_panel_calibration": true,
+  "nuisance": "known population bin means (l*l+l*r+r*r)/3; no fitted noise",
+  "numerical_bias_padding": 1e-12,
+  "numerical_certificate_amendment": "Exact dyadic weighted sums and ranges, outward Decimal confidence calculations and exact rank-helper guards prevent floating-point drift from producing a positive lower bound for constant null scores. A 1e-12 score-arithmetic allowance is added to the analytic bias bound. The numerical validation uses disjoint seeds from the earlier bounded-score study.",
+  "numerical_support_padding": 1e-12,
+  "numpy_version": "1.26.4",
+  "oracle_thetas": [
+    0,
+    0,
+    0.25
+  ],
+  "primary_decision": "strictly positive lower confidence bound",
+  "purpose": "finite-sample bounded certificate with an external analytic bias envelope",
+  "q": [
+    1,
+    2
+  ],
+  "replications": 300,
+  "seed_base": 202609056711000,
+  "seed_stride_by_n": 100000,
+  "source_sha256": {
+    "source_001_bounded_audit.py": "6c971d7aa0d6078ac4234e22b03d35c706709174bb9ce39130fe690dae542f02",
+    "source_002_test_bounded_audit.py": "e0835d86e439bc6c07dc5faa5712ab12c82d22573b6df2239ff13e33f7a32b83",
+    "source_003_verify_validity_construction_20260905.py": "b7c482fc866e32632fef91773842e8841ec128d3d4d64c52ea345644a025c004"
+  },
+  "superseded_run": "strict exact support check stopped at n=2048, replication=118, noise-free null; numerical subtraction put one score 3.47e-18 below the exact endpoint; no completed draw file or rate summary; only numerical support padding and independent replacement seeds changed in the experiment",
+  "supersedes_failed_protocol_sha256": "ab49471bd8e1dc4f0d9701ca915ef1b240dc15c97f866bf9bb26c7deb3ed1d4a",
+  "supersedes_numerically_unsafe_protocol_sha256": "c81217ec02fe268cd0c768f77b054841536540756d76d8a3cd0966fe6ec570dd",
+  "weights": [
+    -0.3333333333333333,
+    1.3333333333333333
+  ]
+}

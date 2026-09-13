@@ -1,0 +1,17 @@
+domain,configuration,frequency,lag,family_size,ABSTAIN,NOT_RETAINED,RETAIN
+electricity,complementary_all,D,14,11,1,0,10
+electricity,complementary_middle,D,14,11,1,0,10
+electricity,directional_all,D,14,11,1,0,10
+electricity,directional_middle,D,14,11,1,0,10
+portfolios,complementary_all,M,12,10,1,9,0
+portfolios,complementary_middle,M,12,10,1,9,0
+portfolios,directional_all,M,12,10,1,9,0
+portfolios,directional_middle,M,12,10,1,9,0
+ratings,complementary_all,cluster,0,10,4,0,6
+ratings,complementary_middle,cluster,0,10,4,0,6
+ratings,directional_all,cluster,0,10,4,0,6
+ratings,directional_middle,cluster,0,10,4,0,6
+retail,complementary_all,W-FRI,2,10,2,1,7
+retail,complementary_middle,W-FRI,2,10,2,3,5
+retail,directional_all,W-FRI,2,10,2,2,6
+retail,directional_middle,W-FRI,2,10,2,1,7

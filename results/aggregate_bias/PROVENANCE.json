@@ -1,0 +1,117 @@
+{
+  "scope": "Portable export of the aggregate validation study. Adapted code paths and execution outputs do not reproduce the original source seal byte-for-byte; scientific result tables are preserved.",
+  "timing": "The two public archives were inspected before the aggregate method was developed. This is a post-exposure diagnosis; the previously specified forecasting success result remains 0/2. The simulation uses a fixed new random stream selected after archive diagnosis, and measures validation-bias coverage and width.",
+  "known_information": "Both new comparison methods receive exact category probabilities. Complete forecast metadata are a distinct, stronger information contract offered to the existing known-forecast comparators.",
+  "unchanged_science": "Forecasts, sampling indices, models, candidates, selections and chronological confirmation periods in forecast_confirmation are not modified by this study.",
+  "numerical_audit_note": "An independent primitive simulation replay first used a different normalization reduction order, changing same-seed random draws. It was corrected to match the declared probability table before the separate raw-observation seed was executed; the distribution, seeds, tested settings and bounds were unchanged.",
+  "source_adaptations": [
+    {
+      "role": "aggregate_bias_bound.py",
+      "original_sha256": "0996bc14d119eb355b53acc56495ad22ef5113756ad2c56688b6aae17f2b643b",
+      "export_sha256": "84a246b716f5bea9a0e6a06e1e7f541d300ac49f47da304ee6ed6d3828d053da",
+      "adapted": true
+    },
+    {
+      "role": "THEORY.md",
+      "original_sha256": "918919ca636af3a1b76e39cfac74e0ed9111825f1a248006a51f958572e44b88",
+      "export_sha256": "f6b86aed8a547feeb8f70abff10f9ce910da70a690a41acf1e1a39185f2bb001",
+      "adapted": true
+    },
+    {
+      "role": "archive/all_candidates.csv",
+      "original_sha256": "64dd8361ec1054f24c4f848b42977d5c57e5e2c90ba17d6499ae86b368b03e3d",
+      "export_sha256": "64dd8361ec1054f24c4f848b42977d5c57e5e2c90ba17d6499ae86b368b03e3d",
+      "adapted": false
+    },
+    {
+      "role": "archive/protocol.json",
+      "original_sha256": "aeeb46fee91f4454dfcf4256737d2b0de78b7f8693bdb27a607c3a2f0496cfcf",
+      "export_sha256": "c4f6cafe8eab11adbcaa8fa0d41acaee7a9ed46c0f179fb6956afdd10ce195e2",
+      "adapted": true
+    },
+    {
+      "role": "simulation/replications.csv.gz",
+      "original_sha256": "7f2b09a591a4a7a88e9ccc5f015ca31779f97592a4e934e3160cb9608eed0c79",
+      "export_sha256": "7f2b09a591a4a7a88e9ccc5f015ca31779f97592a4e934e3160cb9608eed0c79",
+      "adapted": false
+    },
+    {
+      "role": "simulation/summary.csv",
+      "original_sha256": "360948cb8a7c7c8fc8e3ee1d54ad7679898fbaf0bfc4267b4d5120a0acc24b18",
+      "export_sha256": "360948cb8a7c7c8fc8e3ee1d54ad7679898fbaf0bfc4267b4d5120a0acc24b18",
+      "adapted": false
+    },
+    {
+      "role": "simulation/protocol.json",
+      "original_sha256": "589f9d9003440782c34b2275860b732c551a59fdcfd766ae271d9e2b79a1abcf",
+      "export_sha256": "589f9d9003440782c34b2275860b732c551a59fdcfd766ae271d9e2b79a1abcf",
+      "adapted": false
+    },
+    {
+      "role": "verification/second_seed_raw_rows.csv",
+      "original_sha256": "a3ddde2d5a8bc5a0b26394448acb7a754f64d16e1f96e2147445deca7dfc8200",
+      "export_sha256": "a3ddde2d5a8bc5a0b26394448acb7a754f64d16e1f96e2147445deca7dfc8200",
+      "adapted": false
+    },
+    {
+      "role": "verification/second_seed_summary.csv",
+      "original_sha256": "f5ed29b4f7e4fa82feca4a4133235dd28e8f4d9d8e5396bd84989807a0960f20",
+      "export_sha256": "f5ed29b4f7e4fa82feca4a4133235dd28e8f4d9d8e5396bd84989807a0960f20",
+      "adapted": false
+    },
+    {
+      "role": "verification/simulation_audit.json",
+      "original_sha256": "d44eb59dcadf381d029fe7eb472a6d90742335e57d2ebe4384263f624d7f74cd",
+      "export_sha256": "d44eb59dcadf381d029fe7eb472a6d90742335e57d2ebe4384263f624d7f74cd",
+      "adapted": false
+    },
+    {
+      "role": "verification/simulation_replay_note.json",
+      "original_sha256": "556951fdc85e78a54e6c18c7acb91bbd979e7a82430fb361e2f37f4327bc44b4",
+      "export_sha256": "556951fdc85e78a54e6c18c7acb91bbd979e7a82430fb361e2f37f4327bc44b4",
+      "adapted": false
+    },
+    {
+      "role": "diagnose.py",
+      "original_sha256": "708b0bb12c18bbba1d371e7649ab8a061e711625937fe75f183df52b39caa6d1",
+      "export_sha256": "6343bf9b3fc5a43813e2c1a8798440ca502fd7b32db13515eb93d1ec3851436e",
+      "adapted": true
+    },
+    {
+      "role": "simulate.py",
+      "original_sha256": "6e1df6229cc4a3430c0f74fbf8ae565edc0300f0f47e54ee455fe8b1ae964ece",
+      "export_sha256": "aa0e8f3e88693e6930764fef4c321331aa9b813b76731b138341fc7039762770",
+      "adapted": true
+    },
+    {
+      "role": "verify_archive.py",
+      "original_sha256": "5e72fa65c39df0178c8b1ab0f1727e76fb2b625c9bf6041611f9a21eb3eed361",
+      "export_sha256": "0c0837384843d209029a0cb5bf19f82dac4febfa646da304fedfd898c3561471",
+      "adapted": true
+    },
+    {
+      "role": "verify_simulation_primitives.py",
+      "original_sha256": "19c28dc942f1c44dfbbd88eb312ddf95702a7b9009a5eded4c2e0e7fc7dfb439",
+      "export_sha256": "09cb3035903f6ad84f8fe8aa6d11de352cd65233e8b00c925707d98cf4d2b85f",
+      "adapted": true
+    }
+  ],
+  "upstream_inputs": [
+    {
+      "path": "../forecast_confirmation/appliances/forecast_archive.npz",
+      "sha256": "ba16db40e3eeb5121e323c361acf0d69494658809384053ea9ca2d6b891b46bc"
+    },
+    {
+      "path": "../forecast_confirmation/appliances/sampling_indices.npz",
+      "sha256": "8ca68fa1fa7d4570e4e1a65f64f9e0b190682c8542892dc1ab439a8cd62974ee"
+    },
+    {
+      "path": "../forecast_confirmation/metro/forecast_archive.npz",
+      "sha256": "e1029d00ddf3f94000b845760a064aa2c3cab1bdf04a81f9b7a0b6eb37063b1d"
+    },
+    {
+      "path": "../forecast_confirmation/metro/sampling_indices.npz",
+      "sha256": "9b34209acbf3e17afba99934710f137cb92a796047d2dd8264210ea8e2fbea0b"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying paper when using this software."
+title: "When a High Score Is an Illusion: Certifying Genuine versus Repackaged Forecasting Skill"
+authors:
+  - family-names: Ni
+    given-names: Pin
+  - family-names: Medda
+    given-names: Francesca
+  - family-names: Okhrati
+    given-names: Ramin
+version: icdm2026-v7
+date-released: 2026-09-13
+repository-code: "https://github.com/MaxwellNi/forecast-audit"
+url: "https://github.com/MaxwellNi/forecast-audit/releases/tag/icdm2026-v7"

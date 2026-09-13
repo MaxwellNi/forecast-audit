@@ -1,0 +1,221 @@
+{
+  "frozen_utc": "2026-09-07T06:45:51.872323+00:00",
+  "status": "Retrospective descriptive comparison; the metric was specified before its calculation, after the existing audit results were known.",
+  "metric": "Within each actual audit cluster, Spearman(prediction,y), using average ranks and the unchanged admissible audit rows. Primary summary is the equally weighted arithmetic mean over defined cluster correlations. No pooled ranking or row weighting of correlations.",
+  "undefined": "Fewer than two rows, constant prediction, or constant outcome makes cluster correlation undefined. Keep all model rows and report undefined group counts by reason; never replace undefined correlations by zero. A model with no defined groups has undefined mean.",
+  "secondary": "Pooled-row original-scale MAE for finite scores that predict the original target. Exclude ratings SVD interaction because its interaction-only score omits the rating intercept. Baseline MAE and correlation are reported on each model's identical cohort. MAE units are domain-specific and not cross-domain comparable.",
+  "scope": "All 41 models, no refits, tuning, fresh downloads, row exclusions, private cases or model selection. Metrics are descriptive of these held-out cohorts and do not establish generalization, incremental information or conditional independence. Extrapolated beta=2 normal-reference audit labels remain operational screens, not validated certificates.",
+  "verification": "Independent hand-built average ranks and centered inner products versus scipy rankdata/spearmanr for every cluster; all 41 cohort rows and model counts versus existing audit output; math.erfc normal tails versus scipy norm.sf and saved values; independent full-family BY versus statsmodels and saved values.",
+  "script_sha256": "86254abdfa998ca2b932b925fa72c08614488af79a3e8d2f653dd5eb8c6f043b",
+  "domain_source_sha256": "3ee9c76416403c1ac3da562111cbeb721ca29948cecfa1b4c0d312e7d09d5b52",
+  "audit_profile_sha256": "f9d05d4fd880ae82a9fb04cc385e3fa6cfc6b75832b3fdd051ff15e0f978e58f",
+  "inputs": [
+    {
+      "domain": "electricity",
+      "lag": 14,
+      "frequency": "D",
+      "models": [
+        "dlinear",
+        "drift",
+        "histgbr_lag",
+        "holt_winters",
+        "lasso_lag",
+        "linear_lag",
+        "naive_1",
+        "ridge_lag",
+        "seasonal_naive_7",
+        "ses",
+        "theta"
+      ],
+      "files": [
+        {
+          "path": "public_inputs/electricity/new_predictions.csv.gz",
+          "sha256": "3b8dd4072414ff7ba2d310480af4fcbb7da1afe2df1a3bfa371a20c6789c2e28"
+        }
+      ]
+    },
+    {
+      "domain": "ratings",
+      "lag": 0,
+      "frequency": null,
+      "models": [
+        "Alternating least squares",
+        "Global mean",
+        "Item mean",
+        "Item nearest neighbours",
+        "SVD (32 factors)",
+        "SVD (40 factors)",
+        "SVD interaction",
+        "Slope One",
+        "User and item bias",
+        "User mean"
+      ],
+      "files": [
+        {
+          "path": "public_inputs/ratings/model_01.parquet",
+          "sha256": "bd464a78d83e700614e7de5b8766858603fe0357c6185b052114bbe744c4e536"
+        },
+        {
+          "path": "public_inputs/ratings/model_02.parquet",
+          "sha256": "0a57ee01c1d8b4f2edabc17308c3ef7ae1abc9d6e2aeb3564db21f121d895f7c"
+        },
+        {
+          "path": "public_inputs/ratings/model_03.parquet",
+          "sha256": "78e0de0d58e0b79324119a79768bc6752eeffc20e03104f7d8ec6b6573696500"
+        },
+        {
+          "path": "public_inputs/ratings/model_04.parquet",
+          "sha256": "917642da5a43857e4b58e4dc67ebc26fb74a6d0149d5a593fdd2c09c2d4489fc"
+        },
+        {
+          "path": "public_inputs/ratings/model_05.parquet",
+          "sha256": "cbd01b312b6ee7a9e622a76ecc0c4c5eb6adaf5db28204995a33caf0f611882c"
+        },
+        {
+          "path": "public_inputs/ratings/model_06.parquet",
+          "sha256": "0ea7df541f0ea65f2508f2f28264559000fe7ee0d2d31fb36099b7043d92f1aa"
+        },
+        {
+          "path": "public_inputs/ratings/model_07.parquet",
+          "sha256": "7d02bdbb3eaed1a71efe90fef45096b773d4930df33c1cd87d780beeecbe4714"
+        },
+        {
+          "path": "public_inputs/ratings/model_08.parquet",
+          "sha256": "df88bb944322d0dc686bc4d5ef83323f3c108603d081422bd6dd296bfbc99c2c"
+        },
+        {
+          "path": "public_inputs/ratings/model_09.parquet",
+          "sha256": "f667d5fa408d1dc6c79fdb533985de9fd186c28b70f55a7559a5a5dd354306a2"
+        },
+        {
+          "path": "public_inputs/ratings/model_10.parquet",
+          "sha256": "54e14bf6ca591bd0a01eb73f82cc599186f71f982b151c498b9f68f973324f54"
+        }
+      ]
+    },
+    {
+      "domain": "retail",
+      "lag": 2,
+      "frequency": "W-FRI",
+      "models": [
+        "Croston SBA",
+        "Eight week mean",
+        "Exponential smoothing",
+        "Four week mean",
+        "Last week",
+        "Past price and calendar",
+        "Past price calendar and history",
+        "Ridge with history",
+        "Theta",
+        "Training series mean"
+      ],
+      "files": [
+        {
+          "path": "public_inputs/retail/model_01.parquet",
+          "sha256": "02e74ec0b2aa7be34971994c619e88dca1c1b380d834ec589180bbae092382f7"
+        },
+        {
+          "path": "public_inputs/retail/model_02.parquet",
+          "sha256": "828ba9c48064ea9405a8d94cd132c7ce9d5331d925a4002842a8693827a6eb34"
+        },
+        {
+          "path": "public_inputs/retail/model_03.parquet",
+          "sha256": "e0b52f233a0d615c627406c599657e8b7f8bf077b101a0de6670ed3ea5fffe83"
+        },
+        {
+          "path": "public_inputs/retail/model_04.parquet",
+          "sha256": "202bae15e53de8dc91e928a8bf5022bb1578a17399464a9b0cdcf4eaeb831b26"
+        },
+        {
+          "path": "public_inputs/retail/model_05.parquet",
+          "sha256": "eecc46ef21a250a59ea77b55589dd09d7eca3ce426cd6aa0271a4ff1e4ca0d50"
+        },
+        {
+          "path": "public_inputs/retail/model_06.parquet",
+          "sha256": "16592e4482ee5dee1a2f70d6fb6d62bc227e2005e26c54f4340a3f3a04aa71a7"
+        },
+        {
+          "path": "public_inputs/retail/model_07.parquet",
+          "sha256": "122ff4652fc1e9779340004e131eba12871fb8c6d9b7e656c579a74dffee2489"
+        },
+        {
+          "path": "public_inputs/retail/model_08.parquet",
+          "sha256": "eedc9e9a954530190dd1c26a8d75a923d1cf4720f2b29bdabed025ff7a1f4d4b"
+        },
+        {
+          "path": "public_inputs/retail/model_09.parquet",
+          "sha256": "5eabe9797c7e26bf46b08c5bfa040435a2d389b03c852bdbaa81262b28abbe93"
+        },
+        {
+          "path": "public_inputs/retail/model_10.parquet",
+          "sha256": "628e1cd34b6b2404a49b2e65af3ca0ef2b4122846504eb2c87275874116bb52e"
+        }
+      ]
+    },
+    {
+      "domain": "portfolios",
+      "lag": 12,
+      "frequency": "M",
+      "models": [
+        "Elastic net",
+        "Exponential twelve-month mean",
+        "Last month",
+        "LightGBM",
+        "Ridge",
+        "Seasonal twelve-month lag",
+        "Small MLP",
+        "Trailing three-month return",
+        "Trailing twelve-month return",
+        "Training portfolio mean"
+      ],
+      "files": [
+        {
+          "path": "public_inputs/portfolios/model_01.parquet",
+          "sha256": "8f2556c4b9a31a5247e9bbd1c65bc344d74780fc4022bbe0ddcff37c54e050eb"
+        },
+        {
+          "path": "public_inputs/portfolios/model_02.parquet",
+          "sha256": "46708dbc8e02dd8ba78cae8f7fe1f86607763f3b37409f1cf39f77e01a5948d6"
+        },
+        {
+          "path": "public_inputs/portfolios/model_03.parquet",
+          "sha256": "8c12bf9d3be47ff61ba14a76c7ee9d4adcf50fb9d3fd794ff328d2cb4296262f"
+        },
+        {
+          "path": "public_inputs/portfolios/model_04.parquet",
+          "sha256": "1afc60ebf09ebb559472c2912cc7b1f51ae813617d146fdc4148efd96f9a5d83"
+        },
+        {
+          "path": "public_inputs/portfolios/model_05.parquet",
+          "sha256": "a31a64286214e1fb28f1f6fa958f98753b1f50e9bc6e609b27d43327bdc1ef75"
+        },
+        {
+          "path": "public_inputs/portfolios/model_06.parquet",
+          "sha256": "d936a4814bc056f51b60550ae4b6e202e987ed21de232fe2f9d4fa950a65b6db"
+        },
+        {
+          "path": "public_inputs/portfolios/model_07.parquet",
+          "sha256": "be4eed62baeb8f22b3ffde496d335427f414757a797dbedf24305147d8cb42ac"
+        },
+        {
+          "path": "public_inputs/portfolios/model_08.parquet",
+          "sha256": "942efb4f0520b082a2b4216409fad402917f555592a68a8b2f2ed2d1964b39ef"
+        },
+        {
+          "path": "public_inputs/portfolios/model_09.parquet",
+          "sha256": "aaff5c7e5b89f1d0c1a1101d29d29e051e4c3e215346619d021d3c0af614c6dd"
+        },
+        {
+          "path": "public_inputs/portfolios/model_10.parquet",
+          "sha256": "f95451bc5a9c123c5f98a73890cb99615bad50315913199f6b43715bd4f738e1"
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.13.1",
+    "statsmodels": "0.14.6"
+  }
+}

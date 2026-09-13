@@ -1,0 +1,111 @@
+{
+  "status": "PASS",
+  "elapsed_seconds": 8.795403566211462,
+  "summary_verification": {
+    "rows": 9900,
+    "cells": 33,
+    "independent_replications": 300,
+    "condition_datasets": 2700,
+    "chronology": [
+      "2026-09-05T19:37:36.826403+00:00",
+      "2026-09-05T19:37:44.855821+00:00",
+      "2026-09-05T19:38:03.190052+00:00",
+      "2026-09-05T19:39:19.466999+00:00"
+    ],
+    "all_fields_recounted": true,
+    "output_hashes_match": true,
+    "sources_match_frozen_protocol": true,
+    "no_undefined_rows": true
+  },
+  "independent_dense_replay": {
+    "replications": [
+      37,
+      299
+    ],
+    "condition_panels": 18,
+    "audit_specifications": 66,
+    "study_or_core_helper_imports": false,
+    "maximum_mean_absolute_difference": 3.8700878439434927e-13,
+    "maximum_se_absolute_difference": 1.0403483630128108e-13,
+    "maximum_statistic_absolute_difference": 6.45314912617323e-11,
+    "maximum_p_absolute_difference": 1.05940256567294e-11,
+    "all_decisions_identical": true
+  },
+  "verifier_sha256": "f06520fbf999f89a4db0a03a4aa1b1f4a1022479a6067de52711c65aff025326",
+  "input_sha256": {
+    "protocol.json": "7ccbdf33da313587b6fb40a116d16de1c6c53ee6fd8b29e558e8778733602bbf",
+    "draws.csv": "6bb9f9c4a586f4760f28de2273fe83641a80e25574bb3eff8f6ffa1b95f08342",
+    "summary.csv": "add768205451fa0095f83e499dbab2e0b983a35f74008d2810fd43478b38e44b",
+    "receipt.json": "59489b22cc1249f71c05fc1346a3c196c84cb57857e5e1c2968adf9577eae938"
+  },
+  "scientific_assessment": {
+    "independent_forecast_rank_null": "valid in the stated homogeneous independent Gaussian construction",
+    "shifted_fixed_grid_rank_null": "valid: conditional rank laws are permutation-invariant at each focal grid position and noise arrays are independent",
+    "shared_noise_rank_alternative": "strictly positive via Gaussian pairwise-comparison covariances with correlations 0.3 and 0.6",
+    "matches_published_numerical_core": true,
+    "core_sha256": "92489cf8cdae0650cd6493112d28fe13b34cfb356cae02c83a387d39f9561ff3",
+    "uses_numerical_degeneracy_floor": true,
+    "observed_copy_order_guard_not_part_of_this_frozen_study": true
+  },
+  "post_run_population_reference": {
+    "scope": "Post-run deterministic oracle calculation, not protocol tuning or a finite-sample fit",
+    "combined_bias": [
+      {
+        "ladder": "coarse",
+        "beta": 1,
+        "oracle_bin_null_bias": -0.018357177941686575
+      },
+      {
+        "ladder": "primary",
+        "beta": 0.5,
+        "oracle_bin_null_bias": -0.01335674227349229
+      },
+      {
+        "ladder": "primary",
+        "beta": 1,
+        "oracle_bin_null_bias": -0.004456862482235667
+      },
+      {
+        "ladder": "primary",
+        "beta": 2,
+        "oracle_bin_null_bias": -5.6200536116282564e-05
+      },
+      {
+        "ladder": "fine",
+        "beta": 1,
+        "oracle_bin_null_bias": -0.0011107090637911168
+      }
+    ],
+    "independent_quadrature_checks": [
+      {
+        "focal_grid_index": 0,
+        "independent_infinite_interval_quadrature_mean": -1.614409928066743,
+        "closed_form_mean": -1.614409928066743,
+        "absolute_difference": 0.0
+      },
+      {
+        "focal_grid_index": 39,
+        "independent_infinite_interval_quadrature_mean": -0.02151657414557964,
+        "closed_form_mean": -0.02151657414557964,
+        "absolute_difference": 0.0
+      },
+      {
+        "focal_grid_index": 79,
+        "independent_infinite_interval_quadrature_mean": 1.6144099280667434,
+        "closed_form_mean": 1.614409928066743,
+        "absolute_difference": 4.440892098500626e-16
+      }
+    ],
+    "maximum_difference_from_separate_author_reference": 6.938893903907228e-18,
+    "not_a_finite_sample_nuisance_bias_certificate": true
+  },
+  "interpretation_limits": [
+    "300 independent primitive draws, not 9900 independent samples; each draw supplies all paired settings.",
+    "M varies at fixed 80 entities, so total and nuisance-training sample sizes also vary.",
+    "Additional ladders are compared only at M=100 and beta=1; five folds and lag zero remain fixed.",
+    "Zero positive rejections with strongly negative null statistics is not centered normal calibration.",
+    "The 80-point grid is a deliberately fixed competitor shape with homogeneous noise, not a general rank-preservation theorem.",
+    "Post-run exact-model population-bin bias calculations do not establish bounds on finite-sample fitted nuisance bias.",
+    "The separate observed-copy/order abstention layer is outside this frozen statistic experiment."
+  ]
+}

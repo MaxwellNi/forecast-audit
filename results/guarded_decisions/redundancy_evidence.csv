@@ -1,0 +1,42 @@
+domain,model,row_count,cluster_count,singleton_clusters,minimum_cluster_size,maximum_cluster_size,nonconstant_forecast_clusters,nonconstant_baseline_clusters,same_weak_order_clusters,reversed_weak_order_clusters,exact_baseline_copy,zero_forecast_rank_variation,same_weak_order,reversed_weak_order,abstain,reason
+electricity,dlinear,34992,729,0,48,48,729,729,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+electricity,drift,34992,729,0,48,48,729,729,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+electricity,histgbr_lag,34992,729,0,48,48,729,729,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+electricity,holt_winters,34992,729,0,48,48,729,729,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+electricity,lasso_lag,34992,729,0,48,48,729,729,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+electricity,linear_lag,34992,729,0,48,48,729,729,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+electricity,naive_1,34992,729,0,48,48,729,729,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+electricity,ridge_lag,34992,729,0,48,48,729,729,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+electricity,seasonal_naive_7,34992,729,0,48,48,729,729,729,0,True,False,True,False,True,exact_observed_baseline_copy
+electricity,ses,34992,729,0,48,48,729,729,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+electricity,theta,34992,729,0,48,48,729,729,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+ratings,Alternating least squares,12088,279,18,1,761,261,261,37,23,False,False,False,False,False,no_exact_sample_redundancy_detected
+ratings,Global mean,12088,279,18,1,761,0,261,18,18,False,True,False,False,True,zero_within_cluster_forecast_rank_variation
+ratings,Item mean,12088,279,18,1,761,261,261,279,18,True,False,True,False,True,exact_observed_baseline_copy
+ratings,Item nearest neighbours,12088,279,18,1,761,261,261,38,26,False,False,False,False,False,no_exact_sample_redundancy_detected
+ratings,SVD (32 factors),12088,279,18,1,761,261,261,75,18,False,False,False,False,False,no_exact_sample_redundancy_detected
+ratings,SVD (40 factors),12088,279,18,1,761,261,261,68,19,False,False,False,False,False,no_exact_sample_redundancy_detected
+ratings,SVD interaction,12088,279,18,1,761,261,261,29,27,False,False,False,False,False,no_exact_sample_redundancy_detected
+ratings,Slope One,12088,279,18,1,761,261,261,51,19,False,False,False,False,False,no_exact_sample_redundancy_detected
+ratings,User and item bias,12088,279,18,1,761,261,261,279,18,False,False,True,False,True,same_observed_baseline_weak_order
+ratings,User mean,12088,279,18,1,761,0,261,18,18,False,True,False,False,True,zero_within_cluster_forecast_rank_variation
+retail,Croston SBA,112000,28,0,4000,4000,28,28,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+retail,Eight week mean,112000,28,0,4000,4000,28,28,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+retail,Exponential smoothing,112000,28,0,4000,4000,28,28,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+retail,Four week mean,112000,28,0,4000,4000,28,28,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+retail,Last week,112000,28,0,4000,4000,28,28,28,0,True,False,True,False,True,exact_observed_baseline_copy
+retail,Past price and calendar,112000,28,0,4000,4000,28,28,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+retail,Past price calendar and history,112000,28,0,4000,4000,28,28,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+retail,Ridge with history,112000,28,0,4000,4000,28,28,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+retail,Theta,112000,28,0,4000,4000,28,28,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+retail,Training series mean,112000,28,0,4000,4000,28,28,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+monthly_portfolios,Elastic net,27272,132,0,198,209,132,132,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+monthly_portfolios,Exponential twelve-month mean,27272,132,0,198,209,132,132,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+monthly_portfolios,Last month,27272,132,0,198,209,132,132,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+monthly_portfolios,LightGBM,27272,132,0,198,209,132,132,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+monthly_portfolios,Ridge,27272,132,0,198,209,132,132,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+monthly_portfolios,Seasonal twelve-month lag,27272,132,0,198,209,132,132,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+monthly_portfolios,Small MLP,27272,132,0,198,209,132,132,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+monthly_portfolios,Trailing three-month return,27272,132,0,198,209,132,132,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+monthly_portfolios,Trailing twelve-month return,27272,132,0,198,209,132,132,132,0,True,False,True,False,True,exact_observed_baseline_copy
+monthly_portfolios,Training portfolio mean,27272,132,0,198,209,132,132,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected

@@ -1,0 +1,5 @@
+,signed_variance_only_rejections,comparator_only_rejections,signed_variance_higher_lower,comparator_higher_lower,median_radius_ratio
+absolute_range,11565.0,0.0,100000.0,0.0,0.22321641454114832
+signed_range,10217.0,0.0,100000.0,0.0,0.22321641454114832
+independent_triples,176.0,138.0,50213.0,49787.0,0.9999128514587047
+pooled_variance,11.0,62.0,27958.0,72042.0,1.011137890897179

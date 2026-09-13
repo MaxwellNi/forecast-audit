@@ -1,0 +1,32 @@
+{
+  "rows": 112000,
+  "series": 4000,
+  "weeks": 28,
+  "training_rows": 992000,
+  "complete_weeks": 277,
+  "excluded_partial_weeks": {
+    "11617": 2
+  },
+  "training_cutoff_week": 11541,
+  "test_first_week_end": "2015-11-13",
+  "test_last_week_end": "2016-05-20",
+  "cohort_pre_cutoff_eligible_series": 30402,
+  "target_week_prices_missing_among_evaluation_keys": 0,
+  "independently_recomputed_models": {
+    "Last week": 0.0,
+    "Four week mean": 0.0,
+    "Eight week mean": 0.0,
+    "Exponential smoothing": 0.0,
+    "Training series mean": 0.0,
+    "Croston SBA": 4.547473508864641e-13,
+    "Theta": 2.2737367544323206e-13,
+    "Ridge with history": 8.19784418126801e-09,
+    "Past price and calendar": 0.0,
+    "Past price calendar and history": 0.0
+  },
+  "cohort_exactly_reproduced_without_evaluation_values": true,
+  "all_ten_models_same_raw_labels_and_keys": true,
+  "source_hashes_match_frozen_protocol": true,
+  "forecast_origin_interpretation": "Rolling one-week-ahead; earlier realized test sales/prices may enter later test predictions. Not a fixed-origin 28-step forecast.",
+  "elapsed_seconds": 25.032428231090307
+}

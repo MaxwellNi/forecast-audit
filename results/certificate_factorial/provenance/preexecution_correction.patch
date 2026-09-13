@@ -1,0 +1,18 @@
+--- summary_before_serialization_fix.py
++++ summary_after_serialization_fix.py
+@@ -77,5 +77,5 @@
+             bias_allowance=float(g.bias_upper.mean()),absolute_allowance=float(g.absolute_allowance.mean()),
+             signed_allowance=float(g.signed_allowance.mean()),radius=float(g.radius.mean()),
+-            lower=float(g.lower_bound.mean()),coverage_failures=int((~g.lower_covers).sum()),
++            lower=float(g.lower_bound.mean()),coverage_failures=int((~g.lower_covers).sum()) if g.lower_bound.notna().all() else np.nan,
+             allowance_failures=int((~g.allowance_covers).sum())))
+     return pd.DataFrame(rows)
+@@ -151,5 +151,7 @@
+         independent_verifier='No analysis/producer imports. Recompute all rows, CI endpoints using direct binomial inversion, and selected original primitive validation blocks with generic numeric comparisons and scipy LP.',
+         input_sha256={str(p.relative_to(HERE.parent)) if p.is_relative_to(HERE.parent) else str(p.relative_to(HERE.parents[1])):sha(p) for p in files},
+-        code_sha256=sha(Path(__file__)),environment=dict(python=platform.python_version(),numpy=np.__version__,pandas=pd.__version__))
++        code_sha256=sha(Path(__file__)),environment=dict(python=platform.python_version(),numpy=np.__version__,pandas=pd.__version__),
++        preexecution_revision=dict(prior_protocol_sha256=sha(HERE/'protocol_preexecution_v1.json'),
++            note='Before any run_started/results, corrected summary serialization so test-only betting comparators report coverage as unavailable, not as failures. Scientific design unchanged. Initial code/protocol retained.'))
+     write_new(HERE/'protocol.json',protocol);print(json.dumps(protocol,indent=2))
+ 

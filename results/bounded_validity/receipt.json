@@ -1,0 +1,33 @@
+{
+  "analytic_checks": {
+    "extrapolated_bias": 0.005555555555555588,
+    "pass": true,
+    "population_bin_biases": [
+      0.0888888888888889,
+      0.026388888888888917
+    ],
+    "raw_CI_rank_counterexample_covariance": 0.4999999999999999,
+    "support_extrema": {
+      "bounded_noise": [
+        -1.027777777777778,
+        1.979166666666667
+      ],
+      "noise_free": [
+        -0.027777777777777846,
+        0.14583333333333331
+      ]
+    },
+    "tied_rank_max_n80": 8.83246851112417
+  },
+  "datasets": 2700,
+  "draws_sha256": "b881a82437c541c94e4a008fd50a5097c51b0a6f58ff356f20ef9306fe282a6a",
+  "elapsed_seconds": 4.175442308187485,
+  "independent_primitive_draws": 900,
+  "packaged_protocol_scope": "Current reproduction configuration; not a claim of new experimental execution.",
+  "protocol_sha256": "8b4c372f32b3fee600810c804ceb8577b863c27986d11ae84c9e54e0946f46a1",
+  "source_sha256": {
+    "source_001_bounded_audit.py": "6c971d7aa0d6078ac4234e22b03d35c706709174bb9ce39130fe690dae542f02",
+    "source_002_test_bounded_audit.py": "e0835d86e439bc6c07dc5faa5712ab12c82d22573b6df2239ff13e33f7a32b83",
+    "source_003_verify_validity_construction_20260905.py": "b7c482fc866e32632fef91773842e8841ec128d3d4d64c52ea345644a025c004"
+  }
+}

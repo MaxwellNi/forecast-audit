@@ -1,0 +1,58 @@
+{
+  "status": "Portable reproduction of an originally fixed chronological study; publication adaptation after exposure",
+  "seed": 2026091201,
+  "tasks": [
+    {
+      "name": "appliances",
+      "source_url": "https://archive.ics.uci.edu/static/public/374/appliances+energy+prediction.zip",
+      "time_column": "date",
+      "outcome_column": "Appliances",
+      "doi": "10.24432/C5VC8G",
+      "license": "CC-BY-4.0",
+      "target": "next nominal hour appliance Wh, sum of six complete 10-minute records"
+    },
+    {
+      "name": "metro",
+      "source_url": "https://archive.ics.uci.edu/static/public/492/metro+interstate+traffic+volume.zip",
+      "time_column": "date_time",
+      "outcome_column": "traffic_volume",
+      "doi": "10.24432/C5X60B",
+      "license": "CC-BY-4.0",
+      "target": "next nominal hour ATR301 traffic volume, duplicate source timestamps averaged"
+    }
+  ],
+  "chronology": "Appliances: T0 is the first midnight at or after the first source timestamp. Days [0,56) train, [56,70) calibrate weights, [70,84) select and [84,126) confirm; the remainder is unused. Metro: train before 2016, calibrate in January-June 2016, select in July-December 2016 and confirm in 2017; 2018 is unused. Keep nominal local source timestamps without speculative DST conversion.",
+  "coverage": "At least 500 known training targets and at least 75% of nominal target hours in each other fixed span are required. A failed task is retained without replacement or window adjustment.",
+  "forecast_information": "Strictly previous calendar hours only. Outcomes and numeric covariates assumed available after the measurement hour ends, with zero extra publication delay; no archive vintage reconstruction. Missing calendar slots stay missing. Lag 24/168 fallback lag 1 then training median. Train-only numeric imputation with indicators, all-missing columns retained as zero. No target-hour weather, airport interpolations, random source columns or weather text used.",
+  "predictor_recipe": "Exact hyperparameters and seeds are specified in experiment.py. The Ridge baseline uses lag, rolling and calendar features with alpha 10 and the SVD solver. Richer Ridge, histogram gradient boosting and ExtraTrees additionally use allowed previous-hour numeric covariates. HGB has 200 iterations and 15 leaves; ExtraTrees has 256 trees and depth 12. Persistence, daily/week seasonal forecasts, a category-only copy and fixed uniform noise complete eight candidates. Initial models are never refitted. Both seasonal and Ridge baselines are reported; Ridge is primary.",
+  "controls": "There are 32 declared categories: twice the baseline quantile-bin index plus a weekend indicator. Retain all fifteen training clipped-baseline quantile breakpoints, even if equal; searchsorted uses side=left. This is binned adjustment, not full continuous baseline adjustment. Test raw candidate scores so the category-only copy is an exact conditional-rank null.",
+  "loss": "The scale s is max(1, the training target empirical 99th percentile). Clip each prediction and outcome to [0,s], take their squared difference and divide by s squared. This bounded loss is primary in model fitting, weight calibration, selection, direct-loss testing and confirmation. Models fit clipped training targets; all delivered forecasts and augmentations are clipped. Raw MSE/MAE are secondary and compare those delivered forecasts with untruncated outcomes. Unaugmented candidate forecasts are rank-test inputs.",
+  "calibration": "For each baseline b and candidate f, fit b + t*(f-b) using calibration data only and t in {0, .05, ..., 2}. Separately fit convex t in {0, .05, ..., 1}. Choose the smallest t in a tie. Freeze before selection metrics.",
+  "selection": "For each of the five fixed gate methods separately, apply BY at q=.05 to all eight raw candidate rank targets, or the fixed augmentation loss-gain targets for the direct-loss gate. Choose the retained augmentation with the smallest selection bounded MSE only if it strictly improves on baseline; baseline wins exact ties. Ungated selection compares the same eight fitted augmentations and baseline without a gate. Convex selection uses its separately calibrated weights. Freeze every rule before confirmation.",
+  "methods": [
+    "reference_u",
+    "reference_betting",
+    "known_forecast_u",
+    "known_forecast_pairs",
+    "loss_gain"
+  ],
+  "inference": "Condition on the complete fixed selection archive. All 32,768 row indices are independent uniform replacement draws. Reference methods use 4,096 nuisance-training rows, 8,192 validation pairs and 12,288 evaluation rows. Known-forecast methods use exact full-forecast centered midrank metadata and all 32,768 sampled outcomes, with an order-two full U statistic or 16,384 independent-pair kernels. The direct-loss method uses 32,768 bounded gains. Each method has its own complete BY family of eight; no global multiple-method FDR or temporal independence is claimed.",
+  "betting": "Use an equal-weight mixture of 64 fixed geometric fractions from 1e-4 to .99, multiplying over independent symmetrized triples. The p-value is min(1, delta + 1/E); this is not an uncorrected e-BH rule. Validation delta is 0.1*.05 divided by (8 times the eighth harmonic number). No mixture tuning after outcomes.",
+  "confirmation": "All32 task/baseline/rule outcomes retained (five gates,ungated,convex,baseline). Primary contrast: Ridge reference_u against ungated and convex on both tasks. Practical cross-task success requires improvement on BOTH tasks against BOTH, while every strong-comparator result remains visible. Report actual paired per-row differences and week summaries, with descriptive observed-support summaries; the separately specified conditional-average bounds below allow temporal dependence. Confirmation is evaluated once after frozen selections. No seed/window/candidate changes after outcomes.",
+  "cost": "Count source rows, labels at every stage, complete model preparation, calibration and selection censuses, 32,768 gate query calls, distinct queried labels, known-forecast metadata scans and exact-target diagnostic censuses. Raw archives are fully materialized, so no acquisition saving or label-saving claim is made. Methods share forecasts and temporal supports.",
+  "adjudication": "The original local protocol and implementation were fixed before source retrieval. The fixed choices exclude Metro weather text and interpolated airport measurements; use train-median numeric imputation and indicators; test raw candidate ranks; and retain five complete gate families. Later exact-integer residual correction and portable code adaptation do not create a new independent confirmation. There was no external preregistration. Energy and transport are two new dataset tasks in the audited exposure scope, not a claim of two entirely new broad subject domains.",
+  "limits": {
+    "threads": 1,
+    "phase_wall_seconds": 2400,
+    "resident_memory_gib": 8,
+    "failure_policy": "Preserve errors. No post-outcome scientific retuning. Mechanical corrections must be documented and the exposed status retained."
+  },
+  "dependent_confirmation_bound": {
+    "source": "Classical conditional Hoeffding lemma / Azuma-Hoeffding martingale argument; no novel inequality claimed.",
+    "contrasts": "Four primary Ridge contrasts: reference_u vs ungated/convex on each task. No post-result contrast selection.",
+    "alpha_each": 0.0125,
+    "target": "Mean over fixed nominal hours of E[I_t*(loss_comparator_t-loss_reference_u_t)|past]. Prediction and selector must be adapted; availability-weighted target does not assume missing-at-random.",
+    "construction": "Use every nominal confirmation slot: 1,008 for Appliances and 8,760 for Metro. Assign zero observed gain to missing targets. The lower bound is sum(observed gains)/T - sqrt(2*log(1/alpha_each)/T). A four-way union bound gives simultaneous 95% coverage. Original hours may be dependent.",
+    "scope": "Covers same-period conditional average gain under stated information availability, not full-population raw MSE, later time-period performance, nor a rank-to-risk implication."
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "source_file": "peer_sampling.csv",
+  "source_sha256": "8e589be4d2ae6aa061a4a4c0a36a8a5c1f10d016a15718e534aa83f8705afbdc",
+  "generator_sha256": "9f01f8f1057e4327991a482316ac232d65e7605c721e4ec0c13768ecbb08cc0e",
+  "scope": "Conditional-null simulations with 32 entities per period, 300 replications per cell and exact conditional means. Intervals are pointwise 95% Wilson intervals. Fixed effects are aligned or opposed between forecast and outcome.",
+  "reference_line": 0.05,
+  "points": [
+    {
+      "peer_regime": "resampled_peers",
+      "method": "shared_references",
+      "periods": 25,
+      "replications": 300,
+      "rejections": 56,
+      "plotted_x": 25.0,
+      "rejection_rate": 0.18666666666666668,
+      "wilson95": [
+        0.1466374821326313,
+        0.23461877983475085
+      ]
+    },
+    {
+      "peer_regime": "resampled_peers",
+      "method": "shared_references",
+      "periods": 100,
+      "replications": 300,
+      "rejections": 138,
+      "plotted_x": 100.0,
+      "rejection_rate": 0.46,
+      "wilson95": [
+        0.4044631474970939,
+        0.5165482902008698
+      ]
+    },
+    {
+      "peer_regime": "resampled_peers",
+      "method": "shared_references",
+      "periods": 400,
+      "replications": 300,
+      "rejections": 284,
+      "plotted_x": 400.0,
+      "rejection_rate": 0.9466666666666667,
+      "wilson95": [
+        0.9151308582251686,
+        0.9669080874809034
+      ]
+    },
+    {
+      "peer_regime": "resampled_peers",
+      "method": "distinct_references",
+      "periods": 25,
+      "replications": 300,
+      "rejections": 15,
+      "plotted_x": 25.0,
+      "rejection_rate": 0.05,
+      "wilson95": [
+        0.03053164062934728,
+        0.08084703347274415
+      ]
+    },
+    {
+      "peer_regime": "resampled_peers",
+      "method": "distinct_references",
+      "periods": 100,
+      "replications": 300,
+      "rejections": 16,
+      "plotted_x": 100.0,
+      "rejection_rate": 0.05333333333333334,
+      "wilson95": [
+        0.03309191251909646,
+        0.08486914177483133
+      ]
+    },
+    {
+      "peer_regime": "resampled_peers",
+      "method": "distinct_references",
+      "periods": 400,
+      "replications": 300,
+      "rejections": 13,
+      "plotted_x": 400.0,
+      "rejection_rate": 0.043333333333333335,
+      "wilson95": [
+        0.025496448084407246,
+        0.07271746563401146
+      ]
+    },
+    {
+      "peer_regime": "fixed_peers_aligned_effects",
+      "method": "shared_references",
+      "periods": 25,
+      "replications": 300,
+      "rejections": 14,
+      "plotted_x": 25.0,
+      "rejection_rate": 0.04666666666666667,
+      "wilson95": [
+        0.027998933682334012,
+        0.07679736022792105
+      ]
+    },
+    {
+      "peer_regime": "fixed_peers_aligned_effects",
+      "method": "shared_references",
+      "periods": 100,
+      "replications": 300,
+      "rejections": 15,
+      "plotted_x": 100.0,
+      "rejection_rate": 0.05,
+      "wilson95": [
+        0.03053164062934728,
+        0.08084703347274415
+      ]
+    },
+    {
+      "peer_regime": "fixed_peers_aligned_effects",
+      "method": "shared_references",
+      "periods": 400,
+      "replications": 300,
+      "rejections": 16,
+      "plotted_x": 400.0,
+      "rejection_rate": 0.05333333333333334,
+      "wilson95": [
+        0.03309191251909646,
+        0.08486914177483133
+      ]
+    },
+    {
+      "peer_regime": "fixed_peers_aligned_effects",
+      "method": "distinct_references",
+      "periods": 25,
+      "replications": 300,
+      "rejections": 0,
+      "plotted_x": 25.0,
+      "rejection_rate": 0.0,
+      "wilson95": [
+        8.673617379884035e-19,
+        0.012642971224546034
+      ]
+    },
+    {
+      "peer_regime": "fixed_peers_aligned_effects",
+      "method": "distinct_references",
+      "periods": 100,
+      "replications": 300,
+      "rejections": 0,
+      "plotted_x": 100.0,
+      "rejection_rate": 0.0,
+      "wilson95": [
+        8.673617379884035e-19,
+        0.012642971224546034
+      ]
+    },
+    {
+      "peer_regime": "fixed_peers_aligned_effects",
+      "method": "distinct_references",
+      "periods": 400,
+      "replications": 300,
+      "rejections": 0,
+      "plotted_x": 400.0,
+      "rejection_rate": 0.0,
+      "wilson95": [
+        8.673617379884035e-19,
+        0.012642971224546034
+      ]
+    },
+    {
+      "peer_regime": "fixed_peers_opposed_effects",
+      "method": "shared_references",
+      "periods": 25,
+      "replications": 300,
+      "rejections": 16,
+      "plotted_x": 25.0,
+      "rejection_rate": 0.05333333333333334,
+      "wilson95": [
+        0.03309191251909646,
+        0.08486914177483133
+      ]
+    },
+    {
+      "peer_regime": "fixed_peers_opposed_effects",
+      "method": "shared_references",
+      "periods": 100,
+      "replications": 300,
+      "rejections": 16,
+      "plotted_x": 100.0,
+      "rejection_rate": 0.05333333333333334,
+      "wilson95": [
+        0.03309191251909646,
+        0.08486914177483133
+      ]
+    },
+    {
+      "peer_regime": "fixed_peers_opposed_effects",
+      "method": "shared_references",
+      "periods": 400,
+      "replications": 300,
+      "rejections": 17,
+      "plotted_x": 400.0,
+      "rejection_rate": 0.056666666666666664,
+      "wilson95": [
+        0.03567747646328951,
+        0.08886595802247463
+      ]
+    },
+    {
+      "peer_regime": "fixed_peers_opposed_effects",
+      "method": "distinct_references",
+      "periods": 25,
+      "replications": 300,
+      "rejections": 65,
+      "plotted_x": 25.0,
+      "rejection_rate": 0.21666666666666667,
+      "wilson95": [
+        0.1737878350698321,
+        0.2667098486240773
+      ]
+    },
+    {
+      "peer_regime": "fixed_peers_opposed_effects",
+      "method": "distinct_references",
+      "periods": 100,
+      "replications": 300,
+      "rejections": 156,
+      "plotted_x": 100.0,
+      "rejection_rate": 0.52,
+      "wilson95": [
+        0.4635710820137406,
+        0.5759231991372775
+      ]
+    },
+    {
+      "peer_regime": "fixed_peers_opposed_effects",
+      "method": "distinct_references",
+      "periods": 400,
+      "replications": 300,
+      "rejections": 284,
+      "plotted_x": 400.0,
+      "rejection_rate": 0.9466666666666667,
+      "wilson95": [
+        0.9151308582251686,
+        0.9669080874809034
+      ]
+    }
+  ],
+  "size_inches": [
+    7.04,
+    2.2
+  ]
+}

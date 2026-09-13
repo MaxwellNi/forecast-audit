@@ -1,0 +1,11 @@
+model,row_count,cluster_count,singleton_clusters,minimum_cluster_size,maximum_cluster_size,nonconstant_forecast_clusters,nonconstant_baseline_clusters,same_weak_order_clusters,reversed_weak_order_clusters,exact_baseline_copy,zero_forecast_rank_variation,same_weak_order,reversed_weak_order,abstain,reason
+Croston SBA,112000,28,0,4000,4000,28,28,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+Eight week mean,112000,28,0,4000,4000,28,28,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+Exponential smoothing,112000,28,0,4000,4000,28,28,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+Four week mean,112000,28,0,4000,4000,28,28,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+Last week,112000,28,0,4000,4000,28,28,28,0,True,False,True,False,True,exact_observed_baseline_copy
+Past price and calendar,112000,28,0,4000,4000,28,28,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+Past price calendar and history,112000,28,0,4000,4000,28,28,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+Ridge with history,112000,28,0,4000,4000,28,28,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+Theta,112000,28,0,4000,4000,28,28,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected
+Training series mean,112000,28,0,4000,4000,28,28,0,0,False,False,False,False,False,no_exact_sample_redundancy_detected

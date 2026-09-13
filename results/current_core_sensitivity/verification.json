@@ -1,0 +1,9 @@
+{
+  "draw_rows": 9900,
+  "draws_sha256": "6bb9f9c4a586f4760f28de2273fe83641a80e25574bb3eff8f6ffa1b95f08342",
+  "full_core_exact_checks": 33,
+  "independent_primitive_draws": 300,
+  "protocol_sha256": "7ccbdf33da313587b6fb40a116d16de1c6c53ee6fd8b29e558e8778733602bbf",
+  "status": "PASS",
+  "summary_cells": 33
+}

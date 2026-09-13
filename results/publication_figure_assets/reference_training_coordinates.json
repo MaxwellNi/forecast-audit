@@ -1,0 +1,252 @@
+{
+  "sources": {
+    "peer_sampling.csv": "8e589be4d2ae6aa061a4a4c0a36a8a5c1f10d016a15718e534aa83f8705afbdc",
+    "summary.csv": "7610ae22cc8bc904f17a542c5c33d1f9fbaef6e8e1bc7f9bb9f0273de908ac76"
+  },
+  "generator_sha256": "3cf7614561fcef29321cbd9290140b7606ba056ffe71aa256ba1d8ba00ef01f2",
+  "points": [
+    {
+      "panel": "resampled_peers",
+      "method": "shared",
+      "x": 25,
+      "rate": 0.18666666666666668,
+      "rejections": 56,
+      "replications": 300,
+      "wilson_low": 0.1466374821326313,
+      "wilson_high": 0.23461877983475085
+    },
+    {
+      "panel": "resampled_peers",
+      "method": "shared",
+      "x": 100,
+      "rate": 0.46,
+      "rejections": 138,
+      "replications": 300,
+      "wilson_low": 0.4044631474970939,
+      "wilson_high": 0.5165482902008698
+    },
+    {
+      "panel": "resampled_peers",
+      "method": "shared",
+      "x": 400,
+      "rate": 0.9466666666666667,
+      "rejections": 284,
+      "replications": 300,
+      "wilson_low": 0.9151308582251686,
+      "wilson_high": 0.9669080874809034
+    },
+    {
+      "panel": "resampled_peers",
+      "method": "distinct",
+      "x": 25,
+      "rate": 0.05,
+      "rejections": 15,
+      "replications": 300,
+      "wilson_low": 0.03053164062934728,
+      "wilson_high": 0.08084703347274415
+    },
+    {
+      "panel": "resampled_peers",
+      "method": "distinct",
+      "x": 100,
+      "rate": 0.05333333333333334,
+      "rejections": 16,
+      "replications": 300,
+      "wilson_low": 0.03309191251909646,
+      "wilson_high": 0.08486914177483133
+    },
+    {
+      "panel": "resampled_peers",
+      "method": "distinct",
+      "x": 400,
+      "rate": 0.043333333333333335,
+      "rejections": 13,
+      "replications": 300,
+      "wilson_low": 0.025496448084407246,
+      "wilson_high": 0.07271746563401146
+    },
+    {
+      "panel": "learned",
+      "method": "shared",
+      "x": 32,
+      "rate": 0.677,
+      "rejections": 677,
+      "replications": 1000,
+      "wilson_low": 0.6473872202713616,
+      "wilson_high": 0.705258107224752
+    },
+    {
+      "panel": "learned",
+      "method": "shared",
+      "x": 512,
+      "rate": 0.465,
+      "rejections": 465,
+      "replications": 1000,
+      "wilson_low": 0.4342791187506989,
+      "wilson_high": 0.49598875434329004
+    },
+    {
+      "panel": "learned",
+      "method": "shared",
+      "x": 8192,
+      "rate": 0.402,
+      "rejections": 402,
+      "replications": 1000,
+      "wilson_low": 0.3720422335603109,
+      "wilson_high": 0.4327078111028579
+    },
+    {
+      "panel": "learned",
+      "method": "distinct",
+      "x": 32,
+      "rate": 0.527,
+      "rejections": 527,
+      "replications": 1000,
+      "wilson_low": 0.4960112345098614,
+      "wilson_high": 0.5577821205319188
+    },
+    {
+      "panel": "learned",
+      "method": "distinct",
+      "x": 512,
+      "rate": 0.079,
+      "rejections": 79,
+      "replications": 1000,
+      "wilson_low": 0.06384721576082919,
+      "wilson_high": 0.09737491488400823
+    },
+    {
+      "panel": "learned",
+      "method": "distinct",
+      "x": 8192,
+      "rate": 0.041,
+      "rejections": 41,
+      "replications": 1000,
+      "wilson_low": 0.030364971082098315,
+      "wilson_high": 0.0551479932076413
+    },
+    {
+      "panel": "fixed_peers_aligned_effects",
+      "method": "shared",
+      "x": 25,
+      "rate": 0.04666666666666667,
+      "rejections": 14,
+      "replications": 300,
+      "wilson_low": 0.027998933682334012,
+      "wilson_high": 0.07679736022792105
+    },
+    {
+      "panel": "fixed_peers_aligned_effects",
+      "method": "shared",
+      "x": 100,
+      "rate": 0.05,
+      "rejections": 15,
+      "replications": 300,
+      "wilson_low": 0.03053164062934728,
+      "wilson_high": 0.08084703347274415
+    },
+    {
+      "panel": "fixed_peers_aligned_effects",
+      "method": "shared",
+      "x": 400,
+      "rate": 0.05333333333333334,
+      "rejections": 16,
+      "replications": 300,
+      "wilson_low": 0.03309191251909646,
+      "wilson_high": 0.08486914177483133
+    },
+    {
+      "panel": "fixed_peers_aligned_effects",
+      "method": "distinct",
+      "x": 25,
+      "rate": 0.0,
+      "rejections": 0,
+      "replications": 300,
+      "wilson_low": 8.673617379884035e-19,
+      "wilson_high": 0.012642971224546034
+    },
+    {
+      "panel": "fixed_peers_aligned_effects",
+      "method": "distinct",
+      "x": 100,
+      "rate": 0.0,
+      "rejections": 0,
+      "replications": 300,
+      "wilson_low": 8.673617379884035e-19,
+      "wilson_high": 0.012642971224546034
+    },
+    {
+      "panel": "fixed_peers_aligned_effects",
+      "method": "distinct",
+      "x": 400,
+      "rate": 0.0,
+      "rejections": 0,
+      "replications": 300,
+      "wilson_low": 8.673617379884035e-19,
+      "wilson_high": 0.012642971224546034
+    },
+    {
+      "panel": "fixed_peers_opposed_effects",
+      "method": "shared",
+      "x": 25,
+      "rate": 0.05333333333333334,
+      "rejections": 16,
+      "replications": 300,
+      "wilson_low": 0.03309191251909646,
+      "wilson_high": 0.08486914177483133
+    },
+    {
+      "panel": "fixed_peers_opposed_effects",
+      "method": "shared",
+      "x": 100,
+      "rate": 0.05333333333333334,
+      "rejections": 16,
+      "replications": 300,
+      "wilson_low": 0.03309191251909646,
+      "wilson_high": 0.08486914177483133
+    },
+    {
+      "panel": "fixed_peers_opposed_effects",
+      "method": "shared",
+      "x": 400,
+      "rate": 0.056666666666666664,
+      "rejections": 17,
+      "replications": 300,
+      "wilson_low": 0.03567747646328951,
+      "wilson_high": 0.08886595802247463
+    },
+    {
+      "panel": "fixed_peers_opposed_effects",
+      "method": "distinct",
+      "x": 25,
+      "rate": 0.21666666666666667,
+      "rejections": 65,
+      "replications": 300,
+      "wilson_low": 0.1737878350698321,
+      "wilson_high": 0.2667098486240773
+    },
+    {
+      "panel": "fixed_peers_opposed_effects",
+      "method": "distinct",
+      "x": 100,
+      "rate": 0.52,
+      "rejections": 156,
+      "replications": 300,
+      "wilson_low": 0.4635710820137406,
+      "wilson_high": 0.5759231991372775
+    },
+    {
+      "panel": "fixed_peers_opposed_effects",
+      "method": "distinct",
+      "x": 400,
+      "rate": 0.9466666666666667,
+      "rejections": 284,
+      "replications": 300,
+      "wilson_low": 0.9151308582251686,
+      "wilson_high": 0.9669080874809034
+    }
+  ],
+  "reference_line": 0.05,
+  "intervals": "pointwise Wilson 95%",
+  "sampling": "Panels a,c,d: N=32,300 replications and exact means. Panel b: N=64,M=400,1000 replications, empirically estimated means from independent training."
+}

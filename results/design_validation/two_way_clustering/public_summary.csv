@@ -1,0 +1,5 @@
+domain,models,retained_published,retained_twoway,lost_under_twoway,gained_under_twoway
+electricity,11,10,10,[],[]
+ratings,10,6,6,[],[]
+retail,10,7,7,[],[]
+portfolios,10,0,0,[],[]

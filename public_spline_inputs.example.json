@@ -1,0 +1,41 @@
+{
+  "electricity": [
+    "/path/to/electricity/new_predictions.csv.gz"
+  ],
+  "ratings": [
+    "/path/to/ratings/model_01.parquet",
+    "/path/to/ratings/model_02.parquet",
+    "/path/to/ratings/model_03.parquet",
+    "/path/to/ratings/model_04.parquet",
+    "/path/to/ratings/model_05.parquet",
+    "/path/to/ratings/model_06.parquet",
+    "/path/to/ratings/model_07.parquet",
+    "/path/to/ratings/model_08.parquet",
+    "/path/to/ratings/model_09.parquet",
+    "/path/to/ratings/model_10.parquet"
+  ],
+  "retail": [
+    "/path/to/retail/model_01.parquet",
+    "/path/to/retail/model_02.parquet",
+    "/path/to/retail/model_03.parquet",
+    "/path/to/retail/model_04.parquet",
+    "/path/to/retail/model_05.parquet",
+    "/path/to/retail/model_06.parquet",
+    "/path/to/retail/model_07.parquet",
+    "/path/to/retail/model_08.parquet",
+    "/path/to/retail/model_09.parquet",
+    "/path/to/retail/model_10.parquet"
+  ],
+  "portfolios": [
+    "/path/to/portfolios/model_01.parquet",
+    "/path/to/portfolios/model_02.parquet",
+    "/path/to/portfolios/model_03.parquet",
+    "/path/to/portfolios/model_04.parquet",
+    "/path/to/portfolios/model_05.parquet",
+    "/path/to/portfolios/model_06.parquet",
+    "/path/to/portfolios/model_07.parquet",
+    "/path/to/portfolios/model_08.parquet",
+    "/path/to/portfolios/model_09.parquet",
+    "/path/to/portfolios/model_10.parquet"
+  ]
+}

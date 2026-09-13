@@ -1,0 +1,100 @@
+{
+  "alpha": 0.05,
+  "archive": "First96 header meters MT_001...MT_096; nominal daily arithmetic kW means of exactly96 supplied quarter-hour slots. Exclude partial edge days; fail on interior missing data. All zeros retained. Fixed targets2013-01-01 through2014-12-31 inclusive, expected70080 rows.",
+  "attribution": "Trindade, A. (2015). ElectricityLoadDiagrams20112014 [Dataset]. UCI Machine Learning Repository. CC BY 4.0.",
+  "by_q": 0.05,
+  "candidates": [
+    "hist_gradient_boosting",
+    "seasonal_7d",
+    "categorical_copy_control"
+  ],
+  "categories": "C=2*target_weekend+I(seasonal_7d > median seasonal_7d on chronological forecast-training rows). Four fixed categories. Numeric threshold fitted only on pre2013 rows and sealed with forecasts. Binned baseline/calendar target; residual within-bin baseline information may remain.",
+  "census": "Compute exact full-archive midranks, category means and theta only after certificate_results.csv is written. Census is a diagnostic and exact alternative, never used for fitting, choosing budgets, method, categories, or certificate. Benchmark32768 sampled rowqueries and their unique union against70080-row census, plus end-to-end archive construction and runtimes. No claimed overall access saving: preparation materializes the whole archive.",
+  "comparator_contract": "All methods share exactly the same training, validation and evaluation draws, nuisance fits and candidate family. Grouped fullU uses128 groups of96; pooled fullU uses all12288; independent triples use4096 disjoint triples. No extra observations. Each method has its own reported fixed3-target BY family; no selection among methods by results.",
+  "copy_control": "categorical_copy_control=C as a numeric score, so its exact archive conditional residual target is zero. Keep it in each complete three-member family; no outcome-based exclusion.",
+  "delta": 0.0001,
+  "environment": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.9.21",
+    "scipy": "1.13.1",
+    "sklearn": "1.6.1"
+  },
+  "evaluation_groups": 128,
+  "evaluation_peers": 96,
+  "evaluation_rows": 12288,
+  "family_size": 3,
+  "features": [
+    "lag1",
+    "lag2",
+    "lag7",
+    "lag14",
+    "lag28",
+    "mean7",
+    "mean28",
+    "target_dow_sin",
+    "target_dow_cos",
+    "target_year_sin",
+    "target_year_cos"
+  ],
+  "frozen_utc": "2026-09-12T14:28:47.339152+00:00",
+  "helper_sources": {
+    "category_reference_certificate.py": {
+      "sha256": "cba724a995d2d18405a19a6d82dd91c4eb365d34462fb5cd4a3707a4dc7fa84b",
+      "source": "helpers/category_reference_certificate.py"
+    },
+    "peer_rank_products.py": {
+      "sha256": "e614c9d29bb4bbe5e35df073c664c3224c18eaa36eda012e342658246c9a893d",
+      "source": "helpers/peer_rank_products.py"
+    },
+    "reference_certificate_efficiency.py": {
+      "sha256": "90247801d60445a7c8a9ffdca7c571fbd972c8895ab2ebf2e90dfae85bb68c2b",
+      "source": "helpers/reference_certificate_efficiency.py"
+    }
+  },
+  "inference_scope": "Conditional design-based finite-archive statement. Original meter/time dependence is irrelevant to iid index sampling given fixed archive, but results do not certify future forecasting, real-time risk, continuous-baseline incremental information, or causal provenance. Historical raw vintages are not reconstructed.",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "locking": "Protocol and source/helper hashes precede preparation; model, numeric category threshold and archive hash sealed before any audit sampling/outcomes; all results retained; no retuning after audit. Local timing is not external preregistration.",
+  "methods": [
+    "grouped_full_u_absolute_range",
+    "grouped_full_u_signed_range",
+    "grouped_full_u_signed_variance",
+    "pooled_full_u_signed_range",
+    "pooled_full_u_signed_variance",
+    "independent_triples_signed_range",
+    "independent_triples_signed_bernstein"
+  ],
+  "model": {
+    "early_stopping": false,
+    "l2_regularization": 1.0,
+    "learning_rate": 0.05,
+    "max_iter": 160,
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 32,
+    "name": "HistGradientBoostingRegressor",
+    "random_state": 2609123147
+  },
+  "nuisance_fit": "Candidate/outcome marginal leave-one-out midranks in the independent4096-row training sample, averaged by fixed C and clipped[0,1]; empty training categories get0.5. No census ranks or means enter training.",
+  "nuisance_training_rows": 4096,
+  "population": "Uniform finite empirical law over all frozen 2013-2014 target-day x first96-meter archive rows. Condition on this complete archive.",
+  "primary": "pooled_full_u_signed_variance: one full order-three U statistic over all12288 evaluation draws, signed learning allowance, proved variance bound with fixed disjoint-triple variance scores; familyBY across3 candidates.",
+  "public_packaging": {
+    "change": "Portable relative source/helper paths and receipt hash links only; original models, archive, draw indices and numerical results are unchanged.",
+    "original_hashes": "ORIGINAL_RUN_HASHES.json",
+    "timestamp_scope": "Original recorded times describe the original local execution. These repackaged public bytes were not executed at those times."
+  },
+  "sampling": "Independent SeedSequence child streams for4096 training rowindices,8192 disjoint focal/reference validation pairs, and128x96 evaluation rowindices; every index drawn independently uniformly WITH replacement from the frozen archive. Repeated physical rows within/across samples are retained; independence is that of the randomized indices conditional on the fixed archive.",
+  "script_sha256": "16e1c75e2b1d15530248e50d6b30989447f167cfd0f80ead38c2bff1652c6b60",
+  "seed": 2609123147,
+  "source_bytes": 261335609,
+  "source_doi": "https://doi.org/10.24432/C58C86",
+  "source_inventory": "Existing previously used public archive; this is a new locally frozen design-based analysis, not a newly acquired or previously unseen dataset.",
+  "source_sha256": "f6c4d0e0df12ecdb9ea008dd6eef3518adb52c559d04a9bac2e1b81dcfc8d4e1",
+  "source_url": "https://archive.ics.uci.edu/static/public/321/electricityloaddiagrams20112014.zip",
+  "target": "For each fixed candidate X and actual daily mean Y: theta_A=E_A[(F_mid,X,A(X)-E_A[F_mid,X,A(X)|C])*(F_mid,Y,A(Y)-E_A[F_mid,Y,A(Y)|C])]. Marginal population midranks, no within-date ranking, no claim about full continuous baseline adjustment.",
+  "timing": "One-day-ahead daily mean forecast after previous nominal calendar day is observed. Lags target-minus1,2,7,14,28 and previous7/28-day means; target calendar deterministic. All forecast model training targets strictly before2013-01-01. No forecast refit in archive.",
+  "total_sample_row_queries": 32768,
+  "validation": "Each iid validation pair supplies a focal category and focal/reference midcomparison for X and Y. Signed and absolute budgets share identical cell-mean rectangles and Clopper-Pearson category mass bounds; unobserved cells retained.",
+  "validation_pairs": 8192,
+  "validation_rows": 16384
+}

@@ -1,0 +1,30 @@
+{
+  "purpose": "Reference hashes of the existing local public inputs used in the successful OSAP replay on 2026-09-05. No original input files are redistributed.",
+  "input_sha256": {
+    "predictor_ports_full.parquet": "2464b3f608ba076f0c3d1bc64af80070f967c0d57c57219ded726a08e0a7cc44",
+    "F-F_Research_Data_5_Factors_2x3.csv": "b65691efc6d5a28670b49c80b7e4c544cc160cefc8cec41bb1d617e76e67c493",
+    "F-F_Momentum_Factor.csv": "cd2429809e081485a5a62860de64af090948c26b835b92085dcfbb0e08de8663"
+  },
+  "source_pages": {
+    "portfolio_returns": "https://www.openassetpricing.com/data/",
+    "official_csv_exporter": "https://github.com/OpenSourceAP/CrossSection/blob/master/Portfolios/Code/20_PredictorPorts.R",
+    "five_factors": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html",
+    "momentum_factor": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/det_mom_factor.html"
+  },
+  "input_schema": {
+    "portfolio_parquet": [
+      "signalname",
+      "port",
+      "date",
+      "ret",
+      "signallag",
+      "Nlong",
+      "Nshort"
+    ],
+    "long_short_rows": 173302,
+    "long_short_signals": 212
+  },
+  "historical_download_version": "Not independently established. A current download or a newly serialized parquet need not have these exact bytes.",
+  "preparation_tool": "scripts/analysis/prepare_osap_inputs.py",
+  "portfolio_units": "Return units are preserved by preparation; the existing audit combines percentage returns with percentage Ken French factor returns."
+}

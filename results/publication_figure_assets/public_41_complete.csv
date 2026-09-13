@@ -1,0 +1,42 @@
+domain,model,display_name,descriptive_score,mae,mae_status,mae_units,T_beta2,T_spline,guarded_BY_p,final_decision,abstention_reason,finite_copy_or_order_guard,undefined
+electricity,dlinear,DLinear,0.99150090235039345,4.5850489680874844,computed,daily mean in original UCI load units,8.7628575466187009,8.925659822734385,5.269645076491516e-18,retain,none,False,False
+electricity,drift,Drift,0.98265695551500598,6.8554568728803877,computed,daily mean in original UCI load units,9.0659387533537519,9.250888478760151,5.148667944931997e-19,retain,none,False,False
+electricity,histgbr_lag,Histogram gradient boosting,0.99110924091627473,5.5592710537299244,computed,daily mean in original UCI load units,7.4904028865944108,7.722892870049854,1.1404380561489648e-13,retain,none,False,False
+electricity,holt_winters,Holt-Winters,0.95410554909875733,5.5568639410852585,computed,daily mean in original UCI load units,9.0202780336979274,8.790244357788675,6.2322352497422247e-19,retain,none,False,False
+electricity,lasso_lag,Lasso lag regression,0.98750953973416311,5.9690790179141988,computed,daily mean in original UCI load units,8.3516027729296027,8.56183752398884,1.2427985414459695e-16,retain,none,False,False
+electricity,linear_lag,Linear lag regression,0.98751371115347109,5.9504144183577807,computed,daily mean in original UCI load units,8.3562524271901051,8.565853791733275,1.2427985414459695e-16,retain,none,False,False
+electricity,naive_1,One-day persistence,0.98263967575790012,6.8581029833786316,computed,daily mean in original UCI load units,9.0655346606942473,9.25130939348023,5.148667944931997e-19,retain,none,False,False
+electricity,ridge_lag,Ridge lag regression,0.98952398842539746,5.354170553023863,computed,daily mean in original UCI load units,8.5320495588239265,8.694869449194476,3.4114945806208189e-17,retain,none,False,False
+electricity,seasonal_naive_7,Seven-day persistence,0.98522059337329881,6.3068801092740525,computed,daily mean in original UCI load units,-5.3554476889312852,4.938213193092078,1,abstain,exact_observed_baseline_copy,True,False
+electricity,ses,Exponential smoothing,0.94747484528961412,8.0643246566311824,computed,daily mean in original UCI load units,9.4222283815049046,9.246851993172388,7.3349178697038641e-20,retain,none,False,False
+electricity,theta,Theta,0.98984769453684396,4.8933458012159248,computed,daily mean in original UCI load units,9.2391269103397526,9.448110122801834,2.0638475865684457e-19,retain,none,False,False
+portfolios,Elastic net,Elastic net,0.056695745603337795,2.7497758669914183,computed,percentage points of return,0.94697965408148399,0.9458686262733754,1,null,none,False,False
+portfolios,Exponential twelve-month mean,Exponential twelve-month mean,0.08238922633797463,2.8508669554524149,computed,percentage points of return,1.2910757657451699,1.2781205021051223,1,null,none,False,False
+portfolios,Last month,Last month,0.05099817172068026,3.769197830617141,computed,percentage points of return,1.4540050401801183,1.4438273716382972,1,null,none,False,False
+portfolios,LightGBM,LightGBM,0.045043165817219961,2.7512386639308986,computed,percentage points of return,-0.26911021267788099,-0.28497822829528513,1,null,none,False,False
+portfolios,Ridge,Ridge,0.056214794946525835,2.7578914415294822,computed,percentage points of return,0.94242001369609196,0.9417271686585829,1,null,none,False,False
+portfolios,Seasonal twelve-month lag,Seasonal twelve-month lag,0.0037492261719687674,3.8343524715575046,computed,percentage points of return,-1.100404678678665,-1.1101888618111715,1,null,none,False,False
+portfolios,Small MLP,Small MLP,0.016815132996317338,2.9368319055691301,computed,percentage points of return,-1.137301009949647,-1.1235159539178268,1,null,none,False,False
+portfolios,Trailing three-month return,Trailing three-month return,0.032417959306823632,5.6151749928425119,computed,percentage points of return,-0.2035670260604521,-0.2081236182486496,1,null,none,False,False
+portfolios,Trailing twelve-month return,Trailing twelve-month return,0.079192016493576642,11.791534754631686,computed,percentage points of return,0.85980907442531662,-0.7906129020952645,1,abstain,exact_observed_baseline_copy,True,False
+portfolios,Training portfolio mean,Training portfolio mean,0.047194966807735356,2.7585160166287803,computed,percentage points of return,-2.1112743566108398,-2.10993438904199,1,null,none,False,False
+ratings,Alternating least squares,Alternating least squares,0.27358344596833317,0.71899960052014489,computed,rating points,12.743562925312736,12.670868276062574,1.6527786374380712e-36,retain,none,False,False
+ratings,Global mean,Global mean,,0.74747284338371656,computed,rating points,,,1,abstain,zero_within_cluster_forecast_rank_variation,False,True
+ratings,Item mean,Item mean,0.31577549457095366,0.69274958309605128,computed,rating points,2.6118208231587663,3.1966285031423416,1,abstain,exact_observed_baseline_copy,True,False
+ratings,Item nearest neighbours,Item nearest neighbors,0.394732003758899,0.58110038296601219,computed,rating points,12.92678700964048,12.886632595321352,2.3272511401916762e-37,retain,none,False,False
+ratings,SVD (32 factors),SVD (32 factors),0.33889577243021757,0.60829866809035904,computed,rating points,10.075530418996635,10.102852543771748,2.0759742833604864e-23,retain,none,False,False
+ratings,SVD (40 factors),SVD (40 factors),0.35181527164791171,0.60809797204846194,computed,rating points,10.618683043442299,10.635186937977746,8.932576882595599e-26,retain,none,False,False
+ratings,SVD interaction,SVD interaction,0.14354835715986536,,interaction_only_score_not_rating_prediction,rating points,13.597640215602308,13.525753320823602,6.0565626471366981e-41,retain,none,False,False
+ratings,Slope One,Slope One,0.3362542065615875,0.61164017903792944,computed,rating points,7.1766365022036451,7.125995992072474,1.7438909674629517e-12,retain,none,False,False
+ratings,User and item bias,User and item bias,0.31577549457095366,0.62258133767169632,computed,rating points,2.6118208231587663,3.1966285031423416,1,abstain,same_observed_baseline_weak_order,True,False
+ratings,User mean,User mean,,0.71529005895082409,computed,rating points,,,1,abstain,zero_within_cluster_forecast_rank_variation,False,True
+retail,Croston SBA,Croston SBA,0.70384955098923141,4.3551902061695529,computed,weekly sales units,-8.5909875885465468,-13.153617863950144,1,null,none,False,False
+retail,Eight week mean,Eight week mean,0.80031230994920211,3.7395558035714287,computed,weekly sales units,3.8406667900086138,3.8423954878835307,0.0002994883987224518,retain,none,False,False
+retail,Exponential smoothing,Exponential smoothing,0.82131046113004413,3.4922793996756738,computed,weekly sales units,4.2896523744623423,5.615230783146654,5.2414765877128654e-05,retain,none,False,False
+retail,Four week mean,Four week mean,0.82048889105039291,3.5480558035714287,computed,weekly sales units,6.0378415019742473,7.997835817672497,7.6245614923075095e-09,retain,none,False,False
+retail,Last week,Last week,0.79215751275239621,3.8665178571428571,computed,weekly sales units,1.9303410329989004,-0.5018128710497514,1,abstain,exact_observed_baseline_copy,True,False
+retail,Past price and calendar,Past price and calendar,0.13586028689961019,9.1299626196888273,computed,weekly sales units,7.6756612656702323,6.76054653713173,2.4100645219212154e-13,retain,none,False,False
+retail,Past price calendar and history,Past price calendar and history,0.82698030543115308,3.4622748401346195,computed,weekly sales units,4.710654756103474,7.871077240307,9.0403417262834888e-06,retain,none,False,False
+retail,Ridge with history,Ridge with history,0.8202991487062371,3.5612306209119842,computed,weekly sales units,3.650525923131529,7.8798597982052625,0.00054751599654048169,retain,none,False,False
+retail,Theta,Theta,0.83380917064490701,3.4051180294005783,computed,weekly sales units,6.3620597443570981,9.573179018768027,1.4576448157305601e-09,retain,none,False,False
+retail,Training series mean,Training series mean,0.61547934515721681,5.6340023761520737,computed,weekly sales units,,,1,abstain,undefined_audit_scale,False,True

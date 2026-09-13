@@ -1,0 +1,63 @@
+{
+  "status": "COMPLETED_DIAGNOSTIC_SCREEN",
+  "completed_utc": "2026-09-07T21:01:41.435934+00:00",
+  "input_sha256": "7781a94717ab73100485123ad57559722f7bc50a959f01b31eef72a073cc9e24",
+  "family_size": 10,
+  "models": [
+    "Croston SBA",
+    "Eight week mean",
+    "Exponential smoothing",
+    "Four week mean",
+    "Last week",
+    "Past price and calendar",
+    "Past price calendar and history",
+    "Ridge with history",
+    "Theta",
+    "Training series mean"
+  ],
+  "specification": {
+    "frequency": "W-FRI",
+    "lag": 2,
+    "beta": 2,
+    "ladder": [
+      8,
+      12,
+      16,
+      24,
+      32
+    ],
+    "alpha": 0.05,
+    "folds": 5,
+    "fold_scheme": "contiguous whole observed periods",
+    "minimum_clusters": 5
+  },
+  "counts": {
+    "RETAIN": 7,
+    "ABSTAIN": 2,
+    "NULL": 1
+  },
+  "finite_certificate_issued": false,
+  "guarantee_scope": "The five-period minimum allows the five-fold calculation; it does not establish inference validity. The M<=50 flag records an empirical concern, not a validity threshold. Larger panels also require justified sampling, dependence and nuisance conditions. Observed-copy/order guards and full-family BY do not calibrate the underlying normal-reference values.",
+  "selection": "The CLI uses exactly the supplied exponent, ladder, lag and family. It performs no outcome-based choice or tuning.",
+  "fold_scope": "Complete observed periods stay in a single fold. Training may use periods later than an evaluation period; this is not a forward-only forecast-training procedure. Forecasts must already respect the intended evaluation protocol.",
+  "guard_scope": "Exact observed copy, constant within-period ranks, same or reversed weak ordering, and numerical undefined-scale rules. Observed agreement does not prove population measurability. Undefined statistics are blank, with guarded p=1 and ABSTAIN.",
+  "output_scope": "Model and resolution aggregates only; individual outcomes, forecasts, residuals and entity/period labels are not written. Aggregate output may still require publication permission.",
+  "sources": {
+    "forecast_audit_cli.py": "76569a0f71f7e9311c9a3b415553ed5d8bc9650aa8cce737d8be2f6ff4d36d88",
+    "audit_panel_predictions.py": "92489cf8cdae0650cd6493112d28fe13b34cfb356cae02c83a387d39f9561ff3",
+    "audit_decisions.py": "eb5ea949f7ff400aa59e7a5caeb45522ddb8272f72d4f448e695cc2878519305",
+    "cluster_covariance_reference.py": "48911f76a06fb565060394f4a5d30ef242ed80f9ba64405da28641773d30c760"
+  },
+  "dependencies": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.11.4"
+  },
+  "files": {
+    "by_trace.csv": "5f4939d477ad0c3f15604f87410f120436868c6f3536193d3728b1c42cf16ff4",
+    "cohorts.csv": "dc5d63cf368b9d091012fd59c8c50fd584be34a541611ec7e4da6bbdf0eb7c20",
+    "guard_evidence.csv": "85456f4fc3ff800affbb90b97324751360a93b79bc3c895145009be1ea7068e6",
+    "profile.csv": "95af3b3b54e2cb6ab75705cdf43c330c98b08db2ac51172f6bdfd964985f2675",
+    "resolution_trace.csv": "68385a9b63ff0aa26418a8770e6d52216fed928b65dc9c3bb71f7bd1161aee32"
+  }
+}

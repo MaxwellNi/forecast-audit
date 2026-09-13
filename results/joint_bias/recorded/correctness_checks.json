@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "seed": 202609122111,
+  "known_cases": [
+    {
+      "name": "attainable_strict_improvement",
+      "bias_upper": 0.3125,
+      "separable": 0.3515625
+    },
+    {
+      "name": "single_cell_strict_relaxation",
+      "bias_upper": 0.25,
+      "separable": 0.25
+    },
+    {
+      "name": "three_cell_strict_relaxation",
+      "bias_upper": 0.015625,
+      "separable": 0.015625
+    }
+  ],
+  "three_cell_coherent_maximum": "3/256",
+  "three_cell_relaxation_gap": "1/256",
+  "finite_frame_cases": 120,
+  "strict_improvement_cases": 120,
+  "max_independent_corner_formulation_gap": 4.996003610813204e-16,
+  "fallback_checks": 3,
+  "tamper_rejections": 3,
+  "invalid_input_rejections": 4,
+  "exact_lift_and_arbitrary_dual_checks": true
+}

@@ -1,0 +1,25 @@
+{
+  "calibration_draws": 600,
+  "cost": "150 fully observed oracle null datasets per regime, each with n=400, supplied by the known generating law; not free deployable calibration labels.",
+  "evaluated_method_rows": 10800,
+  "files": {
+    "calibration_banks.csv": "11edd063feffb98f12ba48202453b045380b7880c34d8b539cf1b24b69987673",
+    "evaluated.csv": "323596c2a4e1f67b4deba4bc29ed0596fcd5a3bb5758231836ddc0ef97d3e843",
+    "paired_power.csv": "552beb7590c5248711897df35f5266499614fa3ea852d171f0dbc41e6322d392",
+    "summary.csv": "79cdcaa7c967a11ef1010fe13ae942d689ebf7c98d75816cca40196b4efb9cba"
+  },
+  "interpretation": "One retrospective independent-bank analysis, not a new forecasting model or confirmation of actual panel assumptions. No universal superiority conclusion, no data-dependent omitted cell, no repeat split.",
+  "interval_scope": "All 48 method/regime/null-or-positive cells; conditional-on-bank Wilson95 intervals. These intervals do not assess the marginal Monte Carlo validity theorem.",
+  "marginal_rank_bound": 0.046357615894039736,
+  "method_summary_cells": 48,
+  "packaged_protocol_scope": "Current reproduction configuration; not a claim of new experimental execution.",
+  "paired_comparisons": 60,
+  "positive_draws": 1200,
+  "protocol_sha256": "2cb665043c5b3b42a1f1ba7774df5338d81ac630204f3eba60b0eef0abe6cbbe",
+  "script_sha256": "7269dc8c9c35b4b5d77979c29f8486532cf5b75fc90bb405426bffb3b4b53924",
+  "source_sha256": "ccae5edac6f4249995e9be224edad6f973d72efd8b444a7c8f5db0a40a33f221",
+  "status": "COMPLETE",
+  "timing": "Existing full outputs were already available and discussed. This split is fixed before secondary calculation, not before original data generation, and is not a confirmatory preregistration.",
+  "unique_source_draws": 2400,
+  "validation_null_draws": 600
+}

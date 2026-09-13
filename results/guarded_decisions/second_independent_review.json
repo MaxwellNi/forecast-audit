@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "source_sha256": "eb5ea949f7ff400aa59e7a5caeb45522ddb8272f72d4f448e695cc2878519305",
+  "exhaustive_tied_order_pairs": 7380,
+  "rank_reference": "scipy.stats.rankdata average",
+  "comparison_reference": "full pairwise sign matrices on all ternary vectors of lengths1through4",
+  "additional_cases": [
+    "mixed cluster orientations retained",
+    "reversed unequal tied blocks abstain"
+  ],
+  "theorem_review": "p_policy >= p_raw pointwise preserves marginal super-uniformity if originally available, and BY on the unchanged complete family has its usual conditional premise. The rule makes no population measurability claim from sample order agreement. Rejection-set containment alone is not invoked as FDR proof."
+}

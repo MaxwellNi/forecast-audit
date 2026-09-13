@@ -1,0 +1,453 @@
+{
+  "audit": {
+    "betas": [
+      1,
+      2
+    ],
+    "calendar_frequency": "M",
+    "family_size": 10,
+    "floor_policy": "Numerically near-zero standard error in normalized rank-product units is undefined and assigned p=1; not a statistical calibration correction.",
+    "fold_schemes": [
+      "contiguous",
+      "interleaved"
+    ],
+    "hac_lag": 12,
+    "interpretation": "Nominal normal-reference diagnostics only. Neither covariance assumptions nor nuisance bias or real-data inferential calibration is established.",
+    "multiple_testing": "Benjamini-Yekutieli separately within the complete ten-model family for each prespecified specification",
+    "primary_beta": 1,
+    "qs": [
+      8,
+      12,
+      16,
+      24,
+      32
+    ],
+    "score_standard_error_floor": 1e-10,
+    "single_q": 10,
+    "source_lock": "Forecast sources are frozen here; audit source hashes are recorded separately at run start and checked again at completion.",
+    "whole_month_folds": 5
+  },
+  "audit_source_hashes": {
+    "audit_panel_predictions.py": "92489cf8cdae0650cd6493112d28fe13b34cfb356cae02c83a387d39f9561ff3",
+    "cluster_covariance_reference.py": "48911f76a06fb565060394f4a5d30ef242ed80f9ba64405da28641773d30c760",
+    "reproduce_public_forecasts.py": "7d410888b093813e33c88159cc56b11ec6932fbd11de1ae8526afbc7613888f8"
+  },
+  "dataset": "Open Source Asset Pricing published portfolio returns",
+  "dataset_relationship": "A forecasting task on the same public source used by the separate factor-alpha task; not an independent additional dataset.",
+  "dependencies": {
+    "lightgbm": "4.6.0",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "pyarrow": "21.0.0",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.11.4",
+    "statsmodels": "0.14.6"
+  },
+  "elapsed_seconds": 149.77845080196857,
+  "folds": [
+    {
+      "fit_cutoff": "2012-12-31",
+      "fit_runtime_seconds": {
+        "Elastic net": 0.156636543571949,
+        "LightGBM": 0.7323325388133526,
+        "Ridge": 0.01644713059067726,
+        "Small MLP": 8.389578718692064
+      },
+      "fit_warnings": {
+        "Elastic net": [],
+        "LightGBM": [],
+        "Ridge": [],
+        "Small MLP": [
+          "Stochastic Optimizer: Maximum iterations (50) reached and the optimization hasn't converged yet."
+        ]
+      },
+      "latest_training_label_maturity": "2012-12-31",
+      "latest_training_origin": "2012-11-30",
+      "preprocessing_sha256": "561ee52274b83b6e2ab5bbad1400a9d367ae9d86bbb0ac298cf709b87b8a2a01",
+      "test_rows": 2500,
+      "test_year": 2013,
+      "training_rows": 56725
+    },
+    {
+      "fit_cutoff": "2013-12-31",
+      "fit_runtime_seconds": {
+        "Elastic net": 0.12021436914801598,
+        "LightGBM": 0.5478112138807774,
+        "Ridge": 0.010044049471616745,
+        "Small MLP": 8.344173096120358
+      },
+      "fit_warnings": {
+        "Elastic net": [],
+        "LightGBM": [],
+        "Ridge": [],
+        "Small MLP": [
+          "Stochastic Optimizer: Maximum iterations (50) reached and the optimization hasn't converged yet."
+        ]
+      },
+      "latest_training_label_maturity": "2013-12-31",
+      "latest_training_origin": "2013-11-30",
+      "preprocessing_sha256": "8aa9872ab086a28f588504964e4add302074591b8f7bde4fb0dc83a468d3686d",
+      "test_rows": 2484,
+      "test_year": 2014,
+      "training_rows": 59227
+    },
+    {
+      "fit_cutoff": "2014-12-31",
+      "fit_runtime_seconds": {
+        "Elastic net": 0.14272068068385124,
+        "LightGBM": 0.5517731346189976,
+        "Ridge": 0.01723434403538704,
+        "Small MLP": 11.01671464368701
+      },
+      "fit_warnings": {
+        "Elastic net": [],
+        "LightGBM": [],
+        "Ridge": [],
+        "Small MLP": [
+          "Stochastic Optimizer: Maximum iterations (50) reached and the optimization hasn't converged yet."
+        ]
+      },
+      "latest_training_label_maturity": "2014-12-31",
+      "latest_training_origin": "2014-11-30",
+      "preprocessing_sha256": "1eda1f531ba9cd3d67d6693a662e379408c37243c134283bcf19718bb99a25a0",
+      "test_rows": 2484,
+      "test_year": 2015,
+      "training_rows": 61711
+    },
+    {
+      "fit_cutoff": "2015-12-31",
+      "fit_runtime_seconds": {
+        "Elastic net": 0.07362603023648262,
+        "LightGBM": 0.5996177047491074,
+        "Ridge": 0.01016906276345253,
+        "Small MLP": 9.33928569406271
+      },
+      "fit_warnings": {
+        "Elastic net": [],
+        "LightGBM": [],
+        "Ridge": [],
+        "Small MLP": [
+          "Stochastic Optimizer: Maximum iterations (50) reached and the optimization hasn't converged yet."
+        ]
+      },
+      "latest_training_label_maturity": "2015-12-31",
+      "latest_training_origin": "2015-11-30",
+      "preprocessing_sha256": "7c0cf35cf439b96049a435000756fbd43387e56615aac385154ab17ee36019de",
+      "test_rows": 2491,
+      "test_year": 2016,
+      "training_rows": 64195
+    },
+    {
+      "fit_cutoff": "2016-12-31",
+      "fit_runtime_seconds": {
+        "Elastic net": 0.04914131388068199,
+        "LightGBM": 0.595684252679348,
+        "Ridge": 0.011497821658849716,
+        "Small MLP": 8.617136374115944
+      },
+      "fit_warnings": {
+        "Elastic net": [],
+        "LightGBM": [],
+        "Ridge": [],
+        "Small MLP": [
+          "Stochastic Optimizer: Maximum iterations (50) reached and the optimization hasn't converged yet."
+        ]
+      },
+      "latest_training_label_maturity": "2016-12-31",
+      "latest_training_origin": "2016-11-30",
+      "preprocessing_sha256": "bf750c9fb00bd9caf993b8d900e5615be4c44ff500c585259a7ee00756a35ba4",
+      "test_rows": 2496,
+      "test_year": 2017,
+      "training_rows": 66685
+    },
+    {
+      "fit_cutoff": "2017-12-31",
+      "fit_runtime_seconds": {
+        "Elastic net": 0.21611099690198898,
+        "LightGBM": 0.6641676425933838,
+        "Ridge": 0.011177387088537216,
+        "Small MLP": 11.832594275474548
+      },
+      "fit_warnings": {
+        "Elastic net": [],
+        "LightGBM": [],
+        "Ridge": [],
+        "Small MLP": [
+          "Stochastic Optimizer: Maximum iterations (50) reached and the optimization hasn't converged yet."
+        ]
+      },
+      "latest_training_label_maturity": "2017-12-31",
+      "latest_training_origin": "2017-11-30",
+      "preprocessing_sha256": "59e1f497583284297b5c5300292749048a15646aea17f97f0cb3cc049b90c3ae",
+      "test_rows": 2489,
+      "test_year": 2018,
+      "training_rows": 69181
+    },
+    {
+      "fit_cutoff": "2018-12-31",
+      "fit_runtime_seconds": {
+        "Elastic net": 0.10003521665930748,
+        "LightGBM": 0.6514251045882702,
+        "Ridge": 0.011595901101827621,
+        "Small MLP": 11.83692505210638
+      },
+      "fit_warnings": {
+        "Elastic net": [],
+        "LightGBM": [],
+        "Ridge": [],
+        "Small MLP": [
+          "Stochastic Optimizer: Maximum iterations (50) reached and the optimization hasn't converged yet."
+        ]
+      },
+      "latest_training_label_maturity": "2018-12-31",
+      "latest_training_origin": "2018-11-30",
+      "preprocessing_sha256": "e00635b160bae787de412d691166cf089ff9f3326ab8c4e676616386001f7c3d",
+      "test_rows": 2484,
+      "test_year": 2019,
+      "training_rows": 71671
+    },
+    {
+      "fit_cutoff": "2019-12-31",
+      "fit_runtime_seconds": {
+        "Elastic net": 0.03696060553193092,
+        "LightGBM": 0.6401262357831001,
+        "Ridge": 0.012691587209701538,
+        "Small MLP": 13.347126692533493
+      },
+      "fit_warnings": {
+        "Elastic net": [],
+        "LightGBM": [],
+        "Ridge": [],
+        "Small MLP": [
+          "Stochastic Optimizer: Maximum iterations (50) reached and the optimization hasn't converged yet."
+        ]
+      },
+      "latest_training_label_maturity": "2019-12-31",
+      "latest_training_origin": "2019-11-30",
+      "preprocessing_sha256": "3f3f65fd1e662bdf12f802b8f5eba6088cb5c44e806694e1b6aa68029aef34d6",
+      "test_rows": 2484,
+      "test_year": 2020,
+      "training_rows": 74155
+    },
+    {
+      "fit_cutoff": "2020-12-31",
+      "fit_runtime_seconds": {
+        "Elastic net": 0.14630471915006638,
+        "LightGBM": 0.7245913594961166,
+        "Ridge": 0.012882012873888016,
+        "Small MLP": 13.79733081907034
+      },
+      "fit_warnings": {
+        "Elastic net": [],
+        "LightGBM": [],
+        "Ridge": [],
+        "Small MLP": [
+          "Stochastic Optimizer: Maximum iterations (50) reached and the optimization hasn't converged yet."
+        ]
+      },
+      "latest_training_label_maturity": "2020-12-31",
+      "latest_training_origin": "2020-11-30",
+      "preprocessing_sha256": "4392a1acf776134d77e9510e6e1d8d13bcba921b2884c8fee96cfd0007798cb1",
+      "test_rows": 2484,
+      "test_year": 2021,
+      "training_rows": 76639
+    },
+    {
+      "fit_cutoff": "2021-12-31",
+      "fit_runtime_seconds": {
+        "Elastic net": 0.03778716176748276,
+        "LightGBM": 0.5556810609996319,
+        "Ridge": 0.01275947317481041,
+        "Small MLP": 14.113705266267061
+      },
+      "fit_warnings": {
+        "Elastic net": [],
+        "LightGBM": [],
+        "Ridge": [],
+        "Small MLP": [
+          "Stochastic Optimizer: Maximum iterations (50) reached and the optimization hasn't converged yet."
+        ]
+      },
+      "latest_training_label_maturity": "2021-12-31",
+      "latest_training_origin": "2021-11-30",
+      "preprocessing_sha256": "5c1984343166fa621d6bffa58fc3cbfd1a864b6bd3ac4de1b08b3a77ffd62dcf",
+      "test_rows": 2484,
+      "test_year": 2022,
+      "training_rows": 79123
+    },
+    {
+      "fit_cutoff": "2022-12-31",
+      "fit_runtime_seconds": {
+        "Elastic net": 0.24132613465189934,
+        "LightGBM": 0.7060000039637089,
+        "Ridge": 0.018516171723604202,
+        "Small MLP": 14.576682962477207
+      },
+      "fit_warnings": {
+        "Elastic net": [],
+        "LightGBM": [],
+        "Ridge": [],
+        "Small MLP": [
+          "Stochastic Optimizer: Maximum iterations (50) reached and the optimization hasn't converged yet."
+        ]
+      },
+      "latest_training_label_maturity": "2022-12-31",
+      "latest_training_origin": "2022-11-30",
+      "preprocessing_sha256": "32d236887c901c9d38e272b6e23d8371c6721c6a79e2276ca82b27969e0370ef",
+      "test_rows": 2392,
+      "test_year": 2023,
+      "training_rows": 81607
+    }
+  ],
+  "input_sha256": "2464b3f608ba076f0c3d1bc64af80070f967c0d57c57219ded726a08e0a7cc44",
+  "interpretation": "Retrospective chronological public-data forecasting and nominal full-family diagnostics; no historical signal-discovery-vintage or statistical-certification claim",
+  "learned_regressor_fits": 44,
+  "model_errors": [
+    {
+      "mae": 3.769197830617141,
+      "mean_monthly_spearman": 0.05099817172068026,
+      "model": "Last month",
+      "months": 132,
+      "n": 27272,
+      "pooled_spearman": 0.0605868771909135,
+      "prediction_sha256": "34dd2e216333a00500b72756d8c4d916e7a3942b992ac2c0b173aa587aab6ead",
+      "rmse": 6.392951498407612
+    },
+    {
+      "mae": 5.615174992842512,
+      "mean_monthly_spearman": 0.03241795930682364,
+      "model": "Trailing three-month return",
+      "months": 132,
+      "n": 27272,
+      "pooled_spearman": 0.03429072259850773,
+      "prediction_sha256": "d7f7a8c6108097601f58f35d88b3cd5f06df5b9494a500da77c003ad04431b7d",
+      "rmse": 9.729576472053736
+    },
+    {
+      "mae": 11.791534754631686,
+      "mean_monthly_spearman": 0.07919201649357664,
+      "model": "Trailing twelve-month return",
+      "months": 132,
+      "n": 27272,
+      "pooled_spearman": 0.08254587521045102,
+      "prediction_sha256": "e4515f4d4cfdfaadfb8d39d30057e2d5bc27e480f07f88adcd061f7addd54f5a",
+      "rmse": 23.973016410478778
+    },
+    {
+      "mae": 3.8343524715575046,
+      "mean_monthly_spearman": 0.0037492261719687696,
+      "model": "Seasonal twelve-month lag",
+      "months": 132,
+      "n": 27272,
+      "pooled_spearman": 0.001395096984392818,
+      "prediction_sha256": "89c0f8d5426e14cb5f34bc543e71d3a24b473765b8df4e174da53be03a6e9e01",
+      "rmse": 6.458202401379942
+    },
+    {
+      "mae": 2.7585160166287803,
+      "mean_monthly_spearman": 0.047194966807735356,
+      "model": "Training portfolio mean",
+      "months": 132,
+      "n": 27272,
+      "pooled_spearman": 0.04204637227412106,
+      "prediction_sha256": "f26f835f81bde6e69757fd1e7db0f63d82bf19fc562784e5b7577cf0d8bb8a8a",
+      "rmse": 4.65258647987982
+    },
+    {
+      "mae": 2.850866955452415,
+      "mean_monthly_spearman": 0.08238922633797464,
+      "model": "Exponential twelve-month mean",
+      "months": 132,
+      "n": 27272,
+      "pooled_spearman": 0.08833883778424373,
+      "prediction_sha256": "d039a7507b3b921baa846dc7fae059ad2b8308814d44f60414ae637d1c18049c",
+      "rmse": 4.860569287949868
+    },
+    {
+      "mae": 2.757891441529482,
+      "mean_monthly_spearman": 0.05621479494652584,
+      "model": "Ridge",
+      "months": 132,
+      "n": 27272,
+      "pooled_spearman": 0.0660986246861422,
+      "prediction_sha256": "689542d2c0c3a344288eae3646f7a870598e36c9f1a4e94c9b41fed2c3c4a35a",
+      "rmse": 4.674990498187603
+    },
+    {
+      "mae": 2.7497758669914183,
+      "mean_monthly_spearman": 0.056695745603337795,
+      "model": "Elastic net",
+      "months": 132,
+      "n": 27272,
+      "pooled_spearman": 0.0660307284524215,
+      "prediction_sha256": "a1c324222d3bef8db4756916d765a006f1105f281add9b2fbdd5e4e4a5925cce",
+      "rmse": 4.659841478835205
+    },
+    {
+      "mae": 2.7512386639308986,
+      "mean_monthly_spearman": 0.04504316581721996,
+      "model": "LightGBM",
+      "months": 132,
+      "n": 27272,
+      "pooled_spearman": 0.05983765888151019,
+      "prediction_sha256": "77d6bdea1160fc4a3bcc8916607caf8948a33871ac4db988489dd5594e012142",
+      "rmse": 4.669961606108315
+    },
+    {
+      "mae": 2.93683190556913,
+      "mean_monthly_spearman": 0.01681513299631733,
+      "model": "Small MLP",
+      "months": 132,
+      "n": 27272,
+      "pooled_spearman": 0.02290846968718457,
+      "prediction_sha256": "e4bcae5ae84cd41fd002573239502b422b80b790311ac2692234c10dc2e01631",
+      "rmse": 5.0487713050374134
+    }
+  ],
+  "model_family_size": 10,
+  "numeric_provenance": {
+    "author_endorsed_download_package": "https://github.com/mk0417/open-asset-pricing-download",
+    "historical_vintage_policy": "Current public-release numerical verification does not establish historical publication clocks, signal discovery dates, or investable portfolio construction at forecast origins.",
+    "local_input_filename": "predictor_ports_full.parquet",
+    "local_input_sha256": "2464b3f608ba076f0c3d1bc64af80070f967c0d57c57219ded726a08e0a7cc44",
+    "local_keys_absent_official": 0,
+    "local_ls_rows": 173302,
+    "matched_local_keys": 173302,
+    "matched_value_mismatches_1e12": 0,
+    "maximum_absolute_matched_return_difference": 0.0,
+    "official_file_sha256": "79aa0896d79924e1efa83f9afe51a3b4ce94137adfd2c5c3fd2d5d350532ee18",
+    "official_file_url": "https://drive.google.com/uc?export=download&id=10sOryk_ddjkXagaajTKUk1nwJs2ZLRiI",
+    "official_filename": "PredictorLSretWide.csv",
+    "official_home": "https://www.openassetpricing.com/",
+    "official_nonmissing_keys_absent_local": 0,
+    "official_release_folder": "https://drive.google.com/drive/folders/1qQDuTsnyvWfEJR6nPBQZ8xxlq6bkLG_y",
+    "official_signals": 212,
+    "release": "2025.10",
+    "release_url_source": "https://github.com/mk0417/open-asset-pricing-download/blob/master/openassetpricing/urls.py",
+    "retrieved_utc": "2026-09-05T18:34:51.741874+00:00",
+    "return_units": "Percent as used in the published portfolio return export, not decimal; preserved unchanged."
+  },
+  "preparation": {
+    "evaluation_months": 132,
+    "evaluation_origins_on_calendar": 27379,
+    "evaluation_rows_with_all_thirty_features": 27255,
+    "evaluation_rows_with_observed_target_and_baseline": 27272,
+    "evaluation_rows_without_baseline": 94,
+    "evaluation_rows_without_target": 83,
+    "evaluation_series": 209,
+    "input_sha256": "2464b3f608ba076f0c3d1bc64af80070f967c0d57c57219ded726a08e0a7cc44",
+    "panel_rows": 84583,
+    "panel_sha256": "921f43d64704a458071d66d3acb5f3a509e812dd9c671c3ba85b3a86cea374a8",
+    "protocol_sha256": "c6c86f2348023b2d88d5743ecae452201c9b374a3ed1c8f9a83b251435086225",
+    "series": 212,
+    "source_release_vs_historical_observability": "A public downloaded release can establish numeric provenance; it does not establish which release or signal definitions were available at each historical origin."
+  },
+  "prepared_panel_sha256": "921f43d64704a458071d66d3acb5f3a509e812dd9c671c3ba85b3a86cea374a8",
+  "protocol_sha256": "c6c86f2348023b2d88d5743ecae452201c9b374a3ed1c8f9a83b251435086225",
+  "row_level_outputs_published": false,
+  "source_hashes": {
+    "monthly_portfolio_forecasters.py": "a27663fe5ca19dc6d39e7d01de0b6ab6d5c91f1e3e5432f2be465e30c78a5fcb",
+    "reproduce_monthly_portfolio_forecasts.py": "83df7bb4704c547e51c2902357d06d747c08b1f09c75781461d66581822e2488"
+  },
+  "task": "Next-calendar-month public long-short portfolio return forecasting"
+}

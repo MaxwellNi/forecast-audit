@@ -1,0 +1,8 @@
+model,role,training_seed,equal_month_mean_spearman,pooled_spearman,within_month_spearman_standard_deviation
+Custom adversarial residual-ranking MLP (three-seed mean),Fixed ensemble,,0.00274647787935966,-0.0003456463444273172,0.09043306539143697
+Custom adversarial residual-ranking MLP (seed 11),Individual seed,11,0.002577046898332221,0.013670173477817698,0.09046319461130668
+Custom adversarial residual-ranking MLP (seed 23),Individual seed,23,-0.0006321071390244433,-0.01478397511650857,0.10244202773234236
+Custom adversarial residual-ranking MLP (seed 47),Individual seed,47,0.0037437646993417283,-0.0025016538160963567,0.09067345441884328
+Ridge regression,Fitted comparator,,0.05666800051103659,0.04032736358144126,0.12920357384028483
+Histogram gradient boosting,Fitted comparator,,0.037944726667518754,0.022672431148260026,0.11770926279116646
+One-month momentum,Unfit control,,0.023141831040327,-0.004440516180878664,0.12295271370272284

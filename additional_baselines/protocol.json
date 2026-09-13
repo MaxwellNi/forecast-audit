@@ -1,0 +1,4089 @@
+{
+  "analysis_plan": [
+    "Use original driver defaults and unchanged scientific functions; alter only output destinations and add deterministic logging hooks.",
+    "Recount rejection rates, exact denominators and pointwise Wilson 95% intervals from newly stored per-seed decisions. Compare original-driver rounded output and historical summaries after complete prescribed runs.",
+    "Retain all nine ablation settings and all grid/stress cells; distinguish the legacy .18/.90 heuristic thresholds from alpha .05.",
+    "For adaptive beta, record both statistics, product means, standard errors, estimated exponent and squared weight norms on every draw. Do not infer universal impossibility or fixed-exponent validity.",
+    "Recorded summaries are retained; supplementary diagnostic interpretations do not establish calibrated inference.",
+    "No data-dependent exclusion, source correction, new seed, hyperparameter tuning or repeated favorable rerun. If failure occurs, preserve logs and report; no silent replacement."
+  ],
+  "completion_required_before_summary": true,
+  "designs": {
+    "ablation": {
+      "alternative_seed0": 75707,
+      "configurations": [
+        {
+          "beta": 1.0,
+          "binning": "equal-mass",
+          "label": "deployed",
+          "ladder": [
+            8,
+            12,
+            16,
+            24,
+            32
+          ],
+          "sweeps": 12
+        },
+        {
+          "beta": 1.0,
+          "binning": "equal-mass",
+          "label": "ladder: short {8,16,32}",
+          "ladder": [
+            8,
+            16,
+            32
+          ],
+          "sweeps": 12
+        },
+        {
+          "beta": 1.0,
+          "binning": "equal-mass",
+          "label": "ladder: long {8..40}",
+          "ladder": [
+            8,
+            12,
+            16,
+            20,
+            24,
+            28,
+            32,
+            40
+          ],
+          "sweeps": 12
+        },
+        {
+          "beta": 0.5,
+          "binning": "equal-mass",
+          "label": "beta=0.5",
+          "ladder": [
+            8,
+            12,
+            16,
+            24,
+            32
+          ],
+          "sweeps": 12
+        },
+        {
+          "beta": 1.5,
+          "binning": "equal-mass",
+          "label": "beta=1.5",
+          "ladder": [
+            8,
+            12,
+            16,
+            24,
+            32
+          ],
+          "sweeps": 12
+        },
+        {
+          "beta": 2.0,
+          "binning": "equal-mass",
+          "label": "beta=2.0",
+          "ladder": [
+            8,
+            12,
+            16,
+            24,
+            32
+          ],
+          "sweeps": 12
+        },
+        {
+          "beta": 1.0,
+          "binning": "equal-width",
+          "label": "binning: equal-width",
+          "ladder": [
+            8,
+            12,
+            16,
+            24,
+            32
+          ],
+          "sweeps": 12
+        },
+        {
+          "beta": 1.0,
+          "binning": "equal-mass",
+          "label": "nuisance: light fit (4 sweeps)",
+          "ladder": [
+            8,
+            12,
+            16,
+            24,
+            32
+          ],
+          "sweeps": 4
+        },
+        {
+          "beta": 1.0,
+          "binning": "equal-mass",
+          "label": "nuisance: heavy fit (24 sweeps)",
+          "ladder": [
+            8,
+            12,
+            16,
+            24,
+            32
+          ],
+          "sweeps": 24
+        }
+      ],
+      "expected_raw_rows": 9540,
+      "null_seed0": 70707,
+      "overlap": 0.8,
+      "regimes": [
+        "smooth",
+        "nonlinear",
+        "large_n",
+        "heavy_tail"
+      ],
+      "seeds_per_cell": {
+        "heavy_tail": 150,
+        "large_n": 80,
+        "nonlinear": 150,
+        "smooth": 150
+      }
+    },
+    "adaptive_beta": {
+      "adaptive_beta_estimator": "Negative log-log slope of absolute adjacent product-mean differences, clipped to [0.5,2]; estimated from same evaluation spectrum.",
+      "expected_raw_rows": 400,
+      "expected_test_decisions": 800,
+      "fixed_beta": 1.0,
+      "ladder": [
+        8,
+        12,
+        16,
+        24,
+        32
+      ],
+      "metric_delta": {
+        "power": 0.15,
+        "typeI": 0.0
+      },
+      "overlap": 0.8,
+      "regimes": [
+        "smooth",
+        "nonlinear",
+        "large_n",
+        "heavy_tail"
+      ],
+      "same_seed_null_alt": true,
+      "seed0": 505,
+      "seeds_per_cell": 50
+    },
+    "generalization": {
+      "alternative_seed0": 85808,
+      "expected_raw_rows": 42400,
+      "methods": [
+        "ours",
+        "GCM coarse",
+        "GCM fine",
+        "linear",
+        "permutation",
+        "weighted GCM",
+        "projected CM",
+        "local perm."
+      ],
+      "null_seed0": 80808,
+      "overlap": [
+        0.5,
+        0.65,
+        0.8,
+        0.9,
+        0.95
+      ],
+      "reason_for_replay": "No per-seed historical records exist; exact logging needed before retaining a quantified grid table. Comparator fidelity is audited separately, not repaired by replay.",
+      "regimes": [
+        "smooth",
+        "nonlinear",
+        "large_n",
+        "heavy_tail"
+      ],
+      "seeds_per_cell": {
+        "heavy_tail": 150,
+        "large_n": 80,
+        "nonlinear": 150,
+        "smooth": 150
+      }
+    },
+    "stress": {
+      "expected_raw_rows": 1400,
+      "metric_delta": {
+        "power": 0.15,
+        "typeI": 0.0
+      },
+      "overlap": 0.8,
+      "reason_for_replay": "Recount all stress rates from individual decisions rather than copying CSV aggregates.",
+      "same_seed_null_alt": true,
+      "seed0": 505,
+      "seeds_per_cell": {
+        "high_dim_fe": 100,
+        "overlap": 200,
+        "serial": 200,
+        "small_T": 200
+      }
+    }
+  },
+  "original_protocol_sha256": "eb67f9c59f0b3506c2688fd7a188ec2c48d5cd7d308497f6a619771dfb857145",
+  "original_runner_sha256": "af0247dada0a8ebeef45834e6eba8c86ba0eb89775523807c02aaf62c15b39ca",
+  "portable_recount_sha256": "b339dc4528176a791b71eb6f8c52309167775385beae061df52eca602e0cefe1",
+  "portable_runner_sha256": "0a32ed6cee6b04f5601a3850d1d4cd80787a7f4ae99d1be902359db68880ea95",
+  "purpose": "Reproduction of supplementary synthetic diagnostic comparisons; these comparisons do not establish calibrated inference.",
+  "reference_rates": [
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 3,
+      "replicates": 50,
+      "setting": "fixed_beta1",
+      "suite": "adaptive_beta"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 4,
+      "replicates": 50,
+      "setting": "adaptive_heuristic",
+      "suite": "adaptive_beta"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 50,
+      "replicates": 50,
+      "setting": "fixed_beta1",
+      "suite": "adaptive_beta"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 50,
+      "replicates": 50,
+      "setting": "adaptive_heuristic",
+      "suite": "adaptive_beta"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 7,
+      "replicates": 50,
+      "setting": "fixed_beta1",
+      "suite": "adaptive_beta"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 48,
+      "replicates": 50,
+      "setting": "adaptive_heuristic",
+      "suite": "adaptive_beta"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 50,
+      "replicates": 50,
+      "setting": "fixed_beta1",
+      "suite": "adaptive_beta"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 50,
+      "replicates": 50,
+      "setting": "adaptive_heuristic",
+      "suite": "adaptive_beta"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 5,
+      "replicates": 50,
+      "setting": "fixed_beta1",
+      "suite": "adaptive_beta"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 8,
+      "replicates": 50,
+      "setting": "adaptive_heuristic",
+      "suite": "adaptive_beta"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 50,
+      "replicates": 50,
+      "setting": "fixed_beta1",
+      "suite": "adaptive_beta"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 50,
+      "replicates": 50,
+      "setting": "adaptive_heuristic",
+      "suite": "adaptive_beta"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 5,
+      "replicates": 50,
+      "setting": "fixed_beta1",
+      "suite": "adaptive_beta"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 4,
+      "replicates": 50,
+      "setting": "adaptive_heuristic",
+      "suite": "adaptive_beta"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 48,
+      "replicates": 50,
+      "setting": "fixed_beta1",
+      "suite": "adaptive_beta"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 47,
+      "replicates": 50,
+      "setting": "adaptive_heuristic",
+      "suite": "adaptive_beta"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 17,
+      "replicates": 150,
+      "setting": "deployed",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "deployed",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 22,
+      "replicates": 150,
+      "setting": "deployed",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 148,
+      "replicates": 150,
+      "setting": "deployed",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 9,
+      "replicates": 80,
+      "setting": "deployed",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "deployed",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 14,
+      "replicates": 150,
+      "setting": "deployed",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 140,
+      "replicates": 150,
+      "setting": "deployed",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 19,
+      "replicates": 150,
+      "setting": "ladder: short {8,16,32}",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "ladder: short {8,16,32}",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 24,
+      "replicates": 150,
+      "setting": "ladder: short {8,16,32}",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 148,
+      "replicates": 150,
+      "setting": "ladder: short {8,16,32}",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 8,
+      "replicates": 80,
+      "setting": "ladder: short {8,16,32}",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "ladder: short {8,16,32}",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 13,
+      "replicates": 150,
+      "setting": "ladder: short {8,16,32}",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 140,
+      "replicates": 150,
+      "setting": "ladder: short {8,16,32}",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 17,
+      "replicates": 150,
+      "setting": "ladder: long {8..40}",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "ladder: long {8..40}",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 33,
+      "replicates": 150,
+      "setting": "ladder: long {8..40}",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 148,
+      "replicates": 150,
+      "setting": "ladder: long {8..40}",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 9,
+      "replicates": 80,
+      "setting": "ladder: long {8..40}",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "ladder: long {8..40}",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 14,
+      "replicates": 150,
+      "setting": "ladder: long {8..40}",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 144,
+      "replicates": 150,
+      "setting": "ladder: long {8..40}",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 7,
+      "replicates": 150,
+      "setting": "beta=0.5",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 144,
+      "replicates": 150,
+      "setting": "beta=0.5",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 0,
+      "replicates": 150,
+      "setting": "beta=0.5",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 0,
+      "replicates": 150,
+      "setting": "beta=0.5",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 4,
+      "replicates": 80,
+      "setting": "beta=0.5",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "beta=0.5",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 5,
+      "replicates": 150,
+      "setting": "beta=0.5",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 127,
+      "replicates": 150,
+      "setting": "beta=0.5",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 22,
+      "replicates": 150,
+      "setting": "beta=1.5",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "beta=1.5",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 125,
+      "replicates": 150,
+      "setting": "beta=1.5",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "beta=1.5",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 10,
+      "replicates": 80,
+      "setting": "beta=1.5",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "beta=1.5",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 22,
+      "replicates": 150,
+      "setting": "beta=1.5",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 144,
+      "replicates": 150,
+      "setting": "beta=1.5",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 27,
+      "replicates": 150,
+      "setting": "beta=2.0",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "beta=2.0",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 146,
+      "replicates": 150,
+      "setting": "beta=2.0",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "beta=2.0",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 13,
+      "replicates": 80,
+      "setting": "beta=2.0",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "beta=2.0",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 22,
+      "replicates": 150,
+      "setting": "beta=2.0",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 148,
+      "replicates": 150,
+      "setting": "beta=2.0",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 17,
+      "replicates": 150,
+      "setting": "binning: equal-width",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "binning: equal-width",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 23,
+      "replicates": 150,
+      "setting": "binning: equal-width",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 148,
+      "replicates": 150,
+      "setting": "binning: equal-width",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 9,
+      "replicates": 80,
+      "setting": "binning: equal-width",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "binning: equal-width",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 13,
+      "replicates": 150,
+      "setting": "binning: equal-width",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 141,
+      "replicates": 150,
+      "setting": "binning: equal-width",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 17,
+      "replicates": 150,
+      "setting": "nuisance: light fit (4 sweeps)",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "nuisance: light fit (4 sweeps)",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 22,
+      "replicates": 150,
+      "setting": "nuisance: light fit (4 sweeps)",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 148,
+      "replicates": 150,
+      "setting": "nuisance: light fit (4 sweeps)",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 9,
+      "replicates": 80,
+      "setting": "nuisance: light fit (4 sweeps)",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "nuisance: light fit (4 sweeps)",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 14,
+      "replicates": 150,
+      "setting": "nuisance: light fit (4 sweeps)",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 140,
+      "replicates": 150,
+      "setting": "nuisance: light fit (4 sweeps)",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 17,
+      "replicates": 150,
+      "setting": "nuisance: heavy fit (24 sweeps)",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "nuisance: heavy fit (24 sweeps)",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 22,
+      "replicates": 150,
+      "setting": "nuisance: heavy fit (24 sweeps)",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 148,
+      "replicates": 150,
+      "setting": "nuisance: heavy fit (24 sweeps)",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 9,
+      "replicates": 80,
+      "setting": "nuisance: heavy fit (24 sweeps)",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "nuisance: heavy fit (24 sweeps)",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 14,
+      "replicates": 150,
+      "setting": "nuisance: heavy fit (24 sweeps)",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 140,
+      "replicates": 150,
+      "setting": "nuisance: heavy fit (24 sweeps)",
+      "suite": "ablation"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "smooth",
+      "rejections": 14,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "smooth",
+      "rejections": 148,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "nonlinear",
+      "rejections": 14,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "nonlinear",
+      "rejections": 145,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "large_n",
+      "rejections": 8,
+      "replicates": 80,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "heavy_tail",
+      "rejections": 15,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "heavy_tail",
+      "rejections": 143,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "smooth",
+      "rejections": 18,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "smooth",
+      "rejections": 148,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "nonlinear",
+      "rejections": 16,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "nonlinear",
+      "rejections": 145,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "large_n",
+      "rejections": 8,
+      "replicates": 80,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "heavy_tail",
+      "rejections": 15,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "heavy_tail",
+      "rejections": 144,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 21,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 149,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 16,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 145,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 9,
+      "replicates": 80,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 17,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 145,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "smooth",
+      "rejections": 21,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "smooth",
+      "rejections": 149,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "nonlinear",
+      "rejections": 19,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "nonlinear",
+      "rejections": 146,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "large_n",
+      "rejections": 9,
+      "replicates": 80,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "heavy_tail",
+      "rejections": 19,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "heavy_tail",
+      "rejections": 146,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "smooth",
+      "rejections": 22,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "smooth",
+      "rejections": 148,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "nonlinear",
+      "rejections": 21,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "nonlinear",
+      "rejections": 146,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "large_n",
+      "rejections": 9,
+      "replicates": 80,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "heavy_tail",
+      "rejections": 17,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "heavy_tail",
+      "rejections": 144,
+      "replicates": 150,
+      "setting": "ours",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "smooth",
+      "rejections": 48,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "large_n",
+      "rejections": 32,
+      "replicates": 80,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "heavy_tail",
+      "rejections": 41,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "heavy_tail",
+      "rejections": 149,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "smooth",
+      "rejections": 65,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "large_n",
+      "rejections": 40,
+      "replicates": 80,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "heavy_tail",
+      "rejections": 55,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "heavy_tail",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 85,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 48,
+      "replicates": 80,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 62,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "smooth",
+      "rejections": 95,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "large_n",
+      "rejections": 55,
+      "replicates": 80,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "heavy_tail",
+      "rejections": 69,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "heavy_tail",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "smooth",
+      "rejections": 99,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "large_n",
+      "rejections": 58,
+      "replicates": 80,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "heavy_tail",
+      "rejections": 73,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "heavy_tail",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM coarse",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "smooth",
+      "rejections": 25,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "nonlinear",
+      "rejections": 148,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "large_n",
+      "rejections": 13,
+      "replicates": 80,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "heavy_tail",
+      "rejections": 22,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "heavy_tail",
+      "rejections": 146,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "smooth",
+      "rejections": 29,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "large_n",
+      "rejections": 14,
+      "replicates": 80,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "heavy_tail",
+      "rejections": 28,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "heavy_tail",
+      "rejections": 149,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 36,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 17,
+      "replicates": 80,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 30,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 149,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "smooth",
+      "rejections": 41,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "large_n",
+      "rejections": 18,
+      "replicates": 80,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "heavy_tail",
+      "rejections": 33,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "heavy_tail",
+      "rejections": 149,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "smooth",
+      "rejections": 39,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "large_n",
+      "rejections": 19,
+      "replicates": 80,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "heavy_tail",
+      "rejections": 34,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "heavy_tail",
+      "rejections": 149,
+      "replicates": 150,
+      "setting": "GCM fine",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "smooth",
+      "rejections": 135,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "large_n",
+      "rejections": 73,
+      "replicates": 80,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "heavy_tail",
+      "rejections": 128,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "heavy_tail",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "smooth",
+      "rejections": 146,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "heavy_tail",
+      "rejections": 145,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "heavy_tail",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 147,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "heavy_tail",
+      "rejections": 148,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "heavy_tail",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "heavy_tail",
+      "rejections": 149,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "heavy_tail",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "linear",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "smooth",
+      "rejections": 44,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "large_n",
+      "rejections": 27,
+      "replicates": 80,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "heavy_tail",
+      "rejections": 35,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "heavy_tail",
+      "rejections": 149,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "smooth",
+      "rejections": 63,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "large_n",
+      "rejections": 40,
+      "replicates": 80,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "heavy_tail",
+      "rejections": 49,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "heavy_tail",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 79,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 47,
+      "replicates": 80,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 57,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "smooth",
+      "rejections": 83,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "large_n",
+      "rejections": 55,
+      "replicates": 80,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "heavy_tail",
+      "rejections": 65,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "heavy_tail",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "smooth",
+      "rejections": 88,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "smooth",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "large_n",
+      "rejections": 57,
+      "replicates": 80,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "heavy_tail",
+      "rejections": 69,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "heavy_tail",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "permutation",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "smooth",
+      "rejections": 28,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "smooth",
+      "rejections": 100,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "nonlinear",
+      "rejections": 119,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "nonlinear",
+      "rejections": 149,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "large_n",
+      "rejections": 12,
+      "replicates": 80,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "large_n",
+      "rejections": 73,
+      "replicates": 80,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "heavy_tail",
+      "rejections": 15,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "heavy_tail",
+      "rejections": 78,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "smooth",
+      "rejections": 28,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "smooth",
+      "rejections": 100,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "nonlinear",
+      "rejections": 129,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "nonlinear",
+      "rejections": 149,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "large_n",
+      "rejections": 11,
+      "replicates": 80,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "large_n",
+      "rejections": 76,
+      "replicates": 80,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "heavy_tail",
+      "rejections": 15,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "heavy_tail",
+      "rejections": 76,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 25,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 108,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 132,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 149,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 12,
+      "replicates": 80,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 75,
+      "replicates": 80,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 15,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 80,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "smooth",
+      "rejections": 30,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "smooth",
+      "rejections": 109,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "nonlinear",
+      "rejections": 137,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "nonlinear",
+      "rejections": 149,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "large_n",
+      "rejections": 12,
+      "replicates": 80,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "large_n",
+      "rejections": 76,
+      "replicates": 80,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "heavy_tail",
+      "rejections": 17,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "heavy_tail",
+      "rejections": 77,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "smooth",
+      "rejections": 28,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "smooth",
+      "rejections": 106,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "nonlinear",
+      "rejections": 138,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "nonlinear",
+      "rejections": 149,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "large_n",
+      "rejections": 13,
+      "replicates": 80,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "large_n",
+      "rejections": 76,
+      "replicates": 80,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "heavy_tail",
+      "rejections": 14,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "heavy_tail",
+      "rejections": 79,
+      "replicates": 150,
+      "setting": "weighted GCM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "smooth",
+      "rejections": 19,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "smooth",
+      "rejections": 106,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "nonlinear",
+      "rejections": 148,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "large_n",
+      "rejections": 13,
+      "replicates": 80,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "large_n",
+      "rejections": 78,
+      "replicates": 80,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "heavy_tail",
+      "rejections": 15,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "heavy_tail",
+      "rejections": 78,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "smooth",
+      "rejections": 21,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "smooth",
+      "rejections": 108,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "large_n",
+      "rejections": 17,
+      "replicates": 80,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "large_n",
+      "rejections": 78,
+      "replicates": 80,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "heavy_tail",
+      "rejections": 12,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "heavy_tail",
+      "rejections": 79,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 24,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 111,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 13,
+      "replicates": 80,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 79,
+      "replicates": 80,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 14,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 84,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "smooth",
+      "rejections": 26,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "smooth",
+      "rejections": 113,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "large_n",
+      "rejections": 16,
+      "replicates": 80,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "large_n",
+      "rejections": 79,
+      "replicates": 80,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "heavy_tail",
+      "rejections": 16,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "heavy_tail",
+      "rejections": 86,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "smooth",
+      "rejections": 29,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "smooth",
+      "rejections": 120,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "large_n",
+      "rejections": 15,
+      "replicates": 80,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "large_n",
+      "rejections": 79,
+      "replicates": 80,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "heavy_tail",
+      "rejections": 17,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "heavy_tail",
+      "rejections": 80,
+      "replicates": 150,
+      "setting": "projected CM",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "smooth",
+      "rejections": 5,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "smooth",
+      "rejections": 135,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "nonlinear",
+      "rejections": 86,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "large_n",
+      "rejections": 7,
+      "replicates": 80,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "large_n",
+      "rejections": 79,
+      "replicates": 80,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.5,
+      "regime": "heavy_tail",
+      "rejections": 15,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.5,
+      "regime": "heavy_tail",
+      "rejections": 129,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "smooth",
+      "rejections": 9,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "smooth",
+      "rejections": 137,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "nonlinear",
+      "rejections": 92,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "large_n",
+      "rejections": 7,
+      "replicates": 80,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.65,
+      "regime": "heavy_tail",
+      "rejections": 16,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.65,
+      "regime": "heavy_tail",
+      "rejections": 127,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 10,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "smooth",
+      "rejections": 137,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 92,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 8,
+      "replicates": 80,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 17,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "heavy_tail",
+      "rejections": 128,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "smooth",
+      "rejections": 11,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "smooth",
+      "rejections": 139,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "nonlinear",
+      "rejections": 95,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "large_n",
+      "rejections": 6,
+      "replicates": 80,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.9,
+      "regime": "heavy_tail",
+      "rejections": 19,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.9,
+      "regime": "heavy_tail",
+      "rejections": 129,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "smooth",
+      "rejections": 11,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "smooth",
+      "rejections": 139,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "nonlinear",
+      "rejections": 94,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "nonlinear",
+      "rejections": 150,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "large_n",
+      "rejections": 6,
+      "replicates": 80,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "large_n",
+      "rejections": 80,
+      "replicates": 80,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.95,
+      "regime": "heavy_tail",
+      "rejections": 20,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.95,
+      "regime": "heavy_tail",
+      "rejections": 130,
+      "replicates": 150,
+      "setting": "local perm.",
+      "suite": "generalization"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "high_dim_fe",
+      "rejections": 3,
+      "replicates": 100,
+      "setting": "legacy_cluster_extrapolation_beta1",
+      "suite": "stress"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "high_dim_fe",
+      "rejections": 100,
+      "replicates": 100,
+      "setting": "legacy_cluster_extrapolation_beta1",
+      "suite": "stress"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "serial",
+      "rejections": 17,
+      "replicates": 200,
+      "setting": "legacy_cluster_extrapolation_beta1",
+      "suite": "stress"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "serial",
+      "rejections": 198,
+      "replicates": 200,
+      "setting": "legacy_cluster_extrapolation_beta1",
+      "suite": "stress"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "overlap",
+      "rejections": 21,
+      "replicates": 200,
+      "setting": "legacy_cluster_extrapolation_beta1",
+      "suite": "stress"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "overlap",
+      "rejections": 150,
+      "replicates": 200,
+      "setting": "legacy_cluster_extrapolation_beta1",
+      "suite": "stress"
+    },
+    {
+      "legacy_metric": "typeI",
+      "overlap": 0.8,
+      "regime": "small_T",
+      "rejections": 35,
+      "replicates": 200,
+      "setting": "legacy_cluster_extrapolation_beta1",
+      "suite": "stress"
+    },
+    {
+      "legacy_metric": "power",
+      "overlap": 0.8,
+      "regime": "small_T",
+      "rejections": 152,
+      "replicates": 200,
+      "setting": "legacy_cluster_extrapolation_beta1",
+      "suite": "stress"
+    }
+  ],
+  "reference_raw_hashes": {
+    "ablation": "0bf59097eb93fe4ba5940de32e5faa5c637430897d4928f311c461133371eeaf",
+    "adaptive_beta": "c33a4da5aa9d70481a5daefd4419fbb0de1b8b0150f69f27e6b50db7152a04cd",
+    "generalization": "2a11f05ba6ef2dc24b5b52375bccc327dde8b90a50a7b7e25c2ae0e9d8c62c61",
+    "stress": "652bf528a6560e66403ca086b7dd2e3c5959ece76cc4762896b8b9504a5acbac"
+  },
+  "resources": {
+    "BLAS_threads_per_process": 1,
+    "GPU": false,
+    "notes": "At most two original suites concurrently; balanced panels at most 36000 rows, no dense n-by-n arrays in these selected grid routines. Preserve failed and completed outputs; no completed-subset claim.",
+    "outcome_dependent_stopping": false,
+    "processes": 2,
+    "wall_time_limit": null
+  },
+  "runtime": {
+    "packages": {
+      "numpy": "1.26.4",
+      "pandas": "2.3.3",
+      "scipy": "1.13.1"
+    },
+    "python_version": "3.9.21 (main, Dec 11 2024, 16:24:11) \n[GCC 11.2.0]"
+  },
+  "schema_version": 1,
+  "scientific_scope": [
+    "Synthetic _fast_resid fits both nuisance components jointly within each training fold. The synthetic panels are balanced, so unequal-cluster centering is not present in this comparison.",
+    "Row-random folds, shared empirical ranks and finite bins do not establish a calibrated conditional-rank null.",
+    "Adaptive beta uses the evaluation products and does not account for adaptation in its standard error. This is one heuristic, not an impossibility theorem.",
+    "Long-ladder failure and absence of fold-scheme ablation were already documented before September.",
+    "The actual eight-grid methods exclude the two mislabeled RFF/distance routines; WGCM/PCM/local permutation require separate fidelity and information-flow audit."
+  ],
+  "sources": [
+    {
+      "bytes": 2741,
+      "original_module": "scripts/analysis/adaptive_beta.py",
+      "path": "implementation/scripts/analysis/adaptive_beta.py",
+      "sha256": "b1e079fa8c880b5bef113d942a9a61c93fd9e083ede2e7ef1ac924c6b1326632",
+      "status": "SUPPLEMENTARY_SYNTHETIC_IMPLEMENTATION_DIAGNOSTIC_ONLY"
+    },
+    {
+      "bytes": 3705,
+      "original_module": "scripts/analysis/ablation_matrix.py",
+      "path": "implementation/scripts/analysis/ablation_matrix.py",
+      "sha256": "315bf73b91eb490690e72adabbf491ec8a9c152681fdc88acb03e335d4dea677",
+      "status": "SUPPLEMENTARY_SYNTHETIC_IMPLEMENTATION_DIAGNOSTIC_ONLY"
+    },
+    {
+      "bytes": 3459,
+      "original_module": "scripts/analysis/generalization_grid.py",
+      "path": "implementation/scripts/analysis/generalization_grid.py",
+      "sha256": "a5365924b2c6721dcdc56e5f0dc37679a8bb8342b8974ea1977705d20a3ae680",
+      "status": "SUPPLEMENTARY_SYNTHETIC_IMPLEMENTATION_DIAGNOSTIC_ONLY"
+    },
+    {
+      "bytes": 7094,
+      "original_module": "scripts/analysis/clustered_calibration.py",
+      "path": "implementation/scripts/analysis/clustered_calibration.py",
+      "sha256": "b260f0b207f9886d291d3540509c6249536ae5971742ca6025b2fa1aabc95250",
+      "status": "SUPPLEMENTARY_SYNTHETIC_IMPLEMENTATION_DIAGNOSTIC_ONLY"
+    },
+    {
+      "bytes": 5212,
+      "original_module": "scripts/analysis/gcm_residual_audit.py",
+      "path": "implementation/scripts/analysis/gcm_residual_audit.py",
+      "sha256": "e65d6b98e1698953a314d07f80e8a04c196cad9d5fae9c1e9a77dbc0c725d3f9",
+      "status": "SUPPLEMENTARY_SYNTHETIC_IMPLEMENTATION_DIAGNOSTIC_ONLY"
+    },
+    {
+      "bytes": 8922,
+      "original_module": "scripts/analysis/baseline_implementations.py",
+      "path": "implementation/scripts/analysis/baseline_implementations.py",
+      "sha256": "55215a1c2ea942a031322ef0b0bc78c5468b35e626c5d97199fc80b5bd5843e5",
+      "status": "SUPPLEMENTARY_SYNTHETIC_IMPLEMENTATION_DIAGNOSTIC_ONLY"
+    },
+    {
+      "bytes": 6351,
+      "original_module": "scripts/analysis/null_suite_stress.py",
+      "path": "implementation/scripts/analysis/null_suite_stress.py",
+      "sha256": "bdc74417b09a7c291c7d91916db36dd8c0e45c99b07e8fa3cec5803dd8b11e46",
+      "status": "SUPPLEMENTARY_SYNTHETIC_IMPLEMENTATION_DIAGNOSTIC_ONLY"
+    },
+    {
+      "bytes": 4880,
+      "original_module": "scripts/analysis/wgcm_baseline.py",
+      "path": "implementation/scripts/analysis/wgcm_baseline.py",
+      "sha256": "12252e93a1a1362918414be18732a5754c2d0b2b69411a14f4d6c936b94eab61",
+      "status": "SUPPLEMENTARY_SYNTHETIC_IMPLEMENTATION_DIAGNOSTIC_ONLY"
+    },
+    {
+      "bytes": 4924,
+      "original_module": "scripts/analysis/pcm.py",
+      "path": "implementation/scripts/analysis/pcm.py",
+      "sha256": "c4fef6da9cea100d29fc4e107f6c93ed8dfd6ca82f17b0f1b2535da91ed318a3",
+      "status": "SUPPLEMENTARY_SYNTHETIC_IMPLEMENTATION_DIAGNOSTIC_ONLY"
+    },
+    {
+      "bytes": 5158,
+      "original_module": "scripts/analysis/local_permutation_baseline.py",
+      "path": "implementation/scripts/analysis/local_permutation_baseline.py",
+      "sha256": "f40b9189273ab72022788d5050b426de4f8384bc72a1aa913603747023093d56",
+      "status": "SUPPLEMENTARY_SYNTHETIC_IMPLEMENTATION_DIAGNOSTIC_ONLY"
+    }
+  ],
+  "suites": [
+    "adaptive_beta",
+    "ablation",
+    "generalization",
+    "stress"
+  ]
+}

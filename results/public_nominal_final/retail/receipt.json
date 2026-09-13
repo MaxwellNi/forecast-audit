@@ -1,0 +1,52 @@
+{
+  "domain": "retail",
+  "auditor_sha256": "92489cf8cdae0650cd6493112d28fe13b34cfb356cae02c83a387d39f9561ff3",
+  "prediction_input_hashes": [
+    {
+      "name": "model_01.parquet",
+      "sha256": "02e74ec0b2aa7be34971994c619e88dca1c1b380d834ec589180bbae092382f7"
+    },
+    {
+      "name": "model_02.parquet",
+      "sha256": "828ba9c48064ea9405a8d94cd132c7ce9d5331d925a4002842a8693827a6eb34"
+    },
+    {
+      "name": "model_03.parquet",
+      "sha256": "e0b52f233a0d615c627406c599657e8b7f8bf077b101a0de6670ed3ea5fffe83"
+    },
+    {
+      "name": "model_04.parquet",
+      "sha256": "202bae15e53de8dc91e928a8bf5022bb1578a17399464a9b0cdcf4eaeb831b26"
+    },
+    {
+      "name": "model_05.parquet",
+      "sha256": "eecc46ef21a250a59ea77b55589dd09d7eca3ce426cd6aa0271a4ff1e4ca0d50"
+    },
+    {
+      "name": "model_06.parquet",
+      "sha256": "16592e4482ee5dee1a2f70d6fb6d62bc227e2005e26c54f4340a3f3a04aa71a7"
+    },
+    {
+      "name": "model_07.parquet",
+      "sha256": "122ff4652fc1e9779340004e131eba12871fb8c6d9b7e656c579a74dffee2489"
+    },
+    {
+      "name": "model_08.parquet",
+      "sha256": "eedc9e9a954530190dd1c26a8d75a923d1cf4720f2b29bdabed025ff7a1f4d4b"
+    },
+    {
+      "name": "model_09.parquet",
+      "sha256": "5eabe9797c7e26bf46b08c5bfa040435a2d389b03c852bdbaa81262b28abbe93"
+    },
+    {
+      "name": "model_10.parquet",
+      "sha256": "628e1cd34b6b2404a49b2e65af3ca0ef2b4122846504eb2c87275874116bb52e"
+    }
+  ],
+  "rows_per_model": 112000,
+  "models": 10,
+  "elapsed_seconds": 61.50249785929918,
+  "beta1_nominal": 8,
+  "beta1_BY": 7,
+  "beta1_undefined": 1
+}

@@ -1,0 +1,45 @@
+{
+  "calibration_seed": 491732061,
+  "evaluation_seed": 670921843,
+  "calibration_draws": 5000,
+  "evaluation_families": 1000,
+  "entities": [
+    25,
+    100,
+    400
+  ],
+  "times": 20,
+  "lookback": 5,
+  "past_loading": 0.2,
+  "family_sizes": [
+    10,
+    11
+  ],
+  "signals_for_first_three_models": [
+    0.0,
+    0.03,
+    0.06,
+    0.1
+  ],
+  "methods": [
+    "complementary",
+    "gapped_complementary",
+    "directional"
+  ],
+  "inference": [
+    "normal",
+    "student_t",
+    "independent_supplied_null"
+  ],
+  "alpha": 0.05,
+  "nuisance_folds": 5,
+  "evaluation_rows_per_entity": 12,
+  "truth": "Null model has zero raw conditional innovation covariance. Directional fitted raw product expectation is exactly zero. Complementary and gapped fitted products may be biased for that target.",
+  "data": "Independent entity trajectories; Gaussian innovations and intercepts. Forecast uses the preceding five outcome innovations plus unit-variance noise. Forecast noise has correlation 0.5 across models; outcomes are shared. No ranks, bins, estimated spline, or HAC is used.",
+  "pairing": "Entity counts are nested, family sizes are nested, and all methods and injected alternatives share primitives within a family replication. Calibration and evaluation use independent RNG streams.",
+  "guards": "Require complete fixed support with nonempty earlier/later training sides; finite raw inputs; at least two entities; assign p=1 whenever sample standard error is <=1e-10. All family members remain in BY. No p-value or outcome-dependent model filtering.",
+  "studentization": "Sample SD uses ddof=1, so G/(G-1) is already present; t(G-1) changes only the reference law. This does not repair nuisance bias.",
+  "calibration": "Each method and entity count has a separate bank of independent null statistics from the known generator. Plus-one upper-tail ranks include ties. The same independent bank is used for all exchangeable model marginals; no calibration/evaluation draws overlap.",
+  "scope": "Complete raw equal-entity branch with simulated known null law, not the ranked observed-peer Algorithm 1 and not a real-panel or universal FDR guarantee. Alternatives inject current outcome information and are not prospective forecasts.",
+  "source_sha256": "5b351e0672a1027379ac33d71fe6e4d4fe4da402aaf936b29b20c6a030bdc10f"
+}

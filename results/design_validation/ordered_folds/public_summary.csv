@@ -1,0 +1,5 @@
+domain,models,retained_ordered_middle_statistic_beta2,lost_ordered_middle_statistic_beta2,gained_ordered_middle_statistic_beta2,retained_ordered_all_statistic_beta2,lost_ordered_all_statistic_beta2,gained_ordered_all_statistic_beta2,retained_published
+electricity,11,10,[],[],10,[],[],10
+ratings,10,6,[],[],6,[],[],6
+retail,10,7,['Past price and calendar'],['Croston SBA'],6,['Past price and calendar'],[],7
+portfolios,10,0,[],[],0,[],[],0

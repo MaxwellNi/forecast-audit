@@ -1,0 +1,151 @@
+{
+  "status": "PASS_RECOUNT_AND_EXPECTATIONS",
+  "cells": 84,
+  "scalar_replication_rows": 42000,
+  "max_recount_difference": 3.552713678800501e-15,
+  "max_exact_mean_difference": 1.1102230246251565e-16,
+  "maximum_mean_departure_in_mc_standard_errors": 2.455220224921816,
+  "directional_null_cells": [
+    {
+      "entities": 25,
+      "times": 20,
+      "lookback": 1,
+      "rejections": 37,
+      "rejection_rate": 0.074,
+      "wilson95": [
+        0.05416118475101196,
+        0.10033475332223056
+      ]
+    },
+    {
+      "entities": 25,
+      "times": 20,
+      "lookback": 5,
+      "rejections": 41,
+      "rejection_rate": 0.082,
+      "wilson95": [
+        0.06101908946846894,
+        0.10935485915738875
+      ]
+    },
+    {
+      "entities": 25,
+      "times": 40,
+      "lookback": 1,
+      "rejections": 27,
+      "rejection_rate": 0.054,
+      "wilson95": [
+        0.03737435018105752,
+        0.0774265615106471
+      ]
+    },
+    {
+      "entities": 25,
+      "times": 40,
+      "lookback": 5,
+      "rejections": 27,
+      "rejection_rate": 0.054,
+      "wilson95": [
+        0.03737435018105752,
+        0.0774265615106471
+      ]
+    },
+    {
+      "entities": 100,
+      "times": 20,
+      "lookback": 1,
+      "rejections": 32,
+      "rejection_rate": 0.064,
+      "wilson95": [
+        0.04569601604478942,
+        0.08895240883768415
+      ]
+    },
+    {
+      "entities": 100,
+      "times": 20,
+      "lookback": 5,
+      "rejections": 31,
+      "rejection_rate": 0.062,
+      "wilson95": [
+        0.044019209142681565,
+        0.08665971310163822
+      ]
+    },
+    {
+      "entities": 100,
+      "times": 40,
+      "lookback": 1,
+      "rejections": 39,
+      "rejection_rate": 0.078,
+      "wilson95": [
+        0.057581393476161584,
+        0.10485354987338852
+      ]
+    },
+    {
+      "entities": 100,
+      "times": 40,
+      "lookback": 5,
+      "rejections": 44,
+      "rejection_rate": 0.088,
+      "wilson95": [
+        0.06620598447492893,
+        0.11607647206539012
+      ]
+    },
+    {
+      "entities": 400,
+      "times": 20,
+      "lookback": 1,
+      "rejections": 29,
+      "rejection_rate": 0.058,
+      "wilson95": [
+        0.0406837291117572,
+        0.082056187856255
+      ]
+    },
+    {
+      "entities": 400,
+      "times": 20,
+      "lookback": 5,
+      "rejections": 27,
+      "rejection_rate": 0.054,
+      "wilson95": [
+        0.03737435018105752,
+        0.0774265615106471
+      ]
+    },
+    {
+      "entities": 400,
+      "times": 40,
+      "lookback": 1,
+      "rejections": 31,
+      "rejection_rate": 0.062,
+      "wilson95": [
+        0.044019209142681565,
+        0.08665971310163822
+      ]
+    },
+    {
+      "entities": 400,
+      "times": 40,
+      "lookback": 5,
+      "rejections": 39,
+      "rejection_rate": 0.078,
+      "wilson95": [
+        0.057581393476161584,
+        0.10485354987338852
+      ]
+    }
+  ],
+  "directional_null_intervals_excluding_005": 5,
+  "tests": "Four unit tests passed: refusal to overwrite existing output, exact bias/directional expectation, aligned eligibility and temporal fold validation, and independent-entity Monte Carlo centering. A separate scalar loop checked the gapped score on five entities.",
+  "scope": "Independent scalar recount and covariance-sum calculation. Passing this check is not a claim of finite-sample normal calibration.",
+  "files": {
+    "scripts/analysis/equal_entity_directional.py": "dfaa4ea923f4432b5a90f903b67d550f8d7b6db0ff6bee7448ac0751fc3797f1",
+    "results/equal_entity_directional/summary.csv": "095f9e1e0142b65b18e75283c0ce149d4916a24f050109ec586639339ace0ae2",
+    "results/equal_entity_directional/replications.csv.gz": "6715ed29bc738ca7b1170fa58800831168a62271aa4d7f226be1d3c92459d780",
+    "results/equal_entity_directional/protocol.json": "f374fa3e181e81493cef4de975af58698cc25fef21833332ae80e80692081c87"
+  }
+}

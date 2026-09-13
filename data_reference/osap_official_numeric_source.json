@@ -1,0 +1,22 @@
+{
+  "official_home": "https://www.openassetpricing.com/",
+  "author_endorsed_download_package": "https://github.com/mk0417/open-asset-pricing-download",
+  "release_url_source": "https://github.com/mk0417/open-asset-pricing-download/blob/master/openassetpricing/urls.py",
+  "release": "2025.10",
+  "official_release_folder": "https://drive.google.com/drive/folders/1qQDuTsnyvWfEJR6nPBQZ8xxlq6bkLG_y",
+  "official_file_url": "https://drive.google.com/uc?export=download&id=10sOryk_ddjkXagaajTKUk1nwJs2ZLRiI",
+  "official_filename": "PredictorLSretWide.csv",
+  "official_file_sha256": "79aa0896d79924e1efa83f9afe51a3b4ce94137adfd2c5c3fd2d5d350532ee18",
+  "local_input_filename": "predictor_ports_full.parquet",
+  "local_input_sha256": "2464b3f608ba076f0c3d1bc64af80070f967c0d57c57219ded726a08e0a7cc44",
+  "local_ls_rows": 173302,
+  "official_signals": 212,
+  "matched_local_keys": 173302,
+  "local_keys_absent_official": 0,
+  "official_nonmissing_keys_absent_local": 0,
+  "matched_value_mismatches_1e12": 0,
+  "maximum_absolute_matched_return_difference": 0.0,
+  "return_units": "Percent as used in the published portfolio return export, not decimal; preserved unchanged.",
+  "retrieved_utc": "2026-09-05T18:34:51.741874+00:00",
+  "historical_vintage_policy": "Current public-release numerical verification does not establish historical publication clocks, signal discovery dates, or investable portfolio construction at forecast origins."
+}

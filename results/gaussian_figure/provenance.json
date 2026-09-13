@@ -1,0 +1,232 @@
+{
+  "source_sha256": "903b60c62bc5d92d3fcde38b7d3e33c7ce0b6312e5fd94b39a93a1e0da26d3d3",
+  "generator_sha256": "a53abbcfc4711368a675851fcff8f14cf2a3f36f217c224e189bdc0a59fb372f",
+  "scope": "Correct known-covariance Gaussian cells only; raw directions are scalar-bin probes, not the deployed ranked-panel pipeline. Error bars are marginal Wilson95, not simultaneous intervals.",
+  "points": [
+    {
+      "panel": 1,
+      "method": "extrapolation_beta2_normal",
+      "design": 0,
+      "x": -0.025,
+      "rate": 0.177,
+      "wilson95": [
+        0.1545933794855418,
+        0.20187870649612683
+      ]
+    },
+    {
+      "panel": 1,
+      "method": "extrapolation_beta2_normal",
+      "design": 1,
+      "x": 0.975,
+      "rate": 0.244,
+      "wilson95": [
+        0.2183928321652609,
+        0.2715664681793434
+      ]
+    },
+    {
+      "panel": 1,
+      "method": "extrapolation_beta2_normal",
+      "design": 2,
+      "x": 1.975,
+      "rate": 0.548,
+      "wilson95": [
+        0.5170282252037207,
+        0.5786044059816661
+      ]
+    },
+    {
+      "panel": 1,
+      "method": "extrapolation_beta2_normal",
+      "design": 3,
+      "x": 2.975,
+      "rate": 0.558,
+      "wilson95": [
+        0.5270556511526086,
+        0.5885004448630671
+      ]
+    },
+    {
+      "panel": 1,
+      "method": "extrapolation_beta2_gaussian",
+      "design": 0,
+      "x": 0.025,
+      "rate": 0.055,
+      "wilson95": [
+        0.04249742737476844,
+        0.07090838767737563
+      ]
+    },
+    {
+      "panel": 1,
+      "method": "extrapolation_beta2_gaussian",
+      "design": 1,
+      "x": 1.025,
+      "rate": 0.047,
+      "wilson95": [
+        0.0355271051063845,
+        0.06193993808152845
+      ]
+    },
+    {
+      "panel": 1,
+      "method": "extrapolation_beta2_gaussian",
+      "design": 2,
+      "x": 2.025,
+      "rate": 0.043,
+      "wilson95": [
+        0.03207865341171336,
+        0.057419003844084014
+      ]
+    },
+    {
+      "panel": 1,
+      "method": "extrapolation_beta2_gaussian",
+      "design": 3,
+      "x": 3.025,
+      "rate": 0.051,
+      "wilson95": [
+        0.03900094277526684,
+        0.06643548634476165
+      ]
+    },
+    {
+      "panel": 2,
+      "method": "leave_cluster_raw_gaussian",
+      "design": 0,
+      "x": -0.045,
+      "rate": 0.175,
+      "wilson95": [
+        0.1527057476303958,
+        0.19978164538521503
+      ]
+    },
+    {
+      "panel": 2,
+      "method": "leave_cluster_raw_gaussian",
+      "design": 1,
+      "x": 0.955,
+      "rate": 0.134,
+      "wilson95": [
+        0.11428107599412643,
+        0.15652011121729995
+      ]
+    },
+    {
+      "panel": 2,
+      "method": "leave_cluster_raw_gaussian",
+      "design": 2,
+      "x": 1.955,
+      "rate": 0.46,
+      "wilson95": [
+        0.42932142688110647,
+        0.49098471379773795
+      ]
+    },
+    {
+      "panel": 2,
+      "method": "leave_cluster_raw_gaussian",
+      "design": 3,
+      "x": 2.955,
+      "rate": 0.277,
+      "wilson95": [
+        0.25015649034831283,
+        0.3055502439362448
+      ]
+    },
+    {
+      "panel": 2,
+      "method": "leave_cluster_learned_gaussian",
+      "design": 0,
+      "x": 0.0,
+      "rate": 0.225,
+      "wilson95": [
+        0.20019895514206568,
+        0.25190576202498965
+      ]
+    },
+    {
+      "panel": 2,
+      "method": "leave_cluster_learned_gaussian",
+      "design": 1,
+      "x": 1.0,
+      "rate": 0.159,
+      "wilson95": [
+        0.1376463027469242,
+        0.18296354654022445
+      ]
+    },
+    {
+      "panel": 2,
+      "method": "leave_cluster_learned_gaussian",
+      "design": 2,
+      "x": 2.0,
+      "rate": 0.479,
+      "wilson95": [
+        0.4481771504618109,
+        0.5099835733945823
+      ]
+    },
+    {
+      "panel": 2,
+      "method": "leave_cluster_learned_gaussian",
+      "design": 3,
+      "x": 3.0,
+      "rate": 0.316,
+      "wilson95": [
+        0.28793562210416745,
+        0.34547262501851683
+      ]
+    },
+    {
+      "panel": 2,
+      "method": "gls_gaussian",
+      "design": 0,
+      "x": 0.045,
+      "rate": 0.341,
+      "wilson95": [
+        0.31227731829126676,
+        0.37093959090713985
+      ]
+    },
+    {
+      "panel": 2,
+      "method": "gls_gaussian",
+      "design": 1,
+      "x": 1.045,
+      "rate": 0.32,
+      "wilson95": [
+        0.29182400898144156,
+        0.3495536240733583
+      ]
+    },
+    {
+      "panel": 2,
+      "method": "gls_gaussian",
+      "design": 2,
+      "x": 2.045,
+      "rate": 0.694,
+      "wilson95": [
+        0.6647406510279685,
+        0.721774566679636
+      ]
+    },
+    {
+      "panel": 2,
+      "method": "gls_gaussian",
+      "design": 3,
+      "x": 3.045,
+      "rate": 0.713,
+      "wilson95": [
+        0.6841895829243534,
+        0.7401802179608001
+      ]
+    }
+  ],
+  "size_inches": [
+    7.0,
+    2.65
+  ],
+  "raster_dpi": 200
+}

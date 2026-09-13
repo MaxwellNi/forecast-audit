@@ -1,0 +1,34 @@
+{
+  "scope": "New fixed random-stream validation-budget experiment; no forecast-gating or temporal generalization claim",
+  "seed": 1309202601,
+  "repetitions_per_cell": 2000,
+  "categories": [
+    2,
+    8,
+    32,
+    128
+  ],
+  "validation_pairs": [
+    512,
+    2048,
+    8192
+  ],
+  "mass_laws": [
+    "balanced",
+    "one_heavy"
+  ],
+  "fit_errors": [
+    "exact",
+    "same_direction",
+    "opposite_direction"
+  ],
+  "delta": 0.05,
+  "sampling": "two independent half streams of independent focal/reference pairs; two raw channels conditionally independent given class; common marginal references",
+  "methods": [
+    "known_mass_full_rectangle",
+    "known_mass_aggregate_product"
+  ],
+  "prior_exposure": "Settings designed after prior archive diagnostics; no result-dependent grid or seed selection",
+  "measure": "Bias-upper coverage and slack, no claim of discovery power",
+  "comparison": "Both methods use same known category probabilities and 2*m raw calls. Full rectangle uses both channels from all m pairs; aggregate uses X on first half and Y on second."
+}

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "all_panel_data_identical": true,
+  "size_inches": [
+    7,
+    2.05
+  ],
+  "minimum_font_points": 8,
+  "power_method_points": 16,
+  "component_points": 8,
+  "changes": [
+    "theta display replaced by vartheta",
+    "leading zero added to annotations",
+    "hats added to estimated bias allowances",
+    "stable PDF metadata"
+  ],
+  "source_figure_data_sha256": "7b762914c227db6516ab9ad7e825a2b1c5dd8f2c33cee5e1be4af3a382225e3c"
+}

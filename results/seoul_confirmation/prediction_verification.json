@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "existing_verifier": {
+    "passed": true,
+    "chronology": [
+      "2026-09-12T12:01:09.575202+00:00",
+      "2026-09-12T12:01:12.722263+00:00",
+      "2026-09-12T12:01:14.005919+00:00",
+      "2026-09-12T12:01:56.976392+00:00",
+      "2026-09-12T12:01:57.799319+00:00",
+      "2026-09-12T12:01:58.178275+00:00"
+    ],
+    "checks": {
+      "public_receipt_hash_links": true,
+      "sidecar_hash_files": 2,
+      "source_model_and_result_files_preserved": 7,
+      "full_family_BY": 16,
+      "copy_guard_family_members": 5,
+      "fixed_selection_choices": 6,
+      "literal_gain_identities": 16,
+      "risk_metric_rows": 74,
+      "weekly_trace_rows": 888,
+      "paired_gain_and_HAC_rows": 82
+    },
+    "scope": "Public receipt-link and aggregate arithmetic verification. Timestamps refer to the recorded original run; public packaging edits are identified in ORIGINAL_RUN_HASHES.json. No new outcome selection, population nuisance oracle, temporal independence or external preregistration is established."
+  },
+  "complete_manifest_entries_checked": 26,
+  "additional_public_provenance_hash_links_checked": true,
+  "producer_student_quantiles_independently_verified": true,
+  "forecast_counterfactuals": [
+    {
+      "cutoff_row": 6744,
+      "cutoff_time": "2018-09-08 00:00:00",
+      "largest_at_or_before_prediction_change": 0.0
+    },
+    {
+      "cutoff_row": 7752,
+      "cutoff_time": "2018-10-20 00:00:00",
+      "largest_at_or_before_prediction_change": 0.0
+    },
+    {
+      "cutoff_row": 8759,
+      "cutoff_time": "2018-11-30 23:00:00",
+      "largest_at_or_before_prediction_change": 0.0
+    }
+  ],
+  "hourly_reconstructed_forecasts": 74,
+  "largest_metric_absolute_error": 5.820766091346741e-11,
+  "largest_identity_absolute_error": 1.7462298274040222e-10,
+  "largest_interval_absolute_error": 1.1641532182693481e-10,
+  "paired_weekly_fortnight_bootstrap_comparisons": 82,
+  "selected_gate_vs_ungated": [
+    {
+      "baseline": "seasonal_24h",
+      "max_abs_gated_minus_ungated_prediction": 1940.3217680037574,
+      "gate_vs_ungated_mse_gain": -299789.5226076211
+    },
+    {
+      "baseline": "ridge_lags_calendar",
+      "max_abs_gated_minus_ungated_prediction": 0.0,
+      "gate_vs_ungated_mse_gain": 0.0
+    }
+  ],
+  "public_package_files_unchanged": true,
+  "scope": "Frozen-prediction arithmetic and temporal feature-path checks only; no model refitting, new selection, independent confirmation, population-mean recovery or calibrated temporal inference."
+}

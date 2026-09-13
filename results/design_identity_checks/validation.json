@@ -1,0 +1,16 @@
+{
+  "imports": [
+    "argparse",
+    "itertools",
+    "json",
+    "pathlib",
+    "numpy"
+  ],
+  "input_files_required": [],
+  "isolated_script_replay_identical": true,
+  "regression_tests_passed": 5,
+  "result_sha256": "9d88e31620bebc4e9ca649de60f1aacff135f8221c1bb09da911ba5c8897c46f",
+  "scope": "Expectation identities and precondition handling; no inference calibration claim.",
+  "script_sha256": "b868e82485d972fab3532236f0e256095a796c12200daffd207aea0707e92532",
+  "test_sha256": "779f4e8fd4bfc29a1c113aa8774424936f981373f5a7cc67b54f09fadcc9e81d"
+}

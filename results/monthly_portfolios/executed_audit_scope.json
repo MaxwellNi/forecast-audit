@@ -1,0 +1,12 @@
+{
+  "extrapolated_profile": "Contiguous whole-month folds only, beta 1 and 2, ten models in each BY family (20 rows).",
+  "single_resolution_profile": "Both contiguous and interleaved whole-month folds, q=10, ten models in each BY family (20 rows).",
+  "hac_lag": 12,
+  "nominal_rejections": {
+    "extrapolated_beta1": 0,
+    "extrapolated_beta2": 0,
+    "single_contiguous": 0,
+    "single_interleaved": 0
+  },
+  "note": "The protocol lists both fold schemes collectively. The frozen runner delegates the extrapolation ladder to the existing contiguous-fold implementation; both fold schemes apply to the single-resolution profile. No additional specification was selected from outcomes."
+}

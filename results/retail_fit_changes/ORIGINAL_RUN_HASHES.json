@@ -1,0 +1,41 @@
+{
+  "scope": "Identities of the original decomposition producer, protocol, receipt and aggregate results before public packaging edits. The public producer accepts explicit source paths; its revised bytes and receipt links were not executed at the recorded original timestamps. Every numerical CSV and original source-level verification result is unchanged.",
+  "files": {
+    "combined_hac_covariance.csv": {
+      "sha256": "e4d13d2eaf9c4a2df76875567023321411528971ab4b62798f1f1d3acfd42389",
+      "bytes": 3996
+    },
+    "cross_resolution_term_hac_covariance.csv": {
+      "sha256": "8cc2040e0aded8246cba51edd064ec0ac3003587e9dcf416a649f774fd4f796c",
+      "bytes": 37099
+    },
+    "decompose.py": {
+      "sha256": "df674b02ef0884fc5d29d27537e2ca4f9f3b1e40fc3d8a68396da4660702516e",
+      "bytes": 12995
+    },
+    "per_resolution.csv": {
+      "sha256": "f9d6adc98a87e55b3f14c4cdab1e3e00acff9984b3e446c4a860eb4ac7dffee4",
+      "bytes": 2205
+    },
+    "protocol.json": {
+      "sha256": "0ecfc1fd631c0a5e0bb045982e89abda7bd9f448836b5d65de13d1de9583b2cc",
+      "bytes": 3278
+    },
+    "receipt.json": {
+      "sha256": "01d720d29c409d7184a009a77d09cf253dbfc2de275b1eda6b60abd913f6af33",
+      "bytes": 1372
+    },
+    "summary.csv": {
+      "sha256": "0f6d0238bec9a39662d2d2a9eef272895b6479a0818d861cc14b4b244c276afb",
+      "bytes": 1258
+    },
+    "verification.json": {
+      "sha256": "07a639016c8bf27d8555d989e40a23d6a3243342cc6845995b7161d836f295d8",
+      "bytes": 2768
+    },
+    "weekly_aggregates.csv": {
+      "sha256": "47408c72a04c1b89d01aeeb80558db5fe74bd2bc811f6f3f85d87e9712d76fb6",
+      "bytes": 5332
+    }
+  }
+}
